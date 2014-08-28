@@ -1,0 +1,54 @@
+\protect \contentsline {chapter}{Abstract}{iii}
+\protect \contentsline {chapter}{Acknowledgements}{v}
+\protect \contentsline {chapter}{\protect \numberline {1}Introduction}{1}
+\protect \contentsline {section}{\protect \numberline {1.1}Biomembranes and their functions}{1}
+\protect \contentsline {section}{\protect \numberline {1.2}Phospholipids and lipid bilayers as model biomembranes}{2}
+\protect \contentsline {section}{\protect \numberline {1.3}Phases and structures of lipid bilayers}{3}
+\protect \contentsline {section}{\protect \numberline {1.4}Structure determination using the x-ray scattering method}{5}
+\protect \contentsline {section}{\protect \numberline {1.5}Description of thesis}{6}
+\protect \contentsline {chapter}{\protect \numberline {2}Materials and Methods}{7}
+\protect \contentsline {section}{\protect \numberline {2.1}Phospholipid sample preparation}{7}
+\protect \contentsline {section}{\protect \numberline {2.2}X-ray experiments}{8}
+\protect \contentsline {section}{\protect \numberline {2.3}Sample chamber}{10}
+\protect \contentsline {chapter}{\protect \numberline {3}Order and Disorder in Gel Phase Lipid Bilayers}{12}
+\protect \contentsline {section}{\protect \numberline {3.1}Introduction}{12}
+\protect \contentsline {section}{\protect \numberline {3.2}X-ray scattering data}{14}
+\protect \contentsline {section}{\protect \numberline {3.3}Strategy}{16}
+\protect \contentsline {section}{\protect \numberline {3.4}Model}{18}
+\protect \contentsline {section}{\protect \numberline {3.5}Origin of the satellite peaks}{22}
+\protect \contentsline {section}{\protect \numberline {3.6}Fitting the peaks}{23}
+\protect \contentsline {section}{\protect \numberline {3.7}Diffuse scattering}{31}
+\protect \contentsline {section}{\protect \numberline {3.8}Discussion}{34}
+\protect \contentsline {chapter}{\protect \numberline {4}Anomalous Phase Behavior of Long Chain Lecithins}{38}
+\protect \contentsline {section}{\protect \numberline {4.1}Introduction}{38}
+\protect \contentsline {section}{\protect \numberline {4.2}Results}{39}
+\protect \contentsline {section}{\protect \numberline {4.3}Discussion}{49}
+\protect \contentsline {chapter}{\protect \numberline {5}Chain Length and Temperature Dependence of Gel Phase Structure}{55}
+\protect \contentsline {section}{\protect \numberline {5.1}Introduction}{55}
+\protect \contentsline {section}{\protect \numberline {5.2}Methods}{56}
+\protect \contentsline {section}{\protect \numberline {5.3}Results and Discussion}{57}
+\protect \contentsline {subsection}{\protect \numberline {5.3.1}Low-angle Scattering}{57}
+\protect \contentsline {subsection}{\protect \numberline {5.3.2}Wide-angle Scattering}{60}
+\protect \contentsline {subsection}{\protect \numberline {5.3.3}Tilt Angle $\theta $}{64}
+\protect \contentsline {subsection}{\protect \numberline {5.3.4}Interfacial Area A}{67}
+\protect \contentsline {section}{\protect \numberline {5.4}Theoretical Interpretation}{68}
+\protect \contentsline {chapter}{\protect \numberline {6}Structure of the Ripple Phase in Lecithin Bilayers}{70}
+\protect \contentsline {section}{\protect \numberline {6.1}Introduction}{70}
+\protect \contentsline {section}{\protect \numberline {6.2}Modeling method}{72}
+\protect \contentsline {subsection}{\protect \numberline {6.2.1}Lattice structure}{72}
+\protect \contentsline {subsection}{\protect \numberline {6.2.2}Electron density and form factor}{73}
+\protect \contentsline {subsection}{\protect \numberline {6.2.3}Ripple profile}{73}
+\protect \contentsline {subsection}{\protect \numberline {6.2.4}Trans-bilayer electron density profile $T(x,z)$}{77}
+\protect \contentsline {subsection}{\protect \numberline {6.2.5}Overall form factor and the scattering intensity}{79}
+\protect \contentsline {subsection}{\protect \numberline {6.2.6}Determination of the phases and the electron density map}{80}
+\protect \contentsline {section}{\protect \numberline {6.3}Results}{82}
+\protect \contentsline {section}{\protect \numberline {6.4}Discussion}{87}
+\protect \contentsline {chapter}{\protect \numberline {7}Summary}{94}
+\protect \contentsline {section}{\protect \numberline {7.1}Recapitulation of the main results}{94}
+\protect \contentsline {section}{\protect \numberline {7.2}Connection and relevance of the result chapters}{96}
+\protect \contentsline {chapter}{\protect \numberline {A}Pleated vs. parallel chain packings in gel phase bilayers}{99}
+\protect \contentsline {section}{\protect \numberline {A.1}Introduction}{99}
+\protect \contentsline {section}{\protect \numberline {A.2}Theory}{100}
+\protect \contentsline {section}{\protect \numberline {A.3}Results and discussion}{102}
+\protect \contentsline {chapter}{\protect \numberline {B}Publications During Graduate Study}{106}
+\protect \contentsline {chapter}{Bibliography}{108}

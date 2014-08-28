@@ -1,0 +1,728 @@
+\documentstyle[aps,psfig,preprint]{revtex}
+\begin{document}
+\bibliographystyle{prsty}
+
+\noindent
+{\large \bf Biophysics \hspace{4in} MS XD2575}
+
+\vspace{1.5in}
+
+\begin{center}
+{\Large \bf Structure of the Ripple Phase in Lecithin Bilayers}
+
+(biomembranes/phospholipids/x-ray diffraction)
+
+{W.-J. Sun$^{*}$, S. Tristram-Nagle$^{\dag}$, R. M. Suter$^{*}$ and J. F.
+ Nagle$^{* \dag \ddag}$}
+
+\textit{Department of Physics$^{*}$ and Department of Biological 
+Sciences$^{\dag}$,
+\protect\\ Carnegie Mellon University , Pittsburgh, PA 15213 }
+
+(Revised March 22, 1996)
+
+\end{center}
+
+\vspace{4.0in}
+
+\noindent
+\begin{picture}
+\put(0,0){\line(1,0){350}}
+\end{picture}
+
+{\footnotesize
+\noindent Abbreviations: DMPC, dimyristoyl-phosphatidylcholine.
+
+\noindent $^{\ddag}$To whom reprint requests should be addressed.
+}
+
+\pagebreak
+
+% ********************** abst.tex ***********************************
+\begin{abstract}
+
+The phases of the x-ray form factors are derived for the ripple (P$_{\beta '}$)
+thermodynamic phase in the lecithin bilayer system. By combining these phases 
+with experimental intensity data, the electron density map of the 
+ripple phase of DMPC is constructed. The phases are derived by fitting 
+the intensity data to 2D electron density models, which are created
+by convolving an asymmetric triangular ripple profile with a transbilayer 
+electron density profile.  The robustness of the model method
+is indicated by the result that many different models of the
+transbilayer profile yield essentially the same phases, except
+for the weaker, purely ripple (0,k) peaks.  Even with this
+residual ambiguity, the ripple profile is well determined, resulting in
+19\AA\ for the ripple amplitude and 10$^{\circ}$ and 26$^{\circ}$ 
+for the slopes of the major and the minor sides,
+respectively.   Estimates for the bilayer head-head spacings
+show that the major side of the ripple is consistent with gel-like structure
+and the minor side appears to be thinner with lower electron density.
+
+\end{abstract}
+\pagebreak
+
+%--------------- Introduction ----------------------------------
+\section{Introduction}
+
+Lipids in water self-assemble into lamellar bilayers, which comprise the basic
+structural element of biomembranes.   The supramolecular packing of the
+bilayers, in turn, forms lyotropic liquid crystals with rich phase behavior
+and diverse structures.  Among the thermodynamic phases observed in
+lipid bilayer systems, the ripple (P$_{\beta '}$) phase in lecithin bilayers
+is especially fascinating to a broad range of researchers in condensed matter
+physics and physical chemistry as an example of periodically modulated phases.
+Many theoretical papers have attempted to explain the formation of the ripples
+\cite{Don79,Mar84,Haw86,Car87,Gol88,McCu90,Hon91,Lub93}. 
+Such understanding has been delayed because, despite many
+experimental studies
+\cite{Tar73,JanSS79,Luna77,Ino80,Cop80,Sta82,Rup83,Ale85,Sir88,Wac89a,Kat95},
+the structure has not been as well characterized as for the lower temperature 
+gel (L$_{\beta '}$) phase \cite{Sun94} and the higher temperature liquid 
+crystalline (L$_{\alpha}$) phase \cite{Nagle96}.  When an accurate ripple
+structure is known, some indication of the energetics of the ripple formation
+may be obtained by comparing the relative size of the ripple
+wavelength and the ripple amplitude to the size of lipid molecules and
+the bilayer thickness \cite{Gol88}.  Also, correlation 
+between the chirality of the constituent lipid molecules and the asymmetry of 
+the ripples may lead to elucidation of the microscopic origin 
+of the macroscopic properties of the ripple phase \cite{Lub93,Kat95}.
+
+Structural information about the ripple phase can be divided into two
+categories. The first category consists of the 2D lattice parameters, namely, 
+the ripple wavelength $\lambda_r$, the bilayer packing repeat distance $d$ and
+the oblique angle $\gamma$ for the unit cell that are illustrated
+in Fig. 1.  These well-established parameters have been accurately
+obtained by indexing low-angle x-ray scattering peaks
+\cite{Tar73,JanSS79,Ino80,Ale85,Wac89a}. 
+For example, Wack and Webb \cite{Wac89a} reported for DMPC with
+25\% water by weight at 18$^{\circ}$C that 
+$\lambda_r$ = 141.7\AA, $d$ = 57.94\AA\
+and $\gamma$ = 98.4$^{\circ}$.  The second category
+consists of the structure within the ripple unit cell, including
+the shape and the amplitude of the ripples and the bilayer thickness. 
+This second category of structural information
+has been quite uncertain.  Many ripple profiles have been 
+proposed \cite{Don79,Mar84,Car87,Gol88,McCu90,Hon91,Lub93,Tar73,JanSS79,Sta82},
+including sinusoidal, peristaltic and sawtooth and
+estimates of the ripple trough-to-peak 
+amplitude range widely from 15\AA\ to 50\AA\ 
+\cite{Tar73,JanSS79,Sta82,Zas88a,Hata93}.
+
+The second category of information involves electron density maps.  These
+require the amplitudes of the form factors, which, ignoring
+fluctuation corrections \cite{Nagle96}, are just the square roots of
+the Lorentz corrected intensities of the x-ray scattering peaks,
+and the correct phases for these measured form factor amplitudes.
+A traditional approach to solve the phase problem is the 
+``pattern recognition'' method employed by Tardieu et al. 
+\cite{Tar73}; that method
+selects those phase combinations which will give rise to electron density maps 
+agreeing with known physical properties of the bilayer system.
+Considering that there are typically 20 or so 
+peaks in most of the ripple phase x-ray data, finding the right phase 
+combination out of about 2$^{20}$ possibilities is a difficult task.
+The approach we employ involves modeling and nonlinear least square fitting.
+Possibly, this method may be generally useful when studying other disordered
+and fluctuating biological systems which have intrinsically continuous 
+electron density maps rather than an atomic resolution crystal structure.
+
+%------------------- Theory ------------------------------------
+\section{METHODS}
+
+The modeling approach first creates a functional form for the electron density 
+that incorporates known and plausible properties of the bilayer but that
+contains free parameters to incorporate unknown detailed structure.
+The success of the method depends on this modelling step which requires some care
+and is therefore the emphasis of this section.
+Then, the values of the free parameters in the real space model are 
+determined by routine non-linear least squares procedures so that the Fourier
+components of the model provide the best fit to the measured intensities.
+This last step automatically determines the phases of the model, which are
+then used with the original intensity data to produce an electron density map.
+
+\subsection{Lattice structure}
+
+It has been shown from x-ray studies \cite{Tar73,JanSS79,Ino80,Ale85,%
+Wac89a,Kat95} that ripples in different bilayers are registered to form a 
+2-D oblique lattice as shown by the unit cell in Fig. 1.
+The unit cell vectors can be expressed (see Fig. 1) as
+\begin{eqnarray}
+\label{realunit}
+%\left\{ \begin{array}{ll}
+\vec{a} = d \cot \gamma\ \hat{x} + d\ \hat{z} \ \mbox{and}\ \vec{b} = \lambda_r\ \hat{x}.
+%\end{array}
+%\right.
+\end{eqnarray}
+The corresponding reciprocal lattice unit cell vectors (see Fig. 1) are 
+\begin{eqnarray}
+\label{reciunit}
+%\left\{ \begin{array}{ll}
+\vec{A} = \frac{2 \pi}{d}\ \hat{z}\ \mbox{and}\ \vec{B} = \frac{2 \pi}{\lambda_r}\ \hat{x} - \frac{2 \pi}{\lambda_r \tan \gamma}\ \hat{z}.
+%\end{array}
+%\right.
+\end{eqnarray}
+so the q-space vector $\vec{q}_{hk}$ for the Bragg peak with Miller indices $(h,k)$
+is:
+\begin{eqnarray}
+\label{qvector}
+\vec{q}_{hk} =&& h \vec{A} + k \vec{B} ,
+%=&& \frac{2 \pi k}{\lambda_r}\ \hat{x} + \left( \frac{2 \pi h}{d} - \frac{2 \pi k}{\lambda_r \tan \gamma} \right) \hat{z},
+\end{eqnarray}
+with some examples shown in Fig. 1.
+%----------------------------------------------------------------------------
+\subsection{Electron density model and form factor}
+
+The ripple profile is the line z=u(x) that describes the center of the bilayer 
+in the (x,z) plane, such as the one shown in Fig. 1.  
+The closely related contour function is defined as
+\begin{eqnarray}
+\label{contour}
+C(x,z) = \delta [z - u(x)].
+\end{eqnarray}
+The transbilayer electron density function $T_{\psi}(x,z)$ expresses the
+actual electron density at points (x,z) that lie on a straight line with
+slope $\psi$ from the vertical as shown in Fig. 1.  An underlying electron
+density profile will be chosen similar to models for flat bilayer phases.
+Then, the electron density model for $\rho (x,z)$ within
+the unit cell is described as the convolution of a ripple contour
+function $C(x,z)$ and the trans-bilayer electron density profile $T_{\psi}(x,z)$:
+\begin{eqnarray}
+\label{model}
+\rho (x,z) = C(x,z) \ast T_{\psi}(x,z).
+\end{eqnarray}
+This convolution moves the transbilayer electron density function so that
+it is centered on the ripple profile.
+
+The form factor $F(\vec{q})$ is the Fourier transform of the electron density
+expressed in Eqn.\ref{model} and is the product
+\begin{eqnarray}
+\label{formall}
+F(\vec{q}) =&& F_C(\vec{q}) F_T(\vec{q}),
+\end{eqnarray}
+of the Fourier transform $F_{C}(q)$ of $C(x,z)$ and of the Fourier transform
+$F_{T}(q)$ of $T_{\psi}(x,z)$.
+
+%----------------------------------------------------------------------------
+\subsection{Ripple profile}
+
+The results of freeze fracture electron microscopy \cite{Luna77,Cop80,Rup83} and
+scanning tunneling microscopy \cite{Zas88a,Hata93} strongly suggest that the
+ripple profile is asymmetric.  This conclusion is further supported by 
+the result
+of x-ray diffraction that the ripple unit cell is oblique
+($\gamma$ not equal to 90$^{\circ}$) 
+\cite{Tar73,JanSS79,Ino80,Ale85,Sir88,Wac89a,Kat95}.
+For our model ripple profile
+u(x) we choose a triangular shape as shown in
+Fig. 1.  We shall call the longer side of the ripple
+the {\it major} side, and the shorter side the {\it minor} side.
+The triangular ripple profile is completely described by the amplitude
+$A$ and $x_0$, the projection of the major side onto the $x$ axis,
+with obvious relations for other quantities such as the slope angles
+of the major and minor sides.  Choosing the origin at the center
+of the unit cell shown in Fig. 1 gives the ripple profile
+\begin{eqnarray}
+\label{profile}
+u(x) = \left\{ \begin{array}{ll}
+		-\frac{A}{\lambda_r - x_0} (x + \frac{\lambda_r}{2})
+\ \ \ \mbox{if}\ - \frac{\lambda_r}{2} \le x < - \frac{x_0}{2};\\
+		\ \ \ \ \ \frac{A}{x_0}\ x\ \ \ \ \ \ \ \ \ \ \ \ \mbox{if}
+\ \ - \frac{x_0}{2} \le x \le 
+\frac{x_0}{2};\\
+		-\frac{A}{\lambda_r - x_0} (x - \frac{\lambda_r}{2})
+\ \ \ \mbox{if}\ \ \ \ \  \frac{x_0}{2} < x \le \frac{\lambda_r}{2}.
+		\end{array}
+	\right.
+\end{eqnarray}
+This particular choice shows explicitly the inversion
+symmetry in the ripple profile, so that the form factors are real.
+
+Using Eqn.\ref{profile} the contour part of the form factor is
+\begin{eqnarray}
+\label{formcon}
+F_C(\vec{q}) =&& \frac{1}{\lambda_r}\ \int_{- \frac{\lambda_r}
+{2}}^{\frac{\lambda_r}{2}} dx\ \mbox{e}^{i [q_x x + q_z u(x)]}\nonumber \\ 
+=&& \frac{x_0}{\lambda_r}\ \mbox{sinc}(\omega)
++ \frac{\lambda_r - x_0}{\lambda_r}\ \frac{\cos \frac{1}{2} (\frac{1}{2}
+q_x \lambda_r + \omega)}{\cos \frac{1}{2} (\frac{1}{2} q_x \lambda_r -
+\omega)}\nonumber\\ 
+&& \times\ \mbox{sinc}(\frac{q_x \lambda_r}{2} - \omega ),
+\end{eqnarray}
+where the intermediate variable $\omega$ is defined as
+\begin{eqnarray}
+\label{w}
+\omega (\vec{q}) = \frac{1}{2}\ ( q_x x_0 + q_z A).
+\end{eqnarray}
+%Combining Eqn.\ref{qvector} and Eqn.\ref{formcon}, the discrete contour form
+%factor for the Bragg peak with Miller indices $(h,k)$ can be expressed as:
+%\begin{eqnarray}
+%\label{discrete}
+%F_C(h,k) =&& \frac{x_0}{\lambda_r}\ \mbox{sinc}
+%(\omega_{hk}) + (-1)^k\ \frac{\lambda_r - x_0}{\lambda_r}\ 
+%\mbox{sinc}(k \pi - \omega_{hk})\nonumber\\
+%=&& \sin \omega_{hk}\ \left[\frac{k \pi x_0 - 
+%\omega_{hk} \lambda_r}{\omega_{hk} \lambda_r (k \pi - \omega_{hk})} \right],
+%\end{eqnarray}
+%where
+%\begin{eqnarray}
+%\label{whk}
+%\omega_{hk} =&& \frac{1}{2} (q_x^{hk} x_0 + q_z^{hk} A)\nonumber\\
+%=&& \pi\ \left[ \frac{h A}{d} + \frac{k}{\lambda_r}\ (x_0 -
+%\frac{A}{\tan \gamma}) \right].
+%\end{eqnarray}
+The first term on the right hand side of Eqn.\ref{formcon} is the contribution 
+from the major side of the ripple, with scattering amplitude
+\(\frac{x_0}{\lambda_r}\), proportional to its projected length onto the
+x axis, while the last term is the contribution from the 
+minor side of the ripple, with amplitude \(\frac{\lambda_r - x_0}{\lambda_r}\).
+Eqn.\ref{formcon} also shows that the maximum scattering 
+from the major side occurs along that $\vec{q}$ direction determined by
+$\omega = 0$ in Eqn.\ref{w}.  In real space this is also the direction normal to
+the major side of the ripple.  Similarly, the maximum scattering
+direction of the minor side is given by \( \frac{q_x \lambda_r}{2} - \omega 
+= 0 \), and this can be shown to be the direction normal to the minor side.
+These directions are illustrated by the dashed lines in Fig. 1.  
+This theoretical picture for the location of the strong (h,k) peaks
+agrees qualitatively with the experimental intensity pattern of Wack and
+Webb \cite{Wac89a} shown in Fig. 1 as well as other x-ray data
+\cite{Ale85,Kat95}.  This general pattern would also be expected to
+pertain to ripple profiles that are not perfectly triangular, for example,
+with rounded corners.
+
+%---------------------------------------------------------------------------
+\subsection{Trans-bilayer electron density profile $T_{\psi}(x,z)$}
+
+In a study of gel phase DPPC bilayers using the electron
+density modeling approach \cite{WSN89} it was found
+that the precise functional form of the electron density model did not
+much affect the results provided that the essential structural
+features of bilayers were incorporated into the model.
+We therefore first utilized a very simple model for $T_{\psi}(x,z)$ in
+which the two opposite headgroup regions consist of
+two identical positive $\delta$-functions, with amplitude $\rho_H$ and separated
+by the head-head spacing $2X_h$, and
+the central methyl trough consists of a negative $\delta$-function, with amplitude
+$\rho_M$.  The methylene region of bilayers has an electron density
+close to that of water and hence is set equal to zero in the
+following model (minus fluid \cite{WKMc73}) of $T_{\psi}(x,z)$,
+\begin{eqnarray}
+\label{transbi}
+T_{\psi}(x,z) =&& \delta (x + z \tan \psi)\ \{ \rho_H 
+	[\delta (z-X_h\cos \psi) \nonumber\\
+&& +\delta (z+X_h \cos \psi)]-\rho_M \delta (z) \}.
+\end{eqnarray}
+The form factor corresponding to this trans-bilayer electron density profile is
+\begin{eqnarray}
+\label{form_trans}
+F_T (\vec{q}) =&& \rho_M\ [R_{HM} \cos (q_z X_h \cos \psi - 
+q_x X_h \sin \psi) -1],
+\end{eqnarray}
+where \(R_{HM} = \frac{2\ \rho_H}{ \rho_M}\).   We will call this the
+simple delta function (SDF) model.
+Following \cite{WSN89} we also utilized a more realistic model, called the 1G 
+hybrid model that consists of Gaussian functions for the headgroups and
+the terminal methyl trough and that also allows for differences between the electron
+density of methylenes and of water.  We will call this the simple 1G (S1G) model.
+We also considered more complex models that modulated the electron density
+along the direction perpendicular to $\vec{a}$ in real space in Fig. 1; this is
+also the direction $\vec{B}$ in reciprocal space, so this modulation strongly
+affects the $(0,k)$ pure ripple form factors.  Our best ripple modulated 
+models (MDF and M1G) had two additional parameters, one to allow for the 
+electron density across the minor side to be different by a ratio $f_1$
+from the electron density across the major side and a second parameter
+$f_2$, which is multiplied by delta functions ${\delta}(x \pm x_0/2)$ to 
+allow for a
+different electron density near the kink between the major and the minor sides.
+
+%----------------------------------------------------------------------------
+\subsection{Determination of the phases and the electron density map}
+
+Combining Eqns. \ref{formall}, \ref{formcon} and \ref{form_trans}, the 
+Lorentz-corrected scattering intensity for the (h,k) reflection of the 
+SDF model is
+\begin{eqnarray}
+\label{inten_dis}
+I(h,k) && = |F(h,k)|^2 
+= \rho_M^2\ \sin^2 \omega_{hk}\ \left[\frac{k \pi x_0 -
+\omega_{hk} \lambda_r}{\omega_{hk} \lambda_r (k \pi 
+- \omega_{hk})} \right]^2 \nonumber\\
+&& \times\ [R_{HM} \cos (q_z^{hk} X_h \cos \psi - q_x^{hk} X_h \sin \psi) -1]^2,
+\end{eqnarray}
+which contains six independent parameters.
+Two parameters are related to the ripple profile, namely
+the ripple amplitude $A$ and the horizontal projection length of the major side
+of the ripple, $x_0$. The trans-bilayer profile contains three
+parameters, the headgroup to methyl trough electron
+density ratio, $R_{HM}$, the monolayer shift angle $\psi$ and 
+$X_h$, the headgroup position relative to the center of the bilayer. 
+The sixth parameter is a common scaling factor for all the
+$I(h,k)$ peaks.  For the S1G model, all the trans-bilayer profile parameters
+were taken from gel phase data \cite{WSN89} except for the headgroup position
+$X_h$.   The MDF and M1G models had 
+the two additional parameters
+$f_1$ and $f_2$ mentioned above.
+(The parameters ${\lambda}_r$, d and $\gamma$ are known
+from indexing the (h,k) peaks.)
+Standard non-linear least squares fitting procedures were employed to
+obtain unknown parameters by finding the best
+fit of the intensities given by Eqn.\ref{inten_dis} to the $|F(h,k)|^2$ reported
+by Wack and Webb \cite{Wac89a}. 
+This procedure does not require knowing any phases in advance.  However,
+once the best values of the parameters in the electron density model are
+determined, the form factors, and especially the phases, are determined.
+Using these phases and the amplitudes of the form factors $|F(h,k)|$ from 
+the intensity data \cite{Wac89a},
+an experimental relative electron density map $\rho(\vec{r})$ 
+is obtained using
+\begin{eqnarray}
+\label{discretell}
+\rho(x,z) = \sum_{h \geq 0} \sum_{k} F(h,k) \ \cos(q^{hk}_x x + q^{hk}_z z).
+\end{eqnarray}
+
+%------------------- Results and Discussion -------------------------
+\section{Results and Discussion}
+
+The absolute form factors $|F(h,k)|$ reported by Wack and Webb \cite{Wac89a} 
+are shown in Table 1 along with two of our many model fits.
+Our most striking result is that all of our models have the same
+phases for all the (h,k) reflections displayed in Table 1,
+except for the pure ripple
+reflections with h=0.  Figure 2 shows the Fourier map
+of the electron density using the measured \cite{Wac89a} absolute form factors
+$|F(h,k)|$, omitting the pure ripple reflections (0,k),
+and our phases shown in Table 1.
+Since the F(0,k) are rather small, their inclusion with any phase
+combination makes rather small differences to the electron
+density map and negligible differences to the ripple profile.
+
+The ripple profile is shown in Fig. 2 by the dotted lines
+that are defined as the loci of maximum intensity in the headgroup
+region.  This ripple profile clearly has the basic triangular shape
+assumed in our modeling, but this result is not tautological because 
+the experimental 
+absolute form factors are employed in Fig. 2.
+The ripple profile shown in Fig. 2 is in excellent quantitative
+agreement with the fitted model ripple profiles.  The parameters
+A and $x_0$ that describe the ripple profile, as well as other
+parameters in the models, are given in Table 2 for three models.
+From this we conclude that the ripple amplitude A is about 19\AA\
+and the projection of the major side on the a axis is about 103\AA\
+for the single DMPC sample for which Wack and Webb \cite{Wac89a}
+reported absolute form factors.
+
+To obtain a more quantitative picture of the thickness of the
+bilayer in various parts of the ripple, electron density profiles
+(using the experimental $|F(h,k)|$)
+are plotted in Fig. 3 along the three slices shown by short straight dashed
+lines in Fig. 2 and labelled A, B and C.
+Slice A is along the normal of the major side and is centered in the
+middle of the hydrocarbon region; it indicates that the head-head 
+spacing is 38\AA\ and the water spacing is 21\AA\ on the major side.
+Slice B is along the normal to the minor side and centered
+in the middle of the hydrocarbon region; it indicates that
+the bilayer head-head spacing on the minor side is 31\AA.
+Slice C is along the normal to the minor side, but centered in
+the water region; it indicates that the water spacing of the
+minor side is 18\AA.
+All these spacings are, of course, subject to Fourier truncation
+errors since the intensity data only include up to three lamellar orders 
+(h=1-3).  Furthermore, no corrections to the form factors have been
+made to account for fluctuations.  For smectic liquid crystals such
+corrections are considerably more complex than simple Debye-Waller
+factors; they are expected to be smaller for the ripple phase than
+for the fluid $L_{\alpha}$ phase, and even for this latter phase
+these corrections change the head-head spacings negligibly
+(see appendix to \cite{Nagle96}).
+
+We also performed x-ray experiments on a DMPC sample with almost identical
+hydration level as the data in \cite{Wac89a}. 
+The sample was partially dehydrated by a 40\% polyvinylpyrrolidone
+(PVP) aqueous solution.  At 18$^{\circ}$C
+this sample was in the ripple phase, with a d-spacing of 58.1\AA, comparing 
+well with Wack and Webb's 57.94\AA.  We then took
+low angle data at 6$^{\circ}$C at which the sample was clearly in the
+gel phase with no ripple peaks present. The intensities of five orders 
+$h=1-5$ were
+recorded, but the electron density profile was reconstructed using
+the first three orders only so as to form a valid comparison 
+with the ripple phase electron densities that were obtained from 
+experimental data limited to $h=1-3$.  
+The dotted line in Fig. 3A shows this comparison.
+The gel phase profile gives a head-head bilayer thickness of 37.0\AA\ and
+a water spacing of 20.8\AA, agreeing well with 37.9\AA\ and 20.7\AA,
+respectively, obtained for the ripple phase.
+
+The preceding result strongly suggests that the lipid bilayer along the major
+side of the ripple is similar to the gel phase bilayer.
+In contrast, the bilayer along the minor side appears to be
+thinner and this is consistent with the working hypothesis
+that the minor side may be more like the fluid $L_{\alpha}$ bilayer.
+A supporting argument for this hypothesis is that the electron density 
+in the headgroup region along the minor side appears to be lower,
+as it should be for a fluid bilayer with larger area/lipd, than 
+along the major side as shown by the solid curves in Fig. 3B.
+This supporting argument is hardly affected by inclusion of the
+F(0,k) for the two sets of phases $(-+-)$ and $(+-+)$ for the ripple 
+reflections shown in Table 1.  Inclusion makes too little difference 
+to show in Fig. 3A for the major side.  For the minor side the 
+$(-+-)$ phase set increases the height of the head groups, but not
+enough to equal the height for the headgroups on the
+major side, and not relative to the lower electron density of the 
+chain region.  This hypothesis is also consistent with the observation of 
+anisotropic diffusion preferentially along the grooves \cite{SCM83}.
+
+Wack and Webb \cite{Wac89a} argued that the (0,k) phases are $(+++)$ for 
+k=1,2 and 3,
+although the origin of their unit cell is translated by $\vec{b}/2$
+compared to our unit cell in Fig. 1, so their
+phases are equivalent to our phase set $(-+-)$ which we obtain
+from the SDF model as shown in Table 1.  However, the small magnitudes
+of the model F(0,k) motivated us to try the MDF and M1G models that
+deliberately modulate the total electron density in the direction 
+perpendicular to $\vec{a}$ in Fig. 1.  (This direction is also very nearly
+along the major side since it makes an angle of about 10 degrees
+with the b-axis which is nearly the same as $\gamma - 90^{\circ}$.)
+The results for the M1G model given in Table 1, as well as for
+the MDF model (not shown), show a dramatic
+improvement in the fit to most of the F(h,k), not just the F(0,k), with
+a factor of four decrease in the sum of the squares of the residuals.
+(The crystallographic R-value is 0.195 for the SDF model and 
+0.083 for the M1G model.)  It may also be noted that the (0,3) reflection 
+has nearly the same q-value as the (1,-2) reflection.  Reassignment of the 
+larger part of the value 7.81 for $|F(0,3)|$ in Table 1 to $|F(1,-2)|$ would
+further improve the fit.
+However, the set of ripple phases reverses to $(+-+)$ for both the M1G and
+the MDF model and this result is
+unchanged by using different starting values in the nonlinear
+least squares fitting program.   We therefore favor the phases $(+-+)$
+for the ripple reflections, although we recognize that none of
+the models we have considered readily accommodates $|F(0,2)|$ larger
+than $|F(0,1)|$.
+
+Although the phases for the pure ripple (0,k) reflections
+are not as well determined by our procedure as the h$\neq$0 phases,
+the latter phases, which are very robustly determined using
+our model method, already determine the ripple profile.  
+Indeed, the effect of different (0,k) phases on the electron density
+maps is less important than the effect of including the three h=4 
+reflections shown in Table 1 for the M1G model.
+Further progress toward understanding the molecular packing of lipids in the 
+ripple phase should employ careful analysis of wide angle scattering data.
+This study establishes the framework into which such additional information
+must be incorporated.
+
+Acknowledgment: This research was supported by NIH Grant GM44976.
+
+%------------------ Bibliography ----------------------------------
+\begin{thebibliography}{10}
+
+\bibitem{Don79}
+Doniach,~S. (1979) {\it J. Chem. Phys.} {\bf 70},  4587--4596.
+
+\bibitem{Mar84}
+Marder,~M., Frisch, H.~L., Langer, J.~S. and H.~M. McConnell, (1984)
+{\it  Proc. Natl. Acad.  Sci. USA} {\bf 81},  6559-6561.
+
+\bibitem{Haw86}
+Hawton, M.~H. and Keeler, W.~J. (1986) {\it Phys. Rev. A} {\bf 33}, 3333--3340.
+
+\bibitem{Car87}
+Carlson, J.~M. and Sethna, J.~P. (1987) {\it Phys. Rev. A} {\bf 36}, 3359--3374.
+
+\bibitem{Gol88}
+Goldstein, R.~E. and Leibler, S. (1988) {\it Phys. Rev. Lett.} {\bf 61},  
+2213--2216.
+
+\bibitem{McCu90}
+McCullough, W.~S.  and Scott, H.~L. (1990) {\it Phys. Rev. Lett.} {\bf 65},  
+931--934.
+
+\bibitem{Hon91}
+Honda, K.  and Kimura, H. (1991) {\it J. Phys. Soc. Jpn.} {\bf 60}, 1212--1215.
+
+\bibitem{Lub93}
+Lubensky, T.~C. and MacKintosh, F.~C. (1993) {\it Phys. Rev. Lett.} {\bf 71},  
+1565--1568.
+
+\bibitem{Tar73}
+Tardieu, A.,  Luzzati, V. and Reman, F.~C. (1973) {\it J. Mol. Biol.} {\bf 75},
+711--733.
+
+\bibitem{JanSS79}
+Janiak, M.~J., Small, D.~M. and Shipley, G.~G. (1979) {\it J. Biol. Chem.} 
+{\bf 254}, 6068--6078.
+
+\bibitem{Luna77}
+Luna, E.~J. and McConnell, H.~M. (1977) {\it Biochim. Biophys. Acta} {\bf 466},
+381--392.
+
+\bibitem{Ino80}
+Inoko, Y., Mitsui, T., Ohki, K., Sekiya, T. and Y. Nozawa, (1980) {\it Phys. 
+Stat. Sol. (a)} {\bf 61},  115--121.
+
+\bibitem{Cop80}
+Copeland, B.~R. and McConnell, H.~M. (1980) {\it Biochim. Biophys. Acta}  
+{\bf 599},  95--109.
+
+\bibitem{Sta82}
+Stamatoff, J.~B., Feuer, H.~J., Guggenheim, B., Tellez, G. and T. Yamane, (1982)
+{\it Biophys. J.} {\bf 38},  217--226.
+
+\bibitem{Rup83}
+Ruppel, D. and Sackmann, E. (1983){\it J. Physique} {\bf 44},  1025--1034.
+
+\bibitem{Ale85}
+Alecio, M.~R., Miller, A. and Watts, A. (1985) {\it Biochim. Biophys. Acta} 
+{\bf 815},  139--142.
+
+\bibitem{Sir88}
+Sirota, E.~B., Smith, G.~S., Safinya, C.~R., Plano, F.~J.  and  Clark, N.~A. 
+(1988) {\it Science} {\bf 242},  1406--1409.
+
+\bibitem{Wac89a}
+Wack, D.~C. and Webb, W.~W. (1989) {\it Phys. Rev. A} {\bf 40},  2712--2730.
+
+\bibitem{Kat95}
+Katsaras, J. and Raghunathan, V.~A. (1995) {\it Phys. Rev. Lett.} {\bf 74}, 
+2022--2025.
+
+\bibitem{Sun94}
+Sun, W., Suter, R.~M., Knewtson, M.~A., Worthington, C.~R., 
+Tristram-Nagle, S., Zhang, R., and Nagle, J.~F.
+(1996) {\it Phys. Rev. E} {\bf 49}, 4665-4676.
+
+\bibitem{Nagle96}
+Nagle, J.~F., Zhang, R., Tristram-Nagle, S., Sun, W., Petrache, H.~I., and
+Suter, R.~M. (1996) {\it Biophys. J.} {\bf 70}, 1419-1431.
+
+\bibitem{Zas88a}
+Zasadzinski, J.~A.~N., Schneir, J., Gurley, J., Elings, V. and Hansma, P.~K. 
+(1988) {\it Science} {\bf 239},  1013--1014.
+
+\bibitem{Hata93}
+Hatta, I., Kato, S., and Takahashi, H. (1993) {\it Phase Transitions}
+{\bf 45},  157--184.
+
+\bibitem{WSN89}
+Wiener, M.~C., Suter, R.~M., and Nagle, J.~F. (1989) {\it Biophys. J.}
+{\bf 55},  315--325.
+
+\bibitem{WKMc73}
+Worthington, C., King, G.~I., and McIntosh, T.~J. (1973) {\it Biophys. J.}
+{\bf 13}, 480--494.
+
+\bibitem{SCM83}
+Schneider, M.,~B., Chan, W.~K., and Webb, W.~W. (1983) 
+{\it Biophys. J.} {\bf 43}, 157-165.
+
+\end{thebibliography}
+
+%-------------- Figures and Tables ----------------------------
+\begin{figure}
+%\centerline {\psfig{figure=q_model3_new.ps,width=4.00in}}
+%\vspace{11pt}
+\caption{Real space pattern (bottom) shows the asymmetric ripple profile by 
+bold lines for two bilayers.  The q-space pattern (top) shows the (h,k) 
+peak positions as the centers of the circles.  Larger magnitudes of the 
+form factors for reflections that were observed [18] are indicated 
+by darker circles.  The grey dot-dash lines show the perpendiculars to the 
+major and the minor sides of the ripple profile.
+\label{Fig1}}
+\end{figure}
+
+\begin{figure}
+%\centerline {\psfig{figure=map_wack_34.ps,width=4.00in}}
+%\vspace{11pt}
+\caption{Electron density map using measured absolute form factors 
+[18] and phases from Table 1 omitting (0,k) reflections.  The smallest 
+electron density is pure black and the largest electron density is pure 
+white with a linear grey scale interpolating between.  The black dotted 
+lines show two of the loci of maximum electron density. The electron 
+density along the dashed lines A, B and C are shown in a conventional plot 
+in Fig. 3.  The parallelogram shows the unit cell whose width is $\lambda_r$ 
+which equals 141.7\AA.
+\label{Fig2}}
+\end{figure}
+
+\begin{figure}
+%\centerline {\psfig{figure=gel_slc.ps,width=4.00in}}
+%\vspace{11pt}
+\caption{Solid curves in A, B and C show electron density along the three 
+dashed lines in Fig. 2 labelled by A, B and C.  The dotted curve in
+A shows the electron density profile determined for the gel phase.
+The dashed and dash-dot curves in B and C show the electron density when
+the (0,k) reflections with phases $(-+-)$ and $(+-+)$, respectively, are
+added.
+\label{Fig3}}
+\end{figure}
+
+\pagebreak
+%-------------------------- Tables -------------------------------------
+%------------------- Table I -----------------------------------
+\begin{table}
+\caption{Form factors.
+\label{formfactor}}
+\vspace{6pt}
+{\small
+\begin{tabular}{rrrrrr} 
+h & k & 100$\times$q & Data$^{*}$ &
+        \multicolumn{2}{c}{Model F(h,k)} \\ \cline{5-6}
+& & (\AA$^{-1}$) & $|$F(h,k)$|$ & SDF & M1G \\ \hline
+0 &  1 & 4.48  &  5.3  &  -1.4  &  7.9  \\
+0 &  2 & 8.96  & 9.7  &  1.0  &  -4.6 \\
+0 &  3 & 13.4  &  7.8  &  -0.4   &  0.9 \\
+1 &  -2 & 13.0  &  ---  &  5.0  &  6.7   \\
+1 &  -1 & 11.1  &  60.8  &  -42.8  &  -60.4 \\
+1 &   0 & 10.8  &  100.0  &  -96.7  &  -99.1 \\
+1 &   1 & 12.3  &  26.9  &  38.1  &  28.5 \\
+1 &   2 & 15.0  &  ---  &  -23.6  &  -11.8 \\
+1 &   3 & 18.5  &  7.6  &  13.9  &  4.8 \\
+1 &   4 & 22.3  &  ---  &  -6.3  &  -2.4 \\
+2 &  -3 & 23.8  &  ---  &  8.6  &  10.9 \\
+2 &  -2 & 22.2  &  15.1  &  -9.0  &  -14.1 \\
+2 &  -1 & 21.5  &  71.2  &  -66.9  &  -71.7 \\
+2 &   0 & 21.7  &  39.7  &  -41.0  &  -39.9 \\
+2 &   1 & 22.8  &  33.9  &  31.1  &  30.6 \\
+2 &   2 & 24.6  &  22.7  &  -24.3  &  -22.8 \\
+2 &   3 & 27.1  &  14.2  &  17.1  &  15.2 \\
+2 &   4 & 30.1  &  7.8  &  -10.3  &  -9.1 \\
+3 &  -3 & 33.3  &  ---  &  -6.1  &  -6.0 \\
+3 &  -2 & 32.5  &  29.3  &  22.3  &  29.0 \\
+3 &  -1 & 32.2  &  44.2  &  42.2  &  44.5 \\
+3 &   0 & 32.5  &  12.0    &  2.2  &  0.7   \\
+3 &   1 & 33.5  &  ---  &  -11.3  &  -10.5 \\
+3 &   2 & 35.0  &  10.5  &  14.9  &  13.9 \\
+3 &   3 & 37.0  &  14.9  &  -15.0  &  -13.4 \\
+3 &   4 & 39.4  &  10.0  &  12.5  &  10.8 \\
+4 &  -2 & 43.0  &  ---  &  -81.1  &  -39.2$^{\dag}$ \\
+4 &  -1 & 43.0  &  ---  &  -63.5  &  -23.6$^{\dag}$ \\
+4 &   0 & 43.4  &  ---  &  26.1  &  10.3$^{\dag}$ \\
+\end{tabular}
+}
+{\small
+\indent $^{*}$From Wack and Webb [18].
+
+\indent $^{\dag}$Values are consistent with the densitometer trace shown in 
+        Fig. 4 in [18].
+}
+\end{table}
+
+\pagebreak
+
+%------------------- Table II -----------------------------------
+\begin{table}
+\caption{Ripple structural quantities.
+\label{parameter}}
+\vspace{6pt}
+\begin{tabular}{ccccccc} 
+Model & SDF & MDF & M1G \\ \hline
+A(\AA) & 18.6 & 20  & 19 \\
+x$_0$(\AA) & 103 & 103 & 103 \\
+$\psi$($\deg$) & 5 & 9 & 9 \\
+X$_h$(\AA) & 20.1 & 20.4 & 19.3 \\
+f1 & 1(fixed) & 0.7 & 0.6 \\
+f2 & 0(fixed) & -2 & -1 \\
+\end{tabular}
+\end{table}
+
+\end{document}

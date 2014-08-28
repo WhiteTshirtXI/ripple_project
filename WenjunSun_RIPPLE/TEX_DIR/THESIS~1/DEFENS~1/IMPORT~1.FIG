@@ -1,0 +1,21 @@
+#FIG 3.1
+Portrait
+Center
+Inches
+1200 2
+6 1125 4500 8550 5250
+4 0 -1 0 0 2 24 0.0000 4 255 4035 1125 5235     measurements feasible.\001
+4 0 -1 0 0 2 24 0.0000 4 330 7380 1125 4815 2. Homogeneous; reproducible; make physical\001
+-6
+6 1125 5550 8700 6300
+4 0 -1 0 0 2 24 0.0000 4 330 7560 1125 5850 3. Less complex thermodynamic behaviors than\001
+4 0 -1 0 0 2 24 0.0000 4 255 3510 1125 6270     real biomembranes.\001
+-6
+4 0 -1 0 0 30 30 0.0000 4 420 1755 450 3450 Biology:\001
+4 0 -1 0 0 2 24 0.0000 4 255 3930 1125 4200 1. Model biomembranes.\001
+4 0 -1 0 0 30 30 0.0000 4 420 1755 525 7350 Physics:\001
+4 0 -1 0 0 2 24 0.0000 4 330 6345 1125 8100 1. Lyotropic liquid crystals; surfactants.\001
+4 0 -1 0 0 2 24 0.0000 4 330 6585 1125 8715 2. Low dimensionality ---- new physics.\001
+4 0 -1 0 0 2 24 0.0000 4 330 4815 1125 9330 3. Weakly interacting systems.\001
+4 0 -1 0 0 30 36 0.0000 4 405 7890 1125 1425 IMPORTANCE OF STUDYING\001
+4 0 -1 0 0 30 36 0.0000 4 405 5730 2175 2280 PURE LIPID SYSTEMS\001

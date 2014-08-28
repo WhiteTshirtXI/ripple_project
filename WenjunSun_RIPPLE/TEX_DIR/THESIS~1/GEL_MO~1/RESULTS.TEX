@@ -1,0 +1,188 @@
+\section{X-ray scattering data}
+\label{gel_model_data}
+
+\begin{figure}[ht]
+\centerline {\psfig{figure=gel_model_dir/shdpt.ps,width=4in}}
+\caption{Wide-angle scattering intensity versus scattering angle
+2$\theta$ (open circles)
+taken with graphite monochromator and PSD 572mm from the sample.
+Slits were configured to yield resolution $0.068^{\circ}$ HWHM, which is the
+width of the unresolved (20) peak.  The area in black is interpreted
+as the peak scattering.  The temperature was $24^{\circ}$C.
+At $2 \theta = 22.3^{\circ}$ the solid square shows the scattering
+from a capillary filled with water and the solid triangle shows the
+scattering from a capillary in air.
+\label{model:fig1}}
+\end{figure}
+
+Our best resolved data over a broad range, shown in Fig.\ \ref{model:fig1}, 
+were obtained at T = $24^{\circ}$C with the rotating anode source using 
+the PSD. The sharp peak is usually identified 
+as the (20) peak; the use of only two Miller indices indicates that this
+is scattering along a Bragg rod due to a basically two-dimensional system
+rather than scattering from a Bragg peak due to three dimensional order,
+as will be elaborated in Sec. \ref{gel_model_model}.
+The (20) peak was always centered very close to $20.9^{\circ}$,
+corresponding to $d_{20}$ = 4.25\AA . In these data, the (20) peak has HWHM of 
+$0.06^{\circ}$, which is close to our estimated instrumental resolution.  
+Data that focussed on the (20) peak were also obtained at CHESS with resolution
+$0.004^{\circ}$ HWHM.  These data (not shown) yield an intrinsic linewidth of 
+$\Delta q$ that corresponds to $0.015^{\circ}$ HWHM, indicating that order in the 
+(20) direction within the membrane plane persists over length scales greater
+than 2900\AA = $2{\pi}/\Delta q$.  A much broader peak occurs with a maximum 
+near 2$\theta$ equal to $21.3^{\circ}$, although for one of our three samples this peak
+had moved to about $21.5^{\circ}$.  This is usually identified as the (11) peak.
+
+Fig.\ \ref{model:fig1} shows two smaller peaks in the 2$\theta$ range of $20.5^{\circ}$ to 
+$18.5^{\circ}$.
+Below $18.7^{\circ}$ the scattering is smooth and gradually decreasing (data only
+shown to $18.0^{\circ}$).
+The two smaller peaks will be called ``satellites'' because they are due to
+additional scattering from the (11) Bragg rod.
+These satellites were first reported by Mitsui \cite{Mit78} and they can be discerned
+in other data \cite{Sta82} but they have usually been ignored in data
+from unoriented samples.
+Although the signal to noise is not high for such small features,
+we have consistently seen these two satellites at the same angles for
+different data sets and different samples.  It should also be noted that the
+two satellites appear to be sharper with more prominent maxima when observed on
+film or when the film is densitometered and the densitometer
+data are viewed on a computer screen.  However, this sharpening is an optical
+illusion since numerical plots of the digitized densitometer data are very similar
+to the data shown in Fig.\ \ref{model:fig1}.  
+
+Background scattering arises from the glass capillary, air and the water.
+The background scattering curve shown in Fig.\ \ref{model:fig1} was obtained
+from samples consisting of only water in the capillary and of only
+air in the capillary; data points at one angle are shown in 
+Fig. \ \ref{model:fig1}.
+Since the ratio of water to lipid in the lipid samples
+was about 3 to 1, the true background was chosen to lie 3/4 of the way from
+the air+capillary data to the water+capillary data.
+Care was taken to normalize counting times and beam intensity for the control
+samples.
+The background scattering taken with the PSD and shown in Fig.\ \ref{model:fig1} are in
+satisfactory agreement with background scattering obtained using a graphite
+analyzer crystal (data not shown).
+The difference between the total scattering and the background scattering
+becomes practically zero between $25^{\circ}$ and $30^{\circ}$. It then
+increases between $35^{\circ}$ and $40^{\circ}$, though 
+it remains less than 20\% as large as the difference
+near $21^{\circ}$.  The difference between total scattering and
+the background scattering also continues to 
+decrease for smaller $2 \theta$ than shown in Fig.\ \ref{model:fig1}.
+
+\section{Strategy}
+\label{gel_model_strategy}
+
+The sharpness of the (20) peak suggests that there is order in these samples
+that extends over rather long distances; 2900\AA\ is over 300 molecular nearest
+neighbor distances.  This suggests that a reasonable
+starting point is to model the system as a crystal.  As is already well-known,
+however, the order that is reported by the wide angle data in Fig.\ \ref{model:fig1}
+is not three-dimensional but consists of in-plane or two-dimensional
+order \cite{LevTh,Tar73,Hui76,HenHos83,Smi88,STN92}.
+Thus, the starting point will be a two-dimensional crystal model.
+Strictly speaking, it is not possible to have true long range crystalline order
+in two dimensions \cite{Mermin}.  However, if the decay distance of the short
+range order is large compared to the inverse instrumental resolution width, 
+then the scattering will be close \cite{Dutta} to that from 
+two-dimensional crystal models, which therefore remain the
+appropriate starting point.
+
+The strategy we used was to start with the simplest
+basic two-dimensional crystal model (details of the 2-d crystal models
+will be given in the next section) to 
+see how well it could account for the data in Fig.\ \ref{model:fig1}.
+As is well-known \cite{LevTh,Tar73,Hui76,McI80} this model predicts a sharp (20) peak and a broad
+(11) peak.  As is not as well-known, this model also predicts satellite
+peaks.  This reinforces the hypothesis that the 2-d crystal model
+is an appropriate starting point.  However, there were two major
+quantitative discrepancies.  The first was that the exact positions of
+the satellite peaks were not in good agreement with the data.  This is not surprising
+since the detailed nature of lipid bilayers suggests many refinements
+to the simplest 2-d crystal model.  As we will show in Section 
+\ref{gel_model_fit}, our
+refinements overcome this discrepancy completely.  Specifically, we are able
+to obtain a model that gives that portion of the scattering indicated by
+the black areas in Fig.\ \ref{model:fig1}.
+
+The second major discrepancy was that there is a large amount of scattering 
+that is not accounted for, either by the simplest crystal model, or by 
+any refinement of the 2-d crystal model that we can imagine.  This scattering 
+is indicated by the dark gray area in Fig.\ \ref{model:fig1}.  Because this 
+scattering is 
+very broad with no sharp peaks, we suggest that it be identified as
+diffuse scattering.  
+
+Formally, we are therefore dividing the total scattering I
+(after background subtraction) into peak scattering I$_{peak}$ and
+I$_{diffuse}$ where, as usual,
+
+\begin{equation}
+\label{nagle1}
+I({\bf q}) = \int e^{i {\bf q} \cdot {\bf r}} <\rho ({\bf r}_{1}) 
+\rho ({\bf r}_{2})> d {\bf r}_{1} d {\bf r}_{2}~,
+\end{equation}
+where \( {\bf r} = {\bf r}_{1} - {\bf r}_{2} \).  Writing
+
+\begin{equation}
+\label{nagle2}
+<\rho ({\bf r}_{1}) \rho ({\bf r}_{2})> = <\rho ({\bf r}_{1})> <\rho ({\bf r}_{2})> + [<\rho ({\bf r}_{1}) \rho ({\bf r}_{2})> - <\rho ({\bf r}_{1})> <\rho ({\bf r}_{2})>]~, 
+\end{equation}
+where the term in square brackets is the pair correlation function 
+\( C({\bf r}_{1},{\bf r}_{2}) \) (which can also be written as
+\( <\delta ({\bf r}_{1}) \delta({\bf r}_{2})> \) 
+where \( \delta({\bf r})=\rho({\bf r}) - <\rho({\bf r})>) \),
+the total scattering I({\bf q}) can be written as a sum \cite{Zach} of I$_{peaks}$ 
+and I$_{diffuse}$ where 
+\begin{equation} 
+\label{nagle3} 
+I_{peaks} = | \int e^{i {\bf q} \cdot {\bf r}} <\rho({\bf r})> d{\bf r} |^{2}~,
+\end{equation}
+depends only upon the average structure $<\rho({\bf r})>$, 
+which is assumed to be accurately described by a 2-d crystal model, and
+\begin{equation}
+\label{nagle4}
+I_{diffuse} = \int d {\bf r}_{1} \int d {\bf r}_{2} e^{i {\bf q} \cdot {\bf r}} C({\bf r}_{1},{\bf r}_{2})~,
+\end{equation}
+which depends upon pair correlations which report fluctuational disorder in the
+bilayer.  
+
+The formalism in the preceding paragraph raises two issues.  
+The first issue refers back to the first paragraph in this section:
+the possibility that no formal separation between peak scattering (i.e. Bragg rod
+scattering) and diffuse scattering can be performed because there are no
+2-d crystals due to long wavelength phonons.  The consequences for scattering
+have been shown \cite{Dutta} to be power law tails added on to basically
+Gaussian peaks.  These tails are important aspects of partially ordered
+low-dimensional physical systems.  However, such tail scattering due
+to long wavelength phonons associated with the correlation length greater than
+2900\AA\ would be expected to be highly concentrated near the Bragg rods and 
+the total scattering in the tails would be expected to be small compared
+to the scattering under the central peaks.  It would not appear that such
+tails would be
+able to account for the broad diffuse scattering indicated in Fig.\ \ref{model:fig1}.  
+Instead, we suggest that most of the broad scattering is due to breakdown of order
+at much shorter distances.  With molecules as complex as lipids,
+some portions may be packed in arrays fairly well ordered over large
+distances while other parts may be, at the same time, rather disordered.
+This disorder would probably include
+many other fluctuations that are not directly coupled to 
+the (20) peak order, such as headgroup orientations and rotations 
+of the molecules and/or the hydrocarbon chains.  This
+picture leads us back to the separation formalism embodied in the preceding paragraph.
+
+If we now accept the separation formalism, then the second issue is a practical one.
+Where should one draw the curve between peak and diffuse scattering?
+Clearly, this curve is arbitrary unless one has a model that will give
+either the peak scattering or the diffuse scattering.  Our 
+approach indicated above is to obtain the best peak scattering from a
+2-d crystal model and to subtract it from the data to obtain the
+diffuse scattering.  We turn first, in the next section, to a description of
+the 2-d crystal model that we employed and then in Secs. \ref{gel_model_sate}
+and \ref{gel_model_fit}
+to the problem of obtaining the best values of the model parameters.
+Then, the subtraction of the peak scattering can be performed to obtain
+the diffuse scattering shown in Fig.\ \ref{model:fig1}.
+

@@ -1,0 +1,29 @@
+L-DMPC, 25C, 98%RH
+
+d=56.5A, lambda=144A, gamma=99 deg (Katsaras)
+
+Triangular ripple profile, contour part of the form factor (tran-bilayer
+electron density modulation has not been included yet.):
+
+Using: Amplitude=40A, x0=120A (To make (3,1) extinct)
+
+Derived information: slope1=18deg, slope2=59deg
+		     length1=129.4A, length2=46.7A
+		     total ripple profile length=176.1A
+
+h/k	-4	-3	-2	-1	0	1	2	3	4
+
+6	57.71	21.14	10.96	5.46	2.172	0.481	1.5E-04	0.291	0.875
+
+5	544.8	5.979	8.099	7.777	6.245	4.184	2.194	0.738	12.55
+ 
+4	79.69	488.8	3.141	0.375	2.517	4.080	4.468	3.803	2.515
+
+3	20.13	196.6	361.8	21.45	2.537	1.5E-04	1.015	2.793	4.147
+
+2	0.641	10.97	338.4	214.6	36.94	12.21	3.403	0.238	0.525
+
+1	0.681	0.343	0.655	455.7	100.0	48.54	38.26	33.40	29.43
+
+0	0.829	1.236	1.611	1.877	BEAM	1.877	1.611	1.236	0.829
+

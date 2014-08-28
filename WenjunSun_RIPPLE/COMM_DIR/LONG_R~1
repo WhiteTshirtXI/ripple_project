@@ -1,0 +1,69 @@
+			Plans for x-ray experiments on the gel phase
+			of long chain lengths and the ripple phase
+
+1. Gel phase of long chain lengths:
+
+	Purpose: Finish the long chain gel phase study. The lack of quality
+		 data for C16 and C18 at below room temperatures is impeding
+		 this project. C20 is a bridge between shorter chain lengths
+		 like C16 and C18, and longer chain lengths like C22 and C24.
+
+	Samples: C16, C18, C20, fully hydrated, powder samples.
+
+	Data: Low and wide angle scattering data as a function of temperature.
+
+2. Ripple phase study
+
+	Purpose: To explain the jump (or anomalous increase) in D-spacings 
+		 when lecithins go from gel phase to ripple phase. Test two 
+		 hypotheses: 
+
+		Hypothesis 1. The ripple phase structure has more water 
+		molecules in between bilayers than in the gel phase, which
+		gives rise to the increased D-spacing.
+
+			Test: Calculate Nw for both the gel and the ripple
+			phase from electron density profile constructions
+			and volumetric measurements.
+
+			If Nw (ripple) < or = Nw (gel), then Hypothesis 1
+			is false.
+
+			Supporting evidence disproving Hypothesis 1: Janiak
+			el at. (1979) reported that for DMPC, the D-spacings
+			of both gel and ripple phases saturate at 30% water
+			by weight. The means Nw (ripple) = Nw (gel).
+ 
+		Hypothesis 2. The nonzero slopes of the ripples induce an
+		larger apparent D-spacing, which accounts for the jump in
+		the D-spacing.  
+
+			Test: By measuring the low angle scattering intensities 
+			of the ripple peaks and fitting my model to them, the 
+			structure of the ripples could be obtained, including
+			the slope and the local D-spacing. Then the task is
+			to see if
+
+				Apparent D-spacing = Local D-spacing/cos(slope)
+
+			holds.
+
+	Samples: DMPC + PVP water solution (0%, 10%, 20%, 30% and 40% PVP).
+
+		 Reasons to choose DMPC: 
+			1). Could work around the room temperature, where
+			temperatures could be well controlled.
+			2). A lot of ripple phase works have been done on
+			DMPC. Janiak79 (D-spacing as a function of hydration;
+			intensity measurements and modeling); Wack89 (Best
+			intensity measurement in the literature); Katsaras95(
+			Best oriented scattering pattern); Sirota88 (Phase
+			digram and direct observation of ripple peaks using 
+			oriented sample); Zasadzinski87&88(Freeze fracture EM
+			and STM); Hata90,93&94( T-dependence of ripple
+			structure of pure DMPC and DMPC/cholesterol)i; 
+			Simon&McIntosh91 (Cholesterol concentration dependence
+			of DMPC gel and ripple phase).
+			
+	Data: Good low angle data at the temperature range covering 
+	      the gel and the ripple phases.

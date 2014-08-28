@@ -1,0 +1,2 @@
+#!/bin/csh
+f77 -O -o $1 $1.f -L/usr/user/dummy -limsl

@@ -1,0 +1,4 @@
+The attenuation factor due to an attenuator for the low resolution study
+was found to be 7. Check out:
+chess13a/lastday/olddopc_044_c.tif
+chess13a/lastday/olddopc_045_c.tif

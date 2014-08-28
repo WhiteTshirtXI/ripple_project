@@ -1,0 +1,143 @@
+\section{Diffuse scattering}
+\label{gel_model_diff}
+
+Our success in fitting the peak scattering in Fig.\ \ref{model:fig1} suggests that
+our program of separating the total scattering into peak scattering
+and diffuse scattering is reasonable.  It also suggests that the
+actual quantitative diffuse scattering curve is now reasonably
+reliable and can be used as a starting point for the discussion
+of diffuse scattering.  Indeed, precision in the determination of 
+the diffuse scattering curve will probably be much less important in
+discussing the diffuse scattering than it was in fitting the peak scattering.
+At this time the most remarkable aspect of the
+diffuse scattering is the large amount of it as shown in Fig.\ \ref{model:fig1}.  
+
+At this point it may be useful to compare to the data in Fig. \ref{model:fig2}
+of reference \cite{Smi88}
+which shows one nicely resolved satellite peak for oriented lipid samples.
+Although the lipid and the degree of hydration were different, it is
+still perhaps meaningful that there is a clear minimum between the central
+peak and the satellite peak on each Bragg rod in the scattering
+from the oriented samples.  For the same magnitude of the scattering angle
+in Fig. \ref{model:fig1} (2$\theta$ = $20.4^{\circ}$) there is, in contrast,
+only a plateau in the
+scattering.  Of course, the scattering in Fig. \ref{model:fig1}
+comes from all q-vectors
+with the same magnitude, so there is no necessity that there should be
+a minimum in powder samples even if there is a minimum along the
+Bragg rods.  The two sets of data together suggest that a major
+part of the diffuse scattering comes from other parts of q-space than
+along the Bragg rods.  Since the Bragg rods are dominated by the
+chain packing and
+since the results in the preceding section suggest that the headgroup
+region is relatively more disordered at the 4-5\AA~length scale,
+it is reasonable that headgroups may be a
+plausible starting point for this other diffuse scattering.
+
+Let us therefore initiate a first exploratory search for the origin
+of the diffuse scattering by focussing upon the head group region.  One
+reason for greater disorder in the headgroup region is simply the molecular
+nature of the lipid molecule, with one head for every two chains, so
+that, even if the chains were perfectly packed in an hexagonal array, the
+heads could be represented as a disordered array of dimers connecting pairs
+of chains, as indicated in the inset to Fig.\ \ref{model:fig7}.  Furthermore, the 
+most electron dense
+part of the headgroup is the phosphate group.  The position of this group,
+when projected onto the bilayer plane, is closer to the sn-1 chain than to
+the sn-2 chain.  This suggests a simple model as a first
+approximation for headgroup diffuse scattering.  Each headgroup represented
+by a dimer in the inset to Fig.\ \ref{model:fig7} will have a differential scattering 
+center located at 
+only one end on the projection of the hexagonal array of chains. 
+The array of dimers will be considered to be random with respect to orientation
+of the dimers and with respect to the electron dense ends.
+
+\begin{figure}[ht]
+\centerline {\psfig{figure=gel_model_dir/diffuse.ps,width=4in}}
+\caption{Diffuse scattering S($2 \theta$) versus scattering angle $2 \theta$
+predicted by a simple model for phosphate headgroups indicated by the inset
+which represents an x-y plane (see Fig. \ref{model:fig2}c) at the z level 
+of the headgroups.
+Each hydrocarbon chain projects to one of the lattice sites in the
+inset.  Each phosphate group is represented by a solid circle near one
+chain and
+the position of the other chain in the same molecule is
+represented by an open circle connected to the phosphate group by a
+broad grey line.
+\label{model:fig7}}
+\end{figure}
+
+For any model the total scattering is given by Eq.\ \ref{nagle1}.
+For the simple model considered here, ${\bf r}_{1}$ may be taken to be the origin
+and the double integral becomes a single sum over the triangular lattice,
+\begin{equation}
+\label{D3}
+I({\bf q}) = \sum_{n} e^{i {\bf q} \cdot {\bf r}} <\rho(0) \rho({\bf r}_{n})>~.
+\end{equation}
+The correlation function at the origin,
+$<\rho(r_{0}) \rho(r_{0})>$ equals 1/2 because this is the probability that the electron
+dense phosphate end of the headgroup is at the origin.  For nearest neighbor
+lattice sites on the triangular lattice the correlation function
+is $<\rho(r_{0}) \rho(r_{nn})>$ which can be calculated as a factor of 1/2 for the dense
+end at the origin and a factor of 5/12 for having a dense end at the nearest
+neighbor site.  The reason that this latter probability is less than 1/2 is
+due to the fact that, if there is a dense end at the origin, then one of the
+nearest neighbor sites must have a non-dense end while the other five neighbors
+have probability 1/2 of having a dense end.  Further neighbor correlations
+$<\rho(r_{0}) \rho(r_{fn})>$ all have values of (1/2)(1/2)=(1/4).  
+
+The sum in Eq.\ \ref{D3} may now be separated into two pieces.  The first piece
+is a sum over all lattice sites n,
+\begin{equation}
+\label{D4}
+I_{P} = \frac{1}{4} \sum_{n} e^{i {\bf q} \cdot {\bf r}}~,
+\end{equation}
+which yields a Bragg rod that has already been included in the peak analysis in
+the preceding section.  The remaining terms can be written as
+a sum over nearest neighbors nn,
+\begin{equation}
+\label{D5}
+I_{D} = \frac{1}{24} \sum_{nn} [1 - e^{i {\bf q} \cdot {\bf r} }]~,
+\end{equation}
+and yield diffuse scattering.
+
+In order to compare to Fig.\ \ref{model:fig1} the diffuse scattering in Eq.\ \ref{D5} must
+be powder averaged.  Ignoring atomic or molecular form factors, this yields 
+\begin{equation}
+\label{D6}
+I_{D} = {1 - sinc(bq) \over 2}~,
+\end{equation}
+where b is the nearest neighbor distance which is also the
+unit cell dimension b used in the preceding section.  Fig.\ \ref{model:fig7} shows
+S(q) from Eq.\ \ref{D6}.  Unfortunately, this result is not in good agreement with
+the diffuse scattering inferred from Fig.\ \ref{model:fig1}, suggesting that this simple
+model of positional disorder in the phosphate group is not the only cause
+of diffuse scattering.  
+
+An indication that the diffuse scattering is not likely to be due 
+entirely to the headgroup region comes from the
+estimate that the wide angle scattering under the peaks is
+only about 30-40\% as large as the scattering labelled diffuse
+in Fig.\ \ref{model:fig1}, so the integrated peak scattering is only about 25\% of the
+total scattering.  As a rough approximation, let us suppose that 
+this fraction $f_{P}=0.25$ of the scattering under the peaks can be
+represented as a superposition of the scattering from the heads and
+chains, as follows,
+\begin{equation}
+\label{D1}
+f_{P} = { f_{c}n_{c}+f_{H}n_{H} \over n_{P}}~,
+\end{equation}
+where $n_{P}=412$ is the number of electrons in DPPC,
+$n_{c}=248$ is the number of electrons in the chains and $n_{H}=164$ is the
+number of electrons in the heads.  In this approximation the fractions
+$f_{c}$ and $f_{H}$ give estimates of the degree of order in the chain
+and head regions, respectively.
+From the fitting in the preceding section we have $f_{H} n_{H}=45 f_{c}$,
+so $f_{c}=103/(248+45)=0.35$ and $f_{H}=0.10$.
+This rough estimate yields larger values of $f_{c}$ than $f_{H}$, in
+agreement that the headgroups are more disordered than the chains.
+The small value of $f_{c}$ also suggests that even the chains
+are relatively disordered and this disorder must be included in order to account
+for the diffuse scattering.  The appearance of a diffuse scattering
+peak centered near the (20) and (11) peaks is also an indication 
+of chain disorder.

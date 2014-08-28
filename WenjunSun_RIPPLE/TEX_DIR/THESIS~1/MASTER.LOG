@@ -1,0 +1,431 @@
+This is TeX, Version 3.1415 (C version 6.1) (format=lplain 94.12.7)  4 NOV 1997 09:44
+**master.tex
+(master.tex
+LaTeX2e <1994/06/01>
+(title.tex (/usr/local/lib/texmf/tex/latex2e/base/latex209.def
+File: latex209.def 1994/06/01 Standard LaTeX file
+
+Entering LaTeX 2.09 compatibility mode.
+\footheight=\dimen102
+\@maxsep=\dimen103
+\@dblmaxsep=\dimen104
+(/usr/local/lib/texmf/tex/latex2e/base/tracefnt.sty
+Package: tracefnt 1994/05/29 v2.3k Standard LaTeX package (font tracing)
+\tracingfonts=\count82
+LaTeX Info: Redefining \selectfont on input line 113.
+)
+\symbold=\mathgroup4
+\symsans=\mathgroup5
+\symtypewriter=\mathgroup6
+\symitalic=\mathgroup7
+\symsmallcaps=\mathgroup8
+\symslanted=\mathgroup9
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 179.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 180.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 181.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 187.
+LaTeX Info: Redefining \em on input line 197.
+
+(/usr/local/lib/texmf/tex/latex2e/base/latexsym.sty
+Package: latexsym 1994/05/27 v2.1e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup10
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+)
+LaTeX Font Info:    Redeclaring math delimiter \lgroup on input line 262.
+LaTeX Font Info:    Redeclaring math delimiter \rgroup on input line 264.
+LaTeX Font Info:    Redeclaring math delimiter \bracevert on input line 266.
+)
+(/usr/local/lib/texmf/tex/latex2e/base/report.cls
+Document Class: report 1994/06/02 v1.2s Standard LaTeX document class
+(/usr/local/lib/texmf/tex/latex2e/base/size12.clo
+File: size12.clo 1994/06/02 v1.2s Standard LaTeX file (size option)
+)
+\c@part=\count83
+\c@chapter=\count84
+\c@section=\count85
+\c@subsection=\count86
+\c@subsubsection=\count87
+\c@paragraph=\count88
+\c@subparagraph=\count89
+\c@figure=\count90
+\c@table=\count91
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+Compatibility mode: definition of \rm ignored.
+Compatibility mode: definition of \sf ignored.
+Compatibility mode: definition of \tt ignored.
+Compatibility mode: definition of \bf ignored.
+Compatibility mode: definition of \it ignored.
+Compatibility mode: definition of \sl ignored.
+Compatibility mode: definition of \sc ignored.
+\bibindent=\dimen105
+) (mythesis.sty) (psfig.sty
+\@unused=\write4
+
+psfig/tex 1.6b
+\ps@stream=\read1
+\p@intvaluex=\dimen106
+\p@intvaluey=\dimen107
+) (master.aux (abs.aux) (acknowledge.aux) (appendix_dir/pleat.aux)
+(appendix_dir/publication.aux))
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+ [1
+
+]
+LaTeX Font Info:    No math setup on input line 14.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 14.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 14.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 14.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 14.
+
+(/usr/local/lib/texmf/tex/latex2e/base/Ulasy.fd
+File: Ulasy.fd 1994/05/27 v2.1eLaTeX symbol font definitions
+) [2] (abs.tex) [3
+
+
+] [4]
+(acknowledge.tex) [5
+
+
+
+] (master.toc [6
+
+
+])
+\tf@toc=\write5
+ [7] (master.lot)
+\tf@lot=\write6
+ [8
+
+] (master.lof
+[9
+
+] [10] [11] [12] [13])
+\tf@lof=\write7
+ [14]) (intro_dir/intro_chap.tex
+Chapter 1.
+
+Overfull \hbox (11.33928pt too wide) in paragraph at lines 15--20
+[]\OT1/cmr/m/n/12 Living or-gan-isms main-tain and reg-u-late their in-ter-nal 
+com-po-si-tions through biomem-
+ []
+
+
+Overfull \hbox (30.71175pt too wide) in paragraph at lines 37--37
+[]\OT1/cmr/bx/n/17.28 Phospholipids and lipid bi-lay-ers as model biomem-
+ []
+
+[1
+
+]
+psfig: searching intro_dir/dmpc_pair.ps for bounding box
+psfig: including intro_dir/dmpc_pair.ps 
+psfig: searching intro_dir/bilayer_model.ps for bounding box
+psfig: including intro_dir/bilayer_model.ps 
+[2] [3]
+psfig: searching intro_dir/lamellar.eps for bounding box
+psfig: including intro_dir/lamellar.eps 
+[4]
+psfig: searching intro_dir/schematic.ps for bounding box
+psfig: including intro_dir/schematic.ps 
+[5]) (matmet_dir/exp_chap.tex [6]
+Chapter 2.
+[7
+
+]
+Overfull \hbox (6.63933pt too wide) in paragraph at lines 39--58
+[]\OT1/cmr/m/n/12 For the work re-ported in Chap-ters 4[] and 5[], all lecithin
+s were pur-chased in lyophilized
+ []
+
+
+Overfull \hbox (4.444pt too wide) in paragraph at lines 39--58
+\OT1/cmr/m/n/12 be ab-bre-vi-ated C16) Lot# 160PC-188; 1,2-distearoyl-$\OML/cmm
+/m/it/12 sn$\OT1/cmr/m/n/12 -glycero-3-phosphatidylcholine
+ []
+
+
+Overfull \hbox (2.25514pt too wide) in paragraph at lines 39--58
+\OT1/cmr/m/n/12 (C18) Lot# 180PC--76; 1,2-diarachidoyl-$\OML/cmm/m/it/12 sn$\OT
+1/cmr/m/n/12 -glycero-3-phosphatidylcholine (C20) Lot#
+ []
+
+[8]
+psfig: searching matmet_dir/psdhi.ps for bounding box
+psfig: including matmet_dir/psdhi.ps 
+[9] [10]) (gel_model_dir/gel_mdl_chap.tex [11]
+Chapter 3.
+(gel_model_dir/intro.tex [12
+
+]) (gel_model_dir/results.tex [13]
+psfig: searching gel_model_dir/shdpt.ps for bounding box
+psfig: including gel_model_dir/shdpt.ps 
+[14] [15] [16] [17]) (gel_model_dir/theory.tex
+psfig: searching gel_model_dir/modela.ps for bounding box
+psfig: including gel_model_dir/modela.ps 
+psfig: searching gel_model_dir/modelb.ps for bounding box
+psfig: including gel_model_dir/modelb.ps 
+psfig: searching gel_model_dir/modelc.ps for bounding box
+psfig: including gel_model_dir/modelc.ps 
+[18] [19] [20] [21]
+psfig: searching gel_model_dir/fig3.ps for bounding box
+psfig: including gel_model_dir/fig3.ps 
+) (gel_model_dir/fitting.tex [22] [23]
+psfig: searching gel_model_dir/fit_new.ps for bounding box
+psfig: including gel_model_dir/fit_new.ps 
+[24] [25] [26] [27]
+psfig: searching gel_model_dir/fqz11all2.ps for bounding box
+psfig: including gel_model_dir/fqz11all2.ps 
+[28]
+psfig: searching gel_model_dir/denprof2.ps for bounding box
+psfig: including gel_model_dir/denprof2.ps 
+[29] [30]) (gel_model_dir/diffuse.tex [31]
+psfig: searching gel_model_dir/diffuse.ps for bounding box
+psfig: including gel_model_dir/diffuse.ps 
+[32] [33]) (gel_model_dir/dis.tex [34] [35])) (gel_anol_dir/gel_anol_chap.tex
+[36] [37]
+Chapter 4.
+(gel_anol_dir/intro.tex [38
+
+]) (gel_anol_dir/results.tex
+psfig: searching gel_anol_dir/lfig1.ps for bounding box
+psfig: including gel_anol_dir/lfig1.ps 
+[39]
+psfig: searching gel_anol_dir/lfig3.ps for bounding box
+psfig: including gel_anol_dir/lfig3.ps 
+[40]
+psfig: searching gel_anol_dir/lfig4.ps for bounding box
+psfig: including gel_anol_dir/lfig4.ps 
+[41] [42]
+psfig: searching gel_anol_dir/film_data.ps for bounding box
+psfig: including gel_anol_dir/film_data.ps 
+[43]
+psfig: searching gel_anol_dir/anof6n.ps for bounding box
+psfig: including gel_anol_dir/anof6n.ps 
+psfig: searching gel_anol_dir/lfig8b.ps for bounding box
+psfig: including gel_anol_dir/lfig8b.ps 
+[44]
+psfig: searching gel_anol_dir/lfig6.ps for bounding box
+psfig: including gel_anol_dir/lfig6.ps 
+[45] [46] [47]
+psfig: searching gel_anol_dir/c24rvw.ps for bounding box
+psfig: including gel_anol_dir/c24rvw.ps 
+[48]
+psfig: searching gel_anol_dir/c222w.ps for bounding box
+psfig: including gel_anol_dir/c222w.ps 
+psfig: searching gel_anol_dir/c222l.ps for bounding box
+psfig: including gel_anol_dir/c222l.ps 
+) (gel_anol_dir/dis.tex [49] [50] [51] [52] [53]))
+(gel_long_dir/gel_long_chap.tex
+Overfull \hbox (0.96022pt too wide) in paragraph at lines 204--1
+[]\OT1/cmr/m/n/12 Despite these non-equilibrium com-pli-ca-tions in prepa-ra-ti
+ons of long chain lecithins,
+ []
+
+[54]
+Chapter 5.
+(gel_long_dir/intro.tex) (gel_long_dir/matmet.tex [55
+
+]
+psfig: searching gel_long_dir/lgel_cor.ps for bounding box
+psfig: including gel_long_dir/lgel_cor.ps 
+[56]) (gel_long_dir/results.tex
+psfig: searching gel_long_dir/lgel_d95.ps for bounding box
+psfig: including gel_long_dir/lgel_d95.ps 
+LaTeX Font Info:    No math setup on input line 48.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 48.
+
+Overfull \hbox (68.15302pt too wide) in paragraph at lines 21--52
+[][]
+ []
+
+LaTeX Font Info:    No math setup on input line 54.
+[57]
+psfig: searching gel_long_dir/lgel_edp.ps for bounding box
+psfig: including gel_long_dir/lgel_edp.ps 
+[58] [59]
+psfig: searching gel_long_dir/lgel_spc.ps for bounding box
+psfig: including gel_long_dir/lgel_spc.ps 
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[60]
+psfig: searching gel_long_dir/lgel_d20.ps for bounding box
+psfig: including gel_long_dir/lgel_d20.ps 
+psfig: searching gel_long_dir/lgel_lac.ps for bounding box
+psfig: including gel_long_dir/lgel_lac.ps 
+[61] [62]
+psfig: searching gel_long_dir/lgel_hwh.ps for bounding box
+psfig: including gel_long_dir/lgel_hwh.ps 
+[63]
+psfig: searching gel_long_dir/lgel_dis.ps for bounding box
+psfig: including gel_long_dir/lgel_dis.ps 
+LaTeX Font Info:    No math setup on input line 339.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <14.4> on input line 339.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 339.
+LaTeX Font Info:    No math setup on input line 340.
+[64]
+psfig: searching gel_long_dir/lgel_tlt.ps for bounding box
+psfig: including gel_long_dir/lgel_tlt.ps 
+[65] [66] [67]) (gel_long_dir/conclusion.tex [68])) (rppl_dir/rppl_chap.tex
+[69]
+Chapter 6.
+(rppl_dir/rppl_intro.tex [70
+
+]) (rppl_dir/rppl_theory.tex
+psfig: searching rppl_dir/lattice_dim.eps for bounding box
+psfig: including rppl_dir/lattice_dim.eps 
+[71] [72]
+psfig: searching rppl_dir/ripple_profile.eps for bounding box
+psfig: including rppl_dir/ripple_profile.eps 
+[73] [74]
+psfig: searching rppl_dir/q_profile.ps for bounding box
+psfig: including rppl_dir/q_profile.ps 
+[75] [76]
+LaTeX Font Info:    No math setup on input line 267.
+
+psfig: searching rppl_dir/transedp.ps for bounding box
+psfig: including rppl_dir/transedp.ps 
+psfig: searching rppl_dir/psi1.ps for bounding box
+psfig: including rppl_dir/psi1.ps 
+psfig: searching rppl_dir/psi2.ps for bounding box
+psfig: including rppl_dir/psi2.ps 
+LaTeX Font Info:    No math setup on input line 302.
+[77] [78] [79] [80]) [81] (rppl_dir/rppl_result.tex
+psfig: searching rppl_dir/wack_data.ps for bounding box
+psfig: including rppl_dir/wack_data.ps 
+LaTeX Font Info:    No math setup on input line 19.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 19.
+LaTeX Font Info:    No math setup on input line 26.
+LaTeX Font Info:    No math setup on input line 38.
+
+Underfull \hbox (badness 10000) in paragraph at lines 38--78
+
+ []
+
+[82] [83]
+psfig: searching rppl_dir/map_wack_no0k.ps for bounding box
+psfig: including rppl_dir/map_wack_no0k.ps 
+LaTeX Font Info:    No math setup on input line 108.
+psfig: searching rppl_dir/map_slice.ps for bounding box
+psfig: including rppl_dir/map_slice.ps 
+psfig: searching rppl_dir/slcabc.ps for bounding box
+psfig: including rppl_dir/slcabc.ps 
+[84] [85]
+psfig: searching rppl_dir/gel_rppl.ps for bounding box
+psfig: including rppl_dir/gel_rppl.ps 
+[86]
+psfig: searching rppl_dir/q_wack_model3_new.ps for bounding box
+psfig: including rppl_dir/q_wack_model3_new.ps 
+) (rppl_dir/rppl_dis.tex
+psfig: searching rppl_dir/wack_map.ps for bounding box
+psfig: including rppl_dir/wack_map.ps 
+psfig: searching rppl_dir/tardieu_map.ps for bounding box
+psfig: including rppl_dir/tardieu_map.ps 
+psfig: searching rppl_dir/janiak_map1.ps for bounding box
+psfig: including rppl_dir/janiak_map1.ps 
+psfig: searching rppl_dir/janiak_map2.ps for bounding box
+psfig: including rppl_dir/janiak_map2.ps 
+[87] [88] [89] [90]
+psfig: searching rppl_dir/wack_map.ps for bounding box
+psfig: including rppl_dir/wack_map.ps 
+psfig: searching rppl_dir/map_non0k_4k.ps for bounding box
+psfig: including rppl_dir/map_non0k_4k.ps 
+[91] [92])) (summary_dir/summary_chap.tex [93]
+Chapter 7.
+[94
+
+] [95] [96]) [97] [98] (appendix_dir/pleat.tex
+Appendix A.
+[99
+
+
+]
+psfig: searching appendix_dir/pleat_klein.eps for bounding box
+psfig: including appendix_dir/pleat_klein.eps 
+[100] [101] [102]
+psfig: searching appendix_dir/colli.ps for bounding box
+psfig: including appendix_dir/colli.ps 
+psfig: searching appendix_dir/md.ps for bounding box
+psfig: including appendix_dir/md.ps 
+) [103] [104] [105] (appendix_dir/publication.tex
+Appendix B.
+
+Underfull \hbox (badness 10000) in paragraph at lines 3--8
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--14
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--19
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--24
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--30
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--35
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--40
+
+ []
+
+[106
+
+
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 41--45
+
+ []
+
+) [107] (ref.tex (master.bbl [108
+
+
+] [109] [110] [111])) [112] (master.aux
+(abs.aux) (acknowledge.aux) (appendix_dir/pleat.aux)
+(appendix_dir/publication.aux)) ) 
+Here is how much of TeX's memory you used:
+ 1478 strings out of 11075
+ 14071 string characters out of 74288
+ 66517 words of memory out of 262141
+ 3686 multiletter control sequences out of 9500
+ 25122 words of font info for 91 fonts, out of 100000 for 255
+ 14 hyphenation exceptions out of 607
+ 25i,13n,21p,1308b,305s stack positions out of 300i,100n,60p,3000b,4000s
+
+Output written on master.dvi (126 pages, 345492 bytes).

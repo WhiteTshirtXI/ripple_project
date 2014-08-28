@@ -1,0 +1,115 @@
+%!PS-Adobe-2.0
+%%Creator: Wenjun Sun
+%%Title: Ripple pattern
+%%Pages: 1
+%%BoundingBox: 100 50 530 630
+%%EndComments
+%-------------Variables and procedures------------
+/i {72 mul} def
+/width 8.5 i def
+/height 11 i def
+/LM -2.75 i def
+/center {width 2 div height 2 div translate} def
+/getHel {/Helvetica-Bold findfont 15 scalefont setfont} def
+/getHel2 {/Helvetica-Bold findfont 25 scalefont setfont} def
+/getCou {/Courier findfont 20 scalefont setfont} def
+/getSym {/Symbol findfont 20 scalefont setfont} def
+/newline{currentpoint 21 sub exch pop LM exch moveto} def
+/label {/subscript exch def
+ currentpoint moveto ( q) show
+ currentpoint 4 sub moveto subscript show} def
+/peak 
+ {/gs exch def /y exch def /x exch def
+ x y 7 360 0 arcn
+ closepath gs setgray fill} def
+/normal{/length exch def /slope exch def
+/y exch def /x exch def
+gsave newpath x y translate slope rotate 0 0 moveto
+0 length rlineto [6 4 2 4] 0 setdash 1 setlinewidth
+0.5 setgray stroke grestore} def
+%------------End variables and procedures---------
+%%EndProlog
+%%Page: 1 1
+%------------Begin program------------------------
+center
+
+getHel2
+-2 i 0 i moveto
+2 i 0 i lineto
+(x) label
+0 i -0.5 i moveto
+0 i 3.0 i lineto
+(z) label
+1 setlinewidth
+stroke
+
+gsave
+-0.491 i 1.728 i 0.713 peak
+-0.245 i 1.764 i 0.349 peak
+0.000 i 1.800 i 0.952 peak
+0.491 i 1.872 i 0.963 peak
+0.736 i 1.909 i 0.926 peak
+0.981 i 1.945 i 0.967 peak
+-0.491 i 1.128 i 0.924 peak
+-0.245 i 1.164 i 0.000 peak
+0.000 i 1.200 i 0.475 peak
+0.245 i 1.236 i 0.617 peak
+0.491 i 1.272 i 0.828 peak
+0.736 i 1.309 i 0.933 peak
+0.981 i 1.345 i 0.980 peak
+-0.245 i 0.564 i 0.000 peak
+0.000 i 0.600 i 0.000 peak
+0.245 i 0.636 i 0.759 peak
+0.736 i 0.709 i 0.981 peak
+0.245 i 0.036 i 0.991 peak
+0.491 i 0.072 i 0.969 peak
+0.736 i 0.109 i 0.980 peak
+0.736 i 0.109 i 0.980 peak
+grestore
+
+getHel
+1.227 i 0.181 i 3 sub moveto (0) show
+1.227 i 0.781 i 3 sub moveto (1) show
+1.227 i 1.381 i 3 sub moveto (2) show
+1.227 i 1.981 i 3 sub moveto (3) show
+1.472 i 1.117 i 3 sub moveto (h) show
+
+-0.981 i 7 sub 1.955 i moveto (-4) show
+-0.736 i 7 sub 1.991 i moveto (-3) show
+-0.491 i 7 sub 2.028 i moveto (-2) show
+-0.245 i 7 sub 2.064 i moveto (-1) show
+0.000 i 7 sub 2.100 i moveto (0) show
+0.245 i 7 sub 2.136 i moveto (1) show
+0.491 i 7 sub 2.172 i moveto (2) show
+0.736 i 7 sub 2.209 i moveto (3) show
+0.981 i 7 sub 2.245 i moveto (4) show
+-0.491 i 2.328 i moveto (k) show
+
+newpath
+0.000 i 0.000 i moveto
+0.000 i 0.600 i lineto
+0.245 i 0.636 i lineto
+0.245 i 0.036 i lineto
+closepath 2 setlinewidth stroke
+
+0 0.3 i translate
+
+newpath
+-0.734 i -2.250 i moveto
+-0.822 i -1.650 i lineto
+0.645 i -1.650 i lineto
+0.734 i -2.250 i lineto
+closepath 2 setlinewidth stroke
+/Helvetica findfont 36 scalefont setfont
+-0.734 i 0.6 i add -2.250 i 0.1 i add  moveto
+(?) show
+
+LM -4.0 i moveto
+getCou (d = 57.94A, ) show
+getSym (l) show getCou ( = 141.7A, ) show
+getSym (g) show getCou ( = 98.4deg) show
+newline
+((Wack-89-data DMPC 25%-Water 18C)) show
+
+showpage
+%%Trailer

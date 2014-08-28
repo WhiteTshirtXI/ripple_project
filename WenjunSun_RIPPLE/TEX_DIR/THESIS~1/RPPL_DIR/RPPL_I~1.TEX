@@ -1,0 +1,132 @@
+\section{Introduction}
+\label{rppl_intro}
+
+Among the thermodynamic phases observed in
+lipid bilayer systems, the periodically modulated ripple (P$_{\beta '}$) phase
+is especially fascinating as evidenced by the many theoretical papers that
+have attempted to explain the formation of the ripples
+\cite{Don79,Mar84,Haw86,Car87,Gol88,McCu90,Hon91,Lub93}. 
+Such understanding has been delayed, however, because the structure has
+not been as well characterized as for the lower temperature gel
+(L$_{\beta '}$) phase and the higher temperature liquid crystalline
+(L$_{\alpha}$) phase, despite many experimental studies 
+\cite{Tar73,JanSS79,Luna77,Ino80,Cop80,Sta82,Rup83,Ale85,Sir88,%
+Wac89a,Kat95}.  When an accurate ripple
+structure is known, some indication of the energetics of the ripple formation
+may be obtained by comparing the relative size of the ripple
+wavelength and the ripple amplitude to the size of lipid molecules and
+the bilayer thickness \cite{Gol88}.  Also, correlation 
+between the chirality of the constituent lipid molecules and the asymmetry of 
+the ripples may lead to elucidation of the microscopic origin 
+of the macroscopic properties of the ripple phase \cite{Lub93,Kat95}.
+
+Structural information about the ripple phase can be divided into two
+categories. The first category consists of the 2D lattice parameters, namely, 
+the ripple wavelength $\lambda_r$, the bilayer packing repeat distance $d$ and
+the oblique angle $\gamma$ for the unit cell that are illustrated
+in Fig. \ref{unitcells}.  These well-established parameters have been 
+accurately obtained by indexing low-angle x-ray scattering peaks
+\cite{Tar73,JanSS79,Ino80,Ale85,Wac89a}. 
+For example, Wack and Webb \cite{Wac89a} reported for DMPC with
+25\% water by weight at 18$^{\circ}$C that $\lambda_r$ = 141.7\AA, 
+$d$ = 57.94\AA\ and $\gamma$ = 98.4$^{\circ}$.
+
+The second category
+consists of the structure within the ripple unit cell, including
+the shape and the amplitude of the ripples and the bilayer thickness. 
+This second category of structural information
+has been quite uncertain.  Many ripple profiles have been 
+proposed \cite{Don79,Mar84,Car87,Gol88,McCu90,Hon91,Lub93,Tar73,JanSS79,Sta82},
+including sinusoidal, peristaltic and sawtooth and
+estimates of the ripple trough-to-peak 
+amplitude range widely from 15\AA\ to 50\AA\ 
+\cite{Tar73,JanSS79,Sta82,Zas88a,Hata93}, obtained mostly from 
+x-ray and freeze fracture electron microscopic work.
+
+The information about this second category lies in the intensity distribution 
+of the x-ray diffraction peaks. 
+Electron density maps are needed to determine the 
+structure of the ripple phase. In order to Fourier reconstruct the 
+electron density 
+maps from the experimentally measured form factor amplitudes, 
+correct phases are essential. The amplitudes of the form factors are 
+simply the square roots of the Lorentz-corrected x-ray intensities;
+but the phasing information is not contained in the 
+intensity data and has to be sought using other means.
+
+There are two approaches to obtain the phasing information.
+The more traditional approach is the ``pattern recognition''
+method employed by Tardieu et al. \cite{Tar73}; that method 
+selects those phase combinations which will give rise to electron density maps 
+agreeing with known physical properties of the bilayer system, out of all 
+possible phase combinations. Considering that there are typically 20 or so 
+peaks in most of the ripple phase x-ray data, finding the right phase 
+combination out of about 2$^{20}$ possibilities is a difficult task. 
+
+The second approach, as we will employ in this chapter, is the modeling 
+approach. This modeling approach first creates a functional form for the 
+electron density that incorporates known and plausible properties of the 
+bilayer but that contains free parameters to incorporate unknown detailed 
+structure. The success of this method depends on this modeling step which 
+requires some care and is therefore the emphasis of the next section.
+Then, the values of the free parameters in the real space model are 
+determined by routine non-linear least squares procedures so that the Fourier
+components of the model provide the best fit to the measured intensities.
+This last step automatically determines the phases of the model, which are
+then used with the original intensity data to produce an electron density map.
+
+% ----------------- Old text -----------------------------------------------
+%It will also be helpful to compare the ripple structural features with that 
+%of the gel and fluid phases, such as to see their relations and transitions.
+
+%But it has been long overlooked that in a structure with periodic modulation
+%like the ripple phase, the out-plane buckling of the bilayers can lead to
+%an increase in the apparent d-spacing along the normal direction of the
+%average membrane plane, while the structure along the local normal may remain
+%less altered. The local d-spacing is simply the product of the apparent
+%d-spacing and the cosine of the local ripple slope. A big increase in the
+%apparent d-spacing may be just caused by a bigger slope, not necessarily
+%implying a big change in the local d-spacings, which is much more relevant
+%to the interbilayer interactions and the hydrocarbon chain configurations. 
+%To get averaged local area per lipid molecular, lipid bilayer thickness and
+%the water spacing, the amplitude and the profile of the ripples have to be
+%accurately obtained.
+
+%The second approach involves modeling and nonlinear least square fitting.
+%This approach requires the following steps: 1). Build up an electron density 
+%model by incorporating various known physical properties 
+%of the bilayer; 2). Fourier transform the model electron density to get model 
+%form factors (or scattering intensities); 3). Fit the experimentally measured
+%amplitudes of form factors (or intensities) to the model and get the structural
+%quantities and, as a by-product, the phases. It should be emphasized that in 
+%this approach, phases are outputs instead of inputs as in the first approach
+%and are not essential to obtaining the structural quantities, but are very
+%useful in reconstructing the electron density map from the data and comparing
+%that with the map from the model fitting.
+%Wiener et al. \cite{WSN89} used this approach successfully to obtain many
+%key structural quantities of gel phase DPPC bilayers. 
+%Janiak et al. \cite{JanSS79} also followed this route and tried to solve 
+%the ripple phase structures of DMPC at two different hydration levels. 
+%But because their data were from low resolution measurements, which made
+%the decomposition of overlapping peaks subject to large ambiguity, their
+%results are not definitive. Nonetheless, they obtained a ripple amplitude
+%of about 15\AA\ for DMPC at two hydration levels, which compares with
+%15\AA\ for DLPC reported by Tardieu et al. \cite{Tar73}.
+
+%The 
+%difficulty associated with this approach can be seen from the reconstructed
+%electron density map of DLPC published in \cite{Tar73} by Tardieu et al.,
+%where one sees rather irregular bilayers with an arrangement of the
+%ripples within the unit cell which does not give rise to the typical q-space
+%ripple phase patterns shown in oriented sample x-ray data \cite{Ale85,Kat95}.
+
+%The task of this chapter is to propose a more precise electron density model 
+%which is consistent with both available experimental results and known 
+%physical properties of the lipid bilayers, and to fit Wack and Webb's
+%published high resolution x-ray form factor amplitude data to this model.
+%Both accurate structural quantities and form factor phases are obtained 
+%from the fitting. Ripple electron density maps, both from Wack and Webb's
+%data and the model fitting, are Fourier reconstructed using the phases
+%obtained from the model fitting. Comparisons with previous ripple phase
+%works are presented. Implications of the model fitting results in 
+%understanding the ripple phase structure will be discussed.

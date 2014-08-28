@@ -1,0 +1,48 @@
+\begindata{text822, 0}
+Return-path: <ws22+@andrew.cmu.edu>
+X-Andrew-Authenticated-as: 16216;andrew.cmu.edu;Wenjun Sun
+Received: from lipid.phys.cmu.edu via trymail
+          ID </afs/andrew.cmu.edu/usr11/jn12/Mailbox/EknmcaG00VUqRnrU4x>;
+          Wed, 13 Dec 1995 14:31:50 -0500 (EST)
+Received: from lipid.phys.cmu.edu via qmail
+          ID </afs/andrew.cmu.edu/usr19/ws22/.Outgoing/QF.AknmcVm00VUq1nWV10>;
+          Wed, 13 Dec 1995 14:31:45 -0500 (EST)
+Received: from VUI.Andrew.3.70.CUILIB.3.45.SNAP.NOT.LINKED.lipid.phys.cmu.edu.sun4c.411
+          via MS.5.6.lipid.phys.cmu.edu.sun4c_411;
+          Wed, 13 Dec 1995 14:31:45 -0500 (EST)
+Message-ID: <YknmcVW00VUq1nWUsf@andrew.cmu.edu>
+Date: Wed, 13 Dec 1995 14:31:45 -0500 (EST)
+From: Wenjun Sun <ws22+@andrew.cmu.edu>
+To: "John F. Nagle" <jn12+@andrew.cmu.edu>
+Subject: Gray scale map
+Cc:
+
+Dear Dr. Nagle,
+
+I've put the program which I used to plot the grey scale
+images into the directory ~jn12/ws22. It is named
+'ripple_map.c'. It is not very long and is visually
+structured so that it is easy to read.
+
+I've also put a form factor data file 'wack_form_3.dat'
+into the same directory, in case you want to give
+it a shot yourself.
+
+To compile it, run command
+
+     %cc -O -o ripple_map ripple_map.c -lm
+
+To excute it to get an electron density map, run
+
+     %ripple_map wack_form_3.dat map.ps
+
+and answer all the prompted questions, then you
+should have the PS file 'map.ps' which can be
+previewed using 'ghostview' on screen.
+
+Best regards,
+
+Wenjun
+
+
+\enddata{text822, 0}

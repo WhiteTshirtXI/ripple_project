@@ -1,0 +1,734 @@
+%!PS-Adobe-1.0
+%%Creator: GraED
+%%BoundingBox: 0 0 432 504
+%%EndComments
+% Graed Prelude
+
+/GedDict 200 dict def
+
+GedDict begin
+
+/i {72 mul} def  /ini {gsave translate newpath} def
+/LNW {0.25 LR mul setlinewidth}def /sld { [] 0 setdash stroke } def % solid
+/bordr { gsave fl setgray fill grestore LNW sld grestore} bind def
+/cir {0 0 LR 0 360 arc bordr} bind def % for cir
+/sqr {0.85 0.85 scale LR LR moveto 0 LR -2 mul rlineto LR -2 mul 0 rlineto
+0 LR 2 mul rlineto closepath bordr} bind def % square center at Ori
+/x {0.7 0.7 scale LNW 0 LR sub LR moveto LR 2 mul LR -2 mul rlineto
+LR LR moveto LR -2 mul dup rlineto sld } bind def
+/+ {0.85 0.85 scale LNW 0 LR moveto 0 LR -2 mul rlineto 
+LR 0 moveto LR -2 mul 0 rlineto sld } bind def
+/tri {0 LR sub LR 0.866 mul moveto LR 2 mul 0 rlineto
+0 LR sub 0.866 -2 mul LR mul rlineto closepath bordr} bind def% triangle
+/oneline{LR 0 moveto LR -2 mul 0 rlineto 45 rotate} def
+/*{LNW 4 {oneline} repeat sld } bind def
+
+% ---begin symbol---
+/sc {ini cir} bind def % filled circle with level fl
+/ss {ini sqr} bind def
+/st {ini tri} bind def
+
+/sfc {ini /fl 0 def cir} bind def% filled cir
+/soc {ini /fl 1 def cir} bind def% open
+/st {ini tri} bind def
+
+/sfc {ini /fl 0 def cir} bind def% filled cir
+/soc {ini /fl 1 def cir} bind def% open
+/sfs {ini /fl 0 def sqr} bind def% filled sqr
+/sos {ini /fl 1 def sqr} bind def% open
+/sft {ini /fl 0 def tri} bind def% f tri
+/sot {ini /fl 1 def tri} bind def
+/sx {ini x grestore} bind def
+/s+ {ini + grestore} bind def
+/s* {ini * grestore} bind def
+%---end symbol
+/NL {setlinewidth newpath} def % 
+%=== begin font ===
+/fss {findfont NH 1.9 mul scalefont setfont}def
+/fnt {/Helvetica fss} bind def
+/pb {gsave translate 1 -1 scale 0 NH -0.33 mul moveto} def
+/pv {gsave translate 1 -1 scale 0 0 moveto 90 rotate } def
+/pe {show grestore} def
+% The following are for scribe like commands
+/cep {currentpoint exch pop} def % needed for @+, @- to get position back
+/@+- {gsave currentfont [0.8 0 0 0.8 0 0] makefont setfont cep
+      0 NH ud mul rmoveto} bind def % ud = up or down
+/@+ {/ud 0.9 def @+-} bind def
+/@- {/ud -0.8 def @+-} bind def
+/@g {gsave /Symbol fss cep} bind def
+/@i {gsave /Helvetica-Oblique fss cep} bind def
+/@b {gsave /Helvetica-Bold fss cep} bind def
+/@e {show currentpoint pop exch grestore moveto} def % for ')'
+
+%=== end font ====
+ 
+% horizontal and vertical lines
+/l {moveto rlineto sld} bind def 
+/t {lineto} def
+/ct {curveto} def
+/m {moveto} def
+/ar {gsave newpath m t t closepath 0 setgray fill grestore} bind def 
+% x2 y2 x1 y1 x0,y0 ar Draw an arrow head from 0 to 1,2
+/box {dup 0 exch moveto exch 0 rlineto 0 exch -1 mul rlineto 
+0 0 lineto closepath} def % x y box 
+/fb {gsave setgray fill grestore 1 setlinewidth sld grestore} def
+/ff {setgray fill grestore} def% x y box gray ff
+/bb {pop stroke grestore} def % x y box stroke pop off gray level
+%%EndProlog
+%%Page: 1 1
+% 1.3 i  3.0 i translate
+0  7.00 i translate 0.36 -0.36 scale
+ 2 setlinecap 
+   2.0 setlinewidth
+ 0 -1208 104 1248 l 
+ 1.6 setlinewidth [            ] 0 setdash newpath
+ 104 1147 m 124 1147 t 104 1147 m 114 1147 t 104 1021 m 
+ 114 1021 t 104 895 m 124 895 t 104 895 m 114 895 t 
+ 104 769 m 114 769 t 104 644 m 124 644 t 104 644 m 
+ 114 644 t 104 518 m 114 518 t 104 392 m 124 392 t 
+ 104 392 m 114 392 t 104 266 m 114 266 t 104 140 m 
+ 124 140 t 104 140 m 114 140 t 
+ stroke
+ 1065 0 104 1248 l 
+ 1.6 setlinewidth [            ] 0 setdash newpath
+ 104 1248 m 104 1228 t 104 1248 m 104 1238 t 134 1248 m 
+ 134 1238 t 165 1248 m 165 1238 t 195 1248 m 195 1238 t 
+ 226 1248 m 226 1238 t 256 1248 m 256 1228 t 256 1248 m 
+ 256 1238 t 287 1248 m 287 1238 t 317 1248 m 317 1238 t 
+ 348 1248 m 348 1238 t 378 1248 m 378 1238 t 409 1248 m 
+ 409 1228 t 409 1248 m 409 1238 t 439 1248 m 439 1238 t 
+ 469 1248 m 469 1238 t 500 1248 m 500 1238 t 530 1248 m 
+ 530 1238 t 561 1248 m 561 1228 t 561 1248 m 561 1238 t 
+ 591 1248 m 591 1238 t 622 1248 m 622 1238 t 652 1248 m 
+ 652 1238 t 683 1248 m 683 1238 t 713 1248 m 713 1228 t 
+ 713 1248 m 713 1238 t 744 1248 m 744 1238 t 774 1248 m 
+ 774 1238 t 805 1248 m 805 1238 t 835 1248 m 835 1238 t 
+ 865 1248 m 865 1228 t 865 1248 m 865 1238 t 896 1248 m 
+ 896 1238 t 926 1248 m 926 1238 t 957 1248 m 957 1238 t 
+ 987 1248 m 987 1238 t 1018 1248 m 1018 1228 t 1018 1248 m 
+ 1018 1238 t 1048 1248 m 1048 1238 t 1079 1248 m 1079 1238 t 
+ 1109 1248 m 1109 1238 t 1140 1248 m 1140 1238 t 1170 1248 m 
+ 1170 1228 t 1170 1248 m 1170 1238 t 
+ stroke
+ 1065 0 104 39 l 
+ 1.6 setlinewidth [            ] 0 setdash newpath
+ 104 39 m 104 59 t 104 39 m 104 49 t 134 39 m 
+ 134 49 t 165 39 m 165 49 t 195 39 m 195 49 t 
+ 226 39 m 226 49 t 256 39 m 256 59 t 256 39 m 
+ 256 49 t 287 39 m 287 49 t 317 39 m 317 49 t 
+ 348 39 m 348 49 t 378 39 m 378 49 t 409 39 m 
+ 409 59 t 409 39 m 409 49 t 439 39 m 439 49 t 
+ 469 39 m 469 49 t 500 39 m 500 49 t 530 39 m 
+ 530 49 t 561 39 m 561 59 t 561 39 m 561 49 t 
+ 591 39 m 591 49 t 622 39 m 622 49 t 652 39 m 
+ 652 49 t 683 39 m 683 49 t 713 39 m 713 59 t 
+ 713 39 m 713 49 t 744 39 m 744 49 t 774 39 m 
+ 774 49 t 805 39 m 805 49 t 835 39 m 835 49 t 
+ 865 39 m 865 59 t 865 39 m 865 49 t 896 39 m 
+ 896 49 t 926 39 m 926 49 t 957 39 m 957 49 t 
+ 987 39 m 987 49 t 1018 39 m 1018 59 t 1018 39 m 
+ 1018 49 t 1048 39 m 1048 49 t 1079 39 m 1079 49 t 
+ 1109 39 m 1109 49 t 1140 39 m 1140 49 t 1170 39 m 
+ 1170 59 t 1170 39 m 1170 49 t 
+ stroke
+ 0 -1208 1170 1248 l 
+ 1.6 setlinewidth [            ] 0 setdash newpath
+ 1170 1147 m 1150 1147 t 1170 1147 m 1160 1147 t 1170 1021 m 
+ 1160 1021 t 1170 895 m 1150 895 t 1170 895 m 1160 895 t 
+ 1170 769 m 1160 769 t 1170 644 m 1150 644 t 1170 644 m 
+ 1160 644 t 1170 518 m 1160 518 t 1170 392 m 1150 392 t 
+ 1170 392 m 1160 392 t 1170 266 m 1160 266 t 1170 140 m 
+ 1150 140 t 1170 140 m 1160 140 t 
+ stroke
+ /NH  24 def fnt
+ 57 1282 pb (1) pe
+ 81 1282 pb (9) pe
+ 109 1282 pb (.) pe
+ 129 1282 pb (5) pe
+ 209 1282 pb (2) pe
+ 233 1282 pb (0) pe
+ 261 1282 pb (.) pe
+ 281 1282 pb (0) pe
+ 362 1282 pb (2) pe
+ 386 1282 pb (0) pe
+ 414 1282 pb (.) pe
+ 434 1282 pb (5) pe
+ 514 1282 pb (2) pe
+ 538 1282 pb (1) pe
+ 566 1282 pb (.) pe
+ 586 1282 pb (0) pe
+ 666 1282 pb (2) pe
+ 690 1282 pb (1) pe
+ 718 1282 pb (.) pe
+ 738 1282 pb (5) pe
+ 818 1282 pb (2) pe
+ 842 1282 pb (2) pe
+ 870 1282 pb (.) pe
+ 890 1282 pb (0) pe
+ 971 1282 pb (2) pe
+ 995 1282 pb (2) pe
+ 1023 1282 pb (.) pe
+ 1043 1282 pb (5) pe
+ 1123 1282 pb (2) pe
+ 1147 1282 pb (3) pe
+ 1175 1282 pb (.) pe
+ 1195 1282 pb (0) pe
+ 517 1348 pb (2) show
+@g (q) @e ( \050degrees\051) pe
+ 68 728 pv (Intensity) pe
+ 
+ /LR   2 def 
+ 195 276 sfc 197 270 sfc 198 274 sfc 200 265 sfc 202 265 sfc 
+ 204 267 sfc 206 269 sfc 208 271 sfc 210 270 sfc 212 261 sfc 
+ 214 261 sfc 216 260 sfc 217 262 sfc 219 270 sfc 221 261 sfc 
+ 223 266 sfc 225 264 sfc 227 273 sfc 229 264 sfc 231 269 sfc 
+ 233 267 sfc 234 267 sfc 236 274 sfc 238 268 sfc 240 265 sfc 
+ 242 270 sfc 244 272 sfc 246 250 sfc 248 265 sfc 250 264 sfc 
+ 252 258 sfc 253 264 sfc 255 264 sfc 257 268 sfc 259 268 sfc 
+ 261 274 sfc 263 267 sfc 265 269 sfc 267 257 sfc 269 263 sfc 
+ 271 257 sfc 272 265 sfc 274 262 sfc 276 262 sfc 278 263 sfc 
+ 280 264 sfc 282 260 sfc 284 265 sfc 286 260 sfc 288 266 sfc 
+ 289 266 sfc 291 258 sfc 293 264 sfc 295 263 sfc 297 254 sfc 
+ 299 266 sfc 301 257 sfc 303 254 sfc 305 261 sfc 307 262 sfc 
+ 308 261 sfc 310 253 sfc 312 258 sfc 314 259 sfc 316 260 sfc 
+ 318 260 sfc 320 258 sfc 322 257 sfc 324 256 sfc 325 259 sfc 
+ 327 256 sfc 329 255 sfc 331 261 sfc 333 259 sfc 335 257 sfc 
+ 337 259 sfc 339 253 sfc 341 261 sfc 343 257 sfc 344 251 sfc 
+ 346 257 sfc 348 259 sfc 350 249 sfc 352 257 sfc 354 258 sfc 
+ 356 268 sfc 358 261 sfc 360 257 sfc 362 244 sfc 363 254 sfc 
+ 365 255 sfc 367 256 sfc 369 257 sfc 371 261 sfc 373 252 sfc 
+ 375 255 sfc 377 255 sfc 379 268 sfc 380 266 sfc 382 250 sfc 
+ 384 258 sfc 386 260 sfc 388 256 sfc 390 264 sfc 392 256 sfc 
+ 394 253 sfc 396 260 sfc 398 251 sfc 399 256 sfc 401 258 sfc 
+ 403 256 sfc 405 241 sfc 407 255 sfc 409 254 sfc 411 243 sfc 
+ 413 252 sfc 415 248 sfc 417 250 sfc 418 254 sfc 420 257 sfc 
+ 422 254 sfc 424 254 sfc 426 253 sfc 428 254 sfc 430 250 sfc 
+ 432 251 sfc 434 251 sfc 435 245 sfc 437 233 sfc 439 242 sfc 
+ 441 247 sfc 443 234 sfc 445 243 sfc 447 240 sfc 449 243 sfc 
+ 451 223 sfc 453 234 sfc 454 221 sfc 456 224 sfc 458 210 sfc 
+ 460 215 sfc 462 207 sfc 464 202 sfc 466 199 sfc 468 191 sfc 
+ 470 181 sfc 471 183 sfc 473 182 sfc 475 183 sfc 477 184 sfc 
+ 479 188 sfc 481 174 sfc 483 195 sfc 485 193 sfc 487 195 sfc 
+ 489 194 sfc 490 218 sfc 492 205 sfc 494 206 sfc 496 211 sfc 
+ 498 220 sfc 500 217 sfc 502 229 sfc 504 220 sfc 506 222 sfc 
+ 508 228 sfc 509 240 sfc 511 233 sfc 513 214 sfc 515 237 sfc 
+ 517 235 sfc 519 243 sfc 521 228 sfc 523 230 sfc 525 237 sfc 
+ 526 238 sfc 528 239 sfc 530 235 sfc 532 231 sfc 534 235 sfc 
+ 536 232 sfc 538 233 sfc 540 237 sfc 542 228 sfc 544 238 sfc 
+ 545 226 sfc 547 228 sfc 549 232 sfc 551 234 sfc 553 233 sfc 
+ 555 232 sfc 557 229 sfc 559 226 sfc 561 245 sfc 563 233 sfc 
+ 564 235 sfc 566 236 sfc 568 245 sfc 570 234 sfc 572 235 sfc 
+ 574 231 sfc 576 237 sfc 578 229 sfc 580 235 sfc 581 234 sfc 
+ 583 233 sfc 585 235 sfc 587 242 sfc 589 238 sfc 591 235 sfc 
+ 593 240 sfc 595 236 sfc 597 238 sfc 599 241 sfc 600 232 sfc 
+ 602 231 sfc 604 233 sfc 606 237 sfc 608 241 sfc 610 235 sfc 
+ 612 240 sfc 614 227 sfc 616 216 sfc 618 223 sfc 619 232 sfc 
+ 621 231 sfc 623 225 sfc 625 224 sfc 627 232 sfc 629 222 sfc 
+ 631 233 sfc 633 219 sfc 635 236 sfc 636 222 sfc 638 225 sfc 
+ 640 224 sfc 642 228 sfc 644 226 sfc 646 235 sfc 648 235 sfc 
+ 650 237 sfc 652 238 sfc 654 223 sfc 655 225 sfc 657 221 sfc 
+ 659 231 sfc 661 231 sfc 663 213 sfc 665 226 sfc 667 219 sfc 
+ 669 220 sfc 671 229 sfc 673 227 sfc 674 217 sfc 676 218 sfc 
+ 678 223 sfc 680 223 sfc 682 219 sfc 684 206 sfc 686 206 sfc 
+ 688 221 sfc 690 213 sfc 691 215 sfc 693 201 sfc 695 204 sfc 
+ 697 208 sfc 699 212 sfc 701 192 sfc 703 207 sfc 705 212 sfc 
+ 707 212 sfc 709 222 sfc 710 220 sfc 712 216 sfc 714 205 sfc 
+ 716 200 sfc 718 226 sfc 720 230 sfc 722 211 sfc 724 222 sfc 
+ 726 214 sfc 727 219 sfc 729 217 sfc 731 232 sfc 733 236 sfc 
+ 735 231 sfc 737 216 sfc 739 239 sfc 741 225 sfc 743 231 sfc 
+ 745 225 sfc 746 234 sfc 748 223 sfc 750 221 sfc 752 235 sfc 
+ 754 229 sfc 756 232 sfc 758 223 sfc 760 227 sfc 762 228 sfc 
+ 764 234 sfc 765 224 sfc 767 227 sfc 769 234 sfc 771 242 sfc 
+ 773 230 sfc 775 237 sfc 777 236 sfc 779 245 sfc 781 246 sfc 
+ 782 234 sfc 784 240 sfc 786 231 sfc 788 247 sfc 790 239 sfc 
+ 792 242 sfc 794 245 sfc 796 247 sfc 798 247 sfc 800 244 sfc 
+ 801 241 sfc 803 253 sfc 805 241 sfc 807 239 sfc 809 245 sfc 
+ 811 243 sfc 813 233 sfc 815 251 sfc 817 247 sfc 818 250 sfc 
+ 820 249 sfc 822 246 sfc 824 247 sfc 826 240 sfc 828 241 sfc 
+ 830 244 sfc 832 253 sfc 834 237 sfc 836 241 sfc 837 250 sfc 
+ 839 248 sfc 841 251 sfc 843 247 sfc 845 241 sfc 847 244 sfc 
+ 849 256 sfc 851 245 sfc 853 248 sfc 855 254 sfc 856 247 sfc 
+ 858 249 sfc 860 254 sfc 862 243 sfc 864 246 sfc 866 253 sfc 
+ 868 248 sfc 870 260 sfc 872 257 sfc 873 252 sfc 875 259 sfc 
+ 877 251 sfc 879 247 sfc 881 256 sfc 883 255 sfc 885 256 sfc 
+ 887 252 sfc 889 260 sfc 891 259 sfc 892 259 sfc 894 250 sfc 
+ 896 256 sfc 898 259 sfc 900 255 sfc 902 252 sfc 904 257 sfc 
+ 906 251 sfc 908 259 sfc 909 259 sfc 911 255 sfc 913 256 sfc 
+ 915 258 sfc 917 255 sfc 919 263 sfc 921 271 sfc 923 266 sfc 
+ 925 260 sfc 927 262 sfc 928 263 sfc 930 257 sfc 932 252 sfc 
+ 934 261 sfc 936 257 sfc 938 259 sfc 940 254 sfc 942 260 sfc 
+ 944 253 sfc 945 260 sfc 947 252 sfc 949 258 sfc 951 261 sfc 
+ 953 252 sfc 955 265 sfc 957 261 sfc 959 261 sfc 961 249 sfc 
+ 963 262 sfc 964 261 sfc 966 259 sfc 968 264 sfc 970 260 sfc 
+ 972 251 sfc 974 261 sfc 976 264 sfc 978 261 sfc 980 264 sfc 
+ 981 251 sfc 983 255 sfc 985 258 sfc 987 265 sfc 
+ /LR   2 def 
+ 195 439 sfc 
+ 197 443 sfc 198 436 sfc 200 446 sfc 202 446 sfc 204 441 sfc 
+ 206 441 sfc 208 432 sfc 210 439 sfc 212 438 sfc 214 441 sfc 
+ 216 443 sfc 217 441 sfc 219 447 sfc 221 444 sfc 223 439 sfc 
+ 225 434 sfc 227 439 sfc 229 439 sfc 231 448 sfc 233 441 sfc 
+ 234 438 sfc 236 436 sfc 238 437 sfc 240 425 sfc 242 441 sfc 
+ 244 434 sfc 246 440 sfc 248 437 sfc 250 438 sfc 252 435 sfc 
+ 253 442 sfc 255 429 sfc 257 443 sfc 259 438 sfc 261 438 sfc 
+ 263 439 sfc 265 437 sfc 267 425 sfc 269 440 sfc 271 440 sfc 
+ 272 444 sfc 274 440 sfc 276 442 sfc 278 441 sfc 280 440 sfc 
+ 282 432 sfc 284 427 sfc 286 434 sfc 288 444 sfc 289 436 sfc 
+ 291 431 sfc 293 433 sfc 295 436 sfc 297 436 sfc 299 433 sfc 
+ 301 439 sfc 303 439 sfc 305 438 sfc 307 435 sfc 308 435 sfc 
+ 310 446 sfc 312 436 sfc 314 438 sfc 316 431 sfc 318 436 sfc 
+ 320 436 sfc 322 442 sfc 324 444 sfc 325 432 sfc 327 426 sfc 
+ 329 439 sfc 331 437 sfc 333 432 sfc 335 433 sfc 337 423 sfc 
+ 339 431 sfc 341 434 sfc 343 430 sfc 344 430 sfc 346 436 sfc 
+ 348 441 sfc 350 439 sfc 352 433 sfc 354 436 sfc 356 435 sfc 
+ 358 439 sfc 360 428 sfc 362 430 sfc 363 433 sfc 365 430 sfc 
+ 367 438 sfc 369 437 sfc 371 432 sfc 373 440 sfc 375 436 sfc 
+ 377 433 sfc 379 437 sfc 380 434 sfc 382 431 sfc 384 433 sfc 
+ 386 438 sfc 388 432 sfc 390 434 sfc 392 438 sfc 394 437 sfc 
+ 396 420 sfc 398 430 sfc 399 434 sfc 401 430 sfc 403 431 sfc 
+ 405 429 sfc 407 425 sfc 409 434 sfc 411 421 sfc 413 430 sfc 
+ 415 434 sfc 417 435 sfc 418 431 sfc 420 426 sfc 422 421 sfc 
+ 424 430 sfc 426 424 sfc 428 431 sfc 430 423 sfc 432 429 sfc 
+ 434 428 sfc 435 424 sfc 437 435 sfc 439 434 sfc 441 427 sfc 
+ 443 426 sfc 445 418 sfc 447 419 sfc 449 425 sfc 451 413 sfc 
+ 453 408 sfc 454 415 sfc 456 415 sfc 458 409 sfc 460 410 sfc 
+ 462 421 sfc 464 396 sfc 466 405 sfc 468 399 sfc 470 411 sfc 
+ 471 414 sfc 473 416 sfc 475 417 sfc 477 413 sfc 479 400 sfc 
+ 481 411 sfc 483 418 sfc 485 420 sfc 487 412 sfc 489 413 sfc 
+ 490 416 sfc 492 421 sfc 494 414 sfc 496 413 sfc 498 410 sfc 
+ 500 420 sfc 502 412 sfc 504 416 sfc 506 413 sfc 508 419 sfc 
+ 509 423 sfc 511 416 sfc 513 416 sfc 515 420 sfc 517 410 sfc 
+ 519 418 sfc 521 415 sfc 523 415 sfc 525 413 sfc 526 418 sfc 
+ 528 414 sfc 530 415 sfc 532 413 sfc 534 424 sfc 536 407 sfc 
+ 538 424 sfc 540 416 sfc 542 416 sfc 544 418 sfc 545 414 sfc 
+ 547 421 sfc 549 417 sfc 551 418 sfc 553 416 sfc 555 419 sfc 
+ 557 414 sfc 559 413 sfc 561 418 sfc 563 403 sfc 564 404 sfc 
+ 566 409 sfc 568 418 sfc 570 407 sfc 572 410 sfc 574 411 sfc 
+ 576 420 sfc 578 417 sfc 580 413 sfc 581 409 sfc 583 414 sfc 
+ 585 411 sfc 587 403 sfc 589 406 sfc 591 405 sfc 593 407 sfc 
+ 595 408 sfc 597 411 sfc 599 408 sfc 600 402 sfc 602 407 sfc 
+ 604 408 sfc 606 403 sfc 608 404 sfc 610 396 sfc 612 413 sfc 
+ 614 399 sfc 616 392 sfc 618 404 sfc 619 393 sfc 621 390 sfc 
+ 623 386 sfc 625 378 sfc 627 383 sfc 629 373 sfc 631 366 sfc 
+ 633 374 sfc 635 356 sfc 636 344 sfc 638 328 sfc 640 332 sfc 
+ 642 325 sfc 644 304 sfc 646 300 sfc 648 294 sfc 650 281 sfc 
+ 652 272 sfc 654 268 sfc 655 270 sfc 657 283 sfc 659 287 sfc 
+ 661 273 sfc 663 277 sfc 665 276 sfc 667 297 sfc 669 314 sfc 
+ 671 310 sfc 673 338 sfc 674 339 sfc 676 345 sfc 678 349 sfc 
+ 680 350 sfc 682 358 sfc 684 364 sfc 686 365 sfc 688 375 sfc 
+ 690 385 sfc 691 379 sfc 693 388 sfc 695 387 sfc 697 378 sfc 
+ 699 383 sfc 701 404 sfc 703 397 sfc 705 407 sfc 707 401 sfc 
+ 709 410 sfc 710 401 sfc 712 409 sfc 714 406 sfc 716 414 sfc 
+ 718 406 sfc 720 418 sfc 722 400 sfc 724 418 sfc 726 409 sfc 
+ 727 411 sfc 729 408 sfc 731 422 sfc 733 422 sfc 735 412 sfc 
+ 737 407 sfc 739 415 sfc 741 417 sfc 743 425 sfc 745 417 sfc 
+ 746 430 sfc 748 420 sfc 750 416 sfc 752 420 sfc 754 425 sfc 
+ 756 415 sfc 758 432 sfc 760 423 sfc 762 427 sfc 764 422 sfc 
+ 765 423 sfc 767 417 sfc 769 415 sfc 771 423 sfc 773 427 sfc 
+ 775 413 sfc 777 421 sfc 779 421 sfc 781 420 sfc 782 428 sfc 
+ 784 424 sfc 786 425 sfc 788 425 sfc 790 414 sfc 792 426 sfc 
+ 794 423 sfc 796 423 sfc 798 420 sfc 800 432 sfc 801 421 sfc 
+ 803 431 sfc 805 425 sfc 807 426 sfc 809 427 sfc 811 430 sfc 
+ 813 427 sfc 815 421 sfc 817 427 sfc 818 422 sfc 820 420 sfc 
+ 822 426 sfc 824 429 sfc 826 422 sfc 828 436 sfc 830 433 sfc 
+ 832 433 sfc 834 425 sfc 836 431 sfc 837 433 sfc 839 429 sfc 
+ 841 440 sfc 843 434 sfc 845 416 sfc 847 438 sfc 849 433 sfc 
+ 851 427 sfc 853 429 sfc 855 436 sfc 856 432 sfc 858 433 sfc 
+ 860 424 sfc 862 425 sfc 864 428 sfc 866 429 sfc 868 431 sfc 
+ 870 431 sfc 872 442 sfc 873 430 sfc 875 437 sfc 877 429 sfc 
+ 879 429 sfc 881 428 sfc 883 431 sfc 885 434 sfc 887 435 sfc 
+ 889 438 sfc 891 437 sfc 892 431 sfc 894 430 sfc 896 442 sfc 
+ 898 433 sfc 900 433 sfc 902 426 sfc 904 429 sfc 906 436 sfc 
+ 908 433 sfc 909 427 sfc 911 426 sfc 913 440 sfc 915 430 sfc 
+ 917 434 sfc 919 435 sfc 921 444 sfc 923 429 sfc 925 433 sfc 
+ 927 438 sfc 928 438 sfc 930 439 sfc 932 434 sfc 934 432 sfc 
+ 936 428 sfc 938 436 sfc 940 432 sfc 942 427 sfc 944 442 sfc 
+ 945 434 sfc 947 432 sfc 949 431 sfc 951 428 sfc 953 427 sfc 
+ 955 435 sfc 957 437 sfc 959 435 sfc 961 442 sfc 963 439 sfc 
+ 964 433 sfc 966 436 sfc 968 430 sfc 970 436 sfc 972 436 sfc 
+ 974 436 sfc 976 440 sfc 978 439 sfc 980 436 sfc 981 426 sfc 
+ 983 428 sfc 985 430 sfc 987 427 sfc 
+ /LR   2 def 
+ 195 632 sfc 197 626 sfc 
+ 198 626 sfc 200 633 sfc 202 620 sfc 204 628 sfc 206 633 sfc 
+ 208 627 sfc 210 626 sfc 212 632 sfc 214 629 sfc 216 628 sfc 
+ 217 629 sfc 219 630 sfc 221 627 sfc 223 626 sfc 225 619 sfc 
+ 227 619 sfc 229 627 sfc 231 624 sfc 233 631 sfc 234 627 sfc 
+ 236 629 sfc 238 625 sfc 240 629 sfc 242 624 sfc 244 632 sfc 
+ 246 628 sfc 248 628 sfc 250 623 sfc 252 623 sfc 253 625 sfc 
+ 255 627 sfc 257 632 sfc 259 627 sfc 261 633 sfc 263 616 sfc 
+ 265 619 sfc 267 624 sfc 269 627 sfc 271 618 sfc 272 637 sfc 
+ 274 632 sfc 276 632 sfc 278 632 sfc 280 631 sfc 282 625 sfc 
+ 284 627 sfc 286 625 sfc 288 634 sfc 289 632 sfc 291 622 sfc 
+ 293 619 sfc 295 624 sfc 297 615 sfc 299 624 sfc 301 620 sfc 
+ 303 630 sfc 305 632 sfc 307 624 sfc 308 620 sfc 310 637 sfc 
+ 312 625 sfc 314 619 sfc 316 625 sfc 318 625 sfc 320 614 sfc 
+ 322 628 sfc 324 623 sfc 325 626 sfc 327 618 sfc 329 627 sfc 
+ 331 622 sfc 333 616 sfc 335 627 sfc 337 622 sfc 339 623 sfc 
+ 341 628 sfc 343 627 sfc 344 621 sfc 346 617 sfc 348 624 sfc 
+ 350 629 sfc 352 626 sfc 354 619 sfc 356 627 sfc 358 612 sfc 
+ 360 625 sfc 362 618 sfc 363 618 sfc 365 626 sfc 367 622 sfc 
+ 369 620 sfc 371 628 sfc 373 618 sfc 375 625 sfc 377 621 sfc 
+ 379 618 sfc 380 623 sfc 382 622 sfc 384 614 sfc 386 625 sfc 
+ 388 626 sfc 390 625 sfc 392 627 sfc 394 618 sfc 396 623 sfc 
+ 398 624 sfc 399 618 sfc 401 619 sfc 403 621 sfc 405 614 sfc 
+ 407 614 sfc 409 622 sfc 411 607 sfc 413 618 sfc 415 615 sfc 
+ 417 626 sfc 418 614 sfc 420 610 sfc 422 616 sfc 424 616 sfc 
+ 426 616 sfc 428 613 sfc 430 622 sfc 432 620 sfc 434 614 sfc 
+ 435 605 sfc 437 610 sfc 439 604 sfc 441 607 sfc 443 616 sfc 
+ 445 608 sfc 447 609 sfc 449 607 sfc 451 606 sfc 453 617 sfc 
+ 454 605 sfc 456 616 sfc 458 608 sfc 460 621 sfc 462 606 sfc 
+ 464 607 sfc 466 613 sfc 468 616 sfc 470 615 sfc 471 606 sfc 
+ 473 604 sfc 475 605 sfc 477 613 sfc 479 610 sfc 481 619 sfc 
+ 483 602 sfc 485 615 sfc 487 604 sfc 489 616 sfc 490 604 sfc 
+ 492 603 sfc 494 601 sfc 496 611 sfc 498 618 sfc 500 609 sfc 
+ 502 617 sfc 504 611 sfc 506 607 sfc 508 608 sfc 509 604 sfc 
+ 511 613 sfc 513 603 sfc 515 609 sfc 517 601 sfc 519 601 sfc 
+ 521 602 sfc 523 609 sfc 525 604 sfc 526 602 sfc 528 609 sfc 
+ 530 610 sfc 532 605 sfc 534 599 sfc 536 608 sfc 538 605 sfc 
+ 540 607 sfc 542 602 sfc 544 607 sfc 545 608 sfc 547 609 sfc 
+ 549 607 sfc 551 606 sfc 553 598 sfc 555 601 sfc 557 604 sfc 
+ 559 605 sfc 561 603 sfc 563 601 sfc 564 605 sfc 566 604 sfc 
+ 568 589 sfc 570 605 sfc 572 612 sfc 574 593 sfc 576 604 sfc 
+ 578 594 sfc 580 607 sfc 581 600 sfc 583 593 sfc 585 597 sfc 
+ 587 589 sfc 589 596 sfc 591 598 sfc 593 587 sfc 595 581 sfc 
+ 597 575 sfc 599 586 sfc 600 578 sfc 602 582 sfc 604 559 sfc 
+ 606 562 sfc 608 560 sfc 610 549 sfc 612 536 sfc 614 507 sfc 
+ 616 495 sfc 618 488 sfc 619 489 sfc 621 486 sfc 623 465 sfc 
+ 625 447 sfc 627 450 sfc 629 429 sfc 631 443 sfc 633 428 sfc 
+ 635 437 sfc 636 446 sfc 638 465 sfc 640 447 sfc 642 471 sfc 
+ 644 468 sfc 646 488 sfc 648 493 sfc 650 508 sfc 652 517 sfc 
+ 654 525 sfc 655 515 sfc 657 543 sfc 659 553 sfc 661 551 sfc 
+ 663 555 sfc 665 563 sfc 667 574 sfc 669 565 sfc 671 579 sfc 
+ 673 586 sfc 674 587 sfc 676 593 sfc 678 584 sfc 680 595 sfc 
+ 682 588 sfc 684 580 sfc 686 596 sfc 688 603 sfc 690 595 sfc 
+ 691 591 sfc 693 600 sfc 695 597 sfc 697 599 sfc 699 600 sfc 
+ 701 590 sfc 703 593 sfc 705 606 sfc 707 611 sfc 709 604 sfc 
+ 710 596 sfc 712 598 sfc 714 605 sfc 716 602 sfc 718 606 sfc 
+ 720 603 sfc 722 613 sfc 724 606 sfc 726 610 sfc 727 617 sfc 
+ 729 613 sfc 731 608 sfc 733 608 sfc 735 605 sfc 737 611 sfc 
+ 739 616 sfc 741 605 sfc 743 604 sfc 745 610 sfc 746 611 sfc 
+ 748 608 sfc 750 611 sfc 752 609 sfc 754 613 sfc 756 619 sfc 
+ 758 617 sfc 760 616 sfc 762 610 sfc 764 614 sfc 765 613 sfc 
+ 767 611 sfc 769 621 sfc 771 612 sfc 773 622 sfc 775 614 sfc 
+ 777 609 sfc 779 611 sfc 781 625 sfc 782 607 sfc 784 612 sfc 
+ 786 624 sfc 788 613 sfc 790 613 sfc 792 617 sfc 794 618 sfc 
+ 796 613 sfc 798 618 sfc 800 613 sfc 801 612 sfc 803 615 sfc 
+ 805 612 sfc 807 614 sfc 809 618 sfc 811 616 sfc 813 617 sfc 
+ 815 622 sfc 817 620 sfc 818 621 sfc 820 618 sfc 822 621 sfc 
+ 824 619 sfc 826 618 sfc 828 622 sfc 830 616 sfc 832 627 sfc 
+ 834 627 sfc 836 615 sfc 837 611 sfc 839 618 sfc 841 621 sfc 
+ 843 622 sfc 845 624 sfc 847 622 sfc 849 625 sfc 851 615 sfc 
+ 853 616 sfc 855 618 sfc 856 616 sfc 858 624 sfc 860 620 sfc 
+ 862 611 sfc 864 622 sfc 866 620 sfc 868 620 sfc 870 617 sfc 
+ 872 627 sfc 873 619 sfc 875 619 sfc 877 617 sfc 879 624 sfc 
+ 881 616 sfc 883 621 sfc 885 619 sfc 887 617 sfc 889 619 sfc 
+ 891 624 sfc 892 615 sfc 894 630 sfc 896 617 sfc 898 613 sfc 
+ 900 620 sfc 902 625 sfc 904 630 sfc 906 613 sfc 908 622 sfc 
+ 909 621 sfc 911 631 sfc 913 624 sfc 915 622 sfc 917 616 sfc 
+ 919 619 sfc 921 627 sfc 923 626 sfc 925 627 sfc 927 618 sfc 
+ 928 618 sfc 930 630 sfc 932 626 sfc 934 622 sfc 936 626 sfc 
+ 938 620 sfc 940 614 sfc 942 631 sfc 944 623 sfc 945 624 sfc 
+ 947 619 sfc 949 616 sfc 951 616 sfc 953 631 sfc 955 625 sfc 
+ 957 625 sfc 959 605 sfc 961 629 sfc 963 627 sfc 964 621 sfc 
+ 966 613 sfc 968 631 sfc 970 621 sfc 972 614 sfc 974 622 sfc 
+ 976 630 sfc 978 618 sfc 980 613 sfc 981 618 sfc 983 623 sfc 
+ 985 622 sfc 987 621 sfc 
+ /LR   2 def 
+ 195 817 sfc 197 814 sfc 198 816 sfc 
+ 200 818 sfc 202 814 sfc 204 816 sfc 206 818 sfc 208 818 sfc 
+ 210 816 sfc 212 822 sfc 214 816 sfc 216 816 sfc 217 809 sfc 
+ 219 818 sfc 221 818 sfc 223 819 sfc 225 818 sfc 227 820 sfc 
+ 229 817 sfc 231 822 sfc 233 825 sfc 234 816 sfc 236 819 sfc 
+ 238 818 sfc 240 812 sfc 242 817 sfc 244 818 sfc 246 807 sfc 
+ 248 807 sfc 250 819 sfc 252 822 sfc 253 817 sfc 255 816 sfc 
+ 257 820 sfc 259 817 sfc 261 813 sfc 263 807 sfc 265 816 sfc 
+ 267 813 sfc 269 818 sfc 271 816 sfc 272 818 sfc 274 809 sfc 
+ 276 817 sfc 278 813 sfc 280 818 sfc 282 814 sfc 284 820 sfc 
+ 286 824 sfc 288 821 sfc 289 824 sfc 291 819 sfc 293 818 sfc 
+ 295 818 sfc 297 818 sfc 299 823 sfc 301 815 sfc 303 814 sfc 
+ 305 813 sfc 307 822 sfc 308 817 sfc 310 817 sfc 312 819 sfc 
+ 314 813 sfc 316 817 sfc 318 815 sfc 320 813 sfc 322 810 sfc 
+ 324 813 sfc 325 808 sfc 327 819 sfc 329 812 sfc 331 815 sfc 
+ 333 819 sfc 335 816 sfc 337 818 sfc 339 810 sfc 341 814 sfc 
+ 343 802 sfc 344 817 sfc 346 811 sfc 348 817 sfc 350 813 sfc 
+ 352 806 sfc 354 803 sfc 356 810 sfc 358 817 sfc 360 810 sfc 
+ 362 811 sfc 363 822 sfc 365 809 sfc 367 825 sfc 369 806 sfc 
+ 371 815 sfc 373 819 sfc 375 819 sfc 377 813 sfc 379 815 sfc 
+ 380 818 sfc 382 821 sfc 384 809 sfc 386 810 sfc 388 813 sfc 
+ 390 813 sfc 392 811 sfc 394 810 sfc 396 813 sfc 398 813 sfc 
+ 399 810 sfc 401 817 sfc 403 812 sfc 405 816 sfc 407 807 sfc 
+ 409 812 sfc 411 808 sfc 413 811 sfc 415 815 sfc 417 807 sfc 
+ 418 804 sfc 420 805 sfc 422 806 sfc 424 808 sfc 426 802 sfc 
+ 428 813 sfc 430 805 sfc 432 808 sfc 434 798 sfc 435 801 sfc 
+ 437 807 sfc 439 808 sfc 441 817 sfc 443 813 sfc 445 813 sfc 
+ 447 809 sfc 449 805 sfc 451 797 sfc 453 801 sfc 454 803 sfc 
+ 456 809 sfc 458 807 sfc 460 798 sfc 462 802 sfc 464 797 sfc 
+ 466 800 sfc 468 801 sfc 470 801 sfc 471 796 sfc 473 791 sfc 
+ 475 802 sfc 477 796 sfc 479 799 sfc 481 790 sfc 483 797 sfc 
+ 485 799 sfc 487 796 sfc 489 799 sfc 490 804 sfc 492 795 sfc 
+ 494 799 sfc 496 800 sfc 498 793 sfc 500 805 sfc 502 797 sfc 
+ 504 802 sfc 506 805 sfc 508 805 sfc 509 801 sfc 511 794 sfc 
+ 513 809 sfc 515 800 sfc 517 805 sfc 519 799 sfc 521 798 sfc 
+ 523 802 sfc 525 807 sfc 526 797 sfc 528 798 sfc 530 797 sfc 
+ 532 807 sfc 534 794 sfc 536 809 sfc 538 793 sfc 540 789 sfc 
+ 542 802 sfc 544 800 sfc 545 798 sfc 547 794 sfc 549 800 sfc 
+ 551 793 sfc 553 806 sfc 555 799 sfc 557 800 sfc 559 791 sfc 
+ 561 794 sfc 563 796 sfc 564 795 sfc 566 792 sfc 568 793 sfc 
+ 570 790 sfc 572 798 sfc 574 786 sfc 576 799 sfc 578 792 sfc 
+ 580 796 sfc 581 787 sfc 583 795 sfc 585 785 sfc 587 785 sfc 
+ 589 788 sfc 591 794 sfc 593 783 sfc 595 796 sfc 597 791 sfc 
+ 599 796 sfc 600 792 sfc 602 788 sfc 604 786 sfc 606 776 sfc 
+ 608 787 sfc 610 785 sfc 612 776 sfc 614 784 sfc 616 793 sfc 
+ 618 783 sfc 619 772 sfc 621 756 sfc 623 769 sfc 625 761 sfc 
+ 627 751 sfc 629 746 sfc 631 753 sfc 633 733 sfc 635 736 sfc 
+ 636 718 sfc 638 715 sfc 640 689 sfc 642 659 sfc 644 671 sfc 
+ 646 668 sfc 648 653 sfc 650 639 sfc 652 619 sfc 654 635 sfc 
+ 655 615 sfc 657 622 sfc 659 637 sfc 661 648 sfc 663 625 sfc 
+ 665 646 sfc 667 656 sfc 669 689 sfc 671 676 sfc 673 697 sfc 
+ 674 696 sfc 676 709 sfc 678 715 sfc 680 722 sfc 682 724 sfc 
+ 684 744 sfc 686 740 sfc 688 746 sfc 690 759 sfc 691 775 sfc 
+ 693 756 sfc 695 768 sfc 697 775 sfc 699 776 sfc 701 764 sfc 
+ 703 779 sfc 705 785 sfc 707 779 sfc 709 781 sfc 710 789 sfc 
+ 712 786 sfc 714 785 sfc 716 784 sfc 718 785 sfc 720 794 sfc 
+ 722 790 sfc 724 797 sfc 726 805 sfc 727 802 sfc 729 791 sfc 
+ 731 784 sfc 733 795 sfc 735 796 sfc 737 795 sfc 739 802 sfc 
+ 741 788 sfc 743 799 sfc 745 793 sfc 746 802 sfc 748 803 sfc 
+ 750 792 sfc 752 799 sfc 754 805 sfc 756 796 sfc 758 801 sfc 
+ 760 801 sfc 762 804 sfc 764 807 sfc 765 800 sfc 767 793 sfc 
+ 769 799 sfc 771 807 sfc 773 810 sfc 775 812 sfc 777 805 sfc 
+ 779 800 sfc 781 788 sfc 782 808 sfc 784 804 sfc 786 803 sfc 
+ 788 806 sfc 790 800 sfc 792 789 sfc 794 800 sfc 796 799 sfc 
+ 798 801 sfc 800 816 sfc 801 808 sfc 803 799 sfc 805 805 sfc 
+ 807 805 sfc 809 810 sfc 811 811 sfc 813 807 sfc 815 811 sfc 
+ 817 808 sfc 818 803 sfc 820 796 sfc 822 809 sfc 824 802 sfc 
+ 826 809 sfc 828 807 sfc 830 807 sfc 832 808 sfc 834 809 sfc 
+ 836 789 sfc 837 813 sfc 839 800 sfc 841 815 sfc 843 811 sfc 
+ 845 805 sfc 847 809 sfc 849 809 sfc 851 809 sfc 853 810 sfc 
+ 855 811 sfc 856 815 sfc 858 810 sfc 860 810 sfc 862 816 sfc 
+ 864 801 sfc 866 812 sfc 868 801 sfc 870 807 sfc 872 815 sfc 
+ 873 810 sfc 875 802 sfc 877 814 sfc 879 812 sfc 881 820 sfc 
+ 883 805 sfc 885 817 sfc 887 814 sfc 889 816 sfc 891 808 sfc 
+ 892 812 sfc 894 812 sfc 896 811 sfc 898 814 sfc 900 816 sfc 
+ 902 806 sfc 904 810 sfc 906 808 sfc 908 812 sfc 909 809 sfc 
+ 911 819 sfc 913 812 sfc 915 811 sfc 917 807 sfc 919 807 sfc 
+ 921 814 sfc 923 814 sfc 925 810 sfc 927 808 sfc 928 806 sfc 
+ 930 806 sfc 932 817 sfc 934 812 sfc 936 814 sfc 938 815 sfc 
+ 940 814 sfc 942 811 sfc 944 806 sfc 945 809 sfc 947 813 sfc 
+ 949 810 sfc 951 809 sfc 953 811 sfc 955 809 sfc 957 812 sfc 
+ 959 821 sfc 961 803 sfc 963 817 sfc 964 813 sfc 966 817 sfc 
+ 968 812 sfc 970 812 sfc 972 812 sfc 974 812 sfc 976 817 sfc 
+ 978 817 sfc 980 815 sfc 981 810 sfc 983 814 sfc 985 823 sfc 
+ 987 819 sfc 
+ /LR   2 def 
+ 195 985 sfc 197 986 sfc 198 981 sfc 200 981 sfc 
+ 202 980 sfc 204 976 sfc 206 983 sfc 208 981 sfc 210 974 sfc 
+ 212 978 sfc 214 978 sfc 216 977 sfc 217 979 sfc 219 975 sfc 
+ 221 983 sfc 223 985 sfc 225 970 sfc 227 984 sfc 229 969 sfc 
+ 231 972 sfc 233 973 sfc 234 981 sfc 236 977 sfc 238 978 sfc 
+ 240 982 sfc 242 976 sfc 244 973 sfc 246 978 sfc 248 973 sfc 
+ 250 971 sfc 252 975 sfc 253 984 sfc 255 972 sfc 257 983 sfc 
+ 259 979 sfc 261 976 sfc 263 972 sfc 265 981 sfc 267 973 sfc 
+ 269 979 sfc 271 970 sfc 272 973 sfc 274 978 sfc 276 977 sfc 
+ 278 973 sfc 280 975 sfc 282 974 sfc 284 981 sfc 286 975 sfc 
+ 288 977 sfc 289 968 sfc 291 978 sfc 293 982 sfc 295 971 sfc 
+ 297 966 sfc 299 976 sfc 301 974 sfc 303 971 sfc 305 968 sfc 
+ 307 976 sfc 308 971 sfc 310 978 sfc 312 974 sfc 314 977 sfc 
+ 316 979 sfc 318 973 sfc 320 980 sfc 322 973 sfc 324 970 sfc 
+ 325 968 sfc 327 971 sfc 329 972 sfc 331 974 sfc 333 972 sfc 
+ 335 969 sfc 337 965 sfc 339 972 sfc 341 970 sfc 343 982 sfc 
+ 344 968 sfc 346 971 sfc 348 971 sfc 350 978 sfc 352 965 sfc 
+ 354 965 sfc 356 970 sfc 358 975 sfc 360 979 sfc 362 973 sfc 
+ 363 972 sfc 365 968 sfc 367 979 sfc 369 970 sfc 371 971 sfc 
+ 373 979 sfc 375 973 sfc 377 976 sfc 379 975 sfc 380 968 sfc 
+ 382 972 sfc 384 967 sfc 386 973 sfc 388 977 sfc 390 967 sfc 
+ 392 961 sfc 394 976 sfc 396 965 sfc 398 978 sfc 399 968 sfc 
+ 401 978 sfc 403 963 sfc 405 971 sfc 407 973 sfc 409 975 sfc 
+ 411 965 sfc 413 963 sfc 415 977 sfc 417 976 sfc 418 970 sfc 
+ 420 964 sfc 422 968 sfc 424 969 sfc 426 965 sfc 428 973 sfc 
+ 430 965 sfc 432 962 sfc 434 966 sfc 435 969 sfc 437 960 sfc 
+ 439 969 sfc 441 964 sfc 443 975 sfc 445 968 sfc 447 964 sfc 
+ 449 965 sfc 451 969 sfc 453 957 sfc 454 965 sfc 456 966 sfc 
+ 458 962 sfc 460 962 sfc 462 952 sfc 464 959 sfc 466 957 sfc 
+ 468 956 sfc 470 963 sfc 471 955 sfc 473 951 sfc 475 952 sfc 
+ 477 961 sfc 479 946 sfc 481 959 sfc 483 945 sfc 485 952 sfc 
+ 487 950 sfc 489 949 sfc 490 954 sfc 492 955 sfc 494 959 sfc 
+ 496 945 sfc 498 961 sfc 500 951 sfc 502 957 sfc 504 959 sfc 
+ 506 959 sfc 508 964 sfc 509 962 sfc 511 957 sfc 513 952 sfc 
+ 515 962 sfc 517 958 sfc 519 959 sfc 521 959 sfc 523 955 sfc 
+ 525 957 sfc 526 960 sfc 528 952 sfc 530 963 sfc 532 962 sfc 
+ 534 955 sfc 536 949 sfc 538 960 sfc 540 953 sfc 542 967 sfc 
+ 544 952 sfc 545 958 sfc 547 955 sfc 549 949 sfc 551 957 sfc 
+ 553 954 sfc 555 950 sfc 557 961 sfc 559 952 sfc 561 951 sfc 
+ 563 958 sfc 564 956 sfc 566 954 sfc 568 950 sfc 570 948 sfc 
+ 572 957 sfc 574 962 sfc 576 949 sfc 578 948 sfc 580 953 sfc 
+ 581 953 sfc 583 948 sfc 585 950 sfc 587 959 sfc 589 947 sfc 
+ 591 953 sfc 593 953 sfc 595 949 sfc 597 958 sfc 599 943 sfc 
+ 600 950 sfc 602 946 sfc 604 944 sfc 606 944 sfc 608 944 sfc 
+ 610 943 sfc 612 955 sfc 614 944 sfc 616 953 sfc 618 947 sfc 
+ 619 953 sfc 621 950 sfc 623 955 sfc 625 939 sfc 627 943 sfc 
+ 629 945 sfc 631 950 sfc 633 937 sfc 635 940 sfc 636 945 sfc 
+ 638 941 sfc 640 942 sfc 642 942 sfc 644 947 sfc 646 934 sfc 
+ 648 932 sfc 650 942 sfc 652 943 sfc 654 941 sfc 655 929 sfc 
+ 657 919 sfc 659 918 sfc 661 907 sfc 663 916 sfc 665 928 sfc 
+ 667 914 sfc 669 917 sfc 671 909 sfc 673 888 sfc 674 902 sfc 
+ 676 889 sfc 678 876 sfc 680 880 sfc 682 866 sfc 684 874 sfc 
+ 686 838 sfc 688 849 sfc 690 832 sfc 691 834 sfc 693 803 sfc 
+ 695 815 sfc 697 825 sfc 699 829 sfc 701 819 sfc 703 820 sfc 
+ 705 822 sfc 707 830 sfc 709 838 sfc 710 831 sfc 712 860 sfc 
+ 714 861 sfc 716 874 sfc 718 890 sfc 720 890 sfc 722 894 sfc 
+ 724 892 sfc 726 908 sfc 727 895 sfc 729 909 sfc 731 910 sfc 
+ 733 914 sfc 735 912 sfc 737 917 sfc 739 923 sfc 741 920 sfc 
+ 743 918 sfc 745 922 sfc 746 942 sfc 748 929 sfc 750 935 sfc 
+ 752 931 sfc 754 935 sfc 756 930 sfc 758 943 sfc 760 946 sfc 
+ 762 943 sfc 764 941 sfc 765 942 sfc 767 949 sfc 769 939 sfc 
+ 771 941 sfc 773 952 sfc 775 944 sfc 777 938 sfc 779 950 sfc 
+ 781 946 sfc 782 954 sfc 784 951 sfc 786 962 sfc 788 955 sfc 
+ 790 954 sfc 792 954 sfc 794 957 sfc 796 955 sfc 798 950 sfc 
+ 800 957 sfc 801 946 sfc 803 959 sfc 805 950 sfc 807 945 sfc 
+ 809 946 sfc 811 956 sfc 813 956 sfc 815 952 sfc 817 968 sfc 
+ 818 966 sfc 820 954 sfc 822 965 sfc 824 943 sfc 826 962 sfc 
+ 828 961 sfc 830 959 sfc 832 957 sfc 834 960 sfc 836 959 sfc 
+ 837 957 sfc 839 958 sfc 841 952 sfc 843 961 sfc 845 960 sfc 
+ 847 958 sfc 849 960 sfc 851 960 sfc 853 964 sfc 855 966 sfc 
+ 856 963 sfc 858 955 sfc 860 950 sfc 862 962 sfc 864 969 sfc 
+ 866 962 sfc 868 968 sfc 870 962 sfc 872 960 sfc 873 968 sfc 
+ 875 972 sfc 877 959 sfc 879 964 sfc 881 960 sfc 883 963 sfc 
+ 885 962 sfc 887 964 sfc 889 959 sfc 891 964 sfc 892 956 sfc 
+ 894 959 sfc 896 964 sfc 898 965 sfc 900 964 sfc 902 962 sfc 
+ 904 953 sfc 906 963 sfc 908 965 sfc 909 965 sfc 911 968 sfc 
+ 913 968 sfc 915 967 sfc 917 970 sfc 919 961 sfc 921 965 sfc 
+ 923 967 sfc 925 976 sfc 927 969 sfc 928 966 sfc 930 967 sfc 
+ 932 963 sfc 934 974 sfc 936 973 sfc 938 974 sfc 940 978 sfc 
+ 942 964 sfc 944 972 sfc 945 967 sfc 947 964 sfc 949 974 sfc 
+ 951 973 sfc 953 960 sfc 955 976 sfc 957 970 sfc 959 975 sfc 
+ 961 966 sfc 963 962 sfc 964 967 sfc 966 967 sfc 968 970 sfc 
+ 970 980 sfc 972 966 sfc 974 977 sfc 976 979 sfc 978 977 sfc 
+ 980 964 sfc 981 960 sfc 983 969 sfc 985 971 sfc 987 968 sfc 
+ 
+ /LR   2 def 
+ 195 1115 sfc 197 1111 sfc 198 1117 sfc 200 1111 sfc 202 1112 sfc 
+ 204 1113 sfc 206 1104 sfc 208 1107 sfc 210 1117 sfc 212 1107 sfc 
+ 214 1117 sfc 216 1107 sfc 217 1102 sfc 219 1111 sfc 221 1107 sfc 
+ 223 1105 sfc 225 1107 sfc 227 1110 sfc 229 1112 sfc 231 1109 sfc 
+ 233 1116 sfc 234 1115 sfc 236 1111 sfc 238 1108 sfc 240 1116 sfc 
+ 242 1104 sfc 244 1110 sfc 246 1112 sfc 248 1113 sfc 250 1111 sfc 
+ 252 1105 sfc 253 1100 sfc 255 1103 sfc 257 1107 sfc 259 1107 sfc 
+ 261 1106 sfc 263 1112 sfc 265 1107 sfc 267 1102 sfc 269 1105 sfc 
+ 271 1102 sfc 272 1111 sfc 274 1106 sfc 276 1105 sfc 278 1102 sfc 
+ 280 1101 sfc 282 1109 sfc 284 1107 sfc 286 1103 sfc 288 1103 sfc 
+ 289 1114 sfc 291 1104 sfc 293 1106 sfc 295 1109 sfc 297 1105 sfc 
+ 299 1106 sfc 301 1098 sfc 303 1110 sfc 305 1107 sfc 307 1097 sfc 
+ 308 1104 sfc 310 1112 sfc 312 1112 sfc 314 1102 sfc 316 1112 sfc 
+ 318 1112 sfc 320 1100 sfc 322 1105 sfc 324 1101 sfc 325 1097 sfc 
+ 327 1097 sfc 329 1097 sfc 331 1098 sfc 333 1110 sfc 335 1087 sfc 
+ 337 1102 sfc 339 1101 sfc 341 1108 sfc 343 1105 sfc 344 1103 sfc 
+ 346 1103 sfc 348 1100 sfc 350 1103 sfc 352 1099 sfc 354 1100 sfc 
+ 356 1104 sfc 358 1105 sfc 360 1104 sfc 362 1102 sfc 363 1098 sfc 
+ 365 1100 sfc 367 1106 sfc 369 1096 sfc 371 1107 sfc 373 1112 sfc 
+ 375 1102 sfc 377 1102 sfc 379 1100 sfc 380 1102 sfc 382 1098 sfc 
+ 384 1096 sfc 386 1108 sfc 388 1095 sfc 390 1100 sfc 392 1095 sfc 
+ 394 1097 sfc 396 1097 sfc 398 1113 sfc 399 1101 sfc 401 1096 sfc 
+ 403 1099 sfc 405 1096 sfc 407 1094 sfc 409 1096 sfc 411 1099 sfc 
+ 413 1104 sfc 415 1107 sfc 417 1093 sfc 418 1105 sfc 420 1100 sfc 
+ 422 1094 sfc 424 1097 sfc 426 1097 sfc 428 1094 sfc 430 1103 sfc 
+ 432 1096 sfc 434 1092 sfc 435 1099 sfc 437 1086 sfc 439 1100 sfc 
+ 441 1103 sfc 443 1091 sfc 445 1088 sfc 447 1096 sfc 449 1097 sfc 
+ 451 1092 sfc 453 1085 sfc 454 1085 sfc 456 1095 sfc 458 1080 sfc 
+ 460 1088 sfc 462 1068 sfc 464 1067 sfc 466 1061 sfc 468 1072 sfc 
+ 470 1060 sfc 471 1063 sfc 473 1063 sfc 475 1063 sfc 477 1066 sfc 
+ 479 1054 sfc 481 1056 sfc 483 1064 sfc 485 1057 sfc 487 1070 sfc 
+ 489 1060 sfc 490 1068 sfc 492 1071 sfc 494 1076 sfc 496 1071 sfc 
+ 498 1084 sfc 500 1083 sfc 502 1080 sfc 504 1080 sfc 506 1076 sfc 
+ 508 1088 sfc 509 1090 sfc 511 1094 sfc 513 1091 sfc 515 1075 sfc 
+ 517 1077 sfc 519 1084 sfc 521 1082 sfc 523 1089 sfc 525 1082 sfc 
+ 526 1083 sfc 528 1067 sfc 530 1080 sfc 532 1082 sfc 534 1078 sfc 
+ 536 1076 sfc 538 1092 sfc 540 1083 sfc 542 1082 sfc 544 1094 sfc 
+ 545 1093 sfc 547 1088 sfc 549 1076 sfc 551 1091 sfc 553 1076 sfc 
+ 555 1093 sfc 557 1081 sfc 559 1087 sfc 561 1078 sfc 563 1085 sfc 
+ 564 1087 sfc 566 1082 sfc 568 1084 sfc 570 1078 sfc 572 1082 sfc 
+ 574 1089 sfc 576 1088 sfc 578 1088 sfc 580 1079 sfc 581 1080 sfc 
+ 583 1086 sfc 585 1084 sfc 587 1076 sfc 589 1076 sfc 591 1078 sfc 
+ 593 1078 sfc 595 1079 sfc 597 1092 sfc 599 1086 sfc 600 1075 sfc 
+ 602 1072 sfc 604 1083 sfc 606 1074 sfc 608 1079 sfc 610 1084 sfc 
+ 612 1078 sfc 614 1080 sfc 616 1087 sfc 618 1079 sfc 619 1073 sfc 
+ 621 1073 sfc 623 1075 sfc 625 1077 sfc 627 1074 sfc 629 1081 sfc 
+ 631 1075 sfc 633 1073 sfc 635 1075 sfc 636 1069 sfc 638 1076 sfc 
+ 640 1071 sfc 642 1067 sfc 644 1081 sfc 646 1066 sfc 648 1073 sfc 
+ 650 1067 sfc 652 1073 sfc 654 1067 sfc 655 1068 sfc 657 1069 sfc 
+ 659 1064 sfc 661 1057 sfc 663 1062 sfc 665 1069 sfc 667 1061 sfc 
+ 669 1052 sfc 671 1053 sfc 673 1048 sfc 674 1036 sfc 676 1033 sfc 
+ 678 1026 sfc 680 1025 sfc 682 1019 sfc 684 1011 sfc 686 1016 sfc 
+ 688 1007 sfc 690 1015 sfc 691 1012 sfc 693 989 sfc 695 1007 sfc 
+ 697 991 sfc 699 1005 sfc 701 1005 sfc 703 1004 sfc 705 998 sfc 
+ 707 1022 sfc 709 1014 sfc 710 1022 sfc 712 1024 sfc 714 1038 sfc 
+ 716 1037 sfc 718 1040 sfc 720 1052 sfc 722 1033 sfc 724 1047 sfc 
+ 726 1037 sfc 727 1067 sfc 729 1060 sfc 731 1060 sfc 733 1060 sfc 
+ 735 1060 sfc 737 1075 sfc 739 1059 sfc 741 1074 sfc 743 1080 sfc 
+ 745 1075 sfc 746 1081 sfc 748 1070 sfc 750 1069 sfc 752 1072 sfc 
+ 754 1079 sfc 756 1080 sfc 758 1063 sfc 760 1081 sfc 762 1076 sfc 
+ 764 1069 sfc 765 1086 sfc 767 1072 sfc 769 1077 sfc 771 1087 sfc 
+ 773 1083 sfc 775 1094 sfc 777 1088 sfc 779 1093 sfc 781 1072 sfc 
+ 782 1078 sfc 784 1085 sfc 786 1089 sfc 788 1079 sfc 790 1086 sfc 
+ 792 1081 sfc 794 1087 sfc 796 1087 sfc 798 1083 sfc 800 1093 sfc 
+ 801 1077 sfc 803 1089 sfc 805 1084 sfc 807 1096 sfc 809 1080 sfc 
+ 811 1088 sfc 813 1081 sfc 815 1091 sfc 817 1092 sfc 818 1089 sfc 
+ 820 1096 sfc 822 1089 sfc 824 1091 sfc 826 1103 sfc 828 1090 sfc 
+ 830 1089 sfc 832 1096 sfc 834 1095 sfc 836 1091 sfc 837 1100 sfc 
+ 839 1094 sfc 841 1097 sfc 843 1096 sfc 845 1097 sfc 847 1098 sfc 
+ 849 1096 sfc 851 1091 sfc 853 1091 sfc 855 1087 sfc 856 1092 sfc 
+ 858 1098 sfc 860 1098 sfc 862 1089 sfc 864 1093 sfc 866 1092 sfc 
+ 868 1097 sfc 870 1091 sfc 872 1106 sfc 873 1096 sfc 875 1090 sfc 
+ 877 1090 sfc 879 1095 sfc 881 1090 sfc 883 1104 sfc 885 1103 sfc 
+ 887 1103 sfc 889 1091 sfc 891 1107 sfc 892 1092 sfc 894 1095 sfc 
+ 896 1098 sfc 898 1094 sfc 900 1105 sfc 902 1101 sfc 904 1099 sfc 
+ 906 1099 sfc 908 1109 sfc 909 1094 sfc 911 1099 sfc 913 1105 sfc 
+ 915 1105 sfc 917 1097 sfc 919 1110 sfc 921 1095 sfc 923 1111 sfc 
+ 925 1103 sfc 927 1107 sfc 928 1106 sfc 930 1099 sfc 932 1101 sfc 
+ 934 1098 sfc 936 1099 sfc 938 1104 sfc 940 1108 sfc 942 1094 sfc 
+ 944 1091 sfc 945 1098 sfc 947 1105 sfc 949 1106 sfc 951 1105 sfc 
+ 953 1098 sfc 955 1103 sfc 957 1107 sfc 959 1104 sfc 961 1098 sfc 
+ 963 1103 sfc 964 1102 sfc 966 1102 sfc 968 1100 sfc 970 1101 sfc 
+ 972 1100 sfc 974 1109 sfc 976 1107 sfc 978 1105 sfc 980 1105 sfc 
+ 981 1104 sfc 983 1107 sfc 985 1103 sfc 987 1101 sfc /NH  20 def fnt
+ 1056 165 pb (T) pe
+ /NH  20 def fnt
+ 1037 252 pb (65) show
+@+ (o) @e (C) pe
+ /NH  20 def fnt
+ 1037 422 pb (75) show
+@+ (o) @e (C) pe
+ /NH  20 def fnt
+ 1037 605 pb (80) show
+@+ (o) @e (C) pe
+ /NH  20 def fnt
+ 1037 799 pb (75) show
+@+ (o) @e (C) pe
+ /NH  20 def fnt
+ 1037 954 pb (65) show
+@+ (o) @e (C) pe
+ /NH  20 def fnt
+ 1037 1094 pb (65) show
+@+ (o) @e (C) pe
+ /NH  16 def fnt
+ 970 1158 pb (\05018hr later\051) pe
+ /NH  20 def fnt
+ 151 265 pb (1) pe
+ /NH  20 def fnt
+ 151 437 pb (2) pe
+ /NH  20 def fnt
+ 151 622 pb (3) pe
+ /NH  20 def fnt
+ 151 802 pb (4) pe
+ /NH  20 def fnt
+ 151 983 pb (5) pe
+ /NH  20 def fnt
+ 151 1108 pb (6) pe
+ /NH  24 def fnt
+ 416 139 pb (A) pe
+ /NH  24 def fnt
+ 697 302 pb (F) pe
+ 
+ end
+ showpage
+%%Trailer

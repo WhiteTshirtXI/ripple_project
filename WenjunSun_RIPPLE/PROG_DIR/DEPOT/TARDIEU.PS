@@ -1,0 +1,99 @@
+%!PS-Adobe-2.0
+%%Creator: Wenjun Sun
+%%Title: Ripple pattern
+%%Pages: 1
+%%BoundingBox: 0 0 612 792
+%%EndComments
+%-------------Variables and procedures------------
+/i {72 mul} def
+/width 8.5 i def
+/height 11 i def
+/LM -1.5 i def
+/center {width 2 div height 2 div translate} def
+/getHel {/Helvetica-Bold findfont 15 scalefont setfont} def
+/getCou {/Courier findfont 12 scalefont setfont} def
+/getSym {/Symbol findfont 12 scalefont setfont} def
+/newline{currentpoint 14 sub exch pop LM exch moveto} def
+/label {/subscript exch def
+ currentpoint moveto ( q) show
+ currentpoint 4 sub moveto subscript show} def
+/peak 
+ {/gs exch def /y exch def /x exch def
+ x y 7 360 0 arcn
+ closepath gs setgray fill} def
+%------------End variables and procedures---------
+%%EndProlog
+%%Page: 1 1
+%------------Begin program------------------------
+center
+
+getHel
+-2 i 0 i moveto
+2 i 0 i lineto
+(x) label
+0 i -1 i moveto
+0 i 4.5 i lineto
+(z) label
+1 setlinewidth
+stroke
+
+gsave
+-0.366 i 2.533 i 0.768 peak
+0.000 i 2.400 i 0.855 peak
+-0.732 i 2.066 i 0.748 peak
+-0.366 i 1.933 i 0.332 peak
+0.000 i 1.800 i 0.918 peak
+0.366 i 1.667 i 0.763 peak
+0.732 i 1.534 i 0.827 peak
+-0.732 i 1.466 i 0.000 peak
+-0.366 i 1.333 i 0.000 peak
+0.000 i 1.200 i 0.000 peak
+0.366 i 1.067 i 0.082 peak
+0.732 i 0.934 i 0.880 peak
+-0.732 i 0.866 i 0.962 peak
+-0.366 i 0.733 i 0.748 peak
+0.000 i 0.600 i 0.000 peak
+0.366 i 0.467 i 0.924 peak
+0.732 i 0.334 i 0.977 peak
+0.366 i -0.133 i 0.924 peak
+0.732 i -0.266 i 0.974 peak
+0.732 i -0.266 i 0.974 peak
+grestore
+
+1.097 i -0.399 i 3 sub moveto (0) show
+1.097 i 0.201 i 3 sub moveto (1) show
+1.097 i 0.801 i 3 sub moveto (2) show
+1.097 i 1.401 i 3 sub moveto (3) show
+1.097 i 2.001 i 3 sub moveto (4) show
+1.463 i 0.667 i 3 sub moveto (h) show
+
+-0.732 i 7 sub 2.966 i moveto (-2) show
+-0.366 i 7 sub 2.833 i moveto (-1) show
+0.000 i 7 sub 2.700 i moveto (0) show
+0.366 i 7 sub 2.567 i moveto (1) show
+0.732 i 7 sub 2.434 i moveto (2) show
+-0.366 i 3.133 i moveto (k) show
+
+newpath
+0.000 i 0.000 i moveto
+0.000 i 0.600 i lineto
+0.366 i 0.467 i lineto
+0.366 i -0.133 i lineto
+closepath 2 setlinewidth stroke
+
+newpath
+-0.820 i -2.250 i moveto
+-0.456 i -1.250 i lineto
+1.184 i -1.250 i lineto
+0.820 i -2.250 i lineto
+closepath 2 setlinewidth stroke
+
+LM -3.5 i moveto
+getCou (d = 52A, ) show
+getSym (l) show getCou ( = 85.3A, ) show
+getSym (g) show getCou ( = 70 deg) show
+newline
+((Tardieu_73 DLPC 23%_water -7C)) show
+
+showpage
+%%Trailer

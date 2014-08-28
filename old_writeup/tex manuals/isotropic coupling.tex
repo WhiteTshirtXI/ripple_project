@@ -1,0 +1,237 @@
+\documentclass[letterpaper,12pt]{article}
+\author{Kiyo Akabori}
+\title{Pore nucleation due to a mixture of positive and negative proteins}
+%-------------------------------------Package------------------------------------------------
+
+\usepackage[dvips]{graphicx}
+\usepackage{subfigure}
+\usepackage{graphicx,color}
+\usepackage{wrapfig}
+\usepackage{color}
+\usepackage[centertags]{amsmath}
+\usepackage{mathrsfs}
+\usepackage{amsmath,amssymb}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{newlfont}
+\usepackage{epstopdf}
+\usepackage{bm}
+%-------------------------------------definition-----------------------------------------------
+
+\setlength{\oddsidemargin}{0cm} \setlength{\topmargin}{0cm}
+\setlength{\textheight}{22cm} \setlength{\textwidth}{16cm}
+\newtheorem{defn}{Definição}[section]
+\newtheorem{theo}{Teorema}[section]
+\newtheorem{corol}{Corolário}[theo]
+\newtheorem{lem}{Lema}[section]
+
+%-----------------------------------------------------------------------------------------------
+
+\begin{document}
+
+\section{free energy with isotropic couplings}
+A coupling between protein and membrane is described by
+\begin{equation}
+	\frac{E(\mathbf{r},\theta)}{k_BT}=\frac{\lambda_L}{2}(\xi_1\cos^2\theta+\xi_2\sin^2\theta-1)^2+\lambda_X[(\xi_1-\xi_2)\cos\theta\sin\theta-\xi_X]^2+\frac{\lambda_T}{2}(\xi_1\sin^2\theta+\xi_2\cos^2\theta-\xi_T)^2.
+\end{equation}
+The free energy in grand canonical ensemble (grand potential) is given by
+\begin{equation}
+	\frac{F}{k_BT}=\int dA\left[\frac{\kappa}{2}(H-H_0)^2+\bar{\kappa}K-\sum_i\frac{z_i}{A_0}\int d\theta\left(e^{-\frac{E_i}{k_BT}}-e^{-\frac{E_i^F}{k_BT}}\right)\right],
+	\label{eq:GeneralFreeEnergy}
+\end{equation}
+where the sum is over different species of proteins.
+
+For the following discussion, we assume that the membrane has no spontaneous curvature. For simplicity, we focus on the isotropic coupling case, that is, $\lambda_L=\lambda_X=\lambda_T=\lambda$. This gives the molecular energy
+\begin{align}
+\frac{E}{k_BT}&=\frac{\lambda}{2}(\xi_1\cos^2\theta+\xi_2\sin^2\theta-1)^2+\lambda[(\xi_1-\xi_2)\cos\theta\sin\theta-\xi_X]^2+\frac{\lambda}{2}(\xi_1\sin^2\theta+\xi_2\cos^2\theta-\xi_T)^2\nonumber\\
+&=\frac{\lambda}{c_L^2}(H-H_m)^2+\frac{\lambda}{c_L^2}(D^2-2D_mD\cos2\theta+D_m^2),
+\end{align}
+and the flat energy
+\begin{equation}
+	\frac{E^F}{k_BT}=\frac{\lambda}{c_L^2}\left( H_m^2+D_m^2\right),
+\end{equation}
+where $H_m/c_L=1/2(1+\xi_T)$, $D_m/c_L=1/2(1-\xi_T)$, $H/c_L=1/2(\xi_1+\xi_2)$, and $D/c_L=1/2(\xi_1-\xi_2)$. Since $\int_0^{2\pi}d\theta e^{\pm x \cos2\theta}=2\pi I_0(x)$, where $I_0(x)$ is the Bessel function of the first kind, we get
+\begin{equation}
+	\int_0^{2\pi}d\theta e^{-\frac{E}{k_BT}}=2\pi e^{-\lambda\left[(H-H_m)^2+D^2+D_m^2\right]/c_L^2} I_0(2\lambda D_m D/c_L^2).
+	\label{eq:bessel}
+\end{equation}
+Noting that $I_0(x)\approx 1+x^2/4$ for small $x$, the expansion in small curvatures (small $H$ and $D$) yields
+\begin{equation}
+	\int_0^{2\pi}d\theta \left(e^{-\frac{E}{k_BT}}-e^{-\frac{E^F}{k_BT}}\right) \approx \frac{J}{c_L^2}\left[2 H_m H +(\frac{2\lambda H_m^2}{c_L^2}-1)H^2+(\frac{\lambda D_m^2}{c_L^2}-1)D^2\right],
+\end{equation}
+where $J=2\pi \lambda e^{-\lambda(H_m^2+D_m^2)/c_L^2}$. 
+
+Let us consider a system consisting of a single membrane, positively curved proteins with $H_m/c_L=1, D_m/c_L=0$ and negatively curved ones with $H_m/c_L=0, D_m/c_L=1$, both of which bind only to one side of the bilayer. Denote the energy of positive and negative proteins by $E_p$ and $E_n$ respectively. Then, the total free energy is given by eq. (\ref{eq:GeneralFreeEnergy}) with $i=n, p$. Expanding in small curvatures, the free energy density (per area) for a mixture of such proteins becomes
+\begin{equation}
+	f  \approx -2Jz_p\frac{H}{c_L}+\left[\frac{\kappa}{2}-2(\lambda-1)Jz_p-(\lambda-2)Jz_n\right]\frac{H^2}{c_L^2}+\left[\bar{\kappa}-Jz_p+(\lambda-1)Jz_n\right]\frac{K}{c_L^2}
+	\label{eq:FreeExpansion}
+\end{equation}
+where $J=2\pi \lambda e^{-\lambda}$. When $z_p=z_n=z$, added effects to rigidities and spontaneous curvature are
+\begin{align}
+	&\Delta\kappa=-2J\left[(\lambda-2)z_n+2(\lambda-1)z_p\right] \label{eq:DeltaKappa} \\
+	&\Delta\bar{\kappa}=J\left[(\lambda-1)z_n-z_p\right] \label{eq:DeltaKappaBar}\\
+	&\Delta c_0=\frac{2Jz_p}{\kappa-2J\left[(\lambda-2)z_n+2(\lambda-1)z_p\right]}.
+\end{align}
+
+We can study local geometry by focusing on the free energy density 
+\begin{equation}
+\frac{f}{\kappa}=\frac{1}{2} H^2-2\pi \frac{z_p}{\kappa A_0} e^{-\lambda((H-1)^2+D^2)}-2\pi \frac{z_n}{\kappa A_0} e^{-\lambda(H^2+D^2+1)}I_0(2\lambda D),
+\end{equation}
+where the Gaussian curvature term is excluded because it is a topological term and not important for local geometry discussion.
+Figure \ref{fig:PositiveNegative}, \ref{fig:BothFugacity}, and \ref{fig:FixedFugacity} are typical phase diagrams of the combinations of curvatures $\xi_1$ and $\xi_2$ that minimize the free energy \textit{locally}. Local phases that appear in these diagrams are a flat with $\xi_1=\xi_2=0$, spherical with $\xi_1=\xi_2\leq 1$, saddle with $\xi_1=-\xi_2 \leq 1$, and $K\leq 0$ phase. Figure \ref{fig:PositiveNegative} is phase diagrams when either kind of proteins is present. When only positive proteins are present, we find the membrane to be either flat or spherical. Although the proteins try to impose spherical geometry, the membrane is resistent against being spherically curved, which costs more bending energy. When only negative proteins are present, we find the flat and saddle phases. The transition from the flat to saddle phase lies along $\lambda=1$. Figure \ref{fig:BothFugacity} shows phase diagrams when $z_p=z_n$ and $z_p \approx z_n$. In $K \leq 0$ phase appearing here, we find that $\xi_2$ does not deviate very much from $-\xi_1$. Although $z_p=z_n$ in the first diagram, the spherical phase becomes predominant ove the saddle phase as the fugacities are increased. This is because the former is isotropic and has higher orientational entropy. Figure \ref{fig:FixedFugacity} shows phase diagrams while either fugacity is fixed.
+
+%%%%%%%%% Local Phase Diagrams %%%%%%%%
+%mathematica note, mixed_local phase diagrams.nb
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=0.45\textwidth]{local1}
+		\includegraphics[width=0.45\textwidth]{local2}
+		\caption{Left: Local phase diagram for positvely curved proteins binding to one leaf of the bilayer. The solid line indicates a second order transition between the spherical phase (green) and the flat phase (gray). Right: Local phase diagram for negatively curved proteins binding to one leaflet. The solid line indicates a second order transition between the flat phase (gray) and the minimal surface phase (red), while the dashed line indicates a first order transition.}
+		\label{fig:PositiveNegative}
+	\end{center}
+\end{figure}
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=0.40\textwidth]{local3}
+		\includegraphics[width=0.40\textwidth]{local4}
+		\includegraphics[width=0.40\textwidth]{local5}
+		\caption{Local phase diagrams for positve and negative proteins mixed together with(i) $z_p=z_n=z$, (ii) $z_p/\kappa A_0 c_L^2=z/\kappa A_0 c_L^2+0.01$ and $z_n=z$, and (iii) $z_p=z$ and $z_n/\kappa A_0 c_L^2=z/\kappa A_0 c_L^2+0.01$. $K\leq 0$ phase is shown as the purple region. Solid line indicates continous second order transition. Dashed line indicates discontinous first order transition.}
+		\label{fig:BothFugacity}
+	\end{center}
+\end{figure}
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=0.45\textwidth]{local6}
+		\includegraphics[width=0.45\textwidth]{local7}
+		\caption{The left plot: $z_p=z$ and $z_n/\kappa A_0 c_L^2=0.05$. The right plot: $z_p/\kappa A_0 c_L^2=0.05$ and $z_n=z$. The transition orders are the same as in Figure 1.}
+		\label{fig:FixedFugacity}
+	\end{center}
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%
+
+%------------------------------pore phase----------------------------------
+\newpage
+\section{pore}
+Here, we study nucleation and annihilation of pores due to proteins having different intrinsic shapes. We assume that the pore is hydrophilic with a semitoroidally shaped cap. A parametrization of the semitoroidal cap is given by $x=t \cos \phi (r_0/t+1+\cos \alpha)$, $y=t\sin \phi(r_0/t+1+\cos \alpha)$, and $z=t\sin \alpha$ with $0 \leq \phi \leq 2\pi$ and $\pi/2 \leq \alpha \leq 3\pi/2$, where $2t$ is the thickness of bilayer. The principal curvatures of the cap are then 
+\begin{align}
+	c_1&=\frac{1}{t}\nonumber\\
+	c_2&=\frac{\cos \alpha}{r_0+t(1+\cos \alpha)}
+\end{align}
+ The area element is $dA_T=t\left[r_0+t(1+\cos \alpha)\right] d\phi \, d\alpha$. When a pore is nucleated, the energy associated with surface tension is lowered by $\sigma\pi(r+t)^2$ due to reduction of the average membrane area, where $\sigma$ is the surface tension. In contrast, the enegy associated with line tension due to bending and packing of lipids increases the total free energy by $\Gamma2\pi(r+t)$, where $\Gamma$ is the line tension. Then, the total free energy of the pore phase is given by
+\begin{equation}
+\frac{F}{k_BT}=\Gamma2\pi(r+t)-\sigma\pi(r+t)^2-\sum_i\frac{z_i}{A_0}\int dA_T \int d\theta\left(e^{-\frac{E_i}{k_BT}}-e^{-\frac{E_i^F}{k_BT}}\right).
+\label{eq:PoreEnergy}
+\end{equation}
+Note that when $\lambda=0$, we get back the classical nucleation theory with the pore radius given by $r+t$. 
+
+Our system consists of a single membrane with its area equal to $A_p$ and two different kinds of proteins. One kind is positively curved proteins with $H_m=H_{mp}$ and $D_m=D_{mp}$. The other kind is negatively curved proteins with $H_m=H_{mn}$ and $D_m=D_{mn}$.
+
+First, we explore pore phases due to proteins having instrinsic curvatures equal in magnitude to the thickness of the membrane. Namely, we take $t c_L=1$, $H_{mp}/c_L=1$, $D_{mp}/c_L=0$, and $H_{mn}/c_L=0$, $D_{mn}/c_L=1$. Figure {\ref{fig:DensityPlot} is the density plots of these proteins at different values of the parameters. One sees that positive proteins always prefer to sit at top($\alpha=\pi/2$) and bottom ($\alpha=3\pi/2$) of the rim whereas negative proteins generally prefer the middle of the rim ($\alpha=\pi/2$). Whether proteins prefer pores to flat membrane depends on both $\lambda$ and radius, $r$. 
+
+Figure \ref{fig:NegativeOnly} and \ref{fig:AddedPositive1} are typical phase diagrams with the proteins. We generically find four different phases of pores: no pores, metastable, stable, and unstable pores. No pore phase is when the free energy looks like the classical nucleation theory with very large energy barrier between zero radius and infinite radius. The stable pore phase is when there is a free energy local minimum whose value is less than zero. If this minimum is above zero, then pores are defined to be in the metastable phase. In some case, the free energy barrier between a local minimum and infinite radius disappers, that is, the energy minimum becomes unstable. Then, we define it to be the unstable pore phase. 
+
+Figure \ref{fig:NegativeOnly} shows that negative proteins stablize pores for $\lambda>2$. If $\lambda<1$, no pores are observed. This can be inferred from eq. (\ref{eq:DeltaKappa}) and eq. (\ref{eq:DeltaKappaBar}); for $\lambda<1$, renormalization of $\bar{\kappa}$ is negative, meaning that saddle is unfavored. For $1<\lambda<2$, $\Delta\bar{\kappa}>0$ but $\Delta\kappa>0$; hence, saddle like geometry is only partially favored unless $H=0$. Note that the stable radius is always equal or close to 1 while the metastable radius is smaller and its value depends on $\lambda$ and fugacity. Negative proteins prefer pores with radius equal to 1. However, line tension term prefers zero radius. There is a competition between these behaviors; thus, the growth in pore size in the metasable phase as fugacity is increased.
+
+As seen from Figure \ref{fig:AddedPositive1}, the effect of adding the positive proteins is to unstabilize pores. Figure \ref{fig:AddedPositive1} is a phase diagram at fixed $z_n$ with variable $z_p$ and $\lambda$. One observes the same effect of postive proteins at fixed $\lambda$ with variable $z_n$ and $z_p$. This behavior can be understood from the density plots. Positive proteins prefer to sit at locations with $c_2=0$, which occurs at $\alpha=\pi/2$ and $3\pi/2$, because these places minimize the curvature mismatch (recall that $c_2 \leq 0$ for all $\alpha$). The best way to minimize this curvature mismatch is to create pores with infinitely large radius, or $c_2=0$ for all $\alpha$. Thus, addition of positve proteins lead to unstability of pores.
+
+%%%%%%%%%% Density Plot %%%%%%%%%%
+%mathematica note, mixed_pore 1.nb
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=0.40\textwidth]{density1}
+		\includegraphics[width=0.40\textwidth]{density2}
+		\includegraphics[width=0.40\textwidth]{density3}
+		\includegraphics[width=0.40\textwidth]{density4}
+		\caption{Density plots of (a) negative and (b) positive proteins on the rim as a function of $\alpha$. Density on flat membrane is also shown as line (c). Depending on the magnitude of $\lambda$ and pore radius, we find different behaviors of proteins. Proteins' curvatures are $\xi_L=1$ and $\xi_T=-1$ for negative proteins and $\xi_L=1$ and $\xi_T=1$ for positive proteins. Actual density is obtained by multiplying these plots by scaled fugacity $z/\theta_0A_0$.}
+		\label{fig:DensityPlot}
+	\end{center}
+\end{figure}
+%%%%%%%%% negative protein only %%%%%%%%%%
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=0.75\textwidth]{minimal1}
+		\caption{negative proteins only. Each phase transition is defined in the text.}
+		\label{fig:NegativeOnly}
+	\end{center}
+\end{figure}
+%%%%%%%%% addition of positive proteins at fixed negative proteins fugacity %%%%%%%%%%
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=0.75\textwidth]{minimal2}
+		\caption{addition of positive proteins at fixed fugacity of negative proteins at $z_n=15$. At very high fugacity of positive proteins, the stable phase turns into the unstable phase. This phase diagram shows that addition of positive proteins in this case does not annihilate pores.}
+		\label{fig:AddedPositive1}
+	\end{center}
+\end{figure}
+%%%%%%%% equal fugacity for positive and negative proteins %%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------negative proteins with non minimal shape-----------------------
+\newpage
+\section{negative proteins with non minimal shape}
+In this section, we study pore phase diagrams due to not minimal negative proteins having $\xi_{L}=1$ and $-1\leq \xi_{T}\leq 0$. This time, we use eq.(\ref{eq:PoreEnergy}) with $i=n$ and $t c_L=1$. At fixed $\lambda$ and $\xi_T$, we generically find four phases of pores as a function of the fugacity: no pore, metastable pore, stable pore, and unstable pore. 
+
+Figure \ref{fig:DefineTransition} shows an example of how the free energy defined by eq. (\ref{eq:PoreEnergy}) changes as a function of fugacity, $z_n=z$. For small fugacity, line tension is too large for a pore to form. As the fugacity is increased, an energy minimum appears at small radius. However, this minimum is only metastable because its minimum does not reach zero. Note that this radius is larger than 1 for not minimal negative proteins since a larger pore has a smaller curvature along the $\phi$ directon of its rim: therefore, a better curvature match. Along the other direction ($\alpha$ direction), the curvature of the torus is equal to one of the intrinsic curvatures. By increasing the fugacity further, this energy minimum becomes stable in a sense that the energy of the pore phase is lower than the flat phase. However, note that there is still an energy barrier at very small radius, whose magnitude at stable phase is lower than that at metastable phase. Since the protein energy term acts effectively as line tension, at large enough fugacity it will cancel the line tension of the membrane and the surface tension term unstablizes the pore phase.
+
+Figure \ref{fig:NegativePore} is a typical phase diagram as a function of fugacity and intrinsic curvature of negative proteins. It shows that you can not go from no pore phase to unstable phase without going through metastable phase.
+
+%%%%%%%%%%%%Define Transition%%%%%%%%%%%%%
+%mathematica note, mixed_pore 2.nb
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=0.45\textwidth]{DefineTransition1}
+		\includegraphics[width=0.45\textwidth]{DefineTransition2}
+		\includegraphics[width=0.45\textwidth]{DefineTransition3}
+		\caption{The pore free energy as a function of the radius and fugacity at $\xi_{T}=-0.7$ at $\lambda=4$. (a) $z_n=2.05$, the transition from no pore to meta stable pore when an energy minimum appears, (b) $z_n=4.715$, from meta stable to stable pore when the minimum reaches zero energy, and (c) $z_n=8.973$, from stable to unstable pore when the minimum disappears.}
+		\label{fig:DefineTransition}
+	\end{center}
+\end{figure}
+%%%%%%%%%%%%Negative Pore%%%%%%%%%%%%%
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=0.75\textwidth]{NonMinimal1}
+		\caption{Pore phase diagram as a function of $\xi_T$ vs. $z_n$ in the absence of positive proteins at $\lambda=4$ and $t=1$. As explained in the text, at low fugacity there are no pores whereas at large fugacity pores are unstable. Also note that stable pore phase does not exist for $\xi_T$ approximately greater than -0.4.}
+		\label{fig:NegativePore}
+	\end{center}
+\end{figure}
+%%%%%%%%%%%energy barrier table%%%%%%%%%%%%
+\begin{table}[htbp]
+	\caption{Energy barrier (in $k_BT$) at radius, $r$ as a function of $c_{T}$. $r_0$ is the radius of \textit{stable} pores. $z$ column is the critical fugacity at which the transitions take place.}
+	\centering
+	\begin{tabular}{c c c c c}
+	\hline\hline
+	$\xi_{T}$ & $r c_L$ & barrier & $r_0 c_L$ & $z_n$\\
+	\hline
+	-1 & 0.2 & 26 & 1 &6.45\\
+	-0.9 & 0.25 & 28 & 1.15 & 5.77\\
+	-0.8 & 0.3 & 30 &1.3 & 5.2\\
+	-0.6 & 0.4 & 36 & 2 & 4.27\\
+	-0.3 & 0.7 & 52 & NA & 2.74\\
+	\hline
+	\end{tabular}
+\end{table}
+%%%%%%%%%%%%%%%
+
+%---------------------- Addition of positive proteins with curvatures less than 1-----------------------
+\newpage
+What happens to pore phases if we add positive proteins with $\xi_{Lp}=c_{Lp}/c_{Ln}<1$ and $\xi_{Tp}=c_{Tp}/c_{Ln}<1$? Figure \ref{fig:AddedPositive2} is a typical phase diagram when positive isotropic proteins with curvature not equal to $t^{-1}$ are added to not minimal negative proteins. As seen from the figure, addition of positive proteins can result in annihilation of pores. It is also seen that one has to go through metastable phase to annihilate stable and unstable pores. The behavior of positive proteins here is different from the behavior of positive ones with $\xi_{Lp}=\xi_{Tp}=1$. There, addition of proteins do not annihilate pores. This difference is due to curvature mismatch. When a curvature mismatch occurs, the protein coupling energy has a weaker effect of lowering the total free energy; then, the line tension from the membrane becomes predominant, resulting in high total free energy.
+%%%%%%%%%%%%Added Positive Proteins%%%%%%%%%%%%%
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=0.45\textwidth]{NonMinimal2}
+		\caption{(incorrect PlotLabel) Phase diagram for a mixture of non-minimal negative proteins and positive proteins at $\lambda=4$ and $t=1$. Negative proteins have $\xi_{Ln}=1$ and $\xi_{Tn}=-0.7$. Positive proteins have $\xi_{Lp}=\xi_{Tp}=0.5$.}
+		\label{fig:AddedPositive2}
+	\end{center}	
+\end{figure}
+\begin{figure}[htbp]
+	\begin{center}
+		\includegraphics[width=0.45\textwidth]{NonMinimal3}
+		\caption{Phase diagram for a mixture of minimal negative proteins and positive proteins at $\lambda=4$ and $t=1$. Negative proteins have $\xi_{Ln}=1$ and $\xi_{Tn}=-1$. Positive proteins have $\xi_{Lp}=\xi_{Tp}=0.5$.}
+		\label{fig:AddedPositive3}
+	\end{center}	
+\end{figure}
+%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\end{document}

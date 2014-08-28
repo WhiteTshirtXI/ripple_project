@@ -1,0 +1,214 @@
+\chapter{Pleated vs. parallel chain packings in gel phase bilayers}
+
+\section{Introduction}
+
+In \cite{Tu96}, Tu et al. reported their Molecular Dynamics (MD) 
+simulation results 
+of gel phase DPPC bilayers. For the in-plane structure, despite considerable
+disorder and defects, their results agree with ours \cite{Sun94} in that within
+one monolayer, the average chain packing is basically 
+orthorhombic (distorted hexagonal), with
+chains tilting mostly towards nearest neighbors, and the tilt angle is about
+33$^{\circ}$ (comparable to ours of 31.6$^{\circ}$). Their simulation 
+also yielded similar offsets of chains between the two opposing monolayers.
+
+Prior to publication, Tu et al. thought that all their results were in good
+agreement with ours. We recognized, however, that there were disagreements.
+The first disagreement is that the width of the (11) peak in their powder
+scattering intensity is about twice as broad as our experimental
+data; the second disagreement is that there are five diffraction peaks
+in their oriented q-space pattern, while there are only three
+observed experimentally; further examination showed the third
+disagreement: in their simulation, the chains from the two monolayers 
+are not parallel, as in our model, but pleat toward each other. 
+They first thought that this pleated structure was not the cause of the
+first two disagreements and they argued that it was a secondary chain 
+packing structure that gave rise to those disagreements. But as we
+looked carefully at their results, we didn't observe any secondary
+structures. It is now agreed that the pleated structure was the cause 
+of the disagreements. This appendix describes the argument 
+I developed to demonstrate this. 
+
+In the following sections, a simple but general model is worked out
+to include both the parallel and the pleated chain packing structures.
+It will be shown that the the pleated structure gives qualitatively
+different scattering patterns from the parallel structure and the
+pleated structure is indeed the cause of the broadness of the (11)
+peak and the five diffraction peaks in Tu et al.'s simulation results.
+
+\section{Theory}
+
+In our simplified model, I consider only hydrocarbon chains, and assume 
+that the chains are long, cylindrical rods (i.e. all-trans conformation), 
+and are packed in an ideal 2-D orthorhombic lattice within the membrane
+plane. Also the tilt angle is fixed to Tu's 33$^{\circ}$ and the tilting 
+direction is relative to the long side of the orthorhombic unit cell (see
+the angle $\sigma$ in Fig.\ref{chain}). The offsets between
+the two monolayers are denoted $\Delta x0$ and $\Delta y0$ (not shown
+in Fig.\ref{chain}), and it will be shown that small offsets play a rather 
+minor role in the overall scattering.
+
+\begin{figure}
+\centerline {\psfig{figure=appendix_dir/pleat_klein.eps,width=4in}}
+\caption{The unit cell used in this model. It shows the midplane projections
+of the two opposing monolayers. Solid line arrow is the chain
+tilting direction in the upper monolayer, and the dashed-line arrow is
+that for the lower monolayer. Angle $\sigma$ is the angle made by the
+tilting directions to $\vec{a}$. This figure shows the special case in which
+the chains in both monolayers are tilted towards nearest neighbors. The chains
+in opposing monolayers are pleated against each other.
+\label{chain}}
+\end{figure}
+
+Given a scattering vector $\vec{q}$, the upper monolayer
+gives a form factor $F_{u}(\vec{q})$ and the lower monolayer gives
+$F_{l}(\vec{q})$. If the two monolayers scatter incoherently, the scattering
+intensity will be
+
+\begin{eqnarray}
+\label{inco}
+I(\vec{q}) = |F_{u}(\vec{q})|^2 + |F_{l}(\vec{q})|^2.
+\end{eqnarray}
+If the two monolayers scatter coherently (As in both ours and Tu's
+results), the overall form factor is
+
+\begin{eqnarray}
+\label{form}
+F(\vec{q}) = F_{u}(\vec{q}) + F_{l}(\vec{q}),
+\end{eqnarray}
+and the total scattering intensity is
+
+\begin{eqnarray}
+\label{inten}
+I(\vec{q}) && = |F(\vec{q})|^2 \nonumber \\
+&& = |F_{u}(\vec{q})|^2 + |F_{l}(\vec{q})|^2 + F^{*}_{u}(\vec{q}) F_{l}(\vec{q}) + F_{u}(\vec{q}) F^{*}_{l}(\vec{q}) \nonumber \\
+&& = |F_{u}(\vec{q})|^2 + |F_{l}(\vec{q})|^2 + 2 Re[F^{*}_{u}(\vec{q}) F_{l}(\vec{q})].
+\end{eqnarray}
+The first two terms are the scatterings from the two monolayers.
+The third term in the final equation is the interference between the two 
+monolayers. It plays an important role in fine-tuning the diffraction 
+profiles. The effects of the offsets will show up in this term.
+
+Now let us proceed into the analytical calculation of the form factors.
+It could be shown that the form factor for the upper monolayer is
+
+\begin{eqnarray}
+\label{formu}
+F_{u}(\vec{q}) = \left\{ 
+	\begin{array}{ll}
+	0	& \mbox{if M+N are odd,} \\
+	\frac{4}{\gamma}\ e^{i \frac{\gamma L}{2}}\ \sin(\frac{\gamma L}{2}) & \mbox{if M+N are even,}
+	\end{array}
+\right.
+\end{eqnarray}
+where: \( \gamma = (q_{x} \cos{\sigma} + q_{y} \sin{\sigma}) \tan{\theta_{t}} + q_{z} = (M \frac{2\pi}{a}\ \cos{\sigma} + N \frac{2\pi}{b}\ \sin{\sigma})\ \tan{\theta_{t}} + q_{z} \) ,\( L = l \cos{\theta_{t}}
+\), $l$ is the chain length of one lipid molecule (20 \AA\ for DPPC), $\theta_{t}$
+is the tilt angle, and (M,N) are the indices for scattering peaks. We are 
+interested in the (2,0) and (1,1) peaks.
+
+Similar to the calculation of the form factor of the upper monolayer, the form 
+factor for the lower monolayer is
+
+\begin{eqnarray}
+\label{forml}
+F_{l}(\vec{q}) = \left\{
+	\begin{array}{ll}
+		0       & \mbox{if M+N are odd,} \\
+		e^{i \phi}\ \frac{4}{\kappa}\ e^{i \frac{\kappa L}{2}}\ \sin(\frac{\kappa L}{2}) & \mbox{if M+N are even,}
+	\end{array}
+\right.
+\end{eqnarray}
+where  \( \kappa = (q_{x}\cos{\sigma} - q_{y}\sin{\sigma}) \tan{\theta_{t}} 
+- q_{z} = (M \frac{2 \pi}{a}\cos{\sigma} - N \frac{2 \pi}{b}\sin{\sigma})\ 
+\tan{\theta_{t}} - q_{z} \), and \( \phi = q_{x}\ \Delta x0 + q_{y} \Delta 
+y0 = M \frac{2 \pi}{a}\ \Delta x0 + N \frac{2 \pi}{b}\ \Delta y0 \). 
+
+Combining Eqns.\ref{inten}, \ref{formu}, \ref{forml}, the overall scattering
+intensity (for even M+N) of the bilayer will be
+
+\begin{eqnarray}
+\label{intenfi}
+I(\vec{q}) = && \frac{16}{\gamma^2}\ \sin^{2}(\frac{1}{2} \gamma L) \nonumber \\
+	&& + \frac{16}{\kappa^2}\ \sin^{2}(\frac{1}{2} \kappa L) \nonumber \\
+	&& + \frac{32}{\gamma \kappa}\ \sin(\frac{1}{2} \gamma L)\ 
+	\sin(\frac{1}{2} \kappa L)\ \cos[\frac{1}{2}(\kappa-\gamma) L + \phi].
+\end{eqnarray}
+In this simplified model, each monolayer's contribution is a square--sinc term,
+with the full width inversely proportional to $L/2$, and the interference between
+the two monolayers is the product of two sinc functions, modulated by a factor
+which includes the phase difference of the two monolayers and the offsets. As
+can be seen, the offsets only appear in the interference term.
+
+\section{Results and discussion}
+
+Using Eq.\ref{intenfi}, let us check two special cases: 
+
+\begin{itemize}
+
+\item[(a).] Collinear chains without offsets, $\phi = 0$,
+$\sigma = 90^{\circ}$. Since $\kappa = - \gamma$, the two monolayers
+scatter to the same $q_z$, and their interference is very strong. Eq. 
+\ref{intenfi} gives an enhanced sharp scattering peak along each
+of the Bragg rods we are interested in:
+
+\begin{eqnarray}
+\label{colin}
+I(\vec{q}) = \frac{16}{\gamma^2}\ \sin^{2}(\gamma L),
+\end{eqnarray}
+which is our old result (the $q_{r}$-$q_{z}$ space pattern is shown
+in Fig.\ref{sun}). 
+
+\item[(b).] Pleated chains with no offsets. 
+$\phi = 0$, $\sigma = \tan^{-1}(\frac{b}{a})$ (see Fig. \ref{chain}).
+The q-space pattern is shown in Fig.\ref{klein} (using 
+a=9.52\AA,\ b=4.87\AA,\ $\sigma=27.1^{\circ}$, and $\theta_{t}=33^{\circ}$).
+This picture is surprisingly close to Tu's $q_r$-$q_z$ pattern, meaning 
+our model caught the essential features of their simulation structure. The small
+deviations from their results, e.g., the exact peak positions and intensities,
+could be compensated by considering non-zero offsets, relaxing the orthorhombic
+requirement, and allowing chains to be tilted towards non-nearest neighbor
+directions. 
+
+There are a few points about this pleated result:
+\begin{enumerate}
+\item There are five spots in q-space compared to the parallel case, which 
+has only three. This fact could be understood by noticing that, with chains
+pleated, two opposite monolayers scatter in different $q_z$ directions.
+\item The peak widths along the $q_{z}$ direction are twice as wide as in our 
+parallel case. This could not be compensated by considering any other degrees
+of freedom. The physical mechanism behind this broadening is just the same
+as in the above point, namely, each peak comes from one single monolayer, which
+would not yield an interference-enhanced sharpening as in the parallel
+case.
+\item By using the unit cell in this appendix, the indexings of q-space
+peaks are permuted from Tu's result.
+\item The two extra (20) peaks in Tu's result are from the same 
+structure which gives all other main peaks, not from a separate structure
+as thought by Tu et. al..
+\item Because in this pleated structure, the two monolayers scatter in
+different $q_z$ directions, the offsets could not bring them together,
+simply because $|\kappa|$ does not equal $|\gamma|$. 
+\end{enumerate}
+
+\end{itemize}
+
+\begin{figure}
+\centerline {\psfig{figure=appendix_dir/colli.ps,width=4in}}
+\caption{The $q_r$--$q_z$ pattern for the parallel case. There are only three
+peaks which are twice as sharp as in the pleated--chain case along the $q_z$
+direction. The horizontal axis is the $q_r$ axis and the vertical axis is 
+the $q_z$ axis. The units of both axes are in \AA$^{-1}$.
+\label{sun}}
+\end{figure}
+
+\begin{figure}
+\centerline {\psfig{figure=appendix_dir/md.ps,width=4in}}
+\caption{The $q_r$--$q_z$ pattern for the pleated--chain case corresponding to 
+Tu's MD simulation results.
+The horizontal axis is the $q_r$ axis and the vertical axis is 
+the $q_z$ axis. The units of both axes are in \AA$^{-1}$.
+ Parameter values are derived from Tu's
+$q_r$--$q_z$ pattern. a=9.52\AA,
+\ b=4.87\AA,\ $\sigma= 27.1^{\circ}$, and $\theta_{t}=33^{\circ}$. 
+\label{klein}}
+\end{figure}

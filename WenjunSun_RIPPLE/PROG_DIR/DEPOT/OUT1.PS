@@ -1,0 +1,101 @@
+%!PS-Adobe-2.0
+%%Creator: Wenjun Sun
+%%Title: Ripple pattern
+%%Pages: 1
+%%BoundingBox: 0 0 612 792
+%%EndComments
+%-------------Variables and procedures------------
+/i {72 mul} def
+/width 8.5 i def
+/height 11 i def
+/center {width 2 div height 2 div translate} def
+/getfont {/Helvetica-Bold findfont 15 scalefont setfont} def
+/label {/subscript exch def
+ currentpoint moveto ( q) show
+ currentpoint 4 sub moveto subscript show} def
+/peak 
+	 {/gs exch def /y exch def /x exch def
+	 x y 7 360 0 arcn
+	  closepath gs setgray fill} def
+%------------End variables and procedures---------
+%%EndProlog
+%%Page: 1 1
+%------------Begin program------------------------
+getfont
+center
+
+% Draw axes
+-2 i 0 i moveto
+2 i 0 i lineto
+(x) label
+0 i -1 i moveto
+0 i 4.5 i lineto
+(z) label
+1 setlinewidth
+stroke
+
+% Draw spots
+-0.941667 i 3.450856 i 0.971080 peak
+-0.706250 i 3.488142 i 0.000000 peak
+-0.470833 i 3.525428 i 0.254400 peak
+-0.235417 i 3.562714 i 0.864880 peak
+0.000000 i 3.600000 i 0.961280 peak
+0.235417 i 3.637286 i 0.992840 peak
+0.706250 i 3.711858 i 0.995540 peak
+0.941667 i 3.749144 i 0.987720 peak
+-0.941667 i 2.850856 i 0.923720 peak
+-0.706250 i 2.888142 i 0.655400 peak
+-0.470833 i 2.925428 i 0.000000 peak
+-0.235417 i 2.962714 i 0.994740 peak
+0.000000 i 3.000000 i 0.991640 peak
+0.235417 i 3.037286 i 0.975280 peak
+0.470833 i 3.074572 i 0.967580 peak
+0.706250 i 3.111858 i 0.970220 peak
+0.941667 i 3.149144 i 0.980320 peak
+-0.941667 i 2.250856 i 0.996360 peak
+-0.706250 i 2.288142 i 0.996080 peak
+-0.470833 i 2.325428 i 0.000000 peak
+-0.235417 i 2.362714 i 0.538200 peak
+0.000000 i 2.400000 i 0.856300 peak
+0.235417 i 2.437286 i 0.935960 peak
+0.470833 i 2.474572 i 0.976500 peak
+0.706250 i 2.511858 i 0.996480 peak
+0.941667 i 2.549144 i 0.999040 peak
+-0.941667 i 1.650856 i 0.985360 peak
+-0.706250 i 1.688142 i 0.927600 peak
+-0.470833 i 1.725428 i 0.430600 peak
+-0.235417 i 1.762714 i 0.000000 peak
+0.000000 i 1.800000 i 0.952480 peak
+0.470833 i 1.874572 i 0.984780 peak
+0.706250 i 1.911858 i 0.956660 peak
+0.941667 i 1.949144 i 0.928060 peak
+-0.941667 i 1.050856 i 0.991200 peak
+-0.706250 i 1.088142 i 0.989140 peak
+-0.470833 i 1.125428 i 0.996280 peak
+-0.235417 i 1.162714 i 0.000000 peak
+0.000000 i 1.200000 i 0.731400 peak
+0.235417 i 1.237286 i 0.821060 peak
+0.470833 i 1.274572 i 0.842820 peak
+0.706250 i 1.311858 i 0.858760 peak
+0.941667 i 1.349144 i 0.877680 peak
+-0.941667 i 0.450856 i 0.999920 peak
+-0.706250 i 0.488142 i 0.996780 peak
+-0.470833 i 0.525428 i 0.964720 peak
+-0.235417 i 0.562714 i 0.319000 peak
+0.000000 i 0.600000 i 0.000000 peak
+0.235417 i 0.637286 i 0.708600 peak
+0.470833 i 0.674572 i 0.866240 peak
+0.706250 i 0.711858 i 0.923340 peak
+0.941667 i 0.749144 i 0.954520 peak
+-0.941667 i -0.149144 i 0.999260 peak
+-0.706250 i -0.111858 i 0.998680 peak
+-0.470833 i -0.074572 i 0.998100 peak
+-0.235417 i -0.037286 i 0.997660 peak
+0.235417 i 0.037286 i 0.997660 peak
+0.470833 i 0.074572 i 0.998100 peak
+0.706250 i 0.111858 i 0.998680 peak
+0.941667 i 0.149144 i 0.999260 peak
+0.941667 i 0.149144 i 0.999260 peak
+
+showpage
+%%Trailer

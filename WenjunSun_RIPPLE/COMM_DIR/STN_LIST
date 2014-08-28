@@ -1,0 +1,115 @@
+		Programs for gel and ripple phase analysis
+
+				Wenjun Sun
+				(3/12/95)
+_______________________________________________________________________
+
+0. All programs on this list are on lipid.phys.cmu.edu.
+_______________________________________________________________________
+
+1. Program to reconstruct 1D electron density profiles from
+the form factors (with phases):
+
+	Where: /usr/user/sundir/long_chain_dir/edp_dir
+	What: edp.c
+	How: 
+		1). Compilation: %cc -O -o edp edp.c -lm
+		2). Usage: %edp
+		    The program will prompt you to input the
+		    name of the form factor file and the name
+	            of the output file which contains the electron
+  		    density profile.
+		3). Formats for input and output files:
+
+			For input form factor file:
+				
+				D (D-spacing)
+				N (Number of form factors)
+				F(1)
+				F(2)
+				.
+				.
+				F(N)
+
+			For output electron density profile, there are two
+			columns:
+
+				z	rho(z)
+
+			One can use some plotting programs to draw the profile.
+_______________________________________________________________________
+
+2. Ripple phase model fitting programs:
+
+	Where: /usr/user/sundir/ripple_dir/prog_dir/model7_dir
+	What: nlsqfit.f --------- model fitting program
+	      form_factor.f -------- calculate as many form factors as
+				     possible once ripple structural
+ 				     parameters are provided.
+	How: 
+		1). Compilation: 
+			For nlsqfit.f,
+
+			%f77 -O -o nlsqfit nlsqfit.f -L/usr/user/dummy -limsl
+		
+			For form_factor.f,
+
+			%f77 -O -o form_factor form_factor.f
+
+		2).Usage: %nlsqfit
+				
+			  %form_factor.
+
+			form_factor program will prompt for inputs of
+			structural parameter values.
+
+		3).Auxiliary files:
+
+		For nlsqfit program:
+			
+		initial.dat ------- Initial values for fitting parameters
+		inten.dat   ------- Indices and intensities of ripple peaks
+		intenfit.pa ------- Model fit values of fitting parameters
+		intenfit.dat------- Model fit intensities of ripple peaks
+
+_______________________________________________________________________
+
+3. Program which generates greyscale 2-D electron density maps for the
+ripple phase:
+
+	Where: /usr/user/sundir/ripple_dir/prog_dir/edp_dir/map_dir
+	What: ripple_map.c
+	How:
+		1). Compilation: %cc -O -o ripple_map ripple_map.c -lm
+		2). Usage: %ripple_map form_factor_data_file output_edm_file
+		3). Formats for input and output files:
+			For input form factor file,
+				
+				d-spacing ripple_wavelength oblique_angle
+				Number_of_form_factors
+				h	k	F(h,k)
+			e.g.
+				57.94   141.7   98.4
+				20
+				1       0       -100.00
+				1       -1      -60.83
+				1       1        26.86
+				1       3        7.61
+				2       -1      -71.22
+				2       0       -39.69
+				2       -2      -15.06
+				2       1        33.91
+				2       2       -22.70
+				2       3        14.16
+				2       4       -7.78
+				3       -1       44.18
+				3       -2       29.33
+				3       0        12.03
+				3       2        10.48
+				3       3       -14.87
+				3       4        9.99
+				4       -2      -39.2
+				4       -1      -23.6
+				4       0       10.3
+
+			Output file is a ready-to-print PS file.

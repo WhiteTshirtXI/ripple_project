@@ -1,0 +1,172 @@
+This is TeX, Version 3.1415 (C version 6.1) (format=lplain 94.12.7)  10 OCT 1995 22:29
+**master
+(master.tex
+LaTeX2e <1994/06/01>
+(title.tex (/usr/local/lib/texmf/tex/latex2e/base/latex209.def
+File: latex209.def 1994/06/01 Standard LaTeX file
+
+Entering LaTeX 2.09 compatibility mode.
+\footheight=\dimen102
+\@maxsep=\dimen103
+\@dblmaxsep=\dimen104
+(/usr/local/lib/texmf/tex/latex2e/base/tracefnt.sty
+Package: tracefnt 1994/05/29 v2.3k Standard LaTeX package (font tracing)
+\tracingfonts=\count82
+LaTeX Info: Redefining \selectfont on input line 113.
+)
+\symbold=\mathgroup4
+\symsans=\mathgroup5
+\symtypewriter=\mathgroup6
+\symitalic=\mathgroup7
+\symsmallcaps=\mathgroup8
+\symslanted=\mathgroup9
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 179.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 180.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 181.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 187.
+LaTeX Info: Redefining \em on input line 197.
+
+(/usr/local/lib/texmf/tex/latex2e/base/latexsym.sty
+Package: latexsym 1994/05/27 v2.1e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup10
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+)
+LaTeX Font Info:    Redeclaring math delimiter \lgroup on input line 262.
+LaTeX Font Info:    Redeclaring math delimiter \rgroup on input line 264.
+LaTeX Font Info:    Redeclaring math delimiter \bracevert on input line 266.
+)
+Compatibility mode: loading revtex.sty rather than revtex.cls.
+
+(/afs/andrew/system/gamma/pmax_ul4/contributed/lib/revtex/revtex.sty
+Filename: revtex.sty, v3.0 <27 October 92>
+(/afs/andrew/system/gamma/pmax_ul4/contributed/lib/revtex/aps.sty
+Filename: aps.sty, v3.0 <28 October 1992>
+REVTeX message: NFSS detected! Assuming NFSS.
+(/afs/andrew/system/gamma/pmax_ul4/contributed/lib/revtex/aps12.sty
+Filename: aps12.sty, v3.0 <2 October 1992>
+)
+\c@part=\count83
+\c@section=\count84
+\c@subsection=\count85
+\c@subsubsection=\count86
+\c@paragraph=\count87
+\c@subparagraph=\count88
+\@indentflag=\count89
+\@eqtoeqnum=\dimen105
+\c@eqletter=\count90
+\c@equation=\count91
+\@testboxa=\box25
+\@testboxb=\box26
+ (/afs/andrew/system/gamma/pmax_ul4/contributed/lib/revtex/prabib.sty
+Filename: prabib.sty, v3.0 <9/14/92>
+\WidestRefLabelThusFar=\dimen106
+)
+\c@figure=\count92
+\c@table=\count93
+\c@tablenote=\count94
+\@Ldec=\dimen107
+\@Rdec=\dimen108
+)) (psfig.sty
+\@unused=\write4
+
+psfig/tex 1.6b
+\ps@stream=\read1
+\p@intvaluex=\dimen109
+\p@intvaluey=\dimen110
+) (master.aux)
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 4.
+LaTeX Font Info:    ... okay on input line 4.
+LaTeX Font Info:    No math setup on input line 17.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 17.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 17.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 17.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 17.
+ (/usr/local/lib/texmf/tex/latex2e/base/Ulasy.fd
+File: Ulasy.fd 1994/05/27 v2.1eLaTeX symbol font definitions
+)
+LaTeX Font Info:    No math setup on input line 17.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 17.
+) (abs.tex)
+[1
+
+] (intro.tex
+LaTeX Font Info:    No math setup on input line 8.
+ [2]) (theory.tex [3] [4] [5] [6] [7]
+LaTeX Font Info:    No math setup on input line 235.
+LaTeX Font Info:    No math setup on input line 245.
+ [8]
+Overfull \hbox (1.34966pt too wide) in alignment at lines 315--321
+ [] [] [] [] 
+ []
+
+[9] [10]) [11] (result.tex [12] [13]) [14] (dis.tex [15] [16] [17]) (ref.tex
+(master.bbl [18] [19] [20])) (figure_table.tex [21]
+psfig: searching lattice_dim.eps for bounding box
+psfig: including lattice_dim.eps 
+[22]
+psfig: searching ripple_profile.eps for bounding box
+psfig: including ripple_profile.eps 
+[23]
+psfig: searching q_profile.ps for bounding box
+psfig: including q_profile.ps 
+[24]
+psfig: searching psi1.ps for bounding box
+psfig: including psi1.ps 
+psfig: searching psi2.ps for bounding box
+psfig: including psi2.ps 
+LaTeX Font Info:    No math setup on input line 63.
+[25]
+psfig: searching wack_data_model3.ps for bounding box
+psfig: including wack_data_model3.ps 
+[26] [27] [28]
+psfig: searching wack_map.ps for bounding box
+psfig: including wack_map.ps 
+psfig: searching model3_map.ps for bounding box
+psfig: including model3_map.ps 
+[29]
+psfig: searching slice_diagram.ps for bounding box
+psfig: including slice_diagram.ps 
+psfig: searching slice1.ps for bounding box
+psfig: including slice1.ps 
+psfig: searching slice2.ps for bounding box
+psfig: including slice2.ps 
+psfig: searching slice4.ps for bounding box
+psfig: including slice4.ps 
+[30]
+psfig: searching gel_rppl.ps for bounding box
+psfig: including gel_rppl.ps 
+[31]
+psfig: searching tardieu_map.ps for bounding box
+psfig: including tardieu_map.ps 
+psfig: searching janiak_map1.ps for bounding box
+psfig: including janiak_map1.ps 
+psfig: searching janiak_map2.ps for bounding box
+psfig: including janiak_map2.ps 
+psfig: searching random_map.ps for bounding box
+psfig: including random_map.ps 
+) [32] (master.aux) ) 
+Here is how much of TeX's memory you used:
+ 939 strings out of 11075
+ 8839 string characters out of 74288
+ 61129 words of memory out of 262141
+ 3613 multiletter control sequences out of 9500
+ 15449 words of font info for 56 fonts, out of 100000 for 255
+ 14 hyphenation exceptions out of 607
+ 27i,13n,21p,1033b,210s stack positions out of 300i,100n,60p,3000b,4000s
+
+Output written on master.dvi (32 pages, 69484 bytes).

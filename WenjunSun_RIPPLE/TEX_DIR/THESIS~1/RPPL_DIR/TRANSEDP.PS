@@ -1,0 +1,288 @@
+%!PS-Adobe-1.0
+%%Creator: GraED
+%%BoundingBox: 0 0 504 288
+%%EndComments
+% Graed Prelude
+
+/GedDict 200 dict def
+
+GedDict begin
+
+/i {72 mul} def  /ini {gsave translate newpath} def
+/LNW {0.25 LR mul setlinewidth}def /sld { [] 0 setdash stroke } def % solid
+/bordr { gsave fl setgray fill grestore LNW sld grestore} bind def
+/cir {0 0 LR 0 360 arc bordr} bind def % for cir
+/sqr {0.85 0.85 scale LR LR moveto 0 LR -2 mul rlineto LR -2 mul 0 rlineto
+0 LR 2 mul rlineto closepath bordr} bind def % square center at Ori
+/x {0.7 0.7 scale LNW 0 LR sub LR moveto LR 2 mul LR -2 mul rlineto
+LR LR moveto LR -2 mul dup rlineto sld } bind def
+/+ {0.85 0.85 scale LNW 0 LR moveto 0 LR -2 mul rlineto 
+LR 0 moveto LR -2 mul 0 rlineto sld } bind def
+/tri {0 LR sub LR 0.866 mul moveto LR 2 mul 0 rlineto
+0 LR sub 0.866 -2 mul LR mul rlineto closepath bordr} bind def% triangle
+/oneline{LR 0 moveto LR -2 mul 0 rlineto 45 rotate} def
+/*{LNW 4 {oneline} repeat sld } bind def
+
+% ---begin symbol---
+/sc {ini cir} bind def % filled circle with level fl
+/ss {ini sqr} bind def
+/st {ini tri} bind def
+
+/sfc {ini /fl 0 def cir} bind def% filled cir
+/soc {ini /fl 1 def cir} bind def% open
+/st {ini tri} bind def
+
+/sfc {ini /fl 0 def cir} bind def% filled cir
+/soc {ini /fl 1 def cir} bind def% open
+/sfs {ini /fl 0 def sqr} bind def% filled sqr
+/sos {ini /fl 1 def sqr} bind def% open
+/sft {ini /fl 0 def tri} bind def% f tri
+/sot {ini /fl 1 def tri} bind def
+/sx {ini x grestore} bind def
+/s+ {ini + grestore} bind def
+/s* {ini * grestore} bind def
+%---end symbol
+/NL {setlinewidth newpath} def % 
+%=== begin font ===
+/fss {findfont NH 2 mul scalefont setfont}def
+/fnt {/Helvetica fss} bind def
+/pb {gsave translate 1 -1 scale 0 NH -0.33 mul moveto} def
+/pv {gsave translate 1 -1 scale 0 0 moveto 90 rotate } def
+/pe {show grestore} def
+% The following are for scribe like commands
+/cep {currentpoint exch pop} def % needed for @+, @- to get position back
+/@+- {gsave currentfont [0.8 0 0 0.8 0 0] makefont setfont cep
+      0 NH ud mul rmoveto} bind def % ud = up or down
+/@+ {/ud 0.9 def @+-} bind def
+/@- {/ud -0.8 def @+-} bind def
+/@g {gsave /Symbol fss cep} bind def
+/@i {gsave /Helvetica-Oblique fss cep} bind def
+/@b {gsave /Helvetica-Bold fss cep} bind def
+/@e {show currentpoint pop exch grestore moveto} def % for ')'
+
+%=== end font ====
+ 
+% horizontal and vertical lines
+/l {moveto rlineto sld} bind def 
+/t {lineto} def
+/ct {curveto} def
+/m {moveto} def
+/ar {gsave newpath m t t closepath 0 setgray fill grestore} bind def 
+% x2 y2 x1 y1 x0,y0 ar Draw an arrow head from 0 to 1,2
+/box {dup 0 exch moveto exch 0 rlineto 0 exch -1 mul rlineto 
+0 0 lineto closepath} def % x y box 
+/fb {gsave setgray fill grestore 1 setlinewidth sld grestore} def
+/ff {setgray fill grestore} def% x y box gray ff
+/bb {pop stroke grestore} def % x y box stroke pop off gray level
+%%EndProlog
+%%Page: 1 1
+
+% 2.3 i  9.0 i translate -90 rotate
+%0.75 i 2.2 i translate
+0  4.00 i translate 0.36 -0.36 scale
+ 2 setlinecap 
+   1.7 setlinewidth
+ 0 -751 42 776 l 1315 0 42 776 l 1315 0 42 24 l 0 -751 1358 776 l 
+ /NH  15 def fnt
+ 
+ 2.8 setlinewidth [12 24       ] 0 setdash newpath
+ 118 400 m 121 400 t 124 400 t 127 400 t 130 400 t 
+ 133 400 t 136 400 t 139 400 t 141 400 t 144 400 t 
+ 147 400 t 150 400 t 153 400 t 156 400 t 159 400 t 
+ 162 400 t 165 400 t 168 400 t 171 400 t 174 400 t 
+ 177 400 t 179 400 t 182 400 t 185 400 t 188 400 t 
+ 191 400 t 194 400 t 197 400 t 200 400 t 203 400 t 
+ 206 400 t 209 400 t 212 400 t 215 400 t 217 400 t 
+ 220 400 t 223 400 t 226 400 t 229 400 t 232 400 t 
+ 235 400 t 238 400 t 241 397 t 244 397 t 247 397 t 
+ 250 397 t 253 397 t 255 397 t 258 395 t 261 395 t 
+ 264 395 t 267 392 t 270 392 t 273 390 t 276 390 t 
+ 279 387 t 282 385 t 285 382 t 288 380 t 291 377 t 
+ 294 372 t 296 370 t 299 365 t 302 362 t 305 357 t 
+ 308 350 t 311 345 t 314 337 t 317 332 t 320 325 t 
+ 323 315 t 326 307 t 329 297 t 332 290 t 334 280 t 
+ 337 267 t 340 257 t 343 247 t 346 235 t 349 222 t 
+ 352 209 t 355 197 t 358 184 t 361 172 t 364 162 t 
+ 367 149 t 370 137 t 372 127 t 375 117 t 378 107 t 
+ 381 99 t 384 92 t 387 84 t 390 77 t 393 72 t 
+ 396 69 t 399 67 t 402 64 t 405 64 t 408 64 t 
+ 410 67 t 413 72 t 416 74 t 419 82 t 422 87 t 
+ 425 94 t 428 104 t 431 112 t 434 122 t 437 134 t 
+ 440 144 t 443 157 t 446 167 t 448 179 t 451 192 t 
+ 454 204 t 457 217 t 460 230 t 463 242 t 466 255 t 
+ 469 267 t 472 280 t 475 290 t 478 300 t 481 312 t 
+ 484 322 t 487 330 t 489 340 t 492 347 t 495 357 t 
+ 498 365 t 501 370 t 504 377 t 507 382 t 510 390 t 
+ 513 395 t 516 397 t 519 403 t 522 405 t 525 410 t 
+ 527 413 t 530 415 t 533 418 t 536 420 t 539 423 t 
+ 542 423 t 545 425 t 548 425 t 551 428 t 554 428 t 
+ 557 428 t 560 430 t 563 430 t 565 430 t 568 430 t 
+ 571 430 t 574 430 t 577 433 t 580 433 t 583 433 t 
+ 586 433 t 589 433 t 592 433 t 595 433 t 598 433 t 
+ 601 433 t 603 433 t 606 433 t 609 433 t 612 433 t 
+ 615 433 t 618 433 t 621 435 t 624 435 t 627 435 t 
+ 630 438 t 633 440 t 636 443 t 639 445 t 642 450 t 
+ 644 455 t 647 463 t 650 470 t 653 480 t 656 493 t 
+ 659 505 t 662 523 t 665 540 t 668 558 t 671 580 t 
+ 674 601 t 677 623 t 680 643 t 682 666 t 685 683 t 
+ 688 701 t 691 713 t 694 726 t 697 731 t 700 733 t 
+ 703 731 t 706 726 t 709 713 t 712 701 t 715 683 t 
+ 718 666 t 720 643 t 723 623 t 726 601 t 729 580 t 
+ 732 558 t 735 540 t 738 523 t 741 505 t 744 493 t 
+ 747 480 t 750 470 t 753 463 t 756 455 t 758 450 t 
+ 761 445 t 764 443 t 767 440 t 770 438 t 773 435 t 
+ 776 435 t 779 435 t 782 433 t 785 433 t 788 433 t 
+ 791 433 t 794 433 t 797 433 t 799 433 t 802 433 t 
+ 805 433 t 808 433 t 811 433 t 814 433 t 817 433 t 
+ 820 433 t 823 433 t 826 430 t 829 430 t 832 430 t 
+ 835 430 t 837 430 t 840 430 t 843 428 t 846 428 t 
+ 849 428 t 852 425 t 855 425 t 858 423 t 861 423 t 
+ 864 420 t 867 418 t 870 415 t 873 413 t 875 410 t 
+ 878 405 t 881 403 t 884 397 t 887 395 t 890 390 t 
+ 893 382 t 896 377 t 899 370 t 902 365 t 905 357 t 
+ 908 347 t 911 340 t 913 330 t 916 322 t 919 312 t 
+ 922 300 t 925 290 t 928 280 t 931 267 t 934 255 t 
+ 937 242 t 940 230 t 943 217 t 946 204 t 949 192 t 
+ 952 179 t 954 167 t 957 157 t 960 144 t 963 134 t 
+ 966 122 t 969 112 t 972 104 t 975 94 t 978 87 t 
+ 981 82 t 984 74 t 987 72 t 990 67 t 992 64 t 
+ 995 64 t 998 64 t 1001 67 t 1004 69 t 1007 72 t 
+ 1010 77 t 1013 84 t 1016 92 t 1019 99 t 1022 107 t 
+ 1025 117 t 1028 127 t 1030 137 t 1033 149 t 1036 162 t 
+ 1039 172 t 1042 184 t 1045 197 t 1048 209 t 1051 222 t 
+ 1054 235 t 1057 247 t 1060 257 t 1063 267 t 1066 280 t 
+ 1068 290 t 1071 297 t 1074 307 t 1077 315 t 1080 325 t 
+ 1083 332 t 1086 337 t 1089 345 t 1092 350 t 1095 357 t 
+ 1098 362 t 1101 365 t 1104 370 t 1106 372 t 1109 377 t 
+ 1112 380 t 1115 382 t 1118 385 t 1121 387 t 1124 390 t 
+ 1127 390 t 1130 392 t 1133 392 t 1136 395 t 1139 395 t 
+ 1142 395 t 1145 397 t 1147 397 t 1150 397 t 1153 397 t 
+ 1156 397 t 1159 397 t 1162 400 t 1165 400 t 1168 400 t 
+ 1171 400 t 1174 400 t 1177 400 t 1180 400 t 1183 400 t 
+ 1185 400 t 1188 400 t 1191 400 t 1194 400 t 1197 400 t 
+ 1200 400 t 1203 400 t 1206 400 t 1209 400 t 1212 400 t 
+ 1215 400 t 1218 400 t 1221 400 t 1223 400 t 1226 400 t 
+ 1229 400 t 1232 400 t 1235 400 t 1238 400 t 1241 400 t 
+ 1244 400 t 1247 400 t 1250 400 t 1253 400 t 1256 400 t 
+ 1259 400 t 1261 400 t 1264 400 t 1267 400 t 1270 400 t 
+ 1273 400 t 1276 400 t 1279 400 t 1282 400 t 
+ stroke
+ 
+ 2.8 setlinewidth [            ] 0 setdash newpath
+ 118 400 m 121 400 t 124 400 t 127 400 t 130 400 t 
+ 133 400 t 136 400 t 139 400 t 141 400 t 144 400 t 
+ 147 400 t 150 400 t 153 400 t 156 400 t 159 400 t 
+ 162 400 t 165 400 t 168 400 t 171 400 t 174 400 t 
+ 177 400 t 179 400 t 182 400 t 185 400 t 188 400 t 
+ 191 400 t 194 400 t 197 400 t 200 400 t 203 400 t 
+ 206 400 t 209 400 t 212 400 t 215 400 t 217 400 t 
+ 220 400 t 223 400 t 226 400 t 229 400 t 232 400 t 
+ 235 400 t 238 400 t 241 400 t 244 400 t 247 400 t 
+ 250 400 t 253 400 t 255 400 t 258 400 t 261 400 t 
+ 264 400 t 267 400 t 270 400 t 273 400 t 276 400 t 
+ 279 400 t 282 400 t 285 400 t 288 400 t 291 400 t 
+ 294 400 t 296 400 t 299 400 t 302 400 t 305 400 t 
+ 308 400 t 311 400 t 314 400 t 317 400 t 320 400 t 
+ 323 400 t 326 400 t 329 400 t 332 400 t 334 400 t 
+ 337 400 t 340 400 t 343 400 t 346 400 t 349 400 t 
+ 352 400 t 355 400 t 358 400 t 361 400 t 364 400 t 
+ 367 400 t 370 400 t 372 400 t 375 400 t 378 400 t 
+ 381 400 t 384 397 t 387 392 t 390 380 t 393 352 t 
+ 396 302 t 399 230 t 402 144 t 405 77 t 408 49 t 
+ 410 77 t 413 144 t 416 230 t 419 302 t 422 352 t 
+ 425 380 t 428 392 t 431 397 t 434 400 t 437 400 t 
+ 440 400 t 443 400 t 446 400 t 448 400 t 451 400 t 
+ 454 400 t 457 400 t 460 400 t 463 400 t 466 400 t 
+ 469 400 t 472 400 t 475 400 t 478 400 t 481 400 t 
+ 484 400 t 487 400 t 489 400 t 492 400 t 495 400 t 
+ 498 400 t 501 400 t 504 400 t 507 400 t 510 400 t 
+ 513 400 t 516 400 t 519 400 t 522 400 t 525 400 t 
+ 527 400 t 530 400 t 533 400 t 536 400 t 539 400 t 
+ 542 400 t 545 400 t 548 400 t 551 400 t 554 400 t 
+ 557 400 t 560 400 t 563 400 t 565 400 t 568 400 t 
+ 571 400 t 574 400 t 577 400 t 580 400 t 583 400 t 
+ 586 400 t 589 400 t 592 400 t 595 400 t 598 400 t 
+ 601 400 t 603 400 t 606 400 t 609 400 t 612 400 t 
+ 615 400 t 618 400 t 621 400 t 624 400 t 627 400 t 
+ 630 400 t 633 400 t 636 400 t 639 400 t 642 400 t 
+ 644 400 t 647 400 t 650 400 t 653 400 t 656 400 t 
+ 659 400 t 662 400 t 665 400 t 668 400 t 671 400 t 
+ 674 400 t 677 403 t 680 408 t 682 420 t 685 448 t 
+ 688 498 t 691 570 t 694 656 t 697 723 t 700 751 t 
+ 703 723 t 706 656 t 709 570 t 712 498 t 715 448 t 
+ 718 420 t 720 408 t 723 403 t 726 400 t 729 400 t 
+ 732 400 t 735 400 t 738 400 t 741 400 t 744 400 t 
+ 747 400 t 750 400 t 753 400 t 756 400 t 758 400 t 
+ 761 400 t 764 400 t 767 400 t 770 400 t 773 400 t 
+ 776 400 t 779 400 t 782 400 t 785 400 t 788 400 t 
+ 791 400 t 794 400 t 797 400 t 799 400 t 802 400 t 
+ 805 400 t 808 400 t 811 400 t 814 400 t 817 400 t 
+ 820 400 t 823 400 t 826 400 t 829 400 t 832 400 t 
+ 835 400 t 837 400 t 840 400 t 843 400 t 846 400 t 
+ 849 400 t 852 400 t 855 400 t 858 400 t 861 400 t 
+ 864 400 t 867 400 t 870 400 t 873 400 t 875 400 t 
+ 878 400 t 881 400 t 884 400 t 887 400 t 890 400 t 
+ 893 400 t 896 400 t 899 400 t 902 400 t 905 400 t 
+ 908 400 t 911 400 t 913 400 t 916 400 t 919 400 t 
+ 922 400 t 925 400 t 928 400 t 931 400 t 934 400 t 
+ 937 400 t 940 400 t 943 400 t 946 400 t 949 400 t 
+ 952 400 t 954 400 t 957 400 t 960 400 t 963 400 t 
+ 966 400 t 969 397 t 972 392 t 975 380 t 978 352 t 
+ 981 302 t 984 230 t 987 144 t 990 77 t 992 49 t 
+ 995 77 t 998 144 t 1001 230 t 1004 302 t 1007 352 t 
+ 1010 380 t 1013 392 t 1016 397 t 1019 400 t 1022 400 t 
+ 1025 400 t 1028 400 t 1030 400 t 1033 400 t 1036 400 t 
+ 1039 400 t 1042 400 t 1045 400 t 1048 400 t 1051 400 t 
+ 1054 400 t 1057 400 t 1060 400 t 1063 400 t 1066 400 t 
+ 1068 400 t 1071 400 t 1074 400 t 1077 400 t 1080 400 t 
+ 1083 400 t 1086 400 t 1089 400 t 1092 400 t 1095 400 t 
+ 1098 400 t 1101 400 t 1104 400 t 1106 400 t 1109 400 t 
+ 1112 400 t 1115 400 t 1118 400 t 1121 400 t 1124 400 t 
+ 1127 400 t 1130 400 t 1133 400 t 1136 400 t 1139 400 t 
+ 1142 400 t 1145 400 t 1147 400 t 1150 400 t 1153 400 t 
+ 1156 400 t 1159 400 t 1162 400 t 1165 400 t 1168 400 t 
+ 1171 400 t 1174 400 t 1177 400 t 1180 400 t 1183 400 t 
+ 1185 400 t 1188 400 t 1191 400 t 1194 400 t 1197 400 t 
+ 1200 400 t 1203 400 t 1206 400 t 1209 400 t 1212 400 t 
+ 1215 400 t 1218 400 t 1221 400 t 1223 400 t 1226 400 t 
+ 1229 400 t 1232 400 t 1235 400 t 1238 400 t 1241 400 t 
+ 1244 400 t 1247 400 t 1250 400 t 1253 400 t 1256 400 t 
+ 1259 400 t 1261 400 t 1264 400 t 1267 400 t 1270 400 t 
+ 1273 400 t 1276 400 t 1279 400 t 1282 400 t 
+ stroke
+ 
+ 1.4 setlinewidth [9 18 30 18  ] 0 setdash newpath
+ 700 776 m 700 24 t 
+ stroke
+ 
+ 1.4 setlinewidth [9 18 30 18  ] 0 setdash newpath
+ 42 400 m 1358 400 t 
+ stroke
+ 
+ /LR   3 def 
+% 42 400 sot 1358 400 sot 
+ 1.4 setlinewidth [8 8         ] 0 setdash newpath
+ 700 149 m 992 149 t 
+ stroke
+ /NH  24 def fnt
+ 
+ 2.8 setlinewidth [12 24       ] 0 setdash newpath
+ 838 524 m 902 524 t stroke
+ 902 532 pb ( Gaussian model) pe
+ /NH  24 def fnt
+ 
+ 2.8 setlinewidth [            ] 0 setdash newpath
+ 838 582 m 902 582 t stroke
+ 902 590 pb ( Delta function model) pe
+ /NH  24 def fnt
+ 804 128 pb (Xh) pe
+ /NH  24 def fnt
+ 1068 112 pb (Head) pe
+ /NH  24 def fnt
+ 205 107 pb (Head) pe
+ /NH  24 def fnt
+ 489 716 pb (Methyl) pe
+ 
+ end
+ showpage
+%%Trailer

@@ -1,0 +1,244 @@
+%!PS-Adobe-2.0
+%%Creator: Wenjun Sun
+%%Title: Ripple pattern
+%%Pages: 1
+%%BoundingBox: 130 182 481 635
+%%EndComments
+%-------------Variables and procedures------------
+/i {72 mul} def
+/width 8.5 i def
+/height 11 i def
+/LM -1.5 i def
+/center {width 2 div height 2 div translate} def
+/getHel {/Helvetica-Bold findfont 15 scalefont setfont} def
+/getCou {/Courier findfont 12 scalefont setfont} def
+/getSym {/Symbol findfont 12 scalefont setfont} def
+/newline{currentpoint 14 sub exch pop LM exch moveto} def
+/label {/subscript exch def
+ currentpoint moveto ( q) show
+ currentpoint 4 sub moveto subscript show} def
+/peak 
+ {/gs exch def /y exch def /x exch def
+ x y 7 360 0 arcn
+ closepath gs setgray fill} def
+/normal{/length exch def /slope exch def
+/y exch def /x exch def
+gsave newpath x y translate slope rotate 0 0 moveto
+0 length rlineto [6 4 2 4] 0 setdash 1 setlinewidth
+0.5 setgray stroke grestore} def
+%------------End variables and procedures---------
+%%EndProlog
+%%Page: 1 1
+%------------Begin program------------------------
+center
+
+getHel
+-2 i 0 i moveto
+2 i 0 i lineto
+(x) label
+0 i -1 i moveto
+0 i 3.0 i lineto
+(z) label
+1 setlinewidth
+stroke
+
+-0.0443 i -1.95 i 10.2 3.8 i normal
+0.689 i -1.95 i -25.7 3.3 i normal
+0 i 0 i 10.2 1.8 i normal
+0 i 0 i -25.7 2.04 i normal
+
+gsave
+-0.491 i 1.728 i 0.713 peak
+-0.245 i 1.764 i 0.349 peak
+0.000 i 1.800 i 0.952 peak
+0.491 i 1.872 i 0.963 peak
+0.736 i 1.909 i 0.926 peak
+0.981 i 1.945 i 0.967 peak
+-0.491 i 1.128 i 0.924 peak
+-0.245 i 1.164 i 0.000 peak
+0.000 i 1.200 i 0.475 peak
+0.245 i 1.236 i 0.617 peak
+0.491 i 1.272 i 0.828 peak
+0.736 i 1.309 i 0.933 peak
+0.981 i 1.345 i 0.980 peak
+-0.245 i 0.564 i 0.000 peak
+0.000 i 0.600 i 0.000 peak
+0.245 i 0.636 i 0.759 peak
+0.736 i 0.709 i 0.981 peak
+0.245 i 0.036 i 0.991 peak
+0.491 i 0.072 i 0.969 peak
+0.736 i 0.109 i 0.980 peak
+0.736 i 0.109 i 0.980 peak
+grestore
+
+1.227 i 0.181 i 3 sub moveto (0) show
+1.227 i 0.781 i 3 sub moveto (1) show
+1.227 i 1.381 i 3 sub moveto (2) show
+1.227 i 1.981 i 3 sub moveto (3) show
+1.472 i 1.117 i 3 sub moveto (h) show
+
+-0.981 i 7 sub 1.955 i moveto (-4) show
+-0.736 i 7 sub 1.991 i moveto (-3) show
+-0.491 i 7 sub 2.028 i moveto (-2) show
+-0.245 i 7 sub 2.064 i moveto (-1) show
+0.000 i 7 sub 2.100 i moveto (0) show
+0.245 i 7 sub 2.136 i moveto (1) show
+0.491 i 7 sub 2.172 i moveto (2) show
+0.736 i 7 sub 2.209 i moveto (3) show
+0.981 i 7 sub 2.245 i moveto (4) show
+-0.491 i 2.328 i moveto (k) show
+
+newpath
+0.000 i 0.000 i moveto
+0.000 i 0.600 i lineto
+0.245 i 0.636 i lineto
+0.245 i 0.036 i lineto
+closepath 2 setlinewidth stroke
+
+gsave
+newpath
+-0.778 i -1.95 i moveto
+-0.0181 i 0.207 i rlineto
+0.2 i -0.0963 i rlineto
+1.07 i 0.193 i rlineto
+0.2 i -0.0963 i rlineto
+0.0363 i -0.415 i rlineto
+-0.2 i 0.0963 i rlineto
+-1.07 i -0.193 i rlineto
+-0.2 i 0.0963 i rlineto
+closepath 0.75 setgray fill
+grestore
+
+gsave
+newpath
+0.689 i -1.95 i moveto
+-0.0181 i 0.207 i rlineto
+0.2 i -0.0963 i rlineto
+1.07 i 0.193 i rlineto
+0.2 i -0.0963 i rlineto
+0.0363 i -0.415 i rlineto
+-0.2 i 0.0963 i rlineto
+-1.07 i -0.193 i rlineto
+-0.2 i 0.0963 i rlineto
+closepath 0.75 setgray fill
+grestore
+
+gsave
+newpath
+-2.25 i -1.95 i moveto
+-0.0181 i 0.207 i rlineto
+0.2 i -0.0963 i rlineto
+1.07 i 0.193 i rlineto
+0.2 i -0.0963 i rlineto
+0.0363 i -0.415 i rlineto
+-0.2 i 0.0963 i rlineto
+-1.07 i -0.193 i rlineto
+-0.2 i 0.0963 i rlineto
+closepath 0.75 setgray fill
+grestore
+
+gsave
+newpath
+-0.689 i -2.55 i moveto
+-0.0181 i 0.207 i rlineto
+0.2 i -0.0963 i rlineto
+1.07 i 0.193 i rlineto
+0.2 i -0.0963 i rlineto
+0.0363 i -0.415 i rlineto
+-0.2 i 0.0963 i rlineto
+-1.07 i -0.193 i rlineto
+-0.2 i 0.0963 i rlineto
+closepath 0.75 setgray fill
+grestore
+
+gsave
+newpath
+0.778 i -2.55 i moveto
+-0.0181 i 0.207 i rlineto
+0.2 i -0.0963 i rlineto
+1.07 i 0.193 i rlineto
+0.2 i -0.0963 i rlineto
+0.0363 i -0.415 i rlineto
+-0.2 i 0.0963 i rlineto
+-1.07 i -0.193 i rlineto
+-0.2 i 0.0963 i rlineto
+closepath 0.75 setgray fill
+grestore
+
+gsave
+newpath
+-2.16 i -2.55 i moveto
+-0.0181 i 0.207 i rlineto
+0.2 i -0.0963 i rlineto
+1.07 i 0.193 i rlineto
+0.2 i -0.0963 i rlineto
+0.0363 i -0.415 i rlineto
+-0.2 i 0.0963 i rlineto
+-1.07 i -0.193 i rlineto
+-0.2 i 0.0963 i rlineto
+closepath 0.75 setgray fill
+grestore
+
+gsave
+newpath
+-0.778 i -1.95 i moveto
+0.200 i -0.096 i rlineto
+1.067 i 0.193 i rlineto
+0.200 i -0.096 i rlineto
+0.2 setgray 4 setlinewidth stroke
+grestore
+
+gsave
+newpath
+0.689 i -1.95 i moveto
+0.200 i -0.096 i rlineto
+1.067 i 0.193 i rlineto
+0.200 i -0.096 i rlineto
+0.2 setgray 4 setlinewidth stroke
+grestore
+
+gsave
+newpath
+-2.25 i -1.95 i moveto
+0.200 i -0.096 i rlineto
+1.067 i 0.193 i rlineto
+0.200 i -0.096 i rlineto
+0.2 setgray 4 setlinewidth stroke
+grestore
+
+gsave
+newpath
+-0.689 i -2.55 i moveto
+0.200 i -0.096 i rlineto
+1.067 i 0.193 i rlineto
+0.200 i -0.096 i rlineto
+0.2 setgray 4 setlinewidth stroke
+grestore
+
+gsave
+newpath
+0.778 i -2.55 i moveto
+0.200 i -0.096 i rlineto
+1.067 i 0.193 i rlineto
+0.200 i -0.096 i rlineto
+0.2 setgray 4 setlinewidth stroke
+grestore
+
+gsave
+newpath
+-2.16 i -2.55 i moveto
+0.200 i -0.096 i rlineto
+1.067 i 0.193 i rlineto
+0.200 i -0.096 i rlineto
+0.2 setgray 4 setlinewidth stroke
+grestore
+
+newpath
+-0.734 i -2.250 i moveto
+-0.822 i -1.650 i lineto
+0.645 i -1.650 i lineto
+0.734 i -2.250 i lineto
+closepath 2 setlinewidth stroke
+
+showpage
+%%Trailer

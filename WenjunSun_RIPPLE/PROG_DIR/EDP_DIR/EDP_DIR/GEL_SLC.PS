@@ -1,0 +1,397 @@
+%!PS-Adobe-1.0
+%%Creator: GraED
+%%BoundingBox: (atend)
+%%EndComments
+% Graed Prelude
+
+/GedDict 200 dict def
+
+GedDict begin
+
+/i {72 mul} def  /ini {gsave translate newpath} def
+/LNW {0.25 LR mul setlinewidth}def /sld { [] 0 setdash stroke } def % solid
+/bordr { gsave fl setgray fill grestore LNW sld grestore} bind def
+/cir {0 0 LR 0 360 arc bordr} bind def % for cir
+/sqr {0.85 0.85 scale LR LR moveto 0 LR -2 mul rlineto LR -2 mul 0 rlineto
+0 LR 2 mul rlineto closepath bordr} bind def % square center at Ori
+/x {0.7 0.7 scale LNW 0 LR sub LR moveto LR 2 mul LR -2 mul rlineto
+LR LR moveto LR -2 mul dup rlineto sld } bind def
+/+ {0.85 0.85 scale LNW 0 LR moveto 0 LR -2 mul rlineto 
+LR 0 moveto LR -2 mul 0 rlineto sld } bind def
+/tri {0 LR sub LR 0.866 mul moveto LR 2 mul 0 rlineto
+0 LR sub 0.866 -2 mul LR mul rlineto closepath bordr} bind def% triangle
+/oneline{LR 0 moveto LR -2 mul 0 rlineto 45 rotate} def
+/*{LNW 4 {oneline} repeat sld } bind def
+
+% ---begin symbol---
+/sc {ini cir} bind def % filled circle with level fl
+/ss {ini sqr} bind def
+/st {ini tri} bind def
+
+/sfc {ini /fl 0 def cir} bind def% filled cir
+/soc {ini /fl 1 def cir} bind def% open
+/st {ini tri} bind def
+
+/sfc {ini /fl 0 def cir} bind def% filled cir
+/soc {ini /fl 1 def cir} bind def% open
+/sfs {ini /fl 0 def sqr} bind def% filled sqr
+/sos {ini /fl 1 def sqr} bind def% open
+/sft {ini /fl 0 def tri} bind def% f tri
+/sot {ini /fl 1 def tri} bind def
+/sx {ini x grestore} bind def
+/s+ {ini + grestore} bind def
+/s* {ini * grestore} bind def
+%---end symbol
+/NL {setlinewidth newpath} def % 
+%=== begin font ===
+/fss {findfont NH 2 mul scalefont setfont}def
+/fnt {/Helvetica fss} bind def
+/pb {gsave translate 1 -1 scale 0 NH -0.33 mul moveto} def
+/pv {gsave translate 1 -1 scale 0 0 moveto 90 rotate } def
+/pe {show grestore} def
+% The following are for scribe like commands
+/cep {currentpoint exch pop} def % needed for @+, @- to get position back
+/@+- {gsave currentfont [0.8 0 0 0.8 0 0] makefont setfont cep
+      0 NH ud mul rmoveto} bind def % ud = up or down
+/@+ {/ud 0.9 def @+-} bind def
+/@- {/ud -0.8 def @+-} bind def
+/@g {gsave /Symbol fss cep} bind def
+/@i {gsave /Helvetica-Oblique fss cep} bind def
+/@b {gsave /Helvetica-Bold fss cep} bind def
+/@e {show currentpoint pop exch grestore moveto} def % for ')'
+
+%=== end font ====
+ 
+% horizontal and vertical lines
+/l {moveto rlineto sld} bind def 
+/t {lineto} def
+/ct {curveto} def
+/m {moveto} def
+/ar {gsave newpath m t t closepath 0 setgray fill grestore} bind def 
+% x2 y2 x1 y1 x0,y0 ar Draw an arrow head from 0 to 1,2
+/box {dup 0 exch moveto exch 0 rlineto 0 exch -1 mul rlineto 
+0 0 lineto closepath} def % x y box 
+/fb {gsave setgray fill grestore 1 setlinewidth sld grestore} def
+/ff {setgray fill grestore} def% x y box gray ff
+/bb {pop stroke grestore} def % x y box stroke pop off gray level
+%%EndProlog
+%%Page: 1 1
+1.7 i  2.0 i translate
+1.5 dup scale
+0  3.25 i translate 
+0.36 -0.36 scale
+ 2 setlinecap 
+   1.0 setlinewidth
+ 0 -551 57 573 l 
+  .8 setlinewidth [            ] 0 setdash newpath
+ 57 573 m 69 573 t 57 573 m 63 573 t 57 531 m 
+ 63 531 t 57 488 m 69 488 t 57 488 m 63 488 t 
+ 57 446 m 63 446 t 57 403 m 69 403 t 57 403 m 
+ 63 403 t 57 361 m 63 361 t 57 318 m 69 318 t 
+ 57 318 m 63 318 t 57 276 m 63 276 t 57 233 m 
+ 69 233 t 57 233 m 63 233 t 57 191 m 63 191 t 
+ 57 148 m 69 148 t 57 148 m 63 148 t 57 106 m 
+ 63 106 t 57 63 m 69 63 t 57 63 m 63 63 t 
+ 
+ stroke
+ 572 0 57 573 l 
+  .8 setlinewidth [            ] 0 setdash newpath
+ 57 573 m 57 561 t 57 573 m 57 567 t 72 573 m 
+ 72 567 t 87 573 m 87 567 t 102 573 m 102 567 t 
+ 117 573 m 117 567 t 132 573 m 132 561 t 132 573 m 
+ 132 567 t 147 573 m 147 567 t 163 573 m 163 567 t 
+ 178 573 m 178 567 t 193 573 m 193 567 t 208 573 m 
+ 208 561 t 208 573 m 208 567 t 223 573 m 223 567 t 
+ 238 573 m 238 567 t 253 573 m 253 567 t 268 573 m 
+ 268 567 t 283 573 m 283 561 t 283 573 m 283 567 t 
+ 298 573 m 298 567 t 313 573 m 313 567 t 328 573 m 
+ 328 567 t 344 573 m 344 567 t 359 573 m 359 561 t 
+ 359 573 m 359 567 t 374 573 m 374 567 t 389 573 m 
+ 389 567 t 404 573 m 404 567 t 419 573 m 419 567 t 
+ 434 573 m 434 561 t 434 573 m 434 567 t 449 573 m 
+ 449 567 t 464 573 m 464 567 t 479 573 m 479 567 t 
+ 494 573 m 494 567 t 509 573 m 509 561 t 509 573 m 
+ 509 567 t 524 573 m 524 567 t 540 573 m 540 567 t 
+ 555 573 m 555 567 t 570 573 m 570 567 t 585 573 m 
+ 585 561 t 585 573 m 585 567 t 600 573 m 600 567 t 
+ 615 573 m 615 567 t 
+ stroke
+ 572 0 57 21 l 
+  .8 setlinewidth [            ] 0 setdash newpath
+ 57 21 m 57 33 t 57 21 m 57 27 t 72 21 m 
+ 72 27 t 87 21 m 87 27 t 102 21 m 102 27 t 
+ 117 21 m 117 27 t 132 21 m 132 33 t 132 21 m 
+ 132 27 t 147 21 m 147 27 t 163 21 m 163 27 t 
+ 178 21 m 178 27 t 193 21 m 193 27 t 208 21 m 
+ 208 33 t 208 21 m 208 27 t 223 21 m 223 27 t 
+ 238 21 m 238 27 t 253 21 m 253 27 t 268 21 m 
+ 268 27 t 283 21 m 283 33 t 283 21 m 283 27 t 
+ 298 21 m 298 27 t 313 21 m 313 27 t 328 21 m 
+ 328 27 t 344 21 m 344 27 t 359 21 m 359 33 t 
+ 359 21 m 359 27 t 374 21 m 374 27 t 389 21 m 
+ 389 27 t 404 21 m 404 27 t 419 21 m 419 27 t 
+ 434 21 m 434 33 t 434 21 m 434 27 t 449 21 m 
+ 449 27 t 464 21 m 464 27 t 479 21 m 479 27 t 
+ 494 21 m 494 27 t 509 21 m 509 33 t 509 21 m 
+ 509 27 t 524 21 m 524 27 t 540 21 m 540 27 t 
+ 555 21 m 555 27 t 570 21 m 570 27 t 585 21 m 
+ 585 33 t 585 21 m 585 27 t 600 21 m 600 27 t 
+ 615 21 m 615 27 t 
+ stroke
+ 0 -551 630 573 l 
+  .8 setlinewidth [            ] 0 setdash newpath
+ 630 573 m 618 573 t 630 573 m 624 573 t 630 531 m 
+ 624 531 t 630 488 m 618 488 t 630 488 m 624 488 t 
+ 630 446 m 624 446 t 630 403 m 618 403 t 630 403 m 
+ 624 403 t 630 361 m 624 361 t 630 318 m 618 318 t 
+ 630 318 m 624 318 t 630 276 m 624 276 t 630 233 m 
+ 618 233 t 630 233 m 624 233 t 630 191 m 624 191 t 
+ 630 148 m 618 148 t 630 148 m 624 148 t 630 106 m 
+ 624 106 t 630 63 m 618 63 t 630 63 m 624 63 t 
+ 
+ stroke
+ /NH  12 def fnt
+ 39 591 pb (-) pe
+ 52 591 pb (3) pe
+ 65 591 pb (0) pe
+ 114 591 pb (-) pe
+ 127 591 pb (2) pe
+ 140 591 pb (0) pe
+ 190 591 pb (-) pe
+ 203 591 pb (1) pe
+ 216 591 pb (0) pe
+ 252 591 pb ( ) pe
+ 265 591 pb ( ) pe
+ 278 591 pb (0) pe
+ 335 591 pb ( ) pe
+ 348 591 pb (1) pe
+ 361 591 pb (0) pe
+ 410 591 pb ( ) pe
+ 423 591 pb (2) pe
+ 436 591 pb (0) pe
+ 485 591 pb ( ) pe
+ 498 591 pb (3) pe
+ 511 591 pb (0) pe
+ 561 591 pb ( ) pe
+ 574 591 pb (4) pe
+ 587 591 pb (0) pe
+ 279 627 pb (r \050Angstrom\051) pe
+ 37 421 pv (Relative electron density) pe
+ 
+  .8 setlinewidth [3 12        ] 0 setdash newpath
+ 57 148 m 630 148 t 
+ stroke
+ 
+  .8 setlinewidth [8 8         ] 0 setdash newpath
+ 57 291 m 66 306 t 76 319 t 86 327 t 96 330 t 
+ 106 327 t 116 318 t 126 306 t 135 293 t 145 280 t 
+ 155 271 t 165 267 t 175 268 t 185 274 t 195 284 t 
+ 204 297 t 214 311 t 224 323 t 234 334 t 244 342 t 
+ 254 347 t 264 350 t 273 352 t 283 352 t 293 352 t 
+ 303 350 t 313 347 t 323 342 t 332 334 t 342 323 t 
+ 352 311 t 362 297 t 372 284 t 382 274 t 392 268 t 
+ 401 267 t 411 271 t 421 280 t 431 293 t 441 306 t 
+ 451 318 t 461 327 t 470 330 t 480 327 t 490 319 t 
+ 500 306 t 510 291 t 520 277 t 530 265 t 539 258 t 
+ 549 256 t 559 260 t 569 270 t 579 283 t 589 298 t 
+ 598 314 t 608 329 t 618 342 t 628 352 t 
+ stroke
+ 
+  .8 setlinewidth [8 8         ] 0 setdash newpath
+ 57 545 m 66 548 t 76 548 t 86 548 t 96 546 t 
+ 106 544 t 116 541 t 126 536 t 135 529 t 145 519 t 
+ 155 506 t 165 491 t 175 475 t 185 459 t 195 446 t 
+ 204 437 t 214 434 t 224 436 t 234 443 t 244 454 t 
+ 254 466 t 264 477 t 273 485 t 283 487 t 293 485 t 
+ 303 477 t 313 466 t 323 454 t 332 443 t 342 436 t 
+ 352 434 t 362 437 t 372 446 t 382 459 t 392 475 t 
+ 401 491 t 411 506 t 421 519 t 431 529 t 441 536 t 
+ 451 541 t 461 544 t 470 546 t 480 548 t 490 548 t 
+ 500 548 t 510 545 t 520 539 t 530 530 t 539 518 t 
+ 549 502 t 559 485 t 569 467 t 579 452 t 589 440 t 
+ 598 432 t 608 430 t 618 432 t 628 440 t 
+ stroke
+ 
+  .8 setlinewidth [            ] 0 setdash newpath
+ 63 179 m 73 174 t 83 160 t 93 139 t 103 115 t 
+ 113 92 t 123 73 t 133 61 t 143 58 t 153 65 t 
+ 163 81 t 173 103 t 183 128 t 193 154 t 203 178 t 
+ 213 196 t 223 209 t 233 216 t 243 218 t 253 216 t 
+ 263 213 t 273 210 t 283 209 t 293 210 t 303 213 t 
+ 313 216 t 323 218 t 333 216 t 343 209 t 353 196 t 
+ 363 178 t 373 154 t 383 128 t 393 103 t 403 81 t 
+ 413 65 t 423 58 t 433 61 t 443 73 t 453 92 t 
+ 463 115 t 473 139 t 484 160 t 494 174 t 504 179 t 
+ 514 175 t 524 162 t 534 142 t 544 119 t 554 96 t 
+ 564 76 t 574 63 t 584 60 t 594 66 t 604 80 t 
+ 614 102 t 624 127 t 
+ stroke
+ 
+  .8 setlinewidth [            ] 0 setdash newpath
+ 57 291 m 66 306 t 76 320 t 86 329 t 96 332 t 
+ 106 330 t 116 322 t 126 310 t 135 297 t 145 285 t 
+ 155 277 t 165 273 t 175 274 t 185 281 t 195 292 t 
+ 204 305 t 214 319 t 224 332 t 234 343 t 244 351 t 
+ 254 356 t 264 360 t 273 362 t 283 362 t 293 362 t 
+ 303 360 t 313 356 t 323 351 t 332 343 t 342 332 t 
+ 352 319 t 362 305 t 372 292 t 382 281 t 392 274 t 
+ 401 273 t 411 277 t 421 285 t 431 297 t 441 310 t 
+ 451 322 t 461 330 t 470 332 t 480 329 t 490 320 t 
+ 500 306 t 510 291 t 520 276 t 530 263 t 539 256 t 
+ 549 254 t 559 257 t 569 266 t 579 279 t 589 294 t 
+ 598 310 t 608 324 t 618 337 t 628 347 t 
+ stroke
+ 
+  .8 setlinewidth [            ] 0 setdash newpath
+ 57 545 m 66 548 t 76 549 t 86 549 t 96 549 t 
+ 106 547 t 116 545 t 126 540 t 135 534 t 145 524 t 
+ 155 512 t 165 498 t 175 482 t 185 467 t 195 454 t 
+ 204 446 t 214 442 t 224 445 t 234 452 t 244 463 t 
+ 254 476 t 264 487 t 273 494 t 283 497 t 293 494 t 
+ 303 487 t 313 476 t 323 463 t 332 452 t 342 445 t 
+ 352 442 t 362 446 t 372 454 t 382 467 t 392 482 t 
+ 401 498 t 411 512 t 421 524 t 431 534 t 441 540 t 
+ 451 545 t 461 547 t 470 549 t 480 549 t 490 549 t 
+ 500 548 t 510 545 t 520 538 t 530 529 t 539 516 t 
+ 549 500 t 559 482 t 569 464 t 579 448 t 589 436 t 
+ 598 428 t 608 425 t 618 428 t 628 435 t 
+ stroke
+ 
+  .8 setlinewidth [6 12 24 12  ] 0 setdash newpath
+ 57 291 m 66 307 t 76 321 t 86 330 t 96 334 t 
+ 106 332 t 116 325 t 126 314 t 135 302 t 145 291 t 
+ 155 282 t 165 279 t 175 281 t 185 288 t 195 300 t 
+ 204 313 t 214 327 t 224 341 t 234 352 t 244 360 t 
+ 254 366 t 264 369 t 273 371 t 283 372 t 293 371 t 
+ 303 369 t 313 366 t 323 360 t 332 352 t 342 341 t 
+ 352 327 t 362 313 t 372 300 t 382 288 t 392 281 t 
+ 401 279 t 411 282 t 421 291 t 431 302 t 441 314 t 
+ 451 325 t 461 332 t 470 334 t 480 330 t 490 321 t 
+ 500 307 t 510 291 t 520 275 t 530 262 t 539 254 t 
+ 549 251 t 559 255 t 569 263 t 579 276 t 589 290 t 
+ 598 305 t 608 320 t 618 332 t 628 342 t 
+ stroke
+ 
+  .8 setlinewidth [6 12 24 12  ] 0 setdash newpath
+ 57 544 m 66 548 t 76 550 t 86 551 t 96 551 t 
+ 106 550 t 116 548 t 126 544 t 135 538 t 145 530 t 
+ 155 518 t 165 504 t 175 489 t 185 474 t 195 462 t 
+ 204 454 t 214 451 t 224 454 t 234 462 t 244 473 t 
+ 254 485 t 264 496 t 273 504 t 283 507 t 293 504 t 
+ 303 496 t 313 485 t 323 473 t 332 462 t 342 454 t 
+ 352 451 t 362 454 t 372 462 t 382 474 t 392 489 t 
+ 401 504 t 411 518 t 421 530 t 431 538 t 441 544 t 
+ 451 548 t 461 550 t 470 551 t 480 551 t 490 550 t 
+ 500 548 t 510 544 t 520 538 t 530 527 t 539 514 t 
+ 549 497 t 559 479 t 569 461 t 579 445 t 589 432 t 
+ 598 423 t 608 421 t 618 423 t 628 430 t 
+ stroke
+ 
+  .8 setlinewidth [3 12        ] 0 setdash newpath
+ 57 318 m 630 318 t 
+ stroke
+ 
+  .8 setlinewidth [3 12        ] 0 setdash newpath
+ 57 488 m 630 488 t 
+ stroke
+ 
+ /LR   1 def 
+ 501 167 soc 503 167 soc 505 166 soc 507 165 soc 510 164 soc 
+ 512 162 soc 514 160 soc 516 157 soc 518 154 soc 520 151 soc 
+ 523 148 soc 525 144 soc 527 140 soc 529 136 soc 531 131 soc 
+ 534 127 soc 536 122 soc 538 117 soc 540 113 soc 542 108 soc 
+ 544 103 soc 547 99 soc 549 94 soc 551 90 soc 553 85 soc 
+ 555 81 soc 557 78 soc 560 74 soc 562 71 soc 564 68 soc 
+ 566 66 soc 568 64 soc 571 62 soc 573 60 soc 575 60 soc 
+ 577 59 soc 579 59 soc 581 59 soc 584 60 soc 586 61 soc 
+ 588 63 soc 590 65 soc 592 67 soc 594 70 soc 597 73 soc 
+ 599 76 soc 601 80 soc 603 84 soc 605 88 soc 608 93 soc 
+ 610 98 soc 612 103 soc 614 108 soc 616 113 soc 618 119 soc 
+ 621 125 soc 623 130 soc 625 136 soc 627 141 soc 629 147 soc 
+ 
+ /LR   1 def 
+ 65 167 soc 68 167 soc 70 166 soc 72 165 soc 74 164 soc 
+ 76 162 soc 79 160 soc 81 157 soc 83 154 soc 85 151 soc 
+ 87 148 soc 89 144 soc 92 140 soc 94 136 soc 96 131 soc 
+ 98 127 soc 100 122 soc 102 117 soc 105 113 soc 107 108 soc 
+ 109 103 soc 111 99 soc 113 94 soc 116 90 soc 118 85 soc 
+ 120 81 soc 122 78 soc 124 74 soc 126 71 soc 129 68 soc 
+ 131 66 soc 133 64 soc 135 62 soc 137 60 soc 139 60 soc 
+ 142 59 soc 144 59 soc 146 59 soc 148 60 soc 150 61 soc 
+ 153 63 soc 155 65 soc 157 67 soc 159 70 soc 161 73 soc 
+ 163 76 soc 166 80 soc 168 84 soc 170 88 soc 172 93 soc 
+ 174 98 soc 177 103 soc 179 108 soc 181 113 soc 183 119 soc 
+ 185 125 soc 187 130 soc 190 136 soc 192 141 soc 194 147 soc 
+ 196 152 soc 198 158 soc 200 163 soc 203 168 soc 205 173 soc 
+ 207 178 soc 209 183 soc 211 188 soc 214 192 soc 216 196 soc 
+ 218 200 soc 220 203 soc 222 207 soc 224 210 soc 227 213 soc 
+ 229 215 soc 231 218 soc 233 220 soc 235 222 soc 237 223 soc 
+ 240 225 soc 242 226 soc 244 227 soc 246 228 soc 248 229 soc 
+ 251 229 soc 253 230 soc 255 230 soc 257 230 soc 259 231 soc 
+ 261 231 soc 264 231 soc 266 231 soc 268 231 soc 270 231 soc 
+ 272 231 soc 274 231 soc 277 231 soc 279 230 soc 281 230 soc 
+ 285 230 soc 288 230 soc 290 231 soc 292 231 soc 294 231 soc 
+ 296 231 soc 298 231 soc 301 231 soc 303 231 soc 305 231 soc 
+ 307 231 soc 309 230 soc 311 230 soc 314 230 soc 316 229 soc 
+ 318 229 soc 320 228 soc 322 227 soc 325 226 soc 327 225 soc 
+ 329 223 soc 331 222 soc 333 220 soc 335 218 soc 338 215 soc 
+ 340 213 soc 342 210 soc 344 207 soc 346 203 soc 348 200 soc 
+ 351 196 soc 353 192 soc 355 188 soc 357 183 soc 359 178 soc 
+ 362 173 soc 364 168 soc 366 163 soc 368 158 soc 370 152 soc 
+ 372 147 soc 375 141 soc 377 136 soc 379 130 soc 381 125 soc 
+ 383 119 soc 385 113 soc 388 108 soc 390 103 soc 392 98 soc 
+ 394 93 soc 396 88 soc 399 84 soc 401 80 soc 403 76 soc 
+ 405 73 soc 407 70 soc 409 67 soc 412 65 soc 414 63 soc 
+ 416 61 soc 418 60 soc 420 59 soc 423 59 soc 425 59 soc 
+ 427 60 soc 429 60 soc 431 62 soc 433 64 soc 436 66 soc 
+ 438 68 soc 440 71 soc 442 74 soc 444 78 soc 446 81 soc 
+ 449 85 soc 451 90 soc 453 94 soc 455 99 soc 457 103 soc 
+ 460 108 soc 462 113 soc 464 117 soc 466 122 soc 468 127 soc 
+ 470 131 soc 473 136 soc 475 140 soc 477 144 soc 479 148 soc 
+ 481 151 soc 484 154 soc 486 157 soc 488 160 soc 490 162 soc 
+ 492 164 soc 494 165 soc 497 166 soc 499 167 soc 501 167 soc 
+ /NH  12 def fnt
+ 92 75 pb (A.) pe
+ /NH  12 def fnt
+ 92 288 pb (B.) pe
+ /NH  12 def fnt
+ 92 478 pb (C.) pe
+
+% /NH  12 def fnt
+%  .8 setlinewidth [            ] 0 setdash newpath
+% 222 38 m 274 38 t stroke
+% 274 45 pb ( 000) pe
+% /NH  12 def fnt
+%  .8 setlinewidth [8 8         ] 0 setdash newpath
+% 222 67 m 274 67 t stroke
+% 274 74 pb ( -+-) pe
+% /NH  12 def fnt
+%  .8 setlinewidth [6 12 24 12  ] 0 setdash newpath
+% 222 96 m 274 96 t stroke
+% 274 103 pb ( +-+) pe
+
+ /NH  12 def fnt
+ 242 196 pb (Chains) pe
+ /NH  12 def fnt
+ 469 198 pb (Water) pe
+ /NH  12 def fnt
+ 393 52 pb (Heads) pe
+ /NH  12 def fnt
+ 434 353 pb (Water) pe
+ /NH  12 def fnt
+ 242 336 pb (Chains) pe
+ /NH  12 def fnt
+ 363 259 pb (Heads) pe
+ /NH  12 def fnt
+ 443 526 pb (Chains) pe
+ /NH  12 def fnt
+ 242 520 pb (Water) pe
+ /NH  12 def fnt
+ 321 428 pb (Heads) pe
+% /NH  12 def fnt
+% 245 120 soc 271 127 pb ( gel) pe
+ 
+ end
+ showpage
+%%Trailer
+%%BoundingBox: 0 0 234 234

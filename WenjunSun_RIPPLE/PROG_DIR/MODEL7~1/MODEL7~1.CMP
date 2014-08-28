@@ -1,0 +1,62 @@
+
+Wack89 Data
+
+DMPC, 25% Water, 18C
+
+d=57.94A, lambda=141.7A, gamma=98.4deg
+
+------------------------------------------------------------------
+
+Model 7: Trans-bilayer electron density profile tilted away from
+z direction. That tilt angle (beta) is a free parameter.
+MW 1G Hybrid Model has been used. His results of Ch, sig_h, Cch3
+and sig_ch3 have been used. Zh is a free parameter.
+
+Values for Ch, sig_h, Cch3, sig_ch3:
+
+	Ch/|p*ch2|=10.77, sig_h=3.43
+	Cch3/|p*ch2|=-9.23, sig_ch3=1.67
+
+	where p*ch2=p_ch2-p_w
+
+NLSQ fitting results:
+
+Primary parameters:			Secondary parameters:
+----------------------------		---------------------------
+
+Amplitude       18.5(7)A		L_major:	106.6A	
+X0              105(3)A			Slope_major:	9.99deg
+Beta            5(2)deg			L_minor:	41.1A
+Zh              19.1(2)A		Slope_minor:	26.75deg
+
+Chi-square      2.15
+
+------------------------------------------------------------------
+
+h       k               Wack_data       	Model_fit
+					----------------------
+			|F(h,k)|	|F(h,k)|	phase		
+
+3	-2		29.33		20.52		+
+3	-1		44.18		41.65		+
+3	 0		12.03		 2.51		+
+3	 2		10.48		14.92		+
+3	 3		14.87		15.57		-
+3	 4		 9.99		13.72		+
+
+2	-2		15.06		 7.44		-
+2	-1		71.22		65.79		-
+2	 0		39.69		41.05		-
+2	 1		33.91		30.73		+
+2	 2		22.70		24.29		-
+2	 3		14.16		17.70		+
+2	 4		 7.78		11.23		-
+
+1	-1	 	60.83		41.86		-
+1	 0	       100.00	        96.87		-
+1	 1		26.86		37.45		+
+1	 3		 7.61		14.07		+
+
+0	 1		 5.33		 2.11		-
+0	 2		 9.68		 1.52		+
+0 	 3		 7.81		 0.76		-

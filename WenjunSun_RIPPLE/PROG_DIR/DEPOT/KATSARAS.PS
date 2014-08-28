@@ -1,0 +1,111 @@
+%!PS-Adobe-2.0
+%%Creator: Wenjun Sun
+%%Title: Ripple pattern
+%%Pages: 1
+%%BoundingBox: 0 0 612 792
+%%EndComments
+%-------------Variables and procedures------------
+/i {72 mul} def
+/width 8.5 i def
+/height 11 i def
+/LM -1.5 i def
+/center {width 2 div height 2 div translate} def
+/getHel {/Helvetica-Bold findfont 15 scalefont setfont} def
+/getCou {/Courier findfont 12 scalefont setfont} def
+/getSym {/Symbol findfont 12 scalefont setfont} def
+/newline{currentpoint 14 sub exch pop LM exch moveto} def
+/label {/subscript exch def
+ currentpoint moveto ( q) show
+ currentpoint 4 sub moveto subscript show} def
+/peak 
+ {/gs exch def /y exch def /x exch def
+ x y 7 360 0 arcn
+ closepath gs setgray fill} def
+%------------End variables and procedures---------
+%%EndProlog
+%%Page: 1 1
+%------------Begin program------------------------
+center
+
+getHel
+-2 i 0 i moveto
+2 i 0 i lineto
+(x) label
+0 i -1 i moveto
+0 i 4.5 i lineto
+(z) label
+1 setlinewidth
+stroke
+
+gsave
+-0.471 i 3.525 i 0.833 peak
+0.000 i 3.600 i 0.733 peak
+-0.471 i 2.925 i 0.833 peak
+0.000 i 3.000 i 0.700 peak
+-0.706 i 2.288 i 0.667 peak
+-0.471 i 2.325 i 0.000 peak
+-0.235 i 2.363 i 0.000 peak
+0.000 i 2.400 i 0.000 peak
+-0.471 i 1.725 i 0.000 peak
+-0.235 i 1.763 i 0.000 peak
+0.000 i 1.800 i 0.000 peak
+0.471 i 1.875 i 0.333 peak
+0.706 i 1.912 i 0.333 peak
+0.942 i 1.949 i 0.333 peak
+1.177 i 1.986 i 0.667 peak
+-0.471 i 1.125 i 0.667 peak
+-0.235 i 1.163 i 0.000 peak
+0.000 i 1.200 i 0.000 peak
+0.235 i 1.237 i 0.000 peak
+0.471 i 1.275 i 0.333 peak
+-0.235 i 0.563 i 0.000 peak
+0.000 i 0.600 i 0.000 peak
+0.235 i 0.637 i 0.000 peak
+0.235 i 0.637 i 0.000 peak
+grestore
+
+1.412 i 0.224 i 3 sub moveto (0) show
+1.412 i 0.824 i 3 sub moveto (1) show
+1.412 i 1.424 i 3 sub moveto (2) show
+1.412 i 2.024 i 3 sub moveto (3) show
+1.412 i 2.624 i 3 sub moveto (4) show
+1.412 i 3.224 i 3 sub moveto (5) show
+1.412 i 3.824 i 3 sub moveto (6) show
+1.648 i 2.061 i 3 sub moveto (h) show
+
+-1.177 i 7 sub 3.714 i moveto (-5) show
+-0.942 i 7 sub 3.751 i moveto (-4) show
+-0.706 i 7 sub 3.788 i moveto (-3) show
+-0.471 i 7 sub 3.825 i moveto (-2) show
+-0.235 i 7 sub 3.863 i moveto (-1) show
+0.000 i 7 sub 3.900 i moveto (0) show
+0.235 i 7 sub 3.937 i moveto (1) show
+0.471 i 7 sub 3.975 i moveto (2) show
+0.706 i 7 sub 4.012 i moveto (3) show
+0.942 i 7 sub 4.049 i moveto (4) show
+1.177 i 7 sub 4.086 i moveto (5) show
+-0.589 i 4.107 i moveto (k) show
+
+newpath
+0.000 i 0.000 i moveto
+0.000 i 0.600 i lineto
+0.235 i 0.637 i lineto
+0.235 i 0.037 i lineto
+closepath 2 setlinewidth stroke
+
+newpath
+-1.274 i -2.250 i moveto
+-1.433 i -1.250 i lineto
+1.116 i -1.250 i lineto
+1.274 i -2.250 i lineto
+closepath 2 setlinewidth stroke
+
+LM -3.5 i moveto
+getCou (d = 56.5A, ) show
+getSym (l) show getCou ( = 144A, ) show
+getSym (g) show getCou ( = 99 deg) show
+newline
+((Katsaras_95_ori L-DMPC 98%RH 25C)) show
+
+showpage
+%%Trailer

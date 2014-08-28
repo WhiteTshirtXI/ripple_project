@@ -1,0 +1,94 @@
+To Dr. Daniel C. Wack
+
+---------------------------------------------------------------------------
+Dear Dan,
+
+	My student, Wenjun Sun, has gotten interested in the ripple
+phase.  Of course, he has studied your outstanding papers, PRL 61, 
+1210 (1988) and PRA 40, 2712 (1989) (and your thesis, which you kindly 
+sent me), as well as the papers of others.
+
+	Wenjun has persuaded me that he can obtain additional 
+information, such as amplitude of rippling and degree of asymmetry, 
+from your data.  Before he goes any further, however, I thought it 
+important to check with you and Watt and I have called Watt, who 
+says that you have not written any additional papers on the ripple 
+phase.  We would also like to know if anyone else has used your data 
+to obtain additional information about the rippling?
+
+	I will turn this letter over to Wenjun who can describe
+better what he is doing and what additional data he might like to
+have, if you still have it.  If there are additional data and if 
+Wenjun can make something convincing of it, we would, of course,
+invite you to co-author any paper.
+
+	Thanks for your consideration.
+
+					John Nagle
+
+-----------------------------------------------------------------------------
+
+Hi, Dan
+
+My name is Wenjun Sun and I am one of Dr. Nagle's students. I have been 
+interested in the ripple phase of lecithin bilayer system and have learned
+a lot from your papers.
+
+The lattice parameters of the ripple phase, namely the ripple repeat, the 
+inter-bilayer d-spacing and the oblique angle, have been well determined by
+you and other workers. But the ripple amplitude and the degree of assymetry
+of the ripple profile are still subject to many ambiguities. It has 
+been argued that the obliquity of the ripple unit cell implies the asymmetry
+of the ripple profile, but how much is the asymmetry, namely the slopes and the
+lengths of the two sides of the ripple, has has never been answered
+satisfactorily. 
+
+The information about the ripple amplitude and the degree of asymmetry is
+contained in the scattering density distribution of different peaks from
+x-ray measurements, as you well know. There are two approaches to extract
+these information from x-ray density data: 1). Fourier reconstruction of the
+electron density distribution. Typically there are about twenty peaks. Finding
+the right combination of phases ( out of 2^20 possibilities) is extremely
+difficult. 2). Modeling. The model should contain the ripple profile and the
+trans-bilayer electron density distribution. Janiak et al. made such an
+attempt. But their data were not good enough, and they used a symmetrical
+ripple shape. Their fitting result gave an incorrect scattering intensity
+distribution in the q-space, which could be contradicted by your work and
+other oriented sample works. Although their attempt is not very sucessful
+from my point of view, modeling still seems the only sensible way to go.
+
+Recently, I proposed a model. It consists of an asymmetric ripple profile,
+with the ripple amplitude and the slopes as parameters, and a typical
+trans-bilayer electron distribution with the bilayer thickness as one
+of the parameters. I fitted my model to your intensity data reported in your
+PRA paper and achieved very good, both qualitative and quantitative,
+agreements. I showed my preliminary results to Dr. Nagle and other members
+of our group. They were impressed and convinced that I was on the right 
+track. My plan is to get the chain length and hydration dependences of the
+ripple amplitude and the degree of asymmetry. But this requires many high 
+quality x-ray works like the one you had done back in your Ph.D time. Also
+there might be a possibility that you already have all the intensity
+data for different chain length and hydration levels. If so, I would be very
+glad to have them and analyze them using my model. I am sure it will turn
+out to be a (or few) nice paper(s). And as Dr. Nagle mentioned in his
+introduction letter, you are welcome to be a co-author.
+
+It would be highly rare that one can still remember his Ph.D work after
+so many years :) I hope this email would remind you of all those "dark
+hours in CHESS" :) I have gone to CHESS three times, so I fully understand
+what you meant. Even if you do have the intensity data, retrieving them
+will not be an easy job. 
+
+We are sincerely looking forward to hearing from you.
+
+Best regards.
+
+Wenjun
+
+Wenjun Sun
+Department of physics
+Carnegie Mellon University
+Pittsburgh, PA 15213
+phone: (412)268-2730
+FAX: (412)681-0648
+email: ws22@andrew.cmu.edu

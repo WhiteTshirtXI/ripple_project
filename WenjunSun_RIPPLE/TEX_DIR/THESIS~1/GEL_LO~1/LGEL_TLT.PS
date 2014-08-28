@@ -1,0 +1,207 @@
+%!PS-Adobe-1.0
+%%Creator: GraED
+%%BoundingBox: 104 401 515 715
+%%EndComments
+% Graed Prelude
+
+/GedDict 200 dict def
+
+GedDict begin
+
+/i {72 mul} def  /ini {gsave translate newpath} def
+/LNW {0.25 LR mul setlinewidth}def /sld { [] 0 setdash stroke } def % solid
+/bordr { gsave fl setgray fill grestore LNW sld grestore} bind def
+/cir {0 0 LR 0 360 arc bordr} bind def % for cir
+/sqr {0.85 0.85 scale LR LR moveto 0 LR -2 mul rlineto LR -2 mul 0 rlineto
+0 LR 2 mul rlineto closepath bordr} bind def % square center at Ori
+/x {0.7 0.7 scale LNW 0 LR sub LR moveto LR 2 mul LR -2 mul rlineto
+LR LR moveto LR -2 mul dup rlineto sld } bind def
+/+ {0.85 0.85 scale LNW 0 LR moveto 0 LR -2 mul rlineto 
+LR 0 moveto LR -2 mul 0 rlineto sld } bind def
+/tri {0 LR sub LR 0.866 mul moveto LR 2 mul 0 rlineto
+0 LR sub 0.866 -2 mul LR mul rlineto closepath bordr} bind def% triangle
+/oneline{LR 0 moveto LR -2 mul 0 rlineto 45 rotate} def
+/*{LNW 4 {oneline} repeat sld } bind def
+
+% ---begin symbol---
+/sc {ini cir} bind def % filled circle with level fl
+/ss {ini sqr} bind def
+/st {ini tri} bind def
+
+/sfc {ini /fl 0 def cir} bind def% filled cir
+/soc {ini /fl 1 def cir} bind def% open
+/st {ini tri} bind def
+
+/sfc {ini /fl 0 def cir} bind def% filled cir
+/soc {ini /fl 1 def cir} bind def% open
+/sfs {ini /fl 0 def sqr} bind def% filled sqr
+/sos {ini /fl 1 def sqr} bind def% open
+/sft {ini /fl 0 def tri} bind def% f tri
+/sot {ini /fl 1 def tri} bind def
+/sx {ini x grestore} bind def
+/s+ {ini + grestore} bind def
+/s* {ini * grestore} bind def
+%---end symbol
+/NL {setlinewidth newpath} def % 
+%=== begin font ===
+/fss {findfont NH 1.9 mul scalefont setfont}def
+/fnt {/Helvetica fss} bind def
+/pb {gsave translate 1 -1 scale 0 NH -0.33 mul moveto} def
+/pv {gsave translate 1 -1 scale 0 0 moveto 90 rotate } def
+/pe {show grestore} def
+% The following are for scribe like commands
+/cep {currentpoint exch pop} def % needed for @+, @- to get position back
+/@+- {gsave currentfont [0.8 0 0 0.8 0 0] makefont setfont cep
+      0 NH ud mul rmoveto} bind def % ud = up or down
+/@+ {/ud 0.9 def @+-} bind def
+/@- {/ud -0.8 def @+-} bind def
+/@g {gsave /Symbol fss cep} bind def
+/@i {gsave /Helvetica-Oblique fss cep} bind def
+/@b {gsave /Helvetica-Bold fss cep} bind def
+/@e {show currentpoint pop exch grestore moveto} def % for ')'
+
+%=== end font ====
+ 
+% horizontal and vertical lines
+/l {moveto rlineto sld} bind def 
+/t {lineto} def
+/ct {curveto} def
+/m {moveto} def
+/ar {gsave newpath m t t closepath 0 setgray fill grestore} bind def 
+% x2 y2 x1 y1 x0,y0 ar Draw an arrow head from 0 to 1,2
+/box {dup 0 exch moveto exch 0 rlineto 0 exch -1 mul rlineto 
+0 0 lineto closepath} def % x y box 
+/fb {gsave setgray fill grestore 1 setlinewidth sld grestore} def
+/ff {setgray fill grestore} def% x y box gray ff
+/bb {pop stroke grestore} def % x y box stroke pop off gray level
+%%EndProlog
+%%Page: 1 1
+ 1.3 i  5.5 i translate
+0  4.50 i translate 0.36 -0.36 scale
+ 2 setlinecap 
+   1.6 setlinewidth
+ 0 -759 144 785 l 
+ 1.3 setlinewidth [            ] 0 setdash newpath
+ 144 785 m 161 785 t 144 785 m 153 785 t 144 747 m 
+ 153 747 t 144 709 m 153 709 t 144 671 m 153 671 t 
+ 144 633 m 153 633 t 144 595 m 161 595 t 144 595 m 
+ 153 595 t 144 557 m 153 557 t 144 519 m 153 519 t 
+ 144 481 m 153 481 t 144 443 m 153 443 t 144 405 m 
+ 161 405 t 144 405 m 153 405 t 144 367 m 153 367 t 
+ 144 329 m 153 329 t 144 291 m 153 291 t 144 253 m 
+ 153 253 t 144 215 m 161 215 t 144 215 m 153 215 t 
+ 144 177 m 153 177 t 144 139 m 153 139 t 144 101 m 
+ 153 101 t 144 63 m 153 63 t 144 25 m 161 25 t 
+ 144 25 m 153 25 t 
+ stroke
+ 1019 0 144 785 l 
+ 1.3 setlinewidth [            ] 0 setdash newpath
+ 144 785 m 144 776 t 198 785 m 198 776 t 251 785 m 
+ 251 776 t 305 785 m 305 768 t 305 785 m 305 776 t 
+ 359 785 m 359 776 t 412 785 m 412 776 t 466 785 m 
+ 466 776 t 520 785 m 520 776 t 573 785 m 573 768 t 
+ 573 785 m 573 776 t 627 785 m 627 776 t 681 785 m 
+ 681 776 t 735 785 m 735 776 t 788 785 m 788 776 t 
+ 842 785 m 842 768 t 842 785 m 842 776 t 896 785 m 
+ 896 776 t 949 785 m 949 776 t 1003 785 m 1003 776 t 
+ 1057 785 m 1057 776 t 1110 785 m 1110 768 t 1110 785 m 
+ 1110 776 t 
+ stroke
+ 1019 0 144 25 l 
+ 1.3 setlinewidth [            ] 0 setdash newpath
+ 144 25 m 144 34 t 198 25 m 198 34 t 251 25 m 
+ 251 34 t 305 25 m 305 42 t 305 25 m 305 34 t 
+ 359 25 m 359 34 t 412 25 m 412 34 t 466 25 m 
+ 466 34 t 520 25 m 520 34 t 573 25 m 573 42 t 
+ 573 25 m 573 34 t 627 25 m 627 34 t 681 25 m 
+ 681 34 t 735 25 m 735 34 t 788 25 m 788 34 t 
+ 842 25 m 842 42 t 842 25 m 842 34 t 896 25 m 
+ 896 34 t 949 25 m 949 34 t 1003 25 m 1003 34 t 
+ 1057 25 m 1057 34 t 1110 25 m 1110 42 t 1110 25 m 
+ 1110 34 t 
+ stroke
+ 0 -759 1164 785 l 
+ 1.3 setlinewidth [            ] 0 setdash newpath
+ 1164 785 m 1147 785 t 1164 785 m 1155 785 t 1164 747 m 
+ 1155 747 t 1164 709 m 1155 709 t 1164 671 m 1155 671 t 
+ 1164 633 m 1155 633 t 1164 595 m 1147 595 t 1164 595 m 
+ 1155 595 t 1164 557 m 1155 557 t 1164 519 m 1155 519 t 
+ 1164 481 m 1155 481 t 1164 443 m 1155 443 t 1164 405 m 
+ 1147 405 t 1164 405 m 1155 405 t 1164 367 m 1155 367 t 
+ 1164 329 m 1155 329 t 1164 291 m 1155 291 t 1164 253 m 
+ 1155 253 t 1164 215 m 1147 215 t 1164 215 m 1155 215 t 
+ 1164 177 m 1155 177 t 1164 139 m 1155 139 t 1164 101 m 
+ 1155 101 t 1164 63 m 1155 63 t 1164 25 m 1147 25 t 
+ 1164 25 m 1155 25 t 
+ stroke
+ /NH  18 def fnt
+ 90 791 pb (3) pe
+ 110 791 pb (1) pe
+ 90 601 pb (3) pe
+ 110 601 pb (2) pe
+ 90 411 pb (3) pe
+ 110 411 pb (3) pe
+ 90 221 pb (3) pe
+ 110 221 pb (4) pe
+ 90 31 pb (3) pe
+ 110 31 pb (5) pe
+ 286 812 pb (1) pe
+ 306 812 pb (0) pe
+ 554 812 pb (1) pe
+ 574 812 pb (5) pe
+ 823 812 pb (2) pe
+ 843 812 pb (0) pe
+ 1091 812 pb (2) pe
+ 1111 812 pb (5) pe
+ 524 865 pb (Temperature \050) show
+@+ (o) @e (C\051) pe
+ 61 575 pv (Chain Tilt Angle \050 \051) pe
+/LR 5 def
+61 ( ) stringwidth pop sub LR sub 575 (Chain Tilt Angle \050 ) 
+stringwidth pop 
+sub ( ) stringwidth pop 2 div add soc
+ 
+ 1.3 setlinewidth [            ] 0 setdash newpath
+ 219 310 m 219 120 t 212 310 m 226 310 t 212 120 m 
+ 226 120 t 
+ stroke
+ 
+ 1.3 setlinewidth [            ] 0 setdash newpath
+ 305 310 m 305 120 t 298 310 m 312 310 t 298 120 m 
+ 312 120 t 
+ stroke
+ 
+ 1.3 setlinewidth [            ] 0 setdash newpath
+ 386 386 m 386 196 t 379 386 m 393 386 t 379 196 m 
+ 393 196 t 
+ stroke
+ 
+ 1.3 setlinewidth [            ] 0 setdash newpath
+ 788 690 m 788 500 t 781 690 m 795 690 t 781 500 m 
+ 795 500 t 
+ stroke
+ 
+ 1.3 setlinewidth [            ] 0 setdash newpath
+ 874 652 m 874 462 t 867 652 m 881 652 t 867 462 m 
+ 881 462 t 
+ stroke
+ 
+ 1.3 setlinewidth [            ] 0 setdash newpath
+ 1110 766 m 1110 576 t 1103 766 m 1117 766 t 1103 576 m 
+ 1117 576 t 
+ stroke
+ 
+ /LR  15 def 
+ 219 215 sfc 305 215 sfc 386 291 sfc 788 595 sfc 874 557 sfc 
+ 1110 671 sfc 
+ 2.6 setlinewidth [            ] 0 setdash newpath
+ 144 160 m 494 357 t 1086 690 t 1164 734 t 
+ stroke
+ 
+ 2.6 setlinewidth [20 15       ] 0 setdash newpath
+ 1164 638 m 144 277 t 
+ stroke
+ 
+ end
+ showpage
+%%Trailer

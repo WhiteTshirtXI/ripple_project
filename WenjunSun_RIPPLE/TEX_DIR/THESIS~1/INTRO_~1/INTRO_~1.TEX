@@ -1,0 +1,231 @@
+\chapter{Introduction}
+\label{intro_chap}
+
+\section{Biomembranes and their functions}
+\label{intro_chap_biom}
+
+Biomembranes are the walls or barriers separating a living organism,
+be it a cell or a subcell organelle, from its environment. Besides
+maintaining the structural integrity of the living entity, biomembranes
+have to be flexible to adjust to environmental changes. Biomembranes
+are also the places where essential living processes are carried out;
+these include the exchange of substances and information with the
+surroundings, and the generation of energy \cite{Voet90}.
+
+Living organisms maintain and regulate their internal compositions
+through biomembranes. This is realized because biomembranes are
+highly-selective semi-permeable barriers which control the flows of
+nutrients, waste products, ions into and out of the organism
+through membrane-embedded pumps and gates.
+
+Biomembranes also control the flow of information between organisms and 
+their environment. They contain specific receptors
+for external stimuli, and in turn, some membranes also generate
+signals. Thus membranes play a central role in biological
+communication.
+
+In addition, two most important energy conversion processes in
+biological systems involve biomembranes.
+The first is oxidative phosphorylation process which generates
+and store energy in the form of ATP (Adenosine TriPhosphate) by oxidizing
+nutrients \cite{Voet90}; this process takes place in the inner membrane of
+mitochondria.  The second is well-known photosynthesis, in which 
+light energy is converted into chemical-bond energy by forming 
+carbohydrates from H$_2$O and CO$_2$; this process occurs in the inner 
+membranes of chloroplasts \cite{Voet90}.
+
+\section{Phospholipids and lipid bilayers as model biomembranes}
+
+Biomembranes are essentially a 2-D matrix composed of lipids, proteins and 
+small amounts of carbohydrate. Phospholipids are one of the major lipid 
+components in biological membranes. A phospholipid molecule basically
+consists of a polar, hydrophilic headgroup and apolar, hydrophobic
+hydrocarbon tails; because of this special feature, lipid molecules
+are also called amphiphiles. When sufficient amounts of phospholipid
+molecules are dispersed into water, they spontaneously assemble into 
+several forms of aggregates, including micelles, lamellar bilayers
+and cubic phases. The driving force for these aggregate formations
+is the tendency of hydrophobic hydrocarbon tails to be away from water
+and for the heads to be in water in order to minimize the free energy.
+
+Among the most studied phospholipids are the ones with PC (phosphatidylcholine)
+headgroups; this category of phospholipids are also called lecithins. Two
+lecithin molecules with 14 saturated carbons on each of the 
+two chains are shown in Figure~\ref{intro:dmpc}; this molecule is named DMPC 
+(Dimyristoylphosphatidylcholine or C14, following a convention later chapters 
+of this thesis will use.). 
+Saturated lecithins like DMPC and others with longer chain lengths 
+are the focus of this thesis.
+
+\begin{figure}[h]
+\label{intro:dmpc}
+\centerline {\psfig{figure=intro_dir/dmpc_pair.ps,width=4in}}
+\caption{Space-filling model of a pair of DMPC (C14) molecules.
+By courtesy of Dr. Kechuan Tu.}
+\end{figure}
+
+Phospholipid bilayers (see Fig.~\ref{intro_bilayer}) are often employed as 
+model biomembranes, both in experiments and computer simulations,
+because pure lipid bilayers have less complex thermodynamic behaviors
+than real biomembranes. Elucidating the structures and thermodynamics
+of these model bilayer systems is essential for understanding the bulk 
+behavior and functional properties of real, multi-component biological
+membranes.
+
+\begin{figure}
+\label{intro_bilayer}
+\centerline {\psfig{figure=intro_dir/bilayer_model.ps,width=4in}}
+\caption{Space-filling model of two gel phase DPPC (C16) lipid bilayers.
+In between the two bilayers is water.
+By courtesy of Dr. Kechuan Tu.}
+\end{figure}
+
+\section{Phases and structures of lipid bilayers}
+\label{intro_chap_phas}
+
+The supramolecular packing of the bilayers forms lyotropic smectic
+liquid crystals with rich phase behavior and diverse structures. The 
+richness and diversity of phases and structures result from the 
+competitions and the balance among many of the interactions present in 
+lipid bilayer systems, including chain-chain and interbilayer van der 
+Waals interactions, interbilayer hydration interaction, head-head 
+electrostatic interactions \cite{Isr85}. Extensive structural and 
+thermodynamic studies of model membrane systems have been performed [1,6-27].
+%\cite{WSN89,BMc86,Buldt79,Hui76,HenRus91,JanSS76,Kat92,LevTh,McI80,%
+%Mit78,Nag80,NW78,Smi88,Sta79,Tar73,TW76,STN92,Wac89a,WW6,WoK78,Sta82,%
+%HenHos83,Mit80}. 
+
+Noncrystalline lamellar phases observed in lecithin bilayer systems
+include the subgel (L$_{c '}$) phase, the gel (L$_{\beta '}$) phase,
+the ripple (P$_{\beta '}$) phase and the fluid (L$_{\alpha}$) phase
+\cite{Sma86}. The L$_{c '}$ phase has a crystalline-like intra-bilayer 
+structure, in which both the hydrocarbon chains and headgroups are 
+ordered. But this in-plane order doesn't correlate with that of the 
+adjacent bilayers; because of this, the  L$_{c '}$ is not a crystalline 
+phase. Undergoing a so-called sub-transition when the temperature is 
+increased, the bilayers go into the L$_{\beta '}$ phase. In this phase, 
+the hydrocarbon chains are basically in the all-trans conformation and 
+the headgroups are disordered. At higher temperature, after the 
+pre-transition (also called the lower-transition by some researchers), 
+the system is in the ripple (P$_{\beta '}$) phase, in which the bilayers 
+are not flat but modulated, while most of the chains are as ordered
+as in the gel phase. As the temperature is further increased and 
+passes the main-transition (also called the chain-melting transition), 
+the system is in the fluid phase; in this fluid phase, both chains and 
+headgroups are disordered and the whole bilayers fluctuate around their 
+equilibrium positions. Since nearly all real biomembranes are fluid-like, 
+the fluid phase is the most biologically relevant phase.
+Schematics of the L$_{\beta '}$, P$_{\beta '}$ and L$_{\alpha}$ phases
+are shown in Fig. \ref{intro_phase} \cite{Sma86}.
+
+This thesis focusses on the chain ordered phases, particularly the gel and 
+ripple phases in lipid bilayers. 
+These phases have not been fully understood and there are still 
+disagreements in the literature about structures of these phases, 
+especially the relatively less studied ripple phase. In addition, these 
+chain ordered phases are not crystals; they also possess various degrees 
+of disorder; understanding the disorder in these phases can serve as 
+a prelude to the study of disorder in the fluid phase.
+
+From the point of view of biological relevance, the strongest reason to
+study the chain ordered phases is that the determination of the
+biologically relevant fluid phase structure requires the gel phase 
+structure. The major difficulty with obtaining fluid phase structure
+is the paucity of structure data. In contrast to the fluid phase,
+for the chain ordered phases, there is usable wide angle x-ray data and
+more low angle data, so better structure can be obtained. By bootstrapping
+from the much better determined gel phase structure obtained in this
+thesis, reliable fluid phase structure can be obtained. This has been 
+demonstrated in recent work of this lab \cite{N96}.
+
+%Disorders and fluctuations are important to real biological systems 
+%\cite{Voet90,N96}. Biomembranes at physiological temperatures are 
+%two-dimensional fluids in which lipid molecules are disordered and 
+%undergo constant lateral diffusions and much rare transverse diffusions 
+%(flip-flop). Cell fusion, division, endocytosis and exocytosis are all 
+%vital biological processes which require fluid and flexible membranes.
+
+\begin{figure}
+\label{intro_phase}
+\centerline {\psfig{figure=intro_dir/lamellar.eps,width=6in}}
+\caption{Three major phases of lipid bilayers and the phase
+transitions between them.}
+\end{figure}
+
+In order to understand the different roles of headgroups and hydrocarbon
+chains in the structure and thermodynamic properties of lipid
+bilayers, one strategy is to vary the chain length. This variation 
+systematically alters the balance between the interaction energy 
+involving the headgroups, which remains the same, and the total 
+interaction between the chains, which increases with chain length. 
+Chapters \ref{gel_anol_chap} and \ref{gel_long_chap} will show
+the results of chain-length dependence of gel phase structure 
+and thermodynamic properties. 
+
+\section{Structure determination using the x-ray scattering method}
+\label{intro_chap_xray}
+
+X-ray scattering is our primary tool in investigating order and
+disorder in lipid bilayer systems. Ordered and periodic
+structures can be determined from the Bragg diffraction.
+Some of the key structural parameters of gel phase lipid bilayers 
+are shown in Fig. \ref{intro_struc}. Using Bragg's law and 
+Fourier reconstruction of the transbilayer electron density profiles, 
+the lamellar packing structural parameters can be determined from the 
+low angle data. Wide angle data analysis determines the 
+chain packing structure. 
+In contrast, the information about disorder in the lipid bilayer system
+is contained in the broad diffuse scattering underlying the
+Bragg peaks. 
+
+%As shown in \cite{N96}, the bilayer fluctuation
+%in the broad diffuse scatterings and fluctuations in the non-Bragg
+%portion of the scattering peaks \cite{N96}.
+
+\begin{figure}
+\label{intro_struc}
+\centerline {\psfig{figure=intro_dir/schematic.ps,width=5in}}
+\caption{Definitions of main structural parameters of the gel phase
+lipid bilayers. Shown in the right picture is the cross section
+perpendicular to the chains, with each black dot representing
+a hydro-carbon chain.}
+\end{figure}
+
+X-ray scattering provides the lineshapes of the diffraction peaks
+and the amplitudes of the form factors, but not the phase information. 
+In order to determine the detailed and accurate electron density
+distributions either across the bilayer or intra-bilayer (i.e. the
+lateral distribution), electron density modeling and nonlinear least
+square fitting are sometimes necessary. In Chapter \ref{gel_model_chap},
+we propose and apply an electron density model to fit the wide
+angle Bragg scattering data of an unoriented sample of gel phase DPPC
+bilayers, excellent fit was achieved and many key structural parameters
+were extracted; these parameters include the chain tilt angle, 
+effective chain length and offsets of the two monolayers. It had been
+thought that only from oriented samples could those parameters be obtained;
+our modeling results show that with a correct model and careful data
+analysis, powder samples yield no less information than the oriented
+samples. In Chapter \ref{rppl_chap}, we solve the structure of the
+ripple phase by another modeling approach. Our ripple phase model fit 
+provides the phase information of 20 or so peaks typical in ripple phase data.
+It was the difficulty of obtaining the correct phase combination which
+hindered early work on the ripple phase from revealing the ripple
+structure.
+
+\section{Description of thesis}
+\label{intro_chap_desc}
+
+The rest of this thesis is organized as follows. 
+Chapter \ref{matmet_chap} is the Materials and Methods section.
+Chapter \ref{gel_model_chap} shows our model analysis on the wide
+angle results of the gel phase of fully hydrated unoriented 
+MLVs (multilamellar vesicles) of DPPC. Chapters \ref{gel_anol_chap} 
+and \ref{gel_long_chap} show systematic
+low-angle and wide-angle x-ray scattering studies on fully hydrated
+unoriented MLVs of saturated lecithins with even chain
+lengths N = 16, 18, 20, 22 and 24 as a function of temperature in the 
+chain ordered phases; Chapter \ref{gel_anol_chap} shows the anomalous 
+phase behavior of the longer chain lengths $N \geq 20$; Chapter 
+\ref{gel_long_chap} shows the temperature and chain length dependence 
+of the normal gel phase.  Chapter \ref{rppl_chap} shows the study on 
+the structure of the ripple (P$_{\beta '}$) phase.

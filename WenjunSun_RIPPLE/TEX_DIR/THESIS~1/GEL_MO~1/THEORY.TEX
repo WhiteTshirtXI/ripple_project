@@ -1,0 +1,217 @@
+\section{Model}
+\label{gel_model_model}
+
+The gel phase of lipid bilayers has been characterized for many years as
+having conformationally ordered, nearly {\em all-trans} hydrocarbon chains
+that pack into ordered arrays that give rise to the (20) and (11)
+peaks in Fig.\ \ref{model:fig1} \cite{LevTh,Tar73}.
+These ordered hydrocarbon chains may be tilted in various directions with respect 
+to the nearly hexagonal lattice of packed chains \cite{Smi88}.  However, it 
+has been known for a long time that the fully hydrated gel phase of DPPC is 
+characterized by the hydrocarbon chains being tilted towards nearest neighboring 
+chains \cite{LevTh}.  It has also been known that each bilayer scatters 
+independently in the wide angle region due to lack of registry of individual 
+molecules across the aqueous spaces \cite{LevTh,Tar73}.  Since our data will 
+fully confirm these two results, the exposition of the theory will assume them.
+
+\begin{figure}
+\begin{center}
+%\leavevmode
+\raggedleft
+\hspace{0.5in}
+\psfig{figure=gel_model_dir/modela.ps,height=3.0in}
+%\leavevmode
+\raggedright
+\hspace{1.2in}
+\psfig{figure=gel_model_dir/modelb.ps,height=3.0in}
+\end{center}
+\begin{center}
+\leavevmode
+\psfig{figure=gel_model_dir/modelc.ps,width=2.5in}
+\end{center}
+\caption{Cross-sectional views of the model to fit the peak scattering.
+(a) Projection onto the (x,z) plane.  The chains are represented
+by long thin black rectangles and the head groups are represented by shorter
+gray rectangles.  ${\Delta x}_{c}$ is the chain offset, ${\Delta x}_{h}$ is the
+head offset, $Z_{h}$ is the peak position of the headgroup Gaussian and a is the
+unit cell dimension in the x-direction.
+(b) Projection onto the (y,z) plane showing the tilt angle ${\theta}_{t}$
+and the length L of the chains.  ${\Delta y}_{c}$ is the chain offset,
+${\Delta y}_{h}$ is the head offset and b is the unit cell
+dimension in the y-direction.
+(c) Projection onto the (x,y) midplane showing the body-centered
+two-dimensional unit cell.  The filled (open) circles are the projections of
+the hydrocarbon chains from the upper (lower) monolayer, respectively, to show
+the offsets ${\Delta x}_{c}$ and ${\Delta y}_{c}$.  The scale for
+this projection is
+three times the scale for the preceding two projections.
+Only the z-component of the headgroup electron density distribution is
+represented, so this figure does not imply that the headgroups are
+perpendicular to the bilayer.
+\label{model:fig2}}
+\end{figure}
+
+Fig.\ \ref{model:fig2} provides three views of the model of the gel phase lipid bilayer
+used in this chapter.  This model consists of chains and heads.
+The chains are straight, thin rods of electron density that are tilted
+by ${\theta}_{t}$.  Straight ({\it all-trans}) hydrocarbon chains have
+methylenes ($CH_{2}$) spaced a distance 1.27\AA ~apart along the
+chain axis \cite{Bunn}.  However, the terminal methyl ($CH_{3}$) occupies roughly 
+twice as much volume as the methylenes \cite{NW88,WW5} while having one additional 
+electron, so each chain is modelled with a gap of \( {7 \over 8} 1.27\)\AA~at 
+the center of the bilayer. The length of each rod will be given as L.
+There is no reason for precise collinearity of pairs of chains from the opposing
+monolayers, so offsets, $\Delta x_{c}$ and $\Delta y_{c}$, will be allowed
+as shown in Fig.\ \ref{model:fig2}.
+Use of a body centered rectangular unit cell (often referred to as orthorhombic)
+with sides $a$ and
+$b$ then yields the following electron density function for the
+chains for values of $|z|$ between \( L_{1}={7 \over 8} 1.27\mbox{\AA} \cos {\theta}_{t} 
+\) and 
+\( L_{2}={L \over \cos {\theta}_{t}} \),
+
+\begin{equation}
+\label{et1}
+{\rho}_{c}(x,y,z) = {8 \over 1.27\mbox{\AA}~\cos {\theta}_{t}} {\rho}_{cr}(x,y,z)~,
+\end{equation}
+
+where for \( z > 0 \)
+
+\begin{eqnarray*} {\rho}_{cr}(x,y,z) =&& \delta (x - {\Delta x_{c} \over 2},~ y - 
+{\Delta y_{c} \over 2} - z 
+\tan {\theta}_{t}) \\
+&&+ \delta (x -{\Delta x_{c} \over 2} - {a \over 2},~ y - {\Delta y_{c} 
+\over 2} - {b \over 2} - z \tan {\theta}_{t})~,
+\end{eqnarray*}
+
+and for \( z < 0 \)
+
+\begin{eqnarray*} {\rho}_{cr}(x,y,z) =&& \delta (x + {\Delta x_{c} \over 2},~ y + 
+{\Delta y_{c} \over 2} - z 
+\tan {\theta}_{t}) \\
+&& + \delta (x + {\Delta x_{c} \over 2} - {a \over 2},~ y + {\Delta y_{c} 
+\over 2} - {b \over 2} - z \tan {\theta}_{t})~. 
+\end{eqnarray*}
+
+The electron density ${\rho}_{H}(x,y,z)$ for headgroups is represented by
+Gaussians centered at $\pm z_{H}$ with widths ${\sigma}_{H}$ in the z-direction.
+Other data \cite{Buldt79} indicate that the headgroups are oriented more parallel than
+perpendicular to the bilayer, so the portrayal of the headgroups in Fig.\ \ref{model:fig2}
+may be visually unsettling.  However, our data do not allow determination of the orientation
+of the headgroups, i.e. the widths of the headgroups in the x and y directions.
+We can only determine the z-direction distribution of electron density, so
+only this is shown in Fig.\ \ref{model:fig2}, which therefore does not imply that the headgroups
+are oriented perpendicular to the bilayer. 
+Offsets, $\Delta x_{H}$ and $\Delta y_{H}$, are also allowed for the headgroups.
+Headgroups are only placed on the half of the chains associated with the
+corners of the rectangular unit cell.  Quantitatively, we take
+\begin{eqnarray}
+\label{et2}
+{\rho}_{H} (x,y,z) = &&{n_{H} \over {\sigma}_{H} \sqrt{2 \pi}}~\{\exp[{- (z - z_{H})^{2} 
+\over 2 {\sigma}_{H}^{2}}]~\delta (x - {\Delta x_{H} \over 2})~\delta (y - {\Delta y_{H} 
+\over 2}) \nonumber \\ 
+&& + \exp[{-(z + z_{H})^{2} \over 2 {\sigma}_{H}^{2}}]~\delta (x + {\Delta x_{H} 
+\over 2})~\delta (y + {\Delta y_{H} \over 2})\}~.
+\end{eqnarray}
+
+Periodicity with spacing $a$ in the x direction and $b$ in the y direction
+gives two Laue equations for x-ray scattering
+\begin{equation}
+\label{et3}
+a q_{x} = 2 \pi N \mbox{ and } b q_{y} = 2 \pi M~,
+\end{equation}
+which define the Bragg rods. If there are two equivalent substituents per unit 
+cell that form a rectangular body centered lattice, as in Eq.\ \ref{et1},
+then N+M must be even and the two major wide angle peaks
+are for (MN) equal to (20) and (11).  This even constraint could be
+broken by inequivalent ordering of the chains as in polymethylene, but
+even there the (20) and (11) peaks are by far the strongest peaks \cite{Bunn}.  
+The N+M even constraint could also be broken by ordered headgroups as embodied
+in Eq.\ \ref{et2} and Fig. \ref{model:fig2}; we will return to this 
+possibility later.  For
+now let us note that this makes no difference to the calculation of the
+intensities along the (20) and (11) Bragg rods.
+
+To obtain the x-ray scattering from the electron density, a final integration must 
+be performed in the z-direction. Apart from an inconsequential factor
+corresponding to the x and y integrations, this yields a form factor
+amplitude $F(q_{z})$ along the $q_{z}$ direction for each Bragg rod,
+\begin{equation}
+\label{et4}
+F(q_{z}) = \int_{0}^{\infty} {\rho}_{z}(z) e^{i (\gamma z + \phi)} dz + \int_{- \infty}^{0} 
+{\rho}_{z} (z) e^{i (\gamma z - \phi)} dz~,
+\end{equation}
+where \( \gamma = q_{z}+q_{y} \tan \theta \) and \( \phi = {q_{x} \Delta x + q_{y} \Delta y 
+\over 2} \) , with $q_{x}$ and $q_{y}$ given by Eq.\ \ref{et3}.
+The integration in Eq.\ \ref{et4} is best performed separately for heads and
+chains, each with their separate offsets, $\Delta x$ and $\Delta y$, with the result
+\begin{eqnarray}
+\label{et5}
+F(q_{z}) =&& {16 \over 1.27\mbox{\AA}~\gamma \cos {\theta}_{t}}~[\sin(\gamma L_{2} + 
+\phi_{c}) - \sin(\gamma L_{1} + \phi_{c})] \nonumber \\
+&& + 2 n_{H} \cos(\gamma z_{H} + \phi_{H})~e^{-(q_{z} {\sigma}_{H})^{2}/2}~,
+\end{eqnarray}
+where \( \phi_{c} = q_{x} \Delta x_{c} + q_{y} \Delta y_{c} \), and \( \phi_{H} = q_{x} 
+\Delta x_{H} + q_{y} (\Delta y_{H} - z_{H} \tan {\theta}_{t}) \).
+
+Our samples are unoriented dispersions so the {\bf q}-space diffraction pattern
+given by Eq.\ \ref{et5} was powder averaged and the usual Lorentz correction
+was applied.  This was accomplished by multiplying the square of
+Eq.\ \ref{et5} by the factor
+\( { {1+{\cos}^2 (2 \theta)} \over q q_{z}} \), where the components of q are $q_{z}$
+in Eq.\ \ref{et5} and $q_{x}$ and $q_{y}$ in Eq.\ \ref{et3}.
+The final $1/q_{z}$ factor, due to powder averaging the Bragg rods, theoretically
+produces square root singularities when the rod crosses the equator at $q_{z}=0$,
+but observation of such singularities would require zero intrinsic widths
+of the Bragg rods as well as perfect instrumental resolution.  
+
+
+\section{Origin of the satellite peaks}
+\label{gel_model_sate}
+
+The essential scattering pattern for the model in the previous section can be
+most easily seen in the simple limit when headgroups, offsets and methyl
+gaps in the middle of the bilayer are ignored.  Then the scattering is from
+a planar array of rods of finite length 2L all tilted with angle $\theta$
+towards nearest neighbors.  The q-space pattern for such an array is
+shown in Fig.\ \ref{model:fig3}.  Along each Bragg rod the intensity variation is
+just the square of a sinc function as one sees from Eq.\ \ref{et5}.  The maximum
+intensity along the (20) Bragg rod occurs on the equator, \( q_{z} = 0 \).
+Because the rods are tilted, however, the maximum intensity along the (11) and (1,-1)
+rods are displaced from the equator and are given by the relation $\gamma = 0$ 
+where $\gamma$ is defined after Eq.\ \ref{et4}.
+
+\begin{figure}[ht]
+\centerline {\psfig{figure=gel_model_dir/fig3.ps,width=4in}}
+\caption{The q-space pattern for the simplest model of chains tilted towards
+nearest neighbors.  The locations of the Bragg rods are shown as vertical
+dashed lines.  The intensities along these rods are shown as the
+horizontal distances between the solid curves and their underlying dashed
+lines.  The angle $\hat{\theta}$ appears in Eq.\ \protect\ref{et6}.
+\label{model:fig3}}
+\end{figure}
+
+The powder averaged (1,1) and (1,-1) central peaks are broad because
+the magnitude of the q-vectors to various parts of these peaks
+along the Bragg rod are substantially different.
+In contrast, the powder averaged (20) peak is much narrower
+because the magnitudes of all the q-vectors to various parts of that
+peak are nearly the same.  
+
+The ``single slit diffraction pattern'' along each rod shown in 
+Fig. \ref{model:fig3}
+also has secondary maxima, and some of these are the satellite peaks observed
+in Fig.\ \ref{model:fig1}.  The secondary maxima along the (1,1) and (1,-1) Bragg rods
+that are closer to the equator than the central peaks are the satellites
+that occur at smaller angles than the (20) and (11) peaks in Fig.\ \ref{model:fig1}.
+The \(1 / q_{z}\) factor that appears in the powder averaging enhances the
+apparent intensity of these peaks, which is another way of saying that
+the intensity is compressed into a smaller angular range because the
+difference in magnitudes of the q-vectors for various parts of these
+secondary maxima is smaller the closer they are to the equator (\(q_{z} = 0\)).
+Conversely, secondary maxima further from the equator will contribute
+broader and therefore lower peaks to powder scattering.  With film data we 
+observed one such satellite at higher angles than the (11) peak,
+but quantitative intensities could not be 
+obtained.  Similarly, satellites on the (20) Bragg rod are expected to be
+much less prominent than the central equatorial peak.

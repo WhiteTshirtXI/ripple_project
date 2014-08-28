@@ -1,0 +1,470 @@
+\begin{figure}
+\centerline {\psfig{figure=rppl_dir/lattice_dim.eps,height=3in}}
+\vspace{11pt}
+\caption{(i). Ripple unit cell lattice parameters; (ii). The real space and
+the reciprocal space unit cells, and the 2D coordinate system used in this 
+work.
+\label{unitcells}}
+\end{figure}
+
+%----------------------------------------------------------------------------
+\section{Modeling method}
+\label{rppl_theory}
+
+%The modeling approach first creates a functional form for the electron density 
+%that incorporates known and plausible properties of the bilayer but that
+%contains free parameters to incorporate unknown detailed structure.
+%The success of the method depends on this modeling step which 
+%requires some care
+%and is therefore the emphasis of this section.
+%Then, the values of the free parameters in the real space model are 
+%determined by routine non-linear least squares procedures so that the Fourier
+%components of the model provide the best fit to the measured intensities.
+%This last step automatically determines the phases of the model, which are
+%then used with the original intensity data to produce an electron density map.
+
+%----------------------------------------------------------------------------
+\subsection{Lattice structure}
+\label{rppl_theory_1}
+
+It has been shown from x-ray experiments \cite{Tar73,JanSS79,Ino80,Ale85,%
+Wac89a,Kat95} that ripples in different bilayers are registered to form a 
+2-D oblique lattice, which can be adequately described by three parameters: 
+the ripple wavelength $\lambda_r$, the oblique angle $\gamma$ and the stacking
+repeat $d_s$ (See Figure \ref{unitcells}(i)). The lamellar repeat along 
+the average bilayer
+normal direction, $d$, is related to $\gamma$ and $d_s$ by
+\begin{eqnarray}
+\label{dspace}
+d = d_s\ \sin \gamma.
+\end{eqnarray}
+
+By choosing the ripple wave vector direction as the $x$ axis and the average
+bilayer normal as the $z$ axis, the ripple unit cell vectors can be 
+expressed as (See Figure \ref{unitcells}(ii)):
+\begin{eqnarray}
+\label{realunit}
+\left\{ \begin{array}{ll}
+\vec{a} = d_s \cos \gamma\ \hat{x} + d\ \hat{z},\\
+\vec{b} = \lambda_r\ \hat{x}.
+\end{array}
+\right.
+\end{eqnarray}
+
+The corresponding reciprocal lattice unit cell vectors are 
+(See Fig. \ref{unitcells}(ii)):
+\begin{eqnarray}
+\label{reciunit}
+\left\{ \begin{array}{ll}
+\vec{A} = \frac{2 \pi}{d}\ \hat{z},\\
+\vec{B} = \frac{2 \pi}{\lambda_r}\ \hat{x} - \frac{2 \pi}{\lambda_r 
+\tan \gamma}\ \hat{z}.
+\end{array}
+\right.
+\end{eqnarray}
+So the q-space vector for the Bragg peak with Miller indices $(h,k)$
+is:
+\begin{eqnarray}
+\label{qvector}
+\vec{q}_{hk} =&& h \vec{A} + k \vec{B} \nonumber\\
+=&& \frac{2 \pi k}{\lambda_r}\ \hat{x} + \left( \frac{2 \pi h}{d} -
+\frac{2 \pi k}{\lambda_r \tan \gamma} \right) \hat{z}.
+\end{eqnarray}
+
+%----------------------------------------------------------------------------
+\subsection{Electron density and form factor}
+\label{rppl_theory_2}
+
+The overall electron density $\rho (x,z)$ within the ripple unit cell 
+can be described as the convolution of the ripple contour function $C(x,z)$ 
+and the trans-bilayer electron density profile $T(x,z)$:
+\begin{eqnarray}
+\label{model}
+\rho (x,z) = C(x,z) \ast T(x,z),
+\end{eqnarray}
+where `$\ast$' stands for convolution. $C(x,z)$ is related to the ripple 
+profile $u(x)$, which is the trajectory of the center of the bilayer (See
+Fig. \ref{rppl_profile}), by:
+\begin{eqnarray}
+\label{contour}
+C(x,z) = \delta [z - u(x)].
+\end{eqnarray}
+
+The form factor $F(\vec{q})$ is the Fourier transform of the electron density
+expressed in Eqn. \ref{model}. Using the Convolution Theorem in Fourier
+Transform, we have:
+\begin{eqnarray}
+\label{formall}
+F(\vec{q}) =&& {\cal F} \left[ C(x,z) * T(x,z) \right]\nonumber\\
+=&& {\cal F} \left[ C(x,z) \right] \times {\cal F} \left[ T(x,z) \right]\nonumber\\
+=&& F_C(\vec{q}) \times F_T(\vec{q}),
+\end{eqnarray}
+where ${\cal F} [\ ]$ represents the Fourier transform. Eqn. \ref{formall}
+shows that the overall form factor can be conveniently separated into
+the contour part $F_C(\vec{q})$ and the trans-bilayer part $F_T(\vec{q})$. 
+It will be shown in later sections that generally $F_C(\vec{q})$ determines
+the angular scattering intensity distribution in q space.
+%and $F_T(\vec{q})$ determines the radial 
+%intensity distribution in the 2-D q-space.
+
+In the following sections, detailed calculations will be performed using an
+asymmetric triangular ripple profile and a simple trans-bilayer electron 
+density profile.
+
+%----------------------------------------------------------------------------
+\subsection{Ripple profile}
+\label{rppl_theory_3}
+
+\begin{figure}
+\centerline {\psfig{figure=rppl_dir/ripple_profile.eps,height=3in}}
+\vspace{11pt}
+\caption{(i). Parameters describing the ripple profile; (ii). 
+The origin of the coordinate system is chosen to be at the center
+of the major side, to utilize the inversion symmetry. The ripple unit
+cell is shown as indicated.
+\label{rppl_profile}}
+\end{figure}
+
+The results of freeze fracture electron microscopy \cite{Luna77,Cop80,Rup83} 
+and scanning tunneling microscopy \cite{Zas88a,Hata93} strongly suggest that 
+the ripple profile is asymmetric.  This conclusion is further supported by 
+the results of x-ray diffraction that the ripple unit cell is oblique
+($\gamma$ not equal to 90$^{\circ}$) 
+\cite{Tar73,JanSS79,Ino80,Ale85,Sir88,Wac89a,Kat95}, and that the angular 
+scattering intensity distribution is uneven in the 2D oriented q plane
+\cite{Ale85,JanSS79}.
+
+In the light of these experimental evidences, an asymmetric, 
+triangular ripple profile u(x) is chosen as shown in Fig. \ref{rppl_profile}.
+In the rest of this chapter, we shall call the longer side of the ripple 
+the {\it major} side, and the shorter side the {\it minor} side 
+(See Fig. \ref{rppl_profile}).  As shown in Fig. \ref{rppl_profile}(i), the 
+triangular ripple profile can be well described by the amplitude $A$, 
+the slope angle of the major side, $\alpha$, and $x_0$, the projection of 
+the major side onto the $x$ axis. Of these three parameters, only two of 
+them are independent and they are related by the following equation:
+\begin{eqnarray}
+\label{tripara}
+A = x_0\ \tan \alpha.
+\end{eqnarray}
+We will choose $A$ and $x_0$ as the independent parameters of this model.
+By using these parameters and choosing the origin at the center of the 
+major side (see Fig.\ref{rppl_profile}(ii)), the ripple profile can be 
+expressed as
+\begin{eqnarray}
+\label{profile}
+u(x) = \left\{ \begin{array}{ll}
+		-\frac{A}{\lambda_r - x_0} (x + \frac{\lambda_r}{2})
+\ \ \ \mbox{if}\ - \frac{\lambda_r}{2} \le x < - \frac{x_0}{2};\\
+		\ \ \ \ \ \frac{A}{x_0}\ x\ \ \ \ \ \ \ \ \ \ \ \ \mbox{if}
+\ \ - \frac{x_0}{2} \le x \le 
+\frac{x_0}{2};\\
+		-\frac{A}{\lambda_r - x_0} (x - \frac{\lambda_r}{2})
+\ \ \ \mbox{if}\ \ \ \ \  \frac{x_0}{2} < x \le \frac{\lambda_r}{2}.
+		\end{array}
+	\right.
+\end{eqnarray}
+This particular choice of the origin shows explicitly the inversion
+symmetry in the ripple profile, so that the form factors are real.
+
+Now, the contour part of the form factor, $F_C(\vec{q})$ 
+(see Eqn.\ref{formall}), is
+\begin{eqnarray}
+\label{formcon}
+F_C(\vec{q}) =&& \frac{1}{\lambda_r}\ \int_{- \frac{\lambda_r}{2}}^{ 
+\frac{\lambda_r}{2}} dx
+\int_{- \frac{d}{2}}^{\frac{d}{2}} dz\ C(x,z)\ \mbox{e}^{i \vec{q} \cdot \vec{r}} \nonumber\\
+=&& \frac{1}{\lambda_r}\ \int_{- \frac{\lambda_r}{2}}^{\frac{\lambda_r}{2}} dx
+\int_{- \frac{d}{2}}^{\frac{d}{2}} dz\ \delta [z - u(x)] \ \mbox{e}^{i (q_x x + q_z z)} \nonumber\\
+=&& \frac{1}{\lambda_r}\ \int_{- \frac{\lambda_r}{2}}^{\frac{\lambda_r}{2}} dx\ \mbox{e}^{i [q_x x + q_z u(x)]}.
+\end{eqnarray}
+By introducing an intermediate variable
+\begin{eqnarray}
+\label{w}
+\omega (\vec{q}) = \frac{1}{2}\ ( q_x x_0 + q_z A),
+\end{eqnarray}
+and using the triangular ripple profile given in Eqn. \ref{profile}, 
+Eqn. \ref{formcon} can be integrated out to be
+\begin{eqnarray}
+\label{formcon1}
+F_C(\vec{q}) = \frac{x_0}{\lambda_r}\ \mbox{sinc}(\omega)
++ \frac{\lambda_r - x_0}{\lambda_r}\ \frac{\cos \frac{1}{2} (\frac{1}{2}
+q_x \lambda_r + \omega)}{\cos \frac{1}{2} (\frac{1}{2} q_x \lambda_r -
+\omega)}\ 
+\mbox{sinc}(\frac{q_x \lambda_r}{2} - \omega ).
+\end{eqnarray}
+The first term in the parentheses of Eqn. \ref{formcon1} is the contribution 
+from the major side of the ripple, with scattering amplitude 
+\(\frac{x_0}{\lambda_r}\), proportional to its projection length onto the 
+x axis, while the second term is from the minor side of the ripple, with 
+amplitude \(\frac{\lambda_r - x_0}{\lambda_r}\). 
+If $x_0 > \frac{\lambda_r}{2}$, the major side should scatter more strongly
+than the minor side, and vice versa. Eqn. \ref{formcon1} also shows that
+the maximum scattering of the major side occurs along the direction determined 
+by $\omega = 0$ in Eqn. \ref{w}; in real space this also the direction
+normal to the major side of the ripple.  Similarly, the maximum scattering
+direction of the minor side is given by \( \frac{q_x \lambda_r}{2} - \omega 
+= 0 \), and this can be shown to be the direction normal to the minor side.
+These observations can be seen in Fig. \ref{q_pattern}.
+
+\begin{figure}
+\centerline {\psfig{figure=rppl_dir/q_profile.ps,height=3in}}
+\vspace{11pt}
+\caption{Real space ripple structure (only the ripple profile part) and its 
+corresponding q-space pattern. The dot-dashed lines show the normals
+of the major and minor sides. Notice that the two maximum
+scattering directions are along the two normals, and that
+the scattering along the normal of the major side is stronger than
+along the normal of the minor side. Darker spots represent stronger
+scatterings.
+\label{q_pattern}}
+\end{figure}
+
+Some important conclusions can be drawn from the analysis up to now:
+(i) The q-space angular distribution of the scattering intensity from 
+ripples is 
+determined by the geometry of the ripple profile. Angular scattering maxima
+occur at the average normal directions of the two sides of the ripple.
+(ii) The uneven intensity distribution among the two maximum scattering
+directions is due to the asymmetry of the ripple 
+profile, namely, the major side of the ripple contains more scattering
+materials (lipid molecules), thus scatters more strongly along its normal 
+direction compared to the maximum scattering of the minor side, which 
+has fewer lipid molecules. (iii) The experimentally observed uneven angular 
+distribution of 
+scattering intensity among Bragg peaks \cite{Ale85,Wac89a,Kat95} can be used 
+to deduce the average ripple profile. These conclusions would also
+be expected to pertain to ripple profiles that are not perfectly triangular,
+for example, with rounded corners. 
+
+Combining Eqn. \ref{qvector} and Eqn. \ref{formcon1}, the discrete contour form
+factor for the Bragg peak with Miller indices $(h,k)$ can be expressed as:
+\begin{eqnarray}
+\label{discrete}
+F_C(h,k) =&& \frac{x_0}{\lambda_r}\ \mbox{sinc}
+(\omega_{hk}) + (-1)^k\ \frac{\lambda_r - x_0}{\lambda_r}\ 
+\mbox{sinc}(k \pi - \omega_{hk})\nonumber\\
+=&& \sin \omega_{hk}\ \left[\frac{k \pi x_0 - 
+\omega_{hk} \lambda_r}{\omega_{hk} \lambda_r (k \pi - \omega_{hk})} \right],
+\end{eqnarray}
+where
+\begin{eqnarray}
+\label{whk}
+\omega_{hk} =&& \frac{1}{2} (q_x^{hk} x_0 + q_z^{hk} A)\nonumber\\
+=&& \pi\ \left[ \frac{h A}{d} + \frac{k}{\lambda_r}\ (x_0 -
+\frac{A}{\tan \gamma}) \right].
+\end{eqnarray}
+
+The q-space pattern of $|F_C(h,k)|^2$ is shown in Fig. \ref{q_pattern}. 
+The two maximum scattering directions and the uneven intensity distribution 
+among them can be seen clearly, as well as their
+relations to the ripple profile. 
+This theoretical picture for the location of the strong (h,k) peaks
+agrees qualitatively with the experimental x-ray intensity data
+\cite{Ale85,Wac89a,Kat95}. 
+
+%---------------------------------------------------------------------------
+\subsection{Trans-bilayer electron density profile $T(x,z)$}
+\label{rppl_theory_4}
+
+\begin{figure}
+\centerline{\psfig{figure=rppl_dir/transedp.ps,height=3.0in}}
+\caption{
+Two transbilayer electron density profiles we use in our model.
+The solid line indicates the simple Delta function model; the dashed line
+shows the Gaussian model.
+\label{transedp}}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\leavevmode
+\raggedleft 
+\hspace{0.2in}
+\psfig{figure=rppl_dir/psi1.ps,height=2.0in}
+\leavevmode
+\raggedright 
+\hspace{0.7in}
+\psfig{figure=rppl_dir/psi2.ps,height=2.0in}
+\end{center}
+\vspace{-0.2in}
+\hspace{1.2in} (A) \hspace{2.7in} (B)
+\vspace{0.2in}
+\caption{Illustrations of the trans-bilayer structure. The monolayer
+shift angle $\psi$ and headgroup position X$_h$ are defined as
+indicated. The halftone stripes denote the bilayers; The thick black lines 
+represent the central profiles of the rippled bilayers; The white spaces
+between the adjacent bilayers are the water regions. The thin solid
+lines represent the vertical direction and the dot-dashed lines are the
+connecting lines of the deflection points of the upper and lower monolayers.
+The white dots are the centers of the above mentioned connecting lines. 
+(A). A possibility for $\psi$; (B). An unlikely possibility for $\psi$.
+\label{trans}}
+\end{figure}
+
+Because of the bilayer nature of the lipid water system, it is natural 
+to start with a simple, symmetric transbilayer electron density profile. 
+In a study of gel phase DPPC bilayers using the electron
+density modeling approach \cite{WSN89} it was found
+that the precise functional form of the electron density model did not
+much affect the results provided that the essential structural
+features of bilayers were incorporated into the model.
+We therefore first utilized a very simple model for $T(x,z)$ in
+which the two opposite headgroup regions consist of 
+two identical positive $\delta$-functions, with amplitude $\rho_H$ and
+separated by the head-head spacing $2X_h$ (See Fig. \ref{transedp}), and
+the central methyl trough consists of a negative $\delta$-function, with 
+amplitude $\rho_M$. In order to avoid possible conflict between adjacent 
+rippled bilayers, the two opposing monolayers of the same bilayer in this 
+model are allowed to shift by a angle $\psi$ (See Fig. \ref{trans}).
+The methylene region of bilayers has an electron density
+close to that of water and hence is set equal to zero in the
+following model (minus fluid \cite{WKMc73}) of $T_{\psi}(x,z)$,
+\begin{eqnarray}
+\label{transbi}
+T(x,z) = \delta (x + z \tan \psi)\ \left\{ \rho_H [\delta (z-X_h\cos \psi)
++\delta (z+X_h \cos \psi)]-\rho_M \delta (z) \right\},
+\end{eqnarray}
+Then the form factor corresponding to this trans-bilayer 
+electron density profile is:
+\begin{eqnarray}
+\label{form_trans}
+F_T (\vec{q}) =&& \int_{- \infty}^{\infty} dx \int_{- \infty}^{\infty} dz
+\ T(x,z) \ \mbox{e}^{i \vec{q} \cdot \vec{r}} \nonumber\\
+=&& 2 \rho_H\ \cos (q_z X_h \cos \psi - q_x X_h \sin \psi) - \rho_M \nonumber\\
+=&& \rho_M\ [R_{HM} \cos (q_z X_h \cos \psi - q_x X_h \sin \psi) -1],
+\end{eqnarray}
+where \(R_{HM} = \frac{2\ \rho_H}{ \rho_M}\). $F_T (\vec{q})$ is also
+a real quantity, as $F_C (\vec{q})$, because of the inversion symmetry of the
+trans-bilayer electron density profile relative to the center of the bilayer.
+$R_{HM}$, $\psi$ and $X_h$ are the independent parameters which will enter
+the model fitting. The discrete form of Eqn. \ref{form_trans} is:
+\begin{eqnarray}
+\label{dis_trans}
+F_T (h,k) = \rho_M\ [R_{HM} \cos (q_z^{hk} X_h \cos \psi 
+		- q_x^{hk} X_h \sin \psi) -1].
+\end{eqnarray}
+
+We will call the above model the simple delta function (SDF) model.
+Following \cite{WSN89} we also utilized a more realistic model, called the 1G 
+hybrid model that consists of Gaussian functions for the headgroups and
+the terminal methyl trough and that also allows for differences between 
+the electron density of methylenes and of water. We will call this the simple 
+1G (S1G) model. We also considered more complex models that modulated the 
+electron density along the direction perpendicular to $\vec{a}$ in real space 
+in Fig. \ref{unitcells}; this is also the direction $\vec{B}$ in reciprocal 
+space, so this modulation strongly affects the $(0,k)$ pure ripple form 
+factors. Our best ripple modulated models (MDF and M1G) have two additional 
+parameters, one to allow for the electron density across the minor side to 
+be different by a ratio $f_1$ from the electron density across the major 
+side and a second parameter $f_2$, which is multiplied by delta functions 
+${\delta}(x \pm x_0/2)$ to allow for a different electron density near 
+the kink between the major and the minor sides.
+
+%----------------------------------------------------------------------------
+\subsection{Overall form factor and the scattering intensity}
+\label{rppl_theory_5}
+
+Combining Eqns.\ref{formall}, \ref{discrete} and \ref{dis_trans}, the overall 
+form factor for the (h,k) peak of the SDF model is:
+\begin{eqnarray}
+\label{form_dis}
+F(h,k) =&& F_C (h,k) \times F_T (h,k) \nonumber\\
+=&& \sin \omega_{hk} \left[\frac{k \pi x_0 -
+\omega_{hk} \lambda_r}{\omega_{hk} \lambda_r (k \pi - \omega_{hk})} \right]
+ \rho_M \nonumber\\ 
+&& \times\ [R_{HM} \cos (q_z^{hk} X_h \cos \psi - q_x^{hk} X_h \sin \psi) -1].
+\end{eqnarray}
+$F(h,k)$ is real because the overall electron density function has the 
+inversion symmetry as can be seen from the last three subsections.
+The overall Lorentz-corrected scattering intensity of the (h,k) peak
+of the SDF model is:
+\begin{eqnarray}
+\label{inten_dis}
+I(h,k) =&& |F(h,k)|^2 \nonumber\\
+=&& \rho_M^2\ \sin^2 \omega_{hk}\ \left[\frac{k \pi x_0 -
+\omega_{hk} \lambda_r}{\omega_{hk} 
+\lambda_r (k \pi - \omega_{hk})} \right]^2 \nonumber\\ 
+&& \times\ [R_{HM} \cos (q_z^{hk} X_h \cos \psi - q_x^{hk} X_h \sin \psi) -1]^2.
+\end{eqnarray}
+
+For the SDF model, there will be six independent parameters when the 
+non-linear least square fitting is performed. Two of them are related to the 
+ripple profile, namely the ripple amplitude $A$ (contained in $\omega_{hk}$, 
+see Eqn.\ref{whk}) and the horizontal projection length of the major side of 
+the ripple, $x_0$. The trans-bilayer part contains three, the headgroup to 
+methyl trough electron density ratio, $R_{HM}$, the monolayer shift angle 
+$\psi$ and the headgroup position $X_h$. the sixth parameter is an overall 
+scaling factor for $F(h,k)$ or $I(h,k)$ when actually fitting to the data. 
+
+For the S1G model, all the trans-bilayer profile parameters
+were taken from gel phase data \cite{WSN89} except for the headgroup position
+$X_h$. The MDF and M1G models had the two additional parameters $f_1$ and 
+$f_2$ mentioned above. (The parameters ${\lambda}_r$, d and $\gamma$ are known
+from indexing the (h,k) peaks.)
+ 
+%----------------------------------------------------------------------------
+\subsection{Determination of the phases and the electron density map}
+\label{rppl_theory_6}
+
+In order to reconstruct the electron density maps of the ripple phase
+from the experimentally measured amplitudes of the form factors $|F(h,k)|$, 
+correct phases have to be found out first. There are two ways of getting 
+the phases, as discussed in the introduction section. The first is 
+the pattern recognition method. This approach
+is difficult when the number of peaks is large. The second approach,
+which we follow here, is to get phases from model fitting. 
+In our approach, standard non-linear least squares fitting procedures were 
+employed to obtain unknown parameters by finding the best
+fit of the intensities given by Eqn. \ref{inten_dis} to the $|F(h,k)|^2$ 
+reported by Wack and Webb \cite{Wac89a}. 
+This procedure does not require knowing any phases in advance.  However,
+once the best values of the parameters in the electron density model are
+determined, the form factors, and especially the phases, are determined
+from Eqn. \ref{form_dis}.
+Using these phases and the amplitudes of the form factors $|F(h,k)|$ from 
+the intensity data \cite{Wac89a},
+an experimental relative electron density map $\rho(x,z)$ can be obtained. 
+
+The formula for reconstructing the electron density maps
+from discrete form factors is derived as follows. It is easy to see that 
+the general form factor satisfies 
+\begin{eqnarray}
+\label{formallcon2}
+F(-\vec{q}) = \ F^{*}(\vec{q}),
+\end{eqnarray}
+as it should be because $F(\vec{q})$ is the Fourier transform of a real
+function (the electron density).
+
+The electron density is the inverse Fourier transform of $F(\vec{q})$
+(Keep in mind that we are dealing with 2D structures here, so that
+\( \vec{r} = x \hat{x} + z \hat{z}, \vec{q} = q_x \hat{x} + q_z \hat{z}\)),
+\begin{eqnarray}
+\label{edrecon}
+\rho(\vec{r}) =&& \int d \vec{q}\ F(\vec{q})\ 
+\mbox{e}^{- i \vec{q} \cdot \vec{r}}\nonumber\\
+=&& \int_{- \infty}^{\infty} dq_x \int_{- \infty}^{\infty} dq_z
+F(\vec{q})\ \mbox{e}^{- i \vec{q} \cdot \vec{r}}\nonumber\\
+=&& \int_{- \infty}^{\infty} dq_x \int_{0}^{\infty} dq_z
+\left[ F(\vec{q})\ \mbox{e}^{- i \vec{q} \cdot \vec{r}} +
+F(-\vec{q})\ \mbox{e}^{i \vec{q} \cdot \vec{r}}\right]\nonumber\\
+=&& \int_{- \infty}^{\infty} dq_x \int_{0}^{\infty} dq_z
+\left[ F(\vec{q})\ \mbox{e}^{- i \vec{q} \cdot \vec{r}} +
+F^{*}(\vec{q})\ \mbox{e}^{i \vec{q} \cdot \vec{r}}\right]\nonumber\\
+=&& \int_{- \infty}^{\infty} dq_x \int_{0}^{\infty} dq_z
+\ 2\ Re \left[ F(\vec{q})\ \mbox{e}^{- i \vec{q} \cdot \vec{r}}\right]\nonumber\\
+=&& 2\ \int_{- \infty}^{\infty} dq_x \int_{0}^{\infty} dq_z
+\ F(\vec{q}) \cos( \vec{q} \cdot \vec{r}).
+\end{eqnarray}
+In the last step, we used the result that $F(\vec{q})$ is real.
+
+Ignoring the irrelevant constant prefactor, the discrete form for 
+the relative electron density $\rho(\vec{r})$ is 
+\begin{eqnarray}
+\label{discretell}
+\rho(x,z) = \sum_{h \geq 0} \sum_{k} F(h,k) \ \cos(q^{hk}_x x + q^{hk}_z z).
+\end{eqnarray}
+Eqn. \ref{discretell} will be the formula used to reconstruct the electron 
+density maps presented in this chapter. 
+
+\pagebreak

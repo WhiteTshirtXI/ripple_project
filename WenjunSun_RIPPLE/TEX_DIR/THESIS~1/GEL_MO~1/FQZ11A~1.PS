@@ -1,0 +1,314 @@
+%!PS-Adobe-1.0
+%%Creator: GraED
+%%BoundingBox: 0 0 575 413
+%%EndComments
+% Graed Prelude
+
+/GedDict 200 dict def
+
+GedDict begin
+
+/i {72 mul} def  /ini {gsave translate newpath} def
+/LNW {0.25 LR mul setlinewidth}def /sld { [] 0 setdash stroke } def % solid
+/bordr { gsave fl setgray fill grestore LNW sld grestore} bind def
+/cir {0 0 LR 0 360 arc bordr} bind def % for cir
+/sqr {0.85 0.85 scale LR LR moveto 0 LR -2 mul rlineto LR -2 mul 0 rlineto
+0 LR 2 mul rlineto closepath bordr} bind def % square center at Ori
+/x {0.7 0.7 scale LNW 0 LR sub LR moveto LR 2 mul LR -2 mul rlineto
+LR LR moveto LR -2 mul dup rlineto sld } bind def
+/+ {0.85 0.85 scale LNW 0 LR moveto 0 LR -2 mul rlineto 
+LR 0 moveto LR -2 mul 0 rlineto sld } bind def
+/tri {0 LR sub LR 0.866 mul moveto LR 2 mul 0 rlineto
+0 LR sub 0.866 -2 mul LR mul rlineto closepath bordr} bind def% triangle
+/oneline{LR 0 moveto LR -2 mul 0 rlineto 45 rotate} def
+/*{LNW 4 {oneline} repeat sld } bind def
+
+% ---begin symbol---
+/sc {ini cir} bind def % filled circle with level fl
+/ss {ini sqr} bind def
+/st {ini tri} bind def
+
+/sfc {ini /fl 0 def cir} bind def% filled cir
+/soc {ini /fl 1 def cir} bind def% open
+/st {ini tri} bind def
+
+/sfc {ini /fl 0 def cir} bind def% filled cir
+/soc {ini /fl 1 def cir} bind def% open
+/sfs {ini /fl 0 def sqr} bind def% filled sqr
+/sos {ini /fl 1 def sqr} bind def% open
+/sft {ini /fl 0 def tri} bind def% f tri
+/sot {ini /fl 1 def tri} bind def
+/sx {ini x grestore} bind def
+/s+ {ini + grestore} bind def
+/s* {ini * grestore} bind def
+%---end symbol
+/NL {setlinewidth newpath} def % 
+%=== begin font ===
+/fss {findfont NH 3.0 mul scalefont setfont}def
+/fnt {/Helvetica fss} bind def
+/pb {gsave translate 1 -1 scale 0 NH -0.33 mul moveto} def
+/pv {gsave translate 1 -1 scale 0 0 moveto 90 rotate } def
+/pe {show grestore} def
+% The following are for scribe like commands
+/cep {currentpoint exch pop} def % needed for @+, @- to get position back
+/@+- {gsave currentfont [0.8 0 0 0.8 0 0] makefont setfont cep
+      0 NH ud mul rmoveto} bind def % ud = up or down
+/@+ {/ud 0.9 def @+-} bind def
+/@- {/ud -0.8 def @+-} bind def
+/@g {gsave /Symbol fss cep} bind def
+/@i {gsave /Helvetica-Oblique fss cep} bind def
+/@b {gsave /Helvetica-Bold fss cep} bind def
+/@e {show currentpoint pop exch grestore moveto} def % for ')'
+
+%=== end font ====
+ 
+% horizontal and vertical lines
+/l {moveto rlineto sld} bind def 
+/t {lineto} def
+/ct {curveto} def
+/m {moveto} def
+/ar {gsave newpath m t t closepath 0 setgray fill grestore} bind def 
+% x2 y2 x1 y1 x0,y0 ar Draw an arrow head from 0 to 1,2
+/box {dup 0 exch moveto exch 0 rlineto 0 exch -1 mul rlineto 
+0 0 lineto closepath} def % x y box 
+/fb {gsave setgray fill grestore 1 setlinewidth sld grestore} def
+/ff {setgray fill grestore} def% x y box gray ff
+/bb {pop stroke grestore} def % x y box stroke pop off gray level
+%%EndProlog
+%%Page: 1 1
+% 1.3 i  9.5 i translate -90 rotate
+0 0.2 i translate
+0  6.00 i translate 0.36 -0.36 scale
+ 2 setlinecap 
+   2.2 setlinewidth
+ 0 -941 184 1068 l 
+ 1.8 setlinewidth [            ] 0 setdash newpath
+ 184 1068 m 205 1068 t 184 1068 m 195 1068 t 184 974 m 
+ 195 974 t 184 880 m 205 880 t 184 880 m 195 880 t 
+ 184 785 m 195 785 t 184 691 m 205 691 t 184 691 m 
+ 195 691 t 184 597 m 195 597 t 184 503 m 205 503 t 
+ 184 503 m 195 503 t 184 409 m 195 409 t 184 314 m 
+ 205 314 t 184 314 m 195 314 t 184 220 m 195 220 t 
+ 184 126 m 205 126 t 184 126 m 195 126 t 
+ stroke
+ 1367 0 184 1068 l 
+ 1.8 setlinewidth [            ] 0 setdash newpath
+ 184 1068 m 184 1047 t 184 1068 m 184 1057 t 239 1068 m 
+ 239 1057 t 293 1068 m 293 1057 t 348 1068 m 348 1057 t 
+ 403 1068 m 403 1057 t 458 1068 m 458 1047 t 458 1068 m 
+ 458 1057 t 512 1068 m 512 1057 t 567 1068 m 567 1057 t 
+ 622 1068 m 622 1057 t 676 1068 m 676 1057 t 731 1068 m 
+ 731 1047 t 731 1068 m 731 1057 t 786 1068 m 786 1057 t 
+ 841 1068 m 841 1057 t 895 1068 m 895 1057 t 950 1068 m 
+ 950 1057 t 1005 1068 m 1005 1047 t 1005 1068 m 1005 1057 t 
+ 1060 1068 m 1060 1057 t 1114 1068 m 1114 1057 t 1169 1068 m 
+ 1169 1057 t 1224 1068 m 1224 1057 t 1278 1068 m 1278 1047 t 
+ 1278 1068 m 1278 1057 t 1333 1068 m 1333 1057 t 1388 1068 m 
+ 1388 1057 t 1443 1068 m 1443 1057 t 1497 1068 m 1497 1057 t 
+ 1552 1068 m 1552 1047 t 1552 1068 m 1552 1057 t 
+ stroke
+ 1367 0 184 126 l 
+ 1.8 setlinewidth [            ] 0 setdash newpath
+ 184 126 m 184 147 t 184 126 m 184 137 t 239 126 m 
+ 239 137 t 293 126 m 293 137 t 348 126 m 348 137 t 
+ 403 126 m 403 137 t 458 126 m 458 147 t 458 126 m 
+ 458 137 t 512 126 m 512 137 t 567 126 m 567 137 t 
+ 622 126 m 622 137 t 676 126 m 676 137 t 731 126 m 
+ 731 147 t 731 126 m 731 137 t 786 126 m 786 137 t 
+ 841 126 m 841 137 t 895 126 m 895 137 t 950 126 m 
+ 950 137 t 1005 126 m 1005 147 t 1005 126 m 1005 137 t 
+ 1060 126 m 1060 137 t 1114 126 m 1114 137 t 1169 126 m 
+ 1169 137 t 1224 126 m 1224 137 t 1278 126 m 1278 147 t 
+ 1278 126 m 1278 137 t 1333 126 m 1333 137 t 1388 126 m 
+ 1388 137 t 1443 126 m 1443 137 t 1497 126 m 1497 137 t 
+ 1552 126 m 1552 147 t 1552 126 m 1552 137 t 
+ stroke
+ 0 -941 1552 1068 l 
+ 1.8 setlinewidth [            ] 0 setdash newpath
+ 1552 1068 m 1531 1068 t 1552 1068 m 1541 1068 t 1552 974 m 
+ 1541 974 t 1552 880 m 1531 880 t 1552 880 m 1541 880 t 
+ 1552 785 m 1541 785 t 1552 691 m 1531 691 t 1552 691 m 
+ 1541 691 t 1552 597 m 1541 597 t 1552 503 m 1531 503 t 
+ 1552 503 m 1541 503 t 1552 409 m 1541 409 t 1552 314 m 
+ 1531 314 t 1552 314 m 1541 314 t 1552 220 m 1541 220 t 
+ 1552 126 m 1531 126 t 1552 126 m 1541 126 t 
+ stroke
+ /NH  18 def fnt
+ 107 1074 pb (-) pe
+ 127 1074 pb (1) pe
+ 147 1074 pb (0) pe
+ 107 886 pb ( ) pe
+ 127 886 pb (-) pe
+ 147 886 pb (5) pe
+ 107 697 pb ( ) pe
+ 127 697 pb ( ) pe
+ 147 697 pb (0) pe
+ 107 509 pb ( ) pe
+ 127 509 pb ( ) pe
+ 147 509 pb (5) pe
+ 107 320 pb ( ) pe
+ 127 320 pb (1) pe
+ 147 320 pb (0) pe
+ 107 132 pb ( ) pe
+ 127 132 pb (1) pe
+ 147 132 pb (5) pe
+ 145 1120 pb (-) pe
+ 165 1120 pb (0) pe
+ 189 1120 pb (.) pe
+ 205 1120 pb (5) pe
+ 409 1120 pb ( ) pe
+ 429 1120 pb (0) pe
+ 453 1120 pb (.) pe
+ 469 1120 pb (0) pe
+ 682 1120 pb ( ) pe
+ 702 1120 pb (0) pe
+ 726 1120 pb (.) pe
+ 742 1120 pb (5) pe
+ 956 1120 pb ( ) pe
+ 976 1120 pb (1) pe
+ 1000 1120 pb (.) pe
+ 1016 1120 pb (0) pe
+ 1229 1120 pb ( ) pe
+ 1249 1120 pb (1) pe
+ 1273 1120 pb (.) pe
+ 1289 1120 pb (5) pe
+ 1503 1120 pb ( ) pe
+ 1523 1120 pb (2) pe
+ 1551 1120 pb (.) pe
+ 1563 1120 pb (0) pe
+ 818 1200 pb (q) show
+@-(z) @e (\050A   \051) pe
+ 893 1175 pb () show
+@+(o)  @e () pe
+ 930 1190 pb () show
+@+(-1) @e () pe
+ 73 637 pv (F\050q) show
+@-(z) @e (\051) pe
+ 
+ 1.8 setlinewidth [            ] 0 setdash newpath
+ 184 679 m 189 696 t 195 714 t 200 732 t 206 748 t 
+ 211 764 t 217 776 t 222 786 t 228 792 t 233 795 t 
+ 239 793 t 244 787 t 250 778 t 255 764 t 261 748 t 
+ 266 729 t 272 709 t 277 688 t 282 667 t 288 647 t 
+ 293 629 t 299 614 t 304 603 t 310 595 t 315 592 t 
+ 321 593 t 326 599 t 332 610 t 337 624 t 343 642 t 
+ 348 662 t 354 684 t 359 706 t 365 729 t 370 750 t 
+ 376 768 t 381 784 t 386 796 t 392 804 t 397 807 t 
+ 403 805 t 408 798 t 414 787 t 419 771 t 425 753 t 
+ 430 732 t 436 709 t 441 686 t 447 663 t 452 642 t 
+ 458 623 t 463 608 t 469 596 t 474 589 t 479 586 t 
+ 485 589 t 490 595 t 496 606 t 501 621 t 507 639 t 
+ 512 658 t 518 679 t 523 700 t 529 720 t 534 738 t 
+ 540 753 t 545 765 t 551 774 t 556 777 t 562 776 t 
+ 567 771 t 573 762 t 578 749 t 583 733 t 589 714 t 
+ 594 695 t 600 675 t 605 655 t 611 637 t 616 621 t 
+ 622 609 t 627 600 t 633 596 t 638 596 t 644 600 t 
+ 649 608 t 655 620 t 660 635 t 666 652 t 671 670 t 
+ 676 689 t 682 706 t 687 722 t 693 735 t 698 744 t 
+ 704 748 t 709 747 t 715 740 t 720 726 t 726 707 t 
+ 731 683 t 737 653 t 742 618 t 748 580 t 753 539 t 
+ 759 497 t 764 454 t 770 412 t 775 373 t 780 337 t 
+ 786 306 t 791 280 t 797 260 t 802 247 t 808 242 t 
+ 813 244 t 819 253 t 824 270 t 830 293 t 835 323 t 
+ 841 357 t 846 397 t 852 439 t 857 484 t 863 530 t 
+ 868 577 t 873 622 t 879 666 t 884 708 t 890 746 t 
+ 895 780 t 901 809 t 906 834 t 912 854 t 917 869 t 
+ 923 879 t 928 885 t 934 886 t 939 883 t 945 877 t 
+ 950 868 t 956 856 t 961 842 t 966 828 t 972 812 t 
+ 977 796 t 983 780 t 988 765 t 994 751 t 999 738 t 
+ 1005 726 t 1010 716 t 1016 708 t 1021 701 t 1027 696 t 
+ 1032 693 t 1038 692 t 1043 692 t 1049 693 t 1054 696 t 
+ 1060 700 t 1065 704 t 1070 710 t 1076 716 t 1081 722 t 
+ 1087 728 t 1092 734 t 1098 740 t 1103 745 t 1109 750 t 
+ 1114 754 t 1120 757 t 1125 760 t 1131 761 t 1136 762 t 
+ 1142 761 t 1147 760 t 1153 758 t 1158 755 t 1163 751 t 
+ 1169 747 t 1174 742 t 1180 736 t 1185 731 t 1191 725 t 
+ 1196 720 t 1202 714 t 1207 709 t 1213 705 t 1218 701 t 
+ 1224 698 t 1229 696 t 1235 695 t 1240 694 t 1246 694 t 
+ 1251 696 t 1257 697 t 1262 700 t 1267 703 t 1273 707 t 
+ 1278 711 t 1284 715 t 1289 720 t 1295 724 t 1300 728 t 
+ 1306 732 t 1311 735 t 1317 737 t 1322 739 t 1328 740 t 
+ 1333 740 t 1339 740 t 1344 739 t 1350 737 t 1355 734 t 
+ 1360 731 t 1366 727 t 1371 723 t 1377 719 t 1382 715 t 
+ 1388 710 t 1393 706 t 1399 703 t 1404 699 t 1410 696 t 
+ 1415 694 t 1421 693 t 1426 692 t 1432 692 t 1437 692 t 
+ 1443 693 t 1448 695 t 1454 697 t 1459 700 t 1464 703 t 
+ 1470 706 t 1475 710 t 1481 713 t 1486 716 t 1492 719 t 
+ 1497 722 t 1503 724 t 1508 726 t 1514 727 t 1519 727 t 
+ 1525 727 t 1530 727 t 1536 726 t 1541 724 t 1547 722 t 
+ 1552 719 t 
+ stroke
+ 
+ 1.8 setlinewidth [8 8         ] 0 setdash newpath
+ 184 658 m 189 671 t 195 686 t 200 703 t 206 720 t 
+ 211 737 t 217 754 t 222 769 t 228 782 t 233 793 t 
+ 239 799 t 244 803 t 250 802 t 255 797 t 261 788 t 
+ 266 776 t 272 761 t 277 743 t 282 724 t 288 703 t 
+ 293 683 t 299 664 t 304 647 t 310 632 t 315 621 t 
+ 321 613 t 326 610 t 332 612 t 337 618 t 343 628 t 
+ 348 642 t 354 660 t 359 680 t 365 702 t 370 724 t 
+ 376 747 t 381 768 t 386 787 t 392 803 t 397 815 t 
+ 403 823 t 408 826 t 414 824 t 419 818 t 425 806 t 
+ 430 791 t 436 773 t 441 752 t 447 729 t 452 706 t 
+ 458 684 t 463 663 t 469 644 t 474 629 t 479 618 t 
+ 485 612 t 490 610 t 496 614 t 501 622 t 507 634 t 
+ 512 651 t 518 670 t 523 692 t 529 715 t 534 738 t 
+ 540 760 t 545 780 t 551 797 t 556 811 t 562 820 t 
+ 567 824 t 573 824 t 578 819 t 583 809 t 589 795 t 
+ 594 777 t 600 757 t 605 735 t 611 713 t 616 691 t 
+ 622 671 t 627 654 t 633 640 t 638 630 t 644 625 t 
+ 649 626 t 655 632 t 660 642 t 666 658 t 671 678 t 
+ 676 701 t 682 726 t 687 753 t 693 780 t 698 805 t 
+ 704 828 t 709 848 t 715 863 t 720 872 t 726 876 t 
+ 731 872 t 737 862 t 742 844 t 748 819 t 753 788 t 
+ 759 752 t 764 710 t 770 664 t 775 616 t 780 566 t 
+ 786 516 t 791 467 t 797 421 t 802 378 t 808 339 t 
+ 813 305 t 819 278 t 824 257 t 830 243 t 835 237 t 
+ 841 237 t 846 244 t 852 257 t 857 276 t 863 300 t 
+ 868 329 t 873 361 t 879 395 t 884 432 t 890 469 t 
+ 895 506 t 901 542 t 906 577 t 912 610 t 917 640 t 
+ 923 667 t 928 691 t 934 712 t 939 729 t 945 743 t 
+ 950 753 t 956 760 t 961 763 t 966 765 t 972 763 t 
+ 977 760 t 983 755 t 988 748 t 994 741 t 999 732 t 
+ 1005 724 t 1010 715 t 1016 706 t 1021 698 t 1027 690 t 
+ 1032 683 t 1038 677 t 1043 671 t 1049 667 t 1054 664 t 
+ 1060 662 t 1065 661 t 1070 662 t 1076 663 t 1081 665 t 
+ 1087 668 t 1092 673 t 1098 677 t 1103 683 t 1109 688 t 
+ 1114 694 t 1120 700 t 1125 706 t 1131 712 t 1136 717 t 
+ 1142 722 t 1147 726 t 1153 730 t 1158 732 t 1163 734 t 
+ 1169 734 t 1174 734 t 1180 733 t 1185 731 t 1191 728 t 
+ 1196 724 t 1202 720 t 1207 716 t 1213 711 t 1218 706 t 
+ 1224 701 t 1229 696 t 1235 692 t 1240 688 t 1246 684 t 
+ 1251 682 t 1257 680 t 1262 679 t 1267 679 t 1273 680 t 
+ 1278 682 t 1284 684 t 1289 687 t 1295 691 t 1300 695 t 
+ 1306 699 t 1311 704 t 1317 708 t 1322 713 t 1328 717 t 
+ 1333 721 t 1339 724 t 1344 726 t 1350 728 t 1355 729 t 
+ 1360 730 t 1366 729 t 1371 728 t 1377 726 t 1382 723 t 
+ 1388 720 t 1393 717 t 1399 713 t 1404 709 t 1410 705 t 
+ 1415 701 t 1421 698 t 1426 694 t 1432 692 t 1437 689 t 
+ 1443 688 t 1448 686 t 1454 686 t 1459 686 t 1464 687 t 
+ 1470 689 t 1475 691 t 1481 694 t 1486 697 t 1492 700 t 
+ 1497 703 t 1503 707 t 1508 710 t 1514 713 t 1519 716 t 
+ 1525 719 t 1530 721 t 1536 722 t 1541 723 t 1547 724 t 
+ 1552 724 t 
+ stroke
+ 
+ 1.8 setlinewidth [12 6        ] 0 setdash newpath
+ 458 1068 m 458 126 t 
+ stroke
+ 
+ 1.8 setlinewidth [12 6        ] 0 setdash newpath
+ 832 1068 m 832 126 t 
+ stroke
+ 
+ 1.8 setlinewidth [12 6        ] 0 setdash newpath
+ 184 691 m 1552 691 t 
+ stroke
+ /NH  18 def fnt
+ 656 266 pb (\0501,1\051) pe
+ /NH  18 def fnt
+ 907 266 pb (\0501,-1\051) pe
+ 
+ end
+ showpage
+%%Trailer

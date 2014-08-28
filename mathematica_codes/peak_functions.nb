@@ -1,0 +1,298 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     11007,        289]
+NotebookOptionsPosition[     10488,        268]
+NotebookOutlinePosition[     10825,        283]
+CellTagsIndexPosition[     10782,        280]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{"Clear", "[", 
+  RowBox[{
+  "\[Sigma]", ",", "\[Gamma]", ",", "v", ",", "G", ",", "L", ",", "V", ",", 
+   "fG", ",", "fL", ",", "fV", ",", "Vint"}], "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"G", "[", 
+   RowBox[{"x_", ",", "\[Sigma]_"}], "]"}], ":=", 
+  FractionBox[
+   RowBox[{"Exp", "[", 
+    RowBox[{
+     RowBox[{"-", 
+      SuperscriptBox["x", "2"]}], "/", 
+     RowBox[{"(", 
+      RowBox[{"2", 
+       SuperscriptBox["\[Sigma]", "2"]}], ")"}]}], "]"}], 
+   RowBox[{"\[Sigma]", 
+    SqrtBox[
+     RowBox[{"2", "\[Pi]"}]]}]]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"L", "[", 
+   RowBox[{"x_", ",", "\[Gamma]_"}], "]"}], ":=", 
+  FractionBox["\[Gamma]", 
+   RowBox[{"\[Pi]", 
+    RowBox[{"(", 
+     RowBox[{
+      SuperscriptBox["x", "2"], "+", 
+      SuperscriptBox["\[Gamma]", "2"]}], ")"}]}]]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"V", "[", 
+   RowBox[{"x_", ",", "\[Sigma]_", ",", "\[Gamma]_"}], "]"}], ":=", 
+  RowBox[{"NIntegrate", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"G", "[", 
+      RowBox[{"y", ",", "\[Sigma]"}], "]"}], 
+     RowBox[{"L", "[", 
+      RowBox[{
+       RowBox[{"x", "-", "y"}], ",", "\[Gamma]"}], "]"}]}], ",", 
+    RowBox[{"{", 
+     RowBox[{"y", ",", 
+      RowBox[{"-", "\[Infinity]"}], ",", "\[Infinity]"}], "}"}]}], 
+   "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"fG", "[", "\[Sigma]_", "]"}], ":=", 
+  RowBox[{"2", "\[Sigma]", 
+   SqrtBox[
+    RowBox[{"2", 
+     RowBox[{"Log", "[", "2", "]"}]}]]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"fL", "[", "\[Gamma]_", "]"}], ":=", 
+  RowBox[{"2", "\[Gamma]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"fV", "[", 
+   RowBox[{"\[Sigma]_", ",", "\[Gamma]_"}], "]"}], ":=", 
+  RowBox[{
+   RowBox[{"0.5346", 
+    RowBox[{"fL", "[", "\[Gamma]", "]"}]}], "+", 
+   SqrtBox[
+    RowBox[{
+     RowBox[{"0.2166", 
+      SuperscriptBox[
+       RowBox[{"fL", "[", "\[Gamma]", "]"}], "2"]}], "+", 
+     SuperscriptBox[
+      RowBox[{"fG", "[", "\[Sigma]", "]"}], 
+      "2"]}]]}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Vint", "[", 
+   RowBox[{"\[Sigma]_", ",", "\[Gamma]_", ",", "v_"}], "]"}], ":=", 
+  RowBox[{"NIntegrate", "[", 
+   RowBox[{
+    RowBox[{"V", "[", 
+     RowBox[{"x", ",", "\[Sigma]", ",", "\[Gamma]"}], "]"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", 
+      RowBox[{"-", "v"}], ",", "v"}], "}"}]}], "]"}]}]}], "Input",
+ CellChangeTimes->{{3.607438982120821*^9, 3.607439027329181*^9}, {
+  3.607441583582767*^9, 3.607441664949395*^9}, {3.607441747559812*^9, 
+  3.607441901287279*^9}, {3.607441947496865*^9, 3.607441986645114*^9}}],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{"Clear", "[", 
+  RowBox[{"\[Sigma]", ",", "\[Gamma]", ",", "v"}], 
+  "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"\[Gamma]", "=", "0.2"}], ";"}], "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"V", "[", "x", "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{"-", "1"}], ",", "1"}], "}"}]}], "]"}], "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"NIntegrate", "[", 
+    RowBox[{
+     RowBox[{"G", "[", "x", "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{
+        RowBox[{"-", "fG"}], "/", "2"}], ",", 
+       RowBox[{"fG", "/", "2"}]}], "}"}]}], "]"}], "*)"}], 
+  "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"NIntegrate", "[", 
+    RowBox[{
+     RowBox[{"L", "[", "x", "]"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", 
+       RowBox[{
+        RowBox[{"-", "fL"}], "/", "2"}], ",", 
+       RowBox[{"fL", "/", "2"}]}], "}"}]}], "]"}], 
+   "*)"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"data", "=", 
+   RowBox[{"Table", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"\[Sigma]", ",", 
+       RowBox[{"Vint", "[", 
+        RowBox[{"\[Sigma]", ",", "\[Gamma]", ",", 
+         RowBox[{
+          RowBox[{"fV", "[", 
+           RowBox[{"\[Sigma]", ",", "\[Gamma]"}], "]"}], "/", "2"}]}], 
+        "]"}]}], "}"}], ",", 
+     RowBox[{"{", 
+      RowBox[{"\[Sigma]", ",", "2", ",", "3", ",", "0.2"}], "}"}]}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{"ListPlot", "[", "data", "]"}]}], "Input",
+ CellChangeTimes->{{3.607437491237792*^9, 3.607437549713291*^9}, {
+   3.607437622761034*^9, 3.607437681161474*^9}, {3.607437725950303*^9, 
+   3.607437815972419*^9}, {3.607437894409765*^9, 3.607438046563899*^9}, {
+   3.607438082000964*^9, 3.60743822460781*^9}, {3.607438327963095*^9, 
+   3.607438530133106*^9}, {3.60743856225168*^9, 3.607438593509368*^9}, {
+   3.607438712554989*^9, 3.607438892295587*^9}, {3.607438927043014*^9, 
+   3.607438957842351*^9}, {3.607438988878581*^9, 3.607439005265882*^9}, {
+   3.607439072933718*^9, 3.607439167554133*^9}, {3.607439394907289*^9, 
+   3.607439424661475*^9}, {3.607440268701644*^9, 3.607440289160794*^9}, {
+   3.607441124172973*^9, 3.607441132952585*^9}, {3.607441167165172*^9, 
+   3.607441186730664*^9}, {3.60744122995491*^9, 3.607441284573015*^9}, {
+   3.607441677287527*^9, 3.607441696196524*^9}, {3.607441998334381*^9, 
+   3.607442144643762*^9}, {3.607442332358647*^9, 3.607442337586615*^9}, {
+   3.607442469785061*^9, 3.607442495950258*^9}, {3.60744265876559*^9, 
+   3.607442762399248*^9}, {3.60744285220395*^9, 3.607442895700314*^9}, 
+   3.607443476375058*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NIntegrate", "::", "inumr"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"The integrand \[NoBreak]\\!\\(\\(0.012698727186848195`\\\\ \
+\[ExponentialE]\\^\\(\\(\\(-0.125`\\)\\)\\\\ \
+y\\^2\\)\\)\\/\\(\\(\\(0.04000000000000001` \[VeryThinSpace]\\)\\) + \\((x - \
+y)\\)\\^2\\)\\)\[NoBreak] has evaluated to non-numerical values for all \
+sampling points in the region with boundaries \[NoBreak]\\!\\({\\({\\(\\(-\
+\[Infinity]\\)\\), 0.`}\\)}\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/NIntegrate/inumr\\\", ButtonNote -> \
+\\\"NIntegrate::inumr\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.607442067572688*^9, 3.607442112601868*^9, {3.607442480023735*^9, 
+   3.607442497993747*^9}, 3.607442763170139*^9, 3.607442897000081*^9, 
+   3.607443486115141*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NIntegrate", "::", "inumr"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"The integrand \[NoBreak]\\!\\(\\(0.012698727186848195`\\\\ \
+\[ExponentialE]\\^\\(\\(\\(-0.125`\\)\\)\\\\ \
+y\\^2\\)\\)\\/\\(\\(\\(0.04000000000000001` \[VeryThinSpace]\\)\\) + \\((x - \
+y)\\)\\^2\\)\\)\[NoBreak] has evaluated to non-numerical values for all \
+sampling points in the region with boundaries \[NoBreak]\\!\\({\\({\\(\\(-\
+\[Infinity]\\)\\), 0.`}\\)}\\)\[NoBreak]. \\!\\(\\*ButtonBox[\\\"\
+\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", ButtonFrame->None, \
+ButtonData:>\\\"paclet:ref/message/NIntegrate/inumr\\\", ButtonNote -> \
+\\\"NIntegrate::inumr\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.607442067572688*^9, 3.607442112601868*^9, {3.607442480023735*^9, 
+   3.607442497993747*^9}, 3.607442763170139*^9, 3.607442897000081*^9, 
+   3.6074434862008*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"NIntegrate", "::", "inumr"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"The integrand \[NoBreak]\\!\\(\\(0.012698727186848195`\\\\ \
+\[ExponentialE]\\^\\(\\(\\(-0.125`\\)\\)\\\\ \
+y\\^2\\)\\)\\/\\(\\(\\(0.04000000000000001` \[VeryThinSpace]\\)\\) + \
+\\((\\(\\(-x\\)\\) - y)\\)\\^2\\)\\)\[NoBreak] has evaluated to non-numerical \
+values for all sampling points in the region with boundaries \
+\[NoBreak]\\!\\({\\({\\(\\(-\[Infinity]\\)\\), 0.`}\\)}\\)\[NoBreak]. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/NIntegrate/inumr\\\", \
+ButtonNote -> \\\"NIntegrate::inumr\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.607442067572688*^9, 3.607442112601868*^9, {3.607442480023735*^9, 
+   3.607442497993747*^9}, 3.607442763170139*^9, 3.607442897000081*^9, 
+   3.607443486250864*^9}],
+
+Cell[BoxData[
+ RowBox[{
+  StyleBox[
+   RowBox[{"General", "::", "stop"}], "MessageName"], 
+  RowBox[{
+  ":", " "}], "\<\"Further output of \
+\[NoBreak]\\!\\(\\*StyleBox[\\(NIntegrate :: inumr\\), \
+\\\"MessageName\\\"]\\)\[NoBreak] will be suppressed during this calculation. \
+\\!\\(\\*ButtonBox[\\\"\[RightSkeleton]\\\", ButtonStyle->\\\"Link\\\", \
+ButtonFrame->None, ButtonData:>\\\"paclet:ref/message/General/stop\\\", \
+ButtonNote -> \\\"General::stop\\\"]\\)\"\>"}]], "Message", "MSG",
+ CellChangeTimes->{
+  3.607442067572688*^9, 3.607442112601868*^9, {3.607442480023735*^9, 
+   3.607442497993747*^9}, 3.607442763170139*^9, 3.607442897000081*^9, 
+   3.607443486290228*^9}],
+
+Cell[BoxData[
+ GraphicsBox[{{}, 
+   {RGBColor[0.24720000000000017`, 0.24, 0.6], 
+    PointBox[{{2., 0.7356183160446734}, {2.2, 0.7377959199160404}, {2.4, 
+     0.7396292448073972}, {2.6, 0.7411938260385156}, {2.8, 
+     0.7425448436745157}, {3., 0.7437230943543822}}]}, {}},
+  AspectRatio->NCache[GoldenRatio^(-1), 0.6180339887498948],
+  Axes->True,
+  AxesLabel->{None, None},
+  AxesOrigin->{2., 0.7356183160446734},
+  Method->{},
+  PlotRange->{{2., 3.}, {0.7356183160446734, 0.7437230943543822}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{0.02, 0.02}, {0.00016209556619417587`, 
+   0.00016209556619417587`}}]], "Output",
+ CellChangeTimes->{{3.607439128614397*^9, 3.607439168215886*^9}, {
+   3.607439396456381*^9, 3.607439437059713*^9}, {3.607440274514253*^9, 
+   3.607440291464719*^9}, {3.607441127948332*^9, 3.60744113691878*^9}, {
+   3.607441172457194*^9, 3.607441189212452*^9}, {3.607441233242127*^9, 
+   3.607441287076604*^9}, 3.607441689238688*^9, {3.607442006038634*^9, 
+   3.607442069297186*^9}, {3.607442458293382*^9, 3.607442486806132*^9}, 
+   3.607442628833905*^9, 3.607442779304807*^9, 3.607442918549721*^9, 
+   3.607443495537249*^9}]
+}, Open  ]]
+},
+WindowSize->{740, 607},
+WindowMargins->{{Automatic, 27}, {Automatic, 45}},
+FrontEndVersion->"9.0 for Linux x86 (32-bit) (November 20, 2012)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[557, 20, 2606, 78, 287, "Input"],
+Cell[CellGroupData[{
+Cell[3188, 102, 2681, 66, 165, "Input"],
+Cell[5872, 170, 915, 17, 102, "Message"],
+Cell[6790, 189, 913, 17, 102, "Message"],
+Cell[7706, 208, 928, 17, 102, "Message"],
+Cell[8637, 227, 679, 14, 43, "Message"],
+Cell[9319, 243, 1153, 22, 267, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

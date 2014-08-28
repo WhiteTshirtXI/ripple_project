@@ -1,0 +1,24 @@
+		List of files related to MS XD2575
+
+			Wenjun Sun
+
+		Department of Physics, Carnegie Mellon University
+		Pittsburgh, PA 15213-3890
+
+----------------------------------------------------------------------
+
+1. pnas_xd2575.tex
+
+	The LaTex version of our manuscript, in APS's revtex style.
+
+2. tables.tex
+
+	A LaTex file containing the two tables in our manuscript.
+	In the file 'pnas_xd2575.tex', Table 1 exceeds one
+	printed page; this file (tables.tex) remedies it. 
+
+3. fig1.ps ------------------ Figure 1.
+
+4. fig2.ps ------------------ Figure 2.
+
+5. fig3.ps ------------------ Figure 3.

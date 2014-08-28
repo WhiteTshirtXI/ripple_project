@@ -1,0 +1,45 @@
+@style(fontfamily=timesroman,size=12)
+@style(spacing 1.7,leftmargin 1.2 inches,indent 5,spread 0.3)
+@style(topmargin 1.5 inches)
+@style(justification off)
+@make(letter)
+@value(date)
+412-268-2764
+FAX 412-681-0648
+e-mail JN12@andrew.cmu.edu
+@begin(address)
+Proceedings of the National Academy of Sciences
+1010 Wisconsin Ave., NW
+Suite 530
+Washington, DC  20007
+@end(address)
+@begin(body)
+@greeting(Dear Sirs:)
+
+	We wish to submit the enclosed manuscript for publication in
+the Proceedings following the new procedure which does not charge it
+to a member's quota.
+
+	The subject of our MS has been of interest to a number of
+Academy members, particulary Webb, McConnell and Langer
+(see list of references).  Of these Watt Webb would be especially
+appropriate.  
+
+	The subject area of this MS is the Biophysics category.
+
+	The manuscript has been carefully prepared to fall within the
+old length guidelines and to conform to the other 1995 information
+for contributors, but please inform us if we made an inadvertent
+mistake.  If accepted, an electronic version in LaTex will be available.  
+
+@end(body)
+
+Yours sincerely,
+
+
+
+
+John F. Nagle
+Professor of Physics
+and Biological Sciences
+

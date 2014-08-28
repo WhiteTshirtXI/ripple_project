@@ -1,0 +1,103 @@
+%!PS-Adobe-2.0
+%%Creator: Wenjun Sun
+%%Title: Ripple pattern
+%%Pages: 1
+%%BoundingBox: 0 0 612 792
+%%EndComments
+%-------------Variables and procedures------------
+/i {72 mul} def
+/width 8.5 i def
+/height 11 i def
+/LM -1.5 i def
+/center {width 2 div height 2 div translate} def
+/getHel {/Helvetica-Bold findfont 15 scalefont setfont} def
+/getCou {/Courier findfont 12 scalefont setfont} def
+/getSym {/Symbol findfont 12 scalefont setfont} def
+/newline{currentpoint 14 sub exch pop LM exch moveto} def
+/label {/subscript exch def
+ currentpoint moveto ( q) show
+ currentpoint 4 sub moveto subscript show} def
+/peak 
+ {/gs exch def /y exch def /x exch def
+ x y 7 360 0 arcn
+ closepath gs setgray fill} def
+%------------End variables and procedures---------
+%%EndProlog
+%%Page: 1 1
+%------------Begin program------------------------
+center
+
+getHel
+-2 i 0 i moveto
+2 i 0 i lineto
+(x) label
+0 i -1 i moveto
+0 i 4.5 i lineto
+(z) label
+1 setlinewidth
+stroke
+
+gsave
+-0.660 i 2.329 i 0.896 peak
+-0.440 i 2.352 i 0.421 peak
+-0.220 i 2.376 i 0.790 peak
+0.000 i 2.400 i 0.644 peak
+-0.440 i 1.752 i 0.852 peak
+-0.220 i 1.776 i 0.367 peak
+0.000 i 1.800 i 0.529 peak
+0.660 i 1.871 i 0.980 peak
+0.880 i 1.895 i 0.980 peak
+-0.440 i 1.152 i 0.962 peak
+-0.220 i 1.176 i 0.160 peak
+0.000 i 1.200 i 0.000 peak
+0.220 i 1.224 i 0.679 peak
+0.440 i 1.248 i 0.956 peak
+0.660 i 1.271 i 0.980 peak
+-0.220 i 0.576 i 0.010 peak
+0.000 i 0.600 i 0.000 peak
+0.220 i 0.624 i 0.669 peak
+0.440 i 0.648 i 0.980 peak
+0.440 i 0.648 i 0.980 peak
+grestore
+
+1.100 i 0.119 i 3 sub moveto (0) show
+1.100 i 0.719 i 3 sub moveto (1) show
+1.100 i 1.319 i 3 sub moveto (2) show
+1.100 i 1.919 i 3 sub moveto (3) show
+1.100 i 2.519 i 3 sub moveto (4) show
+1.319 i 1.343 i 3 sub moveto (h) show
+
+-0.880 i 7 sub 2.605 i moveto (-4) show
+-0.660 i 7 sub 2.629 i moveto (-3) show
+-0.440 i 7 sub 2.652 i moveto (-2) show
+-0.220 i 7 sub 2.676 i moveto (-1) show
+0.000 i 7 sub 2.700 i moveto (0) show
+0.220 i 7 sub 2.724 i moveto (1) show
+0.440 i 7 sub 2.748 i moveto (2) show
+0.660 i 7 sub 2.771 i moveto (3) show
+0.880 i 7 sub 2.795 i moveto (4) show
+-0.440 i 2.952 i moveto (k) show
+
+newpath
+0.000 i 0.000 i moveto
+0.000 i 0.600 i lineto
+0.220 i 0.624 i lineto
+0.220 i 0.024 i lineto
+closepath 2 setlinewidth stroke
+
+newpath
+-1.364 i -2.250 i moveto
+-1.472 i -1.250 i lineto
+1.256 i -1.250 i lineto
+1.364 i -2.250 i lineto
+closepath 2 setlinewidth stroke
+
+LM -3.5 i moveto
+getCou (d = 60.6A, ) show
+getSym (l) show getCou ( = 165.34A, ) show
+getSym (g) show getCou ( = 96.17 deg) show
+newline
+((Alecio_85_ori DPPC 100%RH 39.5C)) show
+
+showpage
+%%Trailer

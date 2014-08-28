@@ -1,0 +1,372 @@
+% Thesis Option for the Report Document Style
+%
+%   (uses parts of the Stanford and UC Berkeley thesis styles, 
+%   the AAAI style, plus other stuff)
+%
+% Define a null command for comments
+\long\def\comment#1{}
+
+\comment{
+
+  Example of using the thesis option:
+    \documentstyle[thesis]{report}
+    \begin{document}
+    \title{How to Write Theses\\
+ 	    With Two Line Titles}
+    \author{John Henry Candidate}
+ 
+    \beforepreface
+      \prefacesection{Preface}
+        This thesis tells you all you need to know about...
+      \prefacesection{Acknowledgements}
+        I would like to thank...
+    \afterpreface
+ 
+    \chapter{Introduction}
+         ...
+    \chapter{Conclusions}
+         ...
+    \appendix
+    \chapter{A Long Proof}
+         ...
+    \bibliographystyle{cealp}
+    \bibliography{mybib}
+    \addcontentsline{toc}{chapter}{Bibliography}
+
+
+Documentation:
+    This option
+      - sets the margins and interline spacing
+      - disallows page breaks at hyphens
+      - modifies figure captions to be \bf and \protect'ed
+      - allows line breaks in multiple citations
+      - formats the title page and produces a copyright page (optionally)
+      - Changes title of the bibliography to ``References''
+
+    The \beforepreface command creates the title page and a copyright
+    page (optionally).  Then the user should put preface section(s), using
+    the \prefacesection{section title} command.  The \afterpreface command
+    then produces the tables of contents, tables and figures, and sets
+    things up to start the main body (on arabic page 1).
+    
+    The following commands can control what goes in the front matter
+    material:
+    
+    for the title page:
+	\title{thesis title}
+	\author{author's name}
+	\thesistype{e.g., thesis, dissertion, thesis proposal}
+		- Thesis if omitted
+	\university{university name}
+		- Carnegie Mellon University if omitted
+	\dept{author's department}
+		- Civil Engineering if omitted
+	\submitdate{month year in which submitted}
+		- date LaTeX'd if omitted
+
+    for the copyright page:
+	\copyrightyear{year degree conferred (next year if submitted in Dec.)}
+		- year LaTeX'd (or next year, in December) if omitted
+	\copyrighttrue or \copyrightfalse
+		- produce or don't produce a copyright page (false by default)
+
+    miscellaneous stuff:
+	\figurespagetrue or \figurespagefalse
+		- produce or don't produce a List of Figures page
+		  (true by default)
+	\tablespagetrue or \tablespagefalse
+		- produce or don't produce a List of Tables page
+		  (true by default)
+
+}
+
+\makeatletter
+% We need 1" margins except on the binding edge, where it is 1 1/2"
+\oddsidemargin 0.5in
+\textwidth 6in
+\topmargin -0.5in
+\textheight 9in
+
+% Disallow page breaks at hyphens (this will give some underfull vbox's,
+% so an alternative is to use \brokenpenalty=100 and manually search
+% for and fix such page breaks)
+\brokenpenalty=10000
+
+% For some environments we switch back to single-spacing, also
+% provide \dsp in case you need double-spacing where single-spacing
+% is otherwise used.
+%   NOTE: the use of \large immediately followed \normalsize is 
+%     because \baselineskip, the distance between lines, is not
+%     affected until the font size is changed.
+\def\ssp{\def\baselinestretch{1.00}\large\normalsize}
+\def\dsp{\def\baselinestretch{1.37}\large\normalsize}
+%\def\dsp{\def\baselinestretch{1.50}\large\normalsize}
+
+% Chapter Headings (modified version from `rep11.sty', same as `rep10.sty')
+%   - reduce the size of chapter headings by two size increments
+%       (e.g., Huge -> LARGE, huge -> Large)
+\def\@makechapterhead#1{ \vspace*{20pt} { \parindent 0pt \raggedright 
+ \ifnum \c@secnumdepth >\m@ne \Large\bf \@chapapp{} \thechapter \par 
+ \vskip 20pt \fi \LARGE \bf #1\par 
+ \nobreak \vskip 40pt } }
+
+\def\@makeschapterhead#1{ \vspace*{50pt} { \parindent 0pt \raggedright 
+ \huge \bf #1\par 
+ \nobreak \vskip 40pt } }
+
+% To allow running page footers:
+\def\leftfoot#1{\gdef\@leftfoot{#1}}
+\def\rightfoot#1{\gdef\@rightfoot{#1}}
+
+% Default initialization of footers:
+\def\@leftfoot{}\def\@rightfoot{}
+
+% Plain page style (modified version from `report.sty')
+%   - modify \@oddfoot to contain footer information:
+\def\ps@plain{\let\@mkboth\@gobbletwo
+     \def\@oddhead{}%
+     \def\@oddfoot{\rm\makebox[.4\linewidth][l]\@leftfoot%
+       \hfil\thepage\hfil\makebox[.4\linewidth][r]\@rightfoot}%
+     \def\@evenhead{}\let\@evenfoot\@oddfoot}
+
+% Running headers (modified version from `report.sty'):
+%   - do not force running headers to uppercase
+%   - modify \@oddfoot and \@evenfoot to contain footer information
+%     (if two-sided, reverse left and right footers on even numbered pages):
+\if@twoside \def\ps@headings{\let\@mkboth\markboth
+\def\@oddfoot{\rm\@leftfoot\hfil\@rightfoot}%
+\def\@evenfoot{\rm\@rightfoot\hfil\@leftfoot}%
+\def\@evenhead{\rm \thepage\hfil \sl
+\leftmark}\def\@oddhead{\hbox{}\sl \rightmark \hfil
+\rm\thepage}\def\chaptermark##1{\markboth {\ifnum \c@secnumdepth
+>\m@ne
+ \@chapapp\ \thechapter. \ \fi ##1}{}}\def\sectionmark##1{\markright
+{\ifnum \c@secnumdepth >\z@
+ \thesection. \ \fi ##1}}}
+\else \def\ps@headings{\let\@mkboth\markboth
+\def\@oddfoot{\rm\@leftfoot\hfil\@rightfoot}%
+\def\@evenfoot{}\def\@oddhead{\hbox {}\sl \rightmark \hfil
+\rm\thepage}\def\chaptermark##1{\markright {\ifnum \c@secnumdepth
+>\m@ne
+ \@chapapp\ \thechapter. \ \fi ##1}}}
+\fi
+\def\ps@myheadings{\let\@mkboth\@gobbletwo
+\def\@oddhead{\hbox{}\sl\rightmark \hfil
+\rm\thepage}\def\@oddfoot{}\def\@evenhead{\rm \thepage\hfil\sl\leftmark\hbox
+{}}\def\@evenfoot{}\def\sectionmark##1{}\def\subsectionmark##1{}}
+
+% Floating Environments (modified version from `latex.tex'):
+%   - sets floats (e.g., figures and tables) to be single spaced
+\def\@xfloat#1[#2]{\ifhmode \@bsphack\@floatpenalty -\@Mii\else
+   \@floatpenalty-\@Miii\fi\def\@captype{#1}\ifinner
+      \@parmoderr\@floatpenalty\z@
+    \else\@next\@currbox\@freelist{\@tempcnta\csname ftype@#1\endcsname
+       \multiply\@tempcnta\@xxxii\advance\@tempcnta\sixt@@n
+       \@tfor \@tempa :=#2\do
+                        {\if\@tempa h\advance\@tempcnta \@ne\fi
+                         \if\@tempa t\advance\@tempcnta \tw@\fi
+                         \if\@tempa b\advance\@tempcnta 4\relax\fi
+                         \if\@tempa p\advance\@tempcnta 8\relax\fi
+         }\global\count\@currbox\@tempcnta}\@fltovf\fi
+    \global\setbox\@currbox\vbox\bgroup 
+    \ssp\@normalsize					% this line added
+    \boxmaxdepth\z@
+    \hsize\columnwidth \@parboxrestore}
+
+% Footnotes (modified version from `latex.tex'):
+%   - sets footnotes to be single spaced
+\long\def\@footnotetext#1{\insert\footins{\ssp\footnotesize	% added \ssp
+    \interlinepenalty\interfootnotelinepenalty 
+    \splittopskip\footnotesep
+    \splitmaxdepth \dp\strutbox \floatingpenalty \@MM
+    \hsize\columnwidth \@parboxrestore
+   \edef\@currentlabel{\csname p@footnote\endcsname\@thefnmark}\@makefntext
+    {\rule{\z@}{\footnotesep}\ignorespaces
+      #1\strut}}}
+
+% Captions (modified version from `report.sty'):
+%   - put the figure number in boldface
+%   - protect the caption
+\long\def\@makecaption#1#2{\protect			% added \protect
+ \vskip 10pt 
+ \setbox\@tempboxa\hbox{{\bf #1}: #2}			% added {\bf ...}
+ \ifdim \wd\@tempboxa >\hsize \unhbox\@tempboxa\par \else \hbox
+to\hsize{\hfil\box\@tempboxa\hfil} 
+ \fi}
+
+% a version of itemize that has no space between the items
+\newenvironment{bigitemize}{\begin{list}{$\bullet$}
+{\setlength{\rightmargin}{\leftmargin}
+\setlength{\itemsep}{0em}
+\setlength{\topsep}{0em}
+\setlength{\parsep}{0em}}}{\end{list}}
+
+% like the default itemize (i.e., extra space between items)
+%\newenvironment{bigitemize}{\begin{list}{$\bullet$}
+%{\setlength{\rightmargin}{\leftmargin}}}{\end{list}}
+
+% Thebibliography (modified version from `report.sty'):
+%   - change the title to be ``References''
+%   - go ahead and add it to the table of contents
+%\def\thebibliography#1{\chapter*{References\@mkboth
+%  {References}{References}}
+%  \addcontentsline{toc}{chapter}{References}
+\def\thebibliography#1{\chapter*{Bibliography\@mkboth
+  {Bibliography}{Bibliography}}
+  \addcontentsline{toc}{chapter}{Bibliography}
+  \list{[\arabic{enumi}]}{\settowidth\labelwidth{[#1]}\leftmargin\labelwidth
+    \advance\leftmargin\labelsep
+    \usecounter{enumi}}
+    \def\newblock{\hskip .11em plus .33em minus -.07em}
+    \sloppy\clubpenalty4000\widowpenalty4000
+    \sfcode`\.=1000\relax}
+\let\endthebibliography=\endlist
+
+% Table of Contents (modified version from `report.sty'):
+%   - change to single space
+\def\tableofcontents{\@restonecolfalse\if@twocolumn\@restonecoltrue\onecolumn
+ \fi\chapter*{Contents\@mkboth{Contents}{Contents}}
+ {\ssp\@starttoc{toc}}\if@restonecol\twocolumn\fi}
+
+% List of Figures (modified version from `report.sty'):
+%   - change to single space
+\def\listoffigures{\@restonecolfalse\if@twocolumn\@restonecoltrue\onecolumn
+ \fi\chapter*{List of figures\@mkboth
+ {List of figures}{List of figures}}{\ssp\@starttoc{lof}}\if@restonecol\twocolumn
+ \fi}
+
+% List of Tables (modified version from `report.sty'):
+%   - change to single space
+\def\listoftables{\@restonecolfalse\if@twocolumn\@restonecoltrue\onecolumn
+ \fi\chapter*{List of tables\@mkboth
+ {List of tables}{List of tables}}{\ssp\@starttoc{lot}}\if@restonecol\twocolumn
+ \fi}
+
+% Citations (modified version from `latex.tex'):
+%   - add space between multiple citations
+%   - do not box citations
+\def\@citex[#1]#2{\if@filesw\immediate\write\@auxout{\string\citation{#2}}\fi
+  \def\@citea{}\@cite{\@for\@citeb:=#2\do
+    {\@citea\def\@citea{, }\@ifundefined		% added space after `,'
+       {b@\@citeb}{{\bf ?}\@warning
+       {Citation `\@citeb' on page \thepage \space undefined}}%
+{\csname b@\@citeb\endcsname}}}{#1}}			% removed the \hbox
+
+% \author, \title are defined in report; here are the rest of the
+% front matter defining macros
+\def\dept#1{\gdef\@dept{#1}}
+\def\university#1{\gdef\@university{#1}}
+\def\thesistype#1{\gdef\@thesistype{#1}}
+\def\submitdate#1{\gdef\@submitdate{#1}}
+\def\copyrightyear#1{\gdef\@copyrightyear{#1}} % \author, \title in report
+\def\@title{}\def\@author{}\def\@dept{Graduate School}
+\def\@university{Carnegie Mellon University}\def\@thesistype{Dissertation}
+\def\@submitdate{July 3, 1991}
+%\def\@submitdate{\ifcase\the\month\or
+%  January\or February\or March\or April\or May\or June\or
+%  July\or August\or September\or October\or November\or December\fi
+%  \space \number\the\year}
+% December theses should have the next year as the copyright year
+\ifnum\month=12
+    \@tempcnta=\year \advance\@tempcnta by 1
+    \edef\@copyrightyear{\number\the\@tempcnta}
+\else
+    \def\@copyrightyear{\number\the\year}
+\fi
+
+\newif\ifcopyright \copyrightfalse
+\newif\iffigurespage \figurespagetrue 
+\newif\iftablespage \tablespagetrue
+
+\def\titlep{%
+	\thispagestyle{empty}%
+	\null\vskip1in%
+	\begin{center}
+	{\sc\expandafter{\@university}}
+	\end{center}
+	\vfill
+	\begin{center}
+		{\Large\bf\uppercase\expandafter{\@title}}
+	\end{center}
+	\vfill
+	\begin{center}
+		{\sc A \expandafter{\@thesistype}\\
+		submitted to the 
+		\expandafter{\@dept}\\
+		in partial fulf{}illment of the requirements\\}
+		for the degree of\\
+		{\sc Doctor of Philosophy\\}
+		in\\
+		{\sc Physics\\}
+	\end{center}
+	\vfill
+	\begin{center}
+		by\\
+		  ~\\
+	        \@author\\
+	        \@submitdate\\
+	\end{center}\vskip.5in\newpage}
+
+\def\copyrightpage{%
+	\null\vfill
+	\begin{center}
+	  Copyright \copyright\  \@copyrightyear\ Djamal Bouzida. \\
+  {\em The author hereby grants to Carnegie Mellon University the permission to \\
+   reproduce and to distribute copies of this dissertation in whole or in part.}
+%	\@author\\
+	\end{center}
+	\vfill\newpage}
+
+\def\beforepreface{
+	\pagenumbering{roman}
+	\pagestyle{plain}
+	\titlep
+	\ifcopyright\copyrightpage\fi}
+
+\def\prefacesection#1{%
+	\chapter*{#1}
+	\addcontentsline{toc}{chapter}{#1}}
+
+\def\afterpreface{\newpage
+	\tableofcontents
+	\newpage
+	\iftablespage
+		\listoftables
+		\newpage
+	\fi
+	\iffigurespage
+		\listoffigures
+		\newpage
+	\fi
+	\pagenumbering{arabic}
+	\pagestyle{headings}}
+
+% Start with pagestyle{headings} in case front matter isn't processed
+\pagestyle{headings}
+
+% Make the thesis double-spaced
+\dsp
+
+\makeatother
+
+%DEFINE  ALIAS  COMMANDS
+\newcommand{\logkow}{\mbox{$\log K_{ow}$}}
+\newcommand{\logs}{\mbox{$\log S$}}
+\newcommand{\tsa}{\mbox{$TSA$}}
+\newcommand{\psa}{\mbox{$PSA$}}
+\newcommand{\mgsa}{\mbox{$MGSA$}}
+\newcommand{\tali}{\mbox{$TALI$}}
+\newcommand{\npsa}{\mbox{$NPSA$}}
+\newcommand{\nhet}{\mbox{$NHET$}}
+\newcommand{\alk}{{\em Alkyl}}
+\newcommand{\halo}{{\em Halo}}
+\newcommand{\phen}{{\em Phenols}}
+\newcommand{\ami}{{\em Amino}}
+\newcommand{\nap}{{\em Naphthalenes}}
+\newcommand{\pah}{{\em PAHs}}
+\newcommand{\biph}{{\em Biphenyls}}
+\newcommand{\diph}{{\em Diphenyls}}
+\newcommand{\het}{{\em Heterocyclic aromatics}}
+\newcommand{\T}{{\em -C(=O)OR substituent}}
+\newcommand{\des}{{\em Description}}
+\newcommand{\mc}{\multicolumn}

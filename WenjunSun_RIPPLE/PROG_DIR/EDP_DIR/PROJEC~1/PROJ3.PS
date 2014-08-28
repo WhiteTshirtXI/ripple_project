@@ -1,0 +1,482 @@
+%!PS-Adobe-1.0
+%%Creator: GraED
+%%BoundingBox: (atend)
+%%EndComments
+% Graed Prelude
+
+/GedDict 200 dict def
+
+GedDict begin
+
+/i {72 mul} def  /ini {gsave translate newpath} def
+/LNW {0.25 LR mul setlinewidth}def /sld { [] 0 setdash stroke } def % solid
+/bordr { gsave fl setgray fill grestore LNW sld grestore} bind def
+/cir {0 0 LR 0 360 arc bordr} bind def % for cir
+/sqr {0.85 0.85 scale LR LR moveto 0 LR -2 mul rlineto LR -2 mul 0 rlineto
+0 LR 2 mul rlineto closepath bordr} bind def % square center at Ori
+/x {0.7 0.7 scale LNW 0 LR sub LR moveto LR 2 mul LR -2 mul rlineto
+LR LR moveto LR -2 mul dup rlineto sld } bind def
+/+ {0.85 0.85 scale LNW 0 LR moveto 0 LR -2 mul rlineto 
+LR 0 moveto LR -2 mul 0 rlineto sld } bind def
+/tri {0 LR sub LR 0.866 mul moveto LR 2 mul 0 rlineto
+0 LR sub 0.866 -2 mul LR mul rlineto closepath bordr} bind def% triangle
+/oneline{LR 0 moveto LR -2 mul 0 rlineto 45 rotate} def
+/*{LNW 4 {oneline} repeat sld } bind def
+
+% ---begin symbol---
+/sc {ini cir} bind def % filled circle with level fl
+/ss {ini sqr} bind def
+/st {ini tri} bind def
+
+/sfc {ini /fl 0 def cir} bind def% filled cir
+/soc {ini /fl 1 def cir} bind def% open
+/st {ini tri} bind def
+
+/sfc {ini /fl 0 def cir} bind def% filled cir
+/soc {ini /fl 1 def cir} bind def% open
+/sfs {ini /fl 0 def sqr} bind def% filled sqr
+/sos {ini /fl 1 def sqr} bind def% open
+/sft {ini /fl 0 def tri} bind def% f tri
+/sot {ini /fl 1 def tri} bind def
+/sx {ini x grestore} bind def
+/s+ {ini + grestore} bind def
+/s* {ini * grestore} bind def
+%---end symbol
+/NL {setlinewidth newpath} def % 
+%=== begin font ===
+/fss {findfont NH 2 mul scalefont setfont}def
+/fnt {/Helvetica fss} bind def
+/pb {gsave translate 1 -1 scale 0 NH -0.33 mul moveto} def
+/pv {gsave translate 1 -1 scale 0 0 moveto 90 rotate } def
+/pe {show grestore} def
+% The following are for scribe like commands
+/cep {currentpoint exch pop} def % needed for @+, @- to get position back
+/@+- {gsave currentfont [0.8 0 0 0.8 0 0] makefont setfont cep
+      0 NH ud mul rmoveto} bind def % ud = up or down
+/@+ {/ud 0.9 def @+-} bind def
+/@- {/ud -0.8 def @+-} bind def
+/@g {gsave /Symbol fss cep} bind def
+/@i {gsave /Helvetica-Oblique fss cep} bind def
+/@b {gsave /Helvetica-Bold fss cep} bind def
+/@e {show currentpoint pop exch grestore moveto} def % for ')'
+
+%=== end font ====
+ 
+% horizontal and vertical lines
+/l {moveto rlineto sld} bind def 
+/t {lineto} def
+/ct {curveto} def
+/m {moveto} def
+/ar {gsave newpath m t t closepath 0 setgray fill grestore} bind def 
+% x2 y2 x1 y1 x0,y0 ar Draw an arrow head from 0 to 1,2
+/box {dup 0 exch moveto exch 0 rlineto 0 exch -1 mul rlineto 
+0 0 lineto closepath} def % x y box 
+/fb {gsave setgray fill grestore 1 setlinewidth sld grestore} def
+/ff {setgray fill grestore} def% x y box gray ff
+/bb {pop stroke grestore} def % x y box stroke pop off gray level
+%%EndProlog
+%%Page: 1 1
+ 1.3 i  9.5 i translate -90 rotate
+0  6.00 i translate 0.36 -0.36 scale
+ 2 setlinecap 
+   2.2 setlinewidth
+ 0 -1127 48 1164 l 
+ 1.8 setlinewidth [            ] 0 setdash newpath
+ 48 1045 m 69 1045 t 48 1045 m 59 1045 t 48 897 m 
+ 59 897 t 48 748 m 69 748 t 48 748 m 59 748 t 
+ 48 600 m 59 600 t 48 452 m 69 452 t 48 452 m 
+ 59 452 t 48 303 m 59 303 t 48 155 m 69 155 t 
+ 48 155 m 59 155 t 
+ stroke
+ 1503 0 48 1164 l 
+ 1.8 setlinewidth [            ] 0 setdash newpath
+ 48 1164 m 48 1143 t 48 1164 m 48 1153 t 132 1164 m 
+ 132 1153 t 215 1164 m 215 1143 t 215 1164 m 215 1153 t 
+ 299 1164 m 299 1153 t 382 1164 m 382 1143 t 382 1164 m 
+ 382 1153 t 466 1164 m 466 1153 t 549 1164 m 549 1143 t 
+ 549 1164 m 549 1153 t 633 1164 m 633 1153 t 716 1164 m 
+ 716 1143 t 716 1164 m 716 1153 t 800 1164 m 800 1153 t 
+ 884 1164 m 884 1143 t 884 1164 m 884 1153 t 967 1164 m 
+ 967 1153 t 1051 1164 m 1051 1143 t 1051 1164 m 1051 1153 t 
+ 1134 1164 m 1134 1153 t 1218 1164 m 1218 1143 t 1218 1164 m 
+ 1218 1153 t 1301 1164 m 1301 1153 t 1385 1164 m 1385 1143 t 
+ 1385 1164 m 1385 1153 t 1468 1164 m 1468 1153 t 1552 1164 m 
+ 1552 1143 t 1552 1164 m 1552 1153 t 
+ stroke
+ 1503 0 48 36 l 
+ 1.8 setlinewidth [            ] 0 setdash newpath
+ 48 36 m 48 57 t 48 36 m 48 47 t 132 36 m 
+ 132 47 t 215 36 m 215 57 t 215 36 m 215 47 t 
+ 299 36 m 299 47 t 382 36 m 382 57 t 382 36 m 
+ 382 47 t 466 36 m 466 47 t 549 36 m 549 57 t 
+ 549 36 m 549 47 t 633 36 m 633 47 t 716 36 m 
+ 716 57 t 716 36 m 716 47 t 800 36 m 800 47 t 
+ 884 36 m 884 57 t 884 36 m 884 47 t 967 36 m 
+ 967 47 t 1051 36 m 1051 57 t 1051 36 m 1051 47 t 
+ 1134 36 m 1134 47 t 1218 36 m 1218 57 t 1218 36 m 
+ 1218 47 t 1301 36 m 1301 47 t 1385 36 m 1385 57 t 
+ 1385 36 m 1385 47 t 1468 36 m 1468 47 t 1552 36 m 
+ 1552 57 t 1552 36 m 1552 47 t 
+ stroke
+ 0 -1127 1552 1164 l 
+ 1.8 setlinewidth [            ] 0 setdash newpath
+ 1552 1045 m 1531 1045 t 1552 1045 m 1541 1045 t 1552 897 m 
+ 1541 897 t 1552 748 m 1531 748 t 1552 748 m 1541 748 t 
+ 1552 600 m 1541 600 t 1552 452 m 1531 452 t 1552 452 m 
+ 1541 452 t 1552 303 m 1541 303 t 1552 155 m 1531 155 t 
+ 1552 155 m 1541 155 t 
+ stroke
+ /NH  18 def fnt
+ 
+ /LR   2 def 
+ 101 130 soc 334 130 soc 103 131 soc 336 131 soc 106 133 soc 
+ 339 133 soc 108 136 soc 341 136 soc 110 139 soc 343 139 soc 
+ 113 143 soc 346 143 soc 115 148 soc 348 148 soc 117 153 soc 
+ 350 153 soc 120 158 soc 353 158 soc 122 164 soc 355 164 soc 
+ 124 170 soc 357 170 soc 127 175 soc 360 175 soc 129 181 soc 
+ 362 181 soc 131 187 soc 364 187 soc 134 192 soc 367 192 soc 
+ 136 197 soc 369 197 soc 138 202 soc 371 202 soc 141 205 soc 
+ 374 205 soc 143 209 soc 376 209 soc 145 211 soc 378 211 soc 
+ 148 213 soc 381 213 soc 150 214 soc 383 214 soc 152 214 soc 
+ 385 214 soc 155 214 soc 388 214 soc 157 212 soc 390 212 soc 
+ 159 209 soc 392 209 soc 162 206 soc 395 206 soc 164 202 soc 
+ 397 202 soc 166 197 soc 399 197 soc 169 191 soc 402 191 soc 
+ 171 184 soc 404 184 soc 173 177 soc 406 177 soc 175 170 soc 
+ 409 170 soc 178 161 soc 411 161 soc 180 153 soc 413 153 soc 
+ 182 145 soc 416 145 soc 185 136 soc 418 136 soc 187 127 soc 
+ 420 127 soc 189 119 soc 423 119 soc 192 111 soc 425 111 soc 
+ 194 103 soc 427 103 soc 196 96 soc 429 96 soc 199 89 soc 
+ 432 89 soc 201 83 soc 434 83 soc 203 78 soc 436 78 soc 
+ 206 74 soc 439 74 soc 208 70 soc 441 70 soc 210 68 soc 
+ 443 68 soc 213 66 soc 446 66 soc 215 66 soc 448 66 soc 
+ 217 66 soc 450 66 soc 220 68 soc 453 68 soc 222 70 soc 
+ 455 70 soc 224 74 soc 457 74 soc 227 78 soc 460 78 soc 
+ 229 83 soc 462 83 soc 231 89 soc 464 89 soc 234 96 soc 
+ 467 96 soc 236 103 soc 469 103 soc 238 111 soc 471 111 soc 
+ 241 119 soc 474 119 soc 243 127 soc 476 127 soc 245 136 soc 
+ 478 136 soc 248 145 soc 481 145 soc 250 153 soc 483 153 soc 
+ 252 161 soc 485 161 soc 255 170 soc 488 170 soc 257 177 soc 
+ 490 177 soc 259 184 soc 492 184 soc 262 191 soc 495 191 soc 
+ 264 197 soc 497 197 soc 266 202 soc 499 202 soc 269 206 soc 
+ 502 206 soc 271 209 soc 504 209 soc 273 212 soc 506 212 soc 
+ 276 214 soc 509 214 soc 278 214 soc 511 214 soc 280 214 soc 
+ 513 214 soc 283 213 soc 516 213 soc 285 211 soc 518 211 soc 
+ 287 209 soc 520 209 soc 290 205 soc 523 205 soc 292 202 soc 
+ 525 202 soc 294 197 soc 527 197 soc 297 192 soc 530 192 soc 
+ 299 187 soc 532 187 soc 301 181 soc 534 181 soc 304 175 soc 
+ 537 175 soc 306 170 soc 539 170 soc 308 164 soc 541 164 soc 
+ 311 158 soc 544 158 soc 313 153 soc 546 153 soc 315 148 soc 
+ 548 148 soc 318 143 soc 551 143 soc 320 139 soc 553 139 soc 
+ 322 136 soc 555 136 soc 325 133 soc 558 133 soc 327 131 soc 
+ 560 131 soc 329 130 soc 562 130 soc 
+ /LR   2 def 
+ 811 180 soc 1044 180 soc 
+ 813 179 soc 1047 179 soc 816 176 soc 1049 176 soc 818 174 soc 
+ 1051 174 soc 820 170 soc 1053 170 soc 823 166 soc 1056 166 soc 
+ 825 162 soc 1058 162 soc 827 157 soc 1060 157 soc 830 151 soc 
+ 1063 151 soc 832 146 soc 1065 146 soc 834 140 soc 1067 140 soc 
+ 837 134 soc 1070 134 soc 839 128 soc 1072 128 soc 841 123 soc 
+ 1074 123 soc 844 117 soc 1077 117 soc 846 112 soc 1079 112 soc 
+ 848 108 soc 1081 108 soc 851 104 soc 1084 104 soc 853 101 soc 
+ 1086 101 soc 855 98 soc 1088 98 soc 858 96 soc 1091 96 soc 
+ 860 95 soc 1093 95 soc 862 95 soc 1095 95 soc 865 96 soc 
+ 1098 96 soc 867 98 soc 1100 98 soc 869 100 soc 1102 100 soc 
+ 872 104 soc 1105 104 soc 874 108 soc 1107 108 soc 876 113 soc 
+ 1109 113 soc 879 119 soc 1112 119 soc 881 125 soc 1114 125 soc 
+ 883 132 soc 1116 132 soc 886 140 soc 1119 140 soc 888 148 soc 
+ 1121 148 soc 890 156 soc 1123 156 soc 893 165 soc 1126 165 soc 
+ 895 173 soc 1128 173 soc 897 182 soc 1130 182 soc 900 190 soc 
+ 1133 190 soc 902 199 soc 1135 199 soc 904 206 soc 1137 206 soc 
+ 907 214 soc 1140 214 soc 909 220 soc 1142 220 soc 911 226 soc 
+ 1144 226 soc 914 231 soc 1147 231 soc 916 236 soc 1149 236 soc 
+ 918 239 soc 1151 239 soc 921 242 soc 1154 242 soc 923 243 soc 
+ 1156 243 soc 925 244 soc 1158 244 soc 928 243 soc 1161 243 soc 
+ 930 242 soc 1163 242 soc 932 239 soc 1165 239 soc 935 236 soc 
+ 1168 236 soc 937 231 soc 1170 231 soc 939 226 soc 1172 226 soc 
+ 942 220 soc 1175 220 soc 944 214 soc 1177 214 soc 946 206 soc 
+ 1179 206 soc 949 199 soc 1182 199 soc 951 190 soc 1184 190 soc 
+ 953 182 soc 1186 182 soc 956 173 soc 1189 173 soc 958 165 soc 
+ 1191 165 soc 960 156 soc 1193 156 soc 963 148 soc 1196 148 soc 
+ 965 140 soc 1198 140 soc 967 132 soc 1200 132 soc 970 125 soc 
+ 1203 125 soc 972 119 soc 1205 119 soc 974 113 soc 1207 113 soc 
+ 977 108 soc 1210 108 soc 979 104 soc 1212 104 soc 981 100 soc 
+ 1214 100 soc 984 98 soc 1217 98 soc 986 96 soc 1219 96 soc 
+ 988 95 soc 1221 95 soc 991 95 soc 1224 95 soc 993 96 soc 
+ 1226 96 soc 995 98 soc 1228 98 soc 998 101 soc 1231 101 soc 
+ 1000 104 soc 1233 104 soc 1002 108 soc 1235 108 soc 1005 112 soc 
+ 1238 112 soc 1007 117 soc 1240 117 soc 1009 123 soc 1242 123 soc 
+ 1012 128 soc 1245 128 soc 1014 134 soc 1247 134 soc 1016 140 soc 
+ 1249 140 soc 1019 146 soc 1252 146 soc 1021 151 soc 1254 151 soc 
+ 1023 157 soc 1256 157 soc 1026 162 soc 1259 162 soc 1028 166 soc 
+ 1261 166 soc 1030 170 soc 1263 170 soc 1033 174 soc 1266 174 soc 
+ 1035 176 soc 1268 176 soc 1037 179 soc 1270 179 soc 1040 180 soc 
+ 1273 180 soc 
+ /LR   2 def 
+ 101 426 soc 334 426 soc 103 428 soc 336 428 soc 
+ 106 430 soc 339 430 soc 108 433 soc 341 433 soc 110 436 soc 
+ 343 436 soc 113 440 soc 346 440 soc 115 445 soc 348 445 soc 
+ 117 450 soc 350 450 soc 120 455 soc 353 455 soc 122 461 soc 
+ 355 461 soc 124 466 soc 357 466 soc 127 472 soc 360 472 soc 
+ 129 478 soc 362 478 soc 131 484 soc 364 484 soc 134 489 soc 
+ 367 489 soc 136 494 soc 369 494 soc 138 498 soc 371 498 soc 
+ 141 502 soc 374 502 soc 143 506 soc 376 506 soc 145 508 soc 
+ 378 508 soc 148 510 soc 381 510 soc 150 511 soc 383 511 soc 
+ 152 511 soc 385 511 soc 155 510 soc 388 510 soc 157 509 soc 
+ 390 509 soc 159 506 soc 392 506 soc 162 503 soc 395 503 soc 
+ 164 498 soc 397 498 soc 166 493 soc 399 493 soc 169 488 soc 
+ 402 488 soc 171 481 soc 404 481 soc 173 474 soc 406 474 soc 
+ 175 466 soc 409 466 soc 178 458 soc 411 458 soc 180 450 soc 
+ 413 450 soc 182 441 soc 416 441 soc 185 433 soc 418 433 soc 
+ 187 424 soc 420 424 soc 189 416 soc 423 416 soc 192 408 soc 
+ 425 408 soc 194 400 soc 427 400 soc 196 393 soc 429 393 soc 
+ 199 386 soc 432 386 soc 201 380 soc 434 380 soc 203 375 soc 
+ 436 375 soc 206 371 soc 439 371 soc 208 367 soc 441 367 soc 
+ 210 365 soc 443 365 soc 213 363 soc 446 363 soc 215 363 soc 
+ 448 363 soc 217 363 soc 450 363 soc 220 365 soc 453 365 soc 
+ 222 367 soc 455 367 soc 224 371 soc 457 371 soc 227 375 soc 
+ 460 375 soc 229 380 soc 462 380 soc 231 386 soc 464 386 soc 
+ 234 393 soc 467 393 soc 236 400 soc 469 400 soc 238 408 soc 
+ 471 408 soc 241 416 soc 474 416 soc 243 424 soc 476 424 soc 
+ 245 433 soc 478 433 soc 248 441 soc 481 441 soc 250 450 soc 
+ 483 450 soc 252 458 soc 485 458 soc 255 466 soc 488 466 soc 
+ 257 474 soc 490 474 soc 259 481 soc 492 481 soc 262 488 soc 
+ 495 488 soc 264 493 soc 497 493 soc 266 498 soc 499 498 soc 
+ 269 503 soc 502 503 soc 271 506 soc 504 506 soc 273 509 soc 
+ 506 509 soc 276 510 soc 509 510 soc 278 511 soc 511 511 soc 
+ 280 511 soc 513 511 soc 283 510 soc 516 510 soc 285 508 soc 
+ 518 508 soc 287 506 soc 520 506 soc 290 502 soc 523 502 soc 
+ 292 498 soc 525 498 soc 294 494 soc 527 494 soc 297 489 soc 
+ 530 489 soc 299 484 soc 532 484 soc 301 478 soc 534 478 soc 
+ 304 472 soc 537 472 soc 306 466 soc 539 466 soc 308 461 soc 
+ 541 461 soc 311 455 soc 544 455 soc 313 450 soc 546 450 soc 
+ 315 445 soc 548 445 soc 318 440 soc 551 440 soc 320 436 soc 
+ 553 436 soc 322 433 soc 555 433 soc 325 430 soc 558 430 soc 
+ 327 428 soc 560 428 soc 329 426 soc 562 426 soc 
+ /LR   2 def 
+ 811 477 soc 
+ 1044 477 soc 813 475 soc 1047 475 soc 816 473 soc 1049 473 soc 
+ 818 470 soc 1051 470 soc 820 467 soc 1053 467 soc 823 463 soc 
+ 1056 463 soc 825 458 soc 1058 458 soc 827 453 soc 1060 453 soc 
+ 830 448 soc 1063 448 soc 832 442 soc 1065 442 soc 834 437 soc 
+ 1067 437 soc 837 431 soc 1070 431 soc 839 425 soc 1072 425 soc 
+ 841 420 soc 1074 420 soc 844 414 soc 1077 414 soc 846 409 soc 
+ 1079 409 soc 848 405 soc 1081 405 soc 851 401 soc 1084 401 soc 
+ 853 398 soc 1086 398 soc 855 395 soc 1088 395 soc 858 393 soc 
+ 1091 393 soc 860 392 soc 1093 392 soc 862 392 soc 1095 392 soc 
+ 865 393 soc 1098 393 soc 867 394 soc 1100 394 soc 869 397 soc 
+ 1102 397 soc 872 400 soc 1105 400 soc 874 405 soc 1107 405 soc 
+ 876 410 soc 1109 410 soc 879 416 soc 1112 416 soc 881 422 soc 
+ 1114 422 soc 883 429 soc 1116 429 soc 886 437 soc 1119 437 soc 
+ 888 445 soc 1121 445 soc 890 453 soc 1123 453 soc 893 462 soc 
+ 1126 462 soc 895 470 soc 1128 470 soc 897 479 soc 1130 479 soc 
+ 900 487 soc 1133 487 soc 902 495 soc 1135 495 soc 904 503 soc 
+ 1137 503 soc 907 510 soc 1140 510 soc 909 517 soc 1142 517 soc 
+ 911 523 soc 1144 523 soc 914 528 soc 1147 528 soc 916 533 soc 
+ 1149 533 soc 918 536 soc 1151 536 soc 921 539 soc 1154 539 soc 
+ 923 540 soc 1156 540 soc 925 541 soc 1158 541 soc 928 540 soc 
+ 1161 540 soc 930 539 soc 1163 539 soc 932 536 soc 1165 536 soc 
+ 935 533 soc 1168 533 soc 937 528 soc 1170 528 soc 939 523 soc 
+ 1172 523 soc 942 517 soc 1175 517 soc 944 510 soc 1177 510 soc 
+ 946 503 soc 1179 503 soc 949 495 soc 1182 495 soc 951 487 soc 
+ 1184 487 soc 953 479 soc 1186 479 soc 956 470 soc 1189 470 soc 
+ 958 462 soc 1191 462 soc 960 453 soc 1193 453 soc 963 445 soc 
+ 1196 445 soc 965 437 soc 1198 437 soc 967 429 soc 1200 429 soc 
+ 970 422 soc 1203 422 soc 972 416 soc 1205 416 soc 974 410 soc 
+ 1207 410 soc 977 405 soc 1210 405 soc 979 400 soc 1212 400 soc 
+ 981 397 soc 1214 397 soc 984 394 soc 1217 394 soc 986 393 soc 
+ 1219 393 soc 988 392 soc 1221 392 soc 991 392 soc 1224 392 soc 
+ 993 393 soc 1226 393 soc 995 395 soc 1228 395 soc 998 398 soc 
+ 1231 398 soc 1000 401 soc 1233 401 soc 1002 405 soc 1235 405 soc 
+ 1005 409 soc 1238 409 soc 1007 414 soc 1240 414 soc 1009 420 soc 
+ 1242 420 soc 1012 425 soc 1245 425 soc 1014 431 soc 1247 431 soc 
+ 1016 437 soc 1249 437 soc 1019 442 soc 1252 442 soc 1021 448 soc 
+ 1254 448 soc 1023 453 soc 1256 453 soc 1026 458 soc 1259 458 soc 
+ 1028 463 soc 1261 463 soc 1030 467 soc 1263 467 soc 1033 470 soc 
+ 1266 470 soc 1035 473 soc 1268 473 soc 1037 475 soc 1270 475 soc 
+ 1040 477 soc 1273 477 soc 
+ /LR   2 def 
+ 101 837 soc 334 837 soc 103 835 soc 
+ 336 835 soc 106 832 soc 339 832 soc 108 828 soc 341 828 soc 
+ 110 824 soc 343 824 soc 113 818 soc 346 818 soc 115 812 soc 
+ 348 812 soc 117 805 soc 350 805 soc 120 798 soc 353 798 soc 
+ 122 790 soc 355 790 soc 124 782 soc 357 782 soc 127 773 soc 
+ 360 773 soc 129 765 soc 362 765 soc 131 756 soc 364 756 soc 
+ 134 748 soc 367 748 soc 136 739 soc 369 739 soc 138 731 soc 
+ 371 731 soc 141 724 soc 374 724 soc 143 717 soc 376 717 soc 
+ 145 711 soc 378 711 soc 148 705 soc 381 705 soc 150 700 soc 
+ 383 700 soc 152 696 soc 385 696 soc 155 693 soc 388 693 soc 
+ 157 691 soc 390 691 soc 159 689 soc 392 689 soc 162 689 soc 
+ 395 689 soc 164 689 soc 397 689 soc 166 690 soc 399 690 soc 
+ 169 692 soc 402 692 soc 171 695 soc 404 695 soc 173 699 soc 
+ 406 699 soc 175 703 soc 409 703 soc 178 707 soc 411 707 soc 
+ 180 713 soc 413 713 soc 182 718 soc 416 718 soc 185 724 soc 
+ 418 724 soc 187 729 soc 420 729 soc 189 735 soc 423 735 soc 
+ 192 741 soc 425 741 soc 194 746 soc 427 746 soc 196 752 soc 
+ 429 752 soc 199 757 soc 432 757 soc 201 761 soc 434 761 soc 
+ 203 765 soc 436 765 soc 206 768 soc 439 768 soc 208 771 soc 
+ 441 771 soc 210 773 soc 443 773 soc 213 774 soc 446 774 soc 
+ 215 774 soc 448 774 soc 217 774 soc 450 774 soc 220 773 soc 
+ 453 773 soc 222 771 soc 455 771 soc 224 768 soc 457 768 soc 
+ 227 765 soc 460 765 soc 229 761 soc 462 761 soc 231 757 soc 
+ 464 757 soc 234 752 soc 467 752 soc 236 746 soc 469 746 soc 
+ 238 741 soc 471 741 soc 241 735 soc 474 735 soc 243 729 soc 
+ 476 729 soc 245 724 soc 478 724 soc 248 718 soc 481 718 soc 
+ 250 713 soc 483 713 soc 252 707 soc 485 707 soc 255 703 soc 
+ 488 703 soc 257 699 soc 490 699 soc 259 695 soc 492 695 soc 
+ 262 692 soc 495 692 soc 264 690 soc 497 690 soc 266 689 soc 
+ 499 689 soc 269 689 soc 502 689 soc 271 689 soc 504 689 soc 
+ 273 691 soc 506 691 soc 276 693 soc 509 693 soc 278 696 soc 
+ 511 696 soc 280 700 soc 513 700 soc 283 705 soc 516 705 soc 
+ 285 711 soc 518 711 soc 287 717 soc 520 717 soc 290 724 soc 
+ 523 724 soc 292 731 soc 525 731 soc 294 739 soc 527 739 soc 
+ 297 748 soc 530 748 soc 299 756 soc 532 756 soc 301 765 soc 
+ 534 765 soc 304 773 soc 537 773 soc 306 782 soc 539 782 soc 
+ 308 790 soc 541 790 soc 311 798 soc 544 798 soc 313 805 soc 
+ 546 805 soc 315 812 soc 548 812 soc 318 818 soc 551 818 soc 
+ 320 824 soc 553 824 soc 322 828 soc 555 828 soc 325 832 soc 
+ 558 832 soc 327 835 soc 560 835 soc 329 837 soc 562 837 soc 
+ 
+ /LR   2 def 
+ 811 660 soc 1044 660 soc 813 662 soc 1047 662 soc 816 665 soc 
+ 1049 665 soc 818 669 soc 1051 669 soc 820 673 soc 1053 673 soc 
+ 823 679 soc 1056 679 soc 825 685 soc 1058 685 soc 827 692 soc 
+ 1060 692 soc 830 699 soc 1063 699 soc 832 707 soc 1065 707 soc 
+ 834 715 soc 1067 715 soc 837 724 soc 1070 724 soc 839 732 soc 
+ 1072 732 soc 841 741 soc 1074 741 soc 844 749 soc 1077 749 soc 
+ 846 757 soc 1079 757 soc 848 765 soc 1081 765 soc 851 773 soc 
+ 1084 773 soc 853 780 soc 1086 780 soc 855 786 soc 1088 786 soc 
+ 858 792 soc 1091 792 soc 860 797 soc 1093 797 soc 862 801 soc 
+ 1095 801 soc 865 804 soc 1098 804 soc 867 806 soc 1100 806 soc 
+ 869 808 soc 1102 808 soc 872 808 soc 1105 808 soc 874 808 soc 
+ 1107 808 soc 876 806 soc 1109 806 soc 879 804 soc 1112 804 soc 
+ 881 802 soc 1114 802 soc 883 798 soc 1116 798 soc 886 794 soc 
+ 1119 794 soc 888 789 soc 1121 789 soc 890 784 soc 1123 784 soc 
+ 893 779 soc 1126 779 soc 895 773 soc 1128 773 soc 897 767 soc 
+ 1130 767 soc 900 762 soc 1133 762 soc 902 756 soc 1135 756 soc 
+ 904 750 soc 1137 750 soc 907 745 soc 1140 745 soc 909 740 soc 
+ 1142 740 soc 911 736 soc 1144 736 soc 914 732 soc 1147 732 soc 
+ 916 729 soc 1149 729 soc 918 726 soc 1151 726 soc 921 724 soc 
+ 1154 724 soc 923 723 soc 1156 723 soc 925 723 soc 1158 723 soc 
+ 928 723 soc 1161 723 soc 930 724 soc 1163 724 soc 932 726 soc 
+ 1165 726 soc 935 729 soc 1168 729 soc 937 732 soc 1170 732 soc 
+ 939 736 soc 1172 736 soc 942 740 soc 1175 740 soc 944 745 soc 
+ 1177 745 soc 946 750 soc 1179 750 soc 949 756 soc 1182 756 soc 
+ 951 762 soc 1184 762 soc 953 767 soc 1186 767 soc 956 773 soc 
+ 1189 773 soc 958 779 soc 1191 779 soc 960 784 soc 1193 784 soc 
+ 963 789 soc 1196 789 soc 965 794 soc 1198 794 soc 967 798 soc 
+ 1200 798 soc 970 802 soc 1203 802 soc 972 804 soc 1205 804 soc 
+ 974 806 soc 1207 806 soc 977 808 soc 1210 808 soc 979 808 soc 
+ 1212 808 soc 981 808 soc 1214 808 soc 984 806 soc 1217 806 soc 
+ 986 804 soc 1219 804 soc 988 801 soc 1221 801 soc 991 797 soc 
+ 1224 797 soc 993 792 soc 1226 792 soc 995 786 soc 1228 786 soc 
+ 998 780 soc 1231 780 soc 1000 773 soc 1233 773 soc 1002 765 soc 
+ 1235 765 soc 1005 757 soc 1238 757 soc 1007 749 soc 1240 749 soc 
+ 1009 741 soc 1242 741 soc 1012 732 soc 1245 732 soc 1014 724 soc 
+ 1247 724 soc 1016 715 soc 1249 715 soc 1019 707 soc 1252 707 soc 
+ 1021 699 soc 1254 699 soc 1023 692 soc 1256 692 soc 1026 685 soc 
+ 1259 685 soc 1028 679 soc 1261 679 soc 1030 673 soc 1263 673 soc 
+ 1033 669 soc 1266 669 soc 1035 665 soc 1268 665 soc 1037 662 soc 
+ 1270 662 soc 1040 660 soc 1273 660 soc 
+ /LR   2 def 
+ 101 957 soc 334 957 soc 
+ 103 959 soc 336 959 soc 106 962 soc 339 962 soc 108 965 soc 
+ 341 965 soc 110 970 soc 343 970 soc 113 975 soc 346 975 soc 
+ 115 982 soc 348 982 soc 117 988 soc 350 988 soc 120 996 soc 
+ 353 996 soc 122 1004 soc 355 1004 soc 124 1012 soc 357 1012 soc 
+ 127 1020 soc 360 1020 soc 129 1029 soc 362 1029 soc 131 1038 soc 
+ 364 1038 soc 134 1046 soc 367 1046 soc 136 1054 soc 369 1054 soc 
+ 138 1062 soc 371 1062 soc 141 1070 soc 374 1070 soc 143 1077 soc 
+ 376 1077 soc 145 1083 soc 378 1083 soc 148 1089 soc 381 1089 soc 
+ 150 1093 soc 383 1093 soc 152 1097 soc 385 1097 soc 155 1101 soc 
+ 388 1101 soc 157 1103 soc 390 1103 soc 159 1104 soc 392 1104 soc 
+ 162 1105 soc 395 1105 soc 164 1104 soc 397 1104 soc 166 1103 soc 
+ 399 1103 soc 169 1101 soc 402 1101 soc 171 1098 soc 404 1098 soc 
+ 173 1095 soc 406 1095 soc 175 1091 soc 409 1091 soc 178 1086 soc 
+ 411 1086 soc 180 1081 soc 413 1081 soc 182 1076 soc 416 1076 soc 
+ 185 1070 soc 418 1070 soc 187 1064 soc 420 1064 soc 189 1059 soc 
+ 423 1059 soc 192 1053 soc 425 1053 soc 194 1047 soc 427 1047 soc 
+ 196 1042 soc 429 1042 soc 199 1037 soc 432 1037 soc 201 1033 soc 
+ 434 1033 soc 203 1029 soc 436 1029 soc 206 1026 soc 439 1026 soc 
+ 208 1023 soc 441 1023 soc 210 1021 soc 443 1021 soc 213 1020 soc 
+ 446 1020 soc 215 1019 soc 448 1019 soc 217 1020 soc 450 1020 soc 
+ 220 1021 soc 453 1021 soc 222 1023 soc 455 1023 soc 224 1026 soc 
+ 457 1026 soc 227 1029 soc 460 1029 soc 229 1033 soc 462 1033 soc 
+ 231 1037 soc 464 1037 soc 234 1042 soc 467 1042 soc 236 1047 soc 
+ 469 1047 soc 238 1053 soc 471 1053 soc 241 1059 soc 474 1059 soc 
+ 243 1064 soc 476 1064 soc 245 1070 soc 478 1070 soc 248 1076 soc 
+ 481 1076 soc 250 1081 soc 483 1081 soc 252 1086 soc 485 1086 soc 
+ 255 1091 soc 488 1091 soc 257 1095 soc 490 1095 soc 259 1098 soc 
+ 492 1098 soc 262 1101 soc 495 1101 soc 264 1103 soc 497 1103 soc 
+ 266 1104 soc 499 1104 soc 269 1105 soc 502 1105 soc 271 1104 soc 
+ 504 1104 soc 273 1103 soc 506 1103 soc 276 1101 soc 509 1101 soc 
+ 278 1097 soc 511 1097 soc 280 1093 soc 513 1093 soc 283 1089 soc 
+ 516 1089 soc 285 1083 soc 518 1083 soc 287 1077 soc 520 1077 soc 
+ 290 1070 soc 523 1070 soc 292 1062 soc 525 1062 soc 294 1054 soc 
+ 527 1054 soc 297 1046 soc 530 1046 soc 299 1038 soc 532 1038 soc 
+ 301 1029 soc 534 1029 soc 304 1020 soc 537 1020 soc 306 1012 soc 
+ 539 1012 soc 308 1004 soc 541 1004 soc 311 996 soc 544 996 soc 
+ 313 988 soc 546 988 soc 315 982 soc 548 982 soc 318 975 soc 
+ 551 975 soc 320 970 soc 553 970 soc 322 965 soc 555 965 soc 
+ 325 962 soc 558 962 soc 327 959 soc 560 959 soc 329 957 soc 
+ 562 957 soc 
+ /LR   2 def 
+ 811 1133 soc 1044 1133 soc 813 1132 soc 1047 1132 soc 
+ 816 1129 soc 1049 1129 soc 818 1125 soc 1051 1125 soc 820 1121 soc 
+ 1053 1121 soc 823 1115 soc 1056 1115 soc 825 1109 soc 1058 1109 soc 
+ 827 1102 soc 1060 1102 soc 830 1095 soc 1063 1095 soc 832 1087 soc 
+ 1065 1087 soc 834 1079 soc 1067 1079 soc 837 1070 soc 1070 1070 soc 
+ 839 1062 soc 1072 1062 soc 841 1053 soc 1074 1053 soc 844 1044 soc 
+ 1077 1044 soc 846 1036 soc 1079 1036 soc 848 1028 soc 1081 1028 soc 
+ 851 1021 soc 1084 1021 soc 853 1014 soc 1086 1014 soc 855 1008 soc 
+ 1088 1008 soc 858 1002 soc 1091 1002 soc 860 997 soc 1093 997 soc 
+ 862 993 soc 1095 993 soc 865 990 soc 1098 990 soc 867 988 soc 
+ 1100 988 soc 869 986 soc 1102 986 soc 872 986 soc 1105 986 soc 
+ 874 986 soc 1107 986 soc 876 987 soc 1109 987 soc 879 989 soc 
+ 1112 989 soc 881 992 soc 1114 992 soc 883 996 soc 1116 996 soc 
+ 886 1000 soc 1119 1000 soc 888 1004 soc 1121 1004 soc 890 1009 soc 
+ 1123 1009 soc 893 1015 soc 1126 1015 soc 895 1020 soc 1128 1020 soc 
+ 897 1026 soc 1130 1026 soc 900 1032 soc 1133 1032 soc 902 1038 soc 
+ 1135 1038 soc 904 1043 soc 1137 1043 soc 907 1049 soc 1140 1049 soc 
+ 909 1053 soc 1142 1053 soc 911 1058 soc 1144 1058 soc 914 1062 soc 
+ 1147 1062 soc 916 1065 soc 1149 1065 soc 918 1068 soc 1151 1068 soc 
+ 921 1070 soc 1154 1070 soc 923 1071 soc 1156 1071 soc 925 1071 soc 
+ 1158 1071 soc 928 1071 soc 1161 1071 soc 930 1070 soc 1163 1070 soc 
+ 932 1068 soc 1165 1068 soc 935 1065 soc 1168 1065 soc 937 1062 soc 
+ 1170 1062 soc 939 1058 soc 1172 1058 soc 942 1053 soc 1175 1053 soc 
+ 944 1049 soc 1177 1049 soc 946 1043 soc 1179 1043 soc 949 1038 soc 
+ 1182 1038 soc 951 1032 soc 1184 1032 soc 953 1026 soc 1186 1026 soc 
+ 956 1020 soc 1189 1020 soc 958 1015 soc 1191 1015 soc 960 1009 soc 
+ 1193 1009 soc 963 1004 soc 1196 1004 soc 965 1000 soc 1198 1000 soc 
+ 967 996 soc 1200 996 soc 970 992 soc 1203 992 soc 972 989 soc 
+ 1205 989 soc 974 987 soc 1207 987 soc 977 986 soc 1210 986 soc 
+ 979 986 soc 1212 986 soc 981 986 soc 1214 986 soc 984 988 soc 
+ 1217 988 soc 986 990 soc 1219 990 soc 988 993 soc 1221 993 soc 
+ 991 997 soc 1224 997 soc 993 1002 soc 1226 1002 soc 995 1008 soc 
+ 1228 1008 soc 998 1014 soc 1231 1014 soc 1000 1021 soc 1233 1021 soc 
+ 1002 1028 soc 1235 1028 soc 1005 1036 soc 1238 1036 soc 1007 1044 soc 
+ 1240 1044 soc 1009 1053 soc 1242 1053 soc 1012 1062 soc 1245 1062 soc 
+ 1014 1070 soc 1247 1070 soc 1016 1079 soc 1249 1079 soc 1019 1087 soc 
+ 1252 1087 soc 1021 1095 soc 1254 1095 soc 1023 1102 soc 1256 1102 soc 
+ 1026 1109 soc 1259 1109 soc 1028 1115 soc 1261 1115 soc 1030 1121 soc 
+ 1263 1121 soc 1033 1125 soc 1266 1125 soc 1035 1129 soc 1268 1129 soc 
+ 1037 1132 soc 1270 1132 soc 1040 1133 soc 1273 1133 soc /NH  18 def fnt
+ 590 150 pb (\050+++\051) pe
+ /NH  18 def fnt
+ 1303 150 pb (\050---\051) pe
+ /NH  18 def fnt
+ 590 437 pb (\050++-\051) pe
+ /NH  18 def fnt
+ 1303 437 pb (\050--+\051) pe
+ /NH  18 def fnt
+ 590 741 pb (\050+-+\051) pe
+ /NH  18 def fnt
+ 1303 739 pb (\050-+-\051) pe
+ /NH  18 def fnt
+ 590 1043 pb (\050-++\051) pe
+ /NH  18 def fnt
+ 1275 1046 pb (\050+--\051) pe
+ 
+ end
+ showpage
+%%Trailer
+%%BoundingBox: 0 0 576 432

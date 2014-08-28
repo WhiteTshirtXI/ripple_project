@@ -1,0 +1,351 @@
+\section{Fitting the peaks}
+\label{gel_model_fit}
+
+While the simple model described in the preceding section
+gives the overall qualitative features seen in Fig.\ \ref{model:fig1}, 
+it does not give very good quantitative agreement with the scattering
+angles for the satellite peaks.  In this section we
+demonstrate that the physically plausible refinements
+of the model described in Section \ref{gel_model_model} 
+can yield quantitative agreement with all peak scattering.
+
+Fitting the peaks in Fig.\ \ref{model:fig1} with a model poses a problem because there are
+a number of parameters in any realistic model whose practical
+determination requires non-linear least squares fitting, but
+such fitting can not be performed on the total measured scattering.
+We therefore used calculations for our model
+to establish criteria that allow reasonable guesses
+for the diffuse scattering curve.  One
+key criterion was that peak scattering should fall to low values (though not 
+necessarily exactly zero, {\it vide infra}) between the satellite peaks 
+and between the first satellite and the (20) peak.  Also, peak scattering 
+should be small for $2 \theta$ larger than the (11) peak.  
+Another key criterion is that the 
+integrated intensity in the (11) peak should be
+about twice as large as the integrated intensity of the (20) peak.
+This ratio, RII, should be exactly 2 if the electron density of the
+hydrocarbon chains is modelled as a delta function rod as in Section 
+\ref{gel_model_model}.
+We also performed calculations modelling the tails more accurately as 
+stereochemically accurate zigzag chains.  Then, RII could vary by as much 
+as 40\%, but this much deviation of RII from 2 requires full rotational order
+of the chains about their long axis in specific 
+directions.  There is evidence for some rotational order in the
+gel phase \cite{Nag93a}, but the rotational order is closer
+to fully disordered than to ordered, so the deviation of RII from 2
+is probably much smaller than 40\%.  For RII to be close to 2, the 
+diffuse scattering curve must have a broad peak under the (11) peak such
+as the one drawn in Fig.\ \ref{model:fig1}.  Subtraction of this diffuse
+scattering curve from the measured scattering yields the
+peak scattering curve shown in Fig.\ \ref{model:fig4}.
+
+\begin{figure}[ht]
+\centerline {\psfig{figure=gel_model_dir/fit_new.ps,width=4in}}
+\caption{Peak scattering, solid circles with error bars,
+from Fig.\ \protect\ref{model:fig1} and
+model fits from Section \ref{gel_model_strategy}. Longer counting times in 
+the satellite
+region account for the smaller error bars there. The solid line running
+within the error bars of most
+of the data points shows our best fit (${\chi}^{2}$=2.03). The dashed line
+shows the separate
+contribution from the (11) Bragg rod. The left hand inset expands
+the vertical scale for the
+satellite region with scattering angles between $18^{\circ}$ and $20.5^{\circ}$.
+The right hand inset expands the region between $21.0^{\circ}$
+and $21.4^{\circ}$.
+The dot-dash lines in the insets show the suboptimal fit when the
+offsets were set to zero (${\chi}^{2}$=5.79).
+\label{model:fig4}}
+\end{figure}
+
+In addition to the parameters defined in the model
+in the previous section, a parameter ${\sigma}_{inst}$ for the
+instrumental resolution and a parameter
+${\sigma}_{11}$ for the intrinsic width of the (11) Bragg rod were allowed.
+Since the intrinsic (20) peak width is much narrower than the
+instrumental resolution, it was assumed to be zero.
+
+Fits to the peak scattering in Fig.\ \ref{model:fig4} were driven by the IMSL non-linear 
+least squares library routine UNLSF.  
+The reduced ${\chi}^{2}$ of the fit shown in Fig.\ \ref{model:fig4}
+was 2.03, which was quite good considering the intrinsic uncertainty in
+subtraction of the diffuse scattering.  The largest systematic
+error in the fit is for $2 {\theta}$ between $20.7^{\circ}$ and
+$20.8^{\circ}$ on the low angle side of the (20) peak.  This
+could be due to omission from the fitting of the power law tails mentioned in 
+Sec. \ref{gel_model_strategy}.
+The values of the basic parameters determined by the fit 
+shown in Fig.\ \ref{model:fig4} are given in Table\ \ref{table1}.  Two kinds of errors are
+shown in this table.  The first set of errors was determined
+for one particular diffuse scattering curve in the usual way, namely,
+fits were performed in which one parameter was held fixed and
+all other parameters were then optimized.  Those values of the fixed parameter
+that gave increases of 1 in ${\chi}^{2}$ yield the first errors shown in Table\ \ref{table1}.
+The second set of errors was estimated by choosing two different diffuse
+scattering curves and comparing the values of the best fit parameters.
+
+\begin{table}
+\caption{Results for Fitted Parameters to Wide Angle Data
+\label{table1}}
+\begin{center}
+\begin{tabular}{cc}
+\hline \hline \\
+$d_{20}$                        & 4.2440$\pm$ 0.0001$\pm$ 0.0004\AA\\
+$d_{11}$                        & 4.182$\pm$ 0.003 $\pm$0.006\AA\\
+${\theta}_{t}$                  & 31.6$\pm$ 0.1 $\pm$ $0.2^{\circ}$\\
+L                               & 21.32$\pm$ 0.07 $\pm$0.5\AA\\
+${\sigma}_{inst}$               & 0.0578$\pm$ 0.0005 $\pm$ $0.0014^{\circ}$\\
+${\sigma}_{11}$                 & 0.09$\pm$ 0.01 $\pm$ $0.04^{\circ}$\\
+${\Delta x}_{c}$                & 0.47$\pm$ 0.03 $\pm$0.05\AA\\
+${\Delta y}_{c}$                & 0.64$\pm$ 0.07 $\pm$0.13\AA\\
+$n_{\mbox{H}}$                  & 45$\pm$ 1 $\pm$11 electrons\\
+$z_{\mbox{H}}$                  & 20.38$\pm$ 0.07 $\pm$0.25\AA\\
+${\sigma}_{\mbox{H}}$           & 1.9$\pm$ 0.2 $\pm$0.1\AA\\
+${\Delta x}_{\mbox{H}}$         & 0.73$\pm$ 0.06 $\pm$1.0\AA\\
+${\Delta y}_{\mbox{H}}$         & 0.4$\pm$ 0.1 $\pm$ 0.3\AA\\
+$RII$                           & 2.01$\pm$ 0.08 $\pm$0.12\\
+\hline \hline \\
+\end{tabular}
+\end{center}
+\end{table}
+
+While the fit to the data is a complex interaction of all the parameters,
+there are some particular regions of the data that most strongly
+influence certain parameters. The values of $d_{20}$ and ${\sigma}_{inst}$ 
+are quite well determined by the sharp (20) peak.
+The breadth of the central (11) peak is largely determined by twice the length
+L of the chains, which establishes the width of the central peak along
+the Bragg rod, and by the tilt angle $\theta$ which determines how
+far this peak is displaced from the equator ({\it vide infra}).  
+The correct value of L for all-trans hydrocarbon
+chains consisting of 14 $CH_{2}$ groups and a terminal $CH_{3}$ is
+16(1.27\AA )=20.3\AA. That the fitted value of L is slightly
+larger is quite satisfactory; it is consistent with the model chain including
+some of the carbonyl group.
+
+A subtle but important relation concerns
+the ``edge'' angle $2 {\theta}_{e}$ corresponding to the q
+value where the (11) Bragg rod crosses the equator.  
+For \( \theta < {\theta}_{e} \) there is no peak scattering except for resolution
+broadening of the square root singularity at ${\theta}_{e}$.  The fact that
+our data are very smooth from $18.8^{\circ}$ down to $15.5^{\circ}$ (not all data shown
+in Fig.\ \ref{model:fig1}) suggests that $2 {\theta}_{e}$ is close to $18.9^{\circ}$.  
+Identifying ${\theta}_{e}$ provides the equatorial component \(  q_{r,11} = {4 \pi 
+\over \lambda} \sin {\theta}_{e} \) of the
+(11) peak.  This allows one to determine ${\theta}_{t}$ from the
+well-known relation \cite{LevTh,Smi88,HenHos83}
+\begin{equation}
+\label{et6}
+\sin \hat{\theta} = \sqrt{1-({q_{20} \over 2 q_{11}})^2}~ \sin {\theta}_{t}~,
+\end{equation}
+where $\hat{\theta}$ is the angle of the (11) peak in {\bf q}-space
+defined by \( \cos \hat{\theta} = {q_{r,11} \over q_{11}} \).
+Although there is some uncertainty in estimating $q_{11}$ because of the foot
+on the (20) peak between $21.1-21.3^{\circ}$,
+even rough estimates without detailed fitting yield values
+of ${\theta}_{t}$ of 31--32$^{\circ}$.  This agrees very well with our recent work 
+\cite{STN92} on fully hydrated oriented DPPC bilayers which obtained the tilt angle
+${\theta}_{t}$ to be $32.0 \pm 0.5^{\circ}$ at $19^{\circ}$C.  Even the slightly smaller
+values obtained in this fit to data at $24^{\circ}$C can be attributed to our
+earlier observation that the tilt angle decreases with increasing temperature
+\cite{STN92}.
+Our earlier work also verified directly that the tilt is towards nearest neighbors.  
+With such good agreement with known quantities, we believe that some of the
+values for additional parameters obtained for the first time are worthy of
+consideration.  
+
+The intrinsic linewidth ${\sigma}_{11}$ of the (11) Bragg rod is another parameter
+that can be directly estimated by the breadth of the edge at $2 {\theta}_{e}$
+of the second satellite.
+At first, we were concerned that the (11) Bragg rod requires a 
+considerably larger intrinsic width than the (20) Bragg rod, but
+the data in Fig. \ref{model:fig2}c in \cite{Smi88} show the same comparison 
+for oriented
+samples.  An explanation
+for this is that there is likely to be a distribution of tilt angles ${\theta}_{t}$.
+Since the tilt angle probably depends upon competing interactions \cite{STN92} that
+are small relative to the strong cohesive interactions that establish the
+wide angle $d_{11}$ and $d_{20}$ spacings, the distribution
+of these latter spacings may be taken to be very narrow and can be ignored
+compared to the distribution of ${\theta}_{t}$.  Therefore, the
+distribution of ${\theta}_{t}$ gives rise to a distribution of
+(11) Bragg rods that cut the equator at different angles ${\theta}_{e}$ 
+and this distribution in ${\theta}_{e}$ determines ${\sigma}_{11}$.  Using the 
+relations in the preceding paragraph yields mean fluctuations in ${\theta}_{t}$
+of  $\pm 1.3^{\circ}$ about its average value given in Table\ \ref{table1}.  Notice
+that the size of these fluctuations is distinct from the estimated error
+in the average value of ${\theta}_{t}$.
+
+The insets in Fig.\ \ref{model:fig4} show two regions
+where the fit is adversely affected by not allowing any offsets.
+This suggests that offsets not only could exist, but do exist.
+We originally drew the diffuse scattering curve in Figs.\ \ref{model:fig1} and \ref{model:fig4}
+so that the peak scattering would go to zero near $19.5^{\circ}$
+and near $20.5^{\circ}$, but this is not a necessity as seen from the fitted
+curves in Fig.\ \ref{model:fig4}.  The reason for this is interesting and reveals some
+features that help to appreciate the effect of the offsets shown in
+Fig.\ \ref{model:fig4}.  Fig.\ \ref{model:fig5} shows the form factors for the (1,1) and (1,-1) rods.
+Offsets lower the symmetry which only demands
+that the (1,1) and (-1,-1) rods have the same form factors and also
+that the (1,-1) and (-1,1) rods have the same form factors.  To
+obtain the intensity, the individual form factors are first squared
+and then added because the scattering from the two rods comes from
+different regions in real space that scatter incoherently.  Even
+though the intensity from each Bragg rod has zeros, the zeros occur
+for different values of q for the (1,1) and (1,-1) rods,
+so there are no zeros in the sum.  Another reason
+that there are no zeros between the satellites in Fig.\ \ref{model:fig4} is that
+both $\pm |q_{z}|$ values contribute to the same
+powder averaged value of q.
+Another feature of interest in Fig.\ \ref{model:fig5} is that the form factor is not
+symmetric along $q_{z}$ as it would be for a sinc function which describes a
+simple array of rods with no offsets or headgroups.  The simple sinc functions
+have a maximum at the $q_{z}$ indicated by the vertical dashed line near
+${0.7\mbox{\AA}}^{-1}$ in Fig.\ \ref{model:fig5}; this is the value of $q_{z}$ that gives 
+$q=\frac{2 \pi}{d_{11}}$ . With non-zero offsets the maxima in the form factors 
+are displaced as shown in Fig.\ \ref{model:fig5} and reflection symmetry about this 
+$q_{z}$ value disappears.
+
+\begin{figure}[ht]
+\centerline {\psfig{figure=gel_model_dir/fqz11all2.ps,width=4in}}
+\caption{The form factors $F(q_{z})$ along the (1,1) and (1,-1) Bragg rods
+for the parameters in Table\ \protect\ref{table1}.  One vertical dashed
+line at $q_{z}=0$ marks the
+equator and the other vertical dashed line at $q_{z}=0.684$ marks the
+value where $q=2 \pi / d_{11}$.
+\label{model:fig5}}
+\end{figure}
+
+The electron densities perpendicular to the bilayer
+determined from the fit in Fig.\ \ref{model:fig4} and Table\ \ref{table1} are shown 
+in Fig.\ \ref{model:fig6}.  
+The chain electron density has been normalized so that it gives
+the total number of electrons 248, as in the chains (not including the 
+first carbonyl carbon) when multiplied by the area/molecule A and then
+integrated along z.  With this same normalization the number of electrons under 
+the fitted headgroup peak is $n_{H}^{fit}$ = 45.0.
+This may be compared to the number of electrons $n_{{PO_{4}}}$=47 in the phosphate,
+$n_{choline}$=50 in the choline and $n_{back}$=67 in the backbone which
+includes the first carbonyl carbons on the acyl chains, for a total number of
+electrons in the head $n_{H}$=164 .  (Subtraction of that fraction of the
+carbonyl electrons that are included in the slightly larger L would only
+reduce this by 12.)  That this actual
+$n_{H}$ is considerably larger than the $n_{H}^{fit}$ 
+derived from the size of the fitted headgroup peak
+suggests that the headgroups are more disordered than the tails so that
+they preferentially scatter diffusely rather than with coherent peak scattering.
+
+Fig.\ \ref{model:fig6} also shows the electron density determined from our low
+angle data \cite{WSN89}.  The small mismatch with the wide angle
+data in the chain region is due to use of a less accurate and
+smaller measurement of ${d_{11}}$ in the earlier work.
+The headgroup Gaussian from the
+low angle data is larger by a factor of 1.24, containing about 56 electrons,
+than the headgroup Gaussian from the wide angle fit in Fig.\ \ref{model:fig4} that contains
+45.0 electrons.  Furthermore, 
+56 electrons is an underestimate of the number of electrons in the headgroup
+obtained from the low angle fit
+because that Gaussian sits on a smooth ``bridging'' electron density
+that comes from a variety of molecular substituents such as water,
+chains, and headgroup contributions that are not included
+in the headgroup Gaussian.  These latter headgroup contributions account
+for water and chains that have been displaced from the headgroup
+region and therefore the apparent headgroup Gaussian just accounts for electron
+density of the headgroups in excess of the water and hydrocarbon chains.
+To account for the total number of headgroup electrons,
+the low angle Gaussian should be scaled by a factor of 2.9
+for comparison with the wide angle headgroup Gaussian.
+This is shown as the dot-dash Gaussian in Fig.\ \ref{model:fig6}.
+(The difference between the low angle electron density (dashed line
+in Fig.\ \ref{model:fig6}) and the dot-dash Gaussian is the sum of the electron density of
+the chains and the water; this sum is positive as it must be.)
+Since the dot-dash Gaussian is much larger than the solid Gaussian obtained
+from the wide angle fit, it can be concluded that,
+when normalized by the chain scattering,
+the headgroup electrons yield less peak scattering
+in the wide angle region than in the low angle region.
+
+\begin{figure}[ht]
+\centerline {\psfig{figure=gel_model_dir/denprof2.ps,width=4in}}
+\caption{Electron density ${\rho}_{z}$, in units of electrons/cubic angstrom,
+along the bilayer normal for half a symmetric bilayer, with the midplane
+(terminal methyl trough) at z=0.  The constant solid line shows the
+chain density and the solid Gaussian shows the headgroup
+contribution for the parameters in Table\ \protect\ref{table1} .
+The electron density determined by our previous low-angle
+study \protect\cite{WSN89} is plotted with a dashed curve and
+the low-angle headgroup contribution is plotted
+separately (dot-dash curve) for comparison with the wide-angle
+headgroup Gaussian. 
+\label{model:fig6}}
+\end{figure}
+
+The quantities in Table\ \ref{table1} determined directly by the fit to the wide
+angle data allow the determination of other interesting quantities
+for bilayer structure shown in Table\ \ref{table2}.  The following elementary
+equations give the unit cell dimensions, {\it a} and {\it b}, and
+the area $A_{c}$ perpendicular to the chain and the area A
+of the head group:
+\begin{eqnarray}
+\label{d-1}
+a = 2 d_{20} , \ \ b = {d_{11} \over \cos {\theta}_{t} \sqrt{1-({d_{11} \over 2 
+d_{20}})^2}}, \nonumber\\
+A_{c} = {d_{20} d_{11} \over \sqrt{1-({d_{11} \over 2 d_{20}})^2}} \ \mbox{and} 
+\   A = {2 A_{c} \over \cos {\theta}_{t}} .
+\end{eqnarray}
+Since the length of a methylene group is
+1.27\AA~ along all-trans chains, the volume per methylene $V_{CH_{2}}$ equals
+$A_{c} \times 1.27\AA$. Using our current measurement of $A_{c}$, the ratio of methyl 
+volume to methylene volume is
+determined from our previous low angle diffraction work (see Fig.\ \ref{model:fig4}
+in \cite{WSN89}) to be in the range 2.0 to 2.1, which also agrees with
+\cite{NW88,WW5}, and this yields $V_{CH_{3}}$. The 
+hydrocarbon volume $V_{C}$ consists of two chains, each with 14 methylenes
+and one methyl.  The average thickness of the hydrocarbon region $D_{C}$ is 
+obtained from $V_{C}$/A. The volume of the
+headgroup $V_{H}$ equals the measured volume \cite{NW78} of the entire lipid
+$V_{L}$ minus the volume of the chains $V_{C}$. The volume $V_{X}$ of the unit 
+cell comes from AD/2 where our recent measurement of the low angle
+D spacing \cite{STN92} is given.  
+Finally, the number of waters per lipid is given by $(V_{X}-V_{L})/V_{W}$ where 
+$V_{W}$ is the volume of a water molecule which is 30.0\AA$^{3}$ for this 
+temperature of $24^{\circ}$C. Our previous estimates for many of the quantities 
+in Table II \cite{WSN89} used wide angle data that were not fully resolved from 
+which we estimated a value of $d_{11}=4.12 \pm 0.02$\AA~ which is significantly
+smaller than the value of $d_{11}$ from Table \ \ref{table1}.
+This difference is the primary reason that our previous \cite{WSN89}
+and current error bars do not overlap for the quantities
+$A_{c}$, $V_{CH_{2}}$, $V_{CH_{3}}$, $V_{C}$ and $V_{H}$. There may, however, be 
+variations from one sample to another that account for
+these differences in these latter quantities.  We obtained a different data
+set at $19^{\circ}$C that gave results consistent with the values for
+most of the quantities in Table \ \ref{table1}, but which had $d_{11}=4.14$\AA.
+This propagated values of $A_{c}$, $V_{CH_{2}}$, $V_{CH_{3}}$, $V_{C}$ and $V_{H}$ 
+that are about midway between our previous results \cite{WSN89} and the
+results in Table \ \ref{table2}.  Therefore, it might be appropriate to assign a
+wider range of uncertainty to these quantities.
+
+\begin{table}
+\caption{Other Results
+\label{table2}}
+\begin{center}
+\begin{tabular}{cc}
+\hline \hline \\
+$a$             & 8.4880$\pm$0.0008\AA\\
+$b$             & 5.64$\pm$0.02\AA\\
+$A_{c}$         & 20.40$\pm$0.04${\mbox{\AA}}^{2}$\\
+$A$             & 47.9$\pm$0.2${\mbox{\AA}}^{2}$\\
+$V_{{CH}_2}$    & 25.91$\pm$0.05${\mbox{\AA}}^{3}$\\
+$V_{{CH}_3}$    & 53.1$\pm$1.3${\mbox{\AA}}^{3}$\\
+$V_{C}$         & 829$\pm$4${\mbox{\AA}}^{3}$\\
+$D_{C}$         & 17.3$\pm$0.2\AA\\
+$V_{L}$         & 1148$\pm$2${\mbox{\AA}}^{3}$\\
+$V_{H}$         & 319$\pm$6${\mbox{\AA}}^{3}$\\
+$V_{X}$         & 1518$\pm$9${\mbox{\AA}}^{3}$\\
+$D$             & 63.4$\pm$0.1\AA\\
+$n_{w}$         & 12.6$\pm$0.4\\
+\hline \hline \\
+\end{tabular}
+\end{center}
+\end{table}

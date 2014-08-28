@@ -1,0 +1,1189 @@
+This is TeX, Version 3.1415 (C version 6.1) (format=lplain 94.12.7)  4 NOV 1997 09:46
+**master.tex
+(master.tex
+LaTeX2e <1994/06/01>
+(title.tex (/usr/local/lib/texmf/tex/latex2e/base/latex209.def
+File: latex209.def 1994/06/01 Standard LaTeX file
+
+Entering LaTeX 2.09 compatibility mode.
+\footheight=\dimen102
+\@maxsep=\dimen103
+\@dblmaxsep=\dimen104
+(/usr/local/lib/texmf/tex/latex2e/base/tracefnt.sty
+Package: tracefnt 1994/05/29 v2.3k Standard LaTeX package (font tracing)
+\tracingfonts=\count82
+LaTeX Info: Redefining \selectfont on input line 113.
+)
+\symbold=\mathgroup4
+\symsans=\mathgroup5
+\symtypewriter=\mathgroup6
+\symitalic=\mathgroup7
+\symsmallcaps=\mathgroup8
+\symslanted=\mathgroup9
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 179.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 180.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 181.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 187.
+LaTeX Info: Redefining \em on input line 197.
+
+(/usr/local/lib/texmf/tex/latex2e/base/latexsym.sty
+Package: latexsym 1994/05/27 v2.1e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup10
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
+)
+LaTeX Font Info:    Redeclaring math delimiter \lgroup on input line 262.
+LaTeX Font Info:    Redeclaring math delimiter \rgroup on input line 264.
+LaTeX Font Info:    Redeclaring math delimiter \bracevert on input line 266.
+)
+Compatibility mode: loading revtex.sty rather than revtex.cls.
+
+(/usr/contributed/lib/revtex/revtex.sty
+Filename: revtex.sty, v3.0 <27 October 92>
+(/usr/contributed/lib/revtex/aps.sty
+Filename: aps.sty, v3.0 <28 October 1992>
+REVTeX message: NFSS detected! Assuming NFSS.
+(/usr/contributed/lib/revtex/aps10.sty
+Filename: aps10.sty, v3.0 <2 October 1992>
+)
+\c@part=\count83
+\c@section=\count84
+\c@subsection=\count85
+\c@subsubsection=\count86
+\c@paragraph=\count87
+\c@subparagraph=\count88
+\@indentflag=\count89
+\@eqtoeqnum=\dimen105
+\c@eqletter=\count90
+\c@equation=\count91
+\@testboxa=\box25
+\@testboxb=\box26
+ (/usr/contributed/lib/revtex/prabib.sty
+Filename: prabib.sty, v3.0 <9/14/92>
+\WidestRefLabelThusFar=\dimen106
+)
+\c@figure=\count92
+\c@table=\count93
+\c@tablenote=\count94
+\@Ldec=\dimen107
+\@Rdec=\dimen108
+)) (master.aux)
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 3.
+LaTeX Font Info:    ... okay on input line 3.
+LaTeX Font Info:    No math setup on input line 17.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 17.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 17.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 17.
+ (/usr/local/lib/texmf/tex/latex2e/base/Ulasy.fd
+File: Ulasy.fd 1994/05/27 v2.1eLaTeX symbol font definitions
+)
+LaTeX Font Info:    No math setup on input line 17.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 17.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 17.
+) (abst.tex
+[1
+
+]) (intro.tex
+
+LaTeX Warning: Reference `intro_chap' on page 2 undefined on input line 10.
+
+
+LaTeX Warning: Citation `Wac89a' on page 2 undefined on input line 39.
+
+LaTeX Font Info:    No math setup on input line 51.
+
+LaTeX Warning: Reference `gel_model_data' on page 2 undefined on input line 68.
+
+
+
+LaTeX Warning: Reference `gel_model_strategy' on page 2 undefined on input line
+ 70.
+
+
+LaTeX Warning: Reference `gel_model_model' on page 2 undefined on input line 72
+.
+
+
+LaTeX Warning: Reference `gel_model_sate' on page 2 undefined on input line 73.
+
+
+
+LaTeX Warning: Reference `gel_model_fit' on page 2 undefined on input line 74.
+
+
+LaTeX Warning: Reference `gel_model_model' on page 2 undefined on input line 76
+.
+
+
+LaTeX Warning: Reference `gel_model_diff' on page 2 undefined on input line 78.
+
+
+
+LaTeX Warning: Reference `gel_model_dis' on page 2 undefined on input line 81.
+
+) (matmet.tex [2
+
+]) (results.tex
+! Undefined control sequence.
+<argument> \psfig 
+                  {figure=gel_model_dir/shdpt.ps,width=4in}
+l.5 ...g{figure=gel_model_dir/shdpt.ps,width=4in}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.5 ...g{figure=gel_model_dir/shdpt.ps,width=4in}}
+                                                  
+? 
+! Extra }, or forgotten $.
+<argument> ...re=gel_model_dir/shdpt.ps,width=4in}
+                                                  
+l.5 ...g{figure=gel_model_dir/shdpt.ps,width=4in}}
+                                                  
+? 
+! Extra }, or forgotten $.
+\centerline #1->\@@line {\hss #1\hss }
+                                      
+l.5 ...g{figure=gel_model_dir/shdpt.ps,width=4in}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.15 \label{model:fig1}}
+                        
+? 
+LaTeX Font Info:    No math setup on input line 15.
+! Missing } inserted.
+<inserted text> 
+                }
+l.16 \end{figure}
+                 
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.16 \end{figure}
+                 
+? 
+
+LaTeX Warning: Reference `model:fig1' on page 3 undefined on input line 18.
+
+LaTeX Font Info:    No math setup on input line 19.
+
+LaTeX Warning: Reference `gel_model_model' on page 3 undefined on input line 24
+.
+
+[3]
+
+LaTeX Warning: Reference `model:fig1' on page 4 undefined on input line 36.
+
+
+LaTeX Warning: Reference `model:fig1' on page 4 undefined on input line 52.
+
+
+LaTeX Warning: Reference `model:fig1' on page 4 undefined on input line 55.
+
+
+LaTeX Warning: Reference `model:fig1' on page 4 undefined on input line 58.
+
+
+LaTeX Warning: Reference `model:fig1' on page 4 undefined on input line 64.
+
+
+LaTeX Warning: Reference `model:fig1' on page 4 undefined on input line 73.
+
+
+LaTeX Warning: Reference `model:fig1' on page 4 undefined on input line 82.
+
+
+LaTeX Warning: Reference `model:fig1' on page 4 undefined on input line 96.
+
+
+LaTeX Warning: Reference `gel_model_fit' on page 4 undefined on input line 105.
+
+
+
+LaTeX Warning: Reference `model:fig1' on page 4 undefined on input line 108.
+
+
+LaTeX Warning: Reference `model:fig1' on page 4 undefined on input line 113.
+
+
+Overfull \hbox (104.13852pt too wide) detected at line 132
+  [] 
+ []
+
+[4]
+
+LaTeX Warning: Reference `model:fig1' on page 5 undefined on input line 165.
+
+
+LaTeX Warning: Reference `gel_model_sate' on page 5 undefined on input line 183
+.
+
+
+LaTeX Warning: Reference `gel_model_fit' on page 5 undefined on input line 184.
+
+
+
+LaTeX Warning: Reference `model:fig1' on page 5 undefined on input line 187.
+
+) (theory.tex
+
+LaTeX Warning: Reference `model:fig1' on page 5 undefined on input line 7.
+
+! Undefined control sequence.
+l.22 \psfig
+           {figure=gel_model_dir/modela.ps,height=3.0in}
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.22 \psfig{figure=gel_
+                       model_dir/modela.ps,height=3.0in}
+? 
+! Extra }, or forgotten $.
+l.22 ...gure=gel_model_dir/modela.ps,height=3.0in}
+                                                  
+? 
+! Undefined control sequence.
+l.26 \psfig
+           {figure=gel_model_dir/modelb.ps,height=3.0in}
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 \end{center}
+                 
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 \end{center}
+                 
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.27 \end{center}
+                 
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.27 \end{center}
+                 
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--28
+[][]  \OT1/cmr/m/n/10 figure=gel$[]\OML/cmm/m/it/10 odel[]ir=modela:ps; height 
+\OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (73.77686pt too wide) in paragraph at lines 21--28
+\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 in []$ 
+ []
+
+! Undefined control sequence.
+l.30 \psfig
+           {figure=gel_model_dir/modelc.ps,width=2.5in}
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.30 \psfig{figure=gel_
+                       model_dir/modelc.ps,width=2.5in}
+? 
+! Extra }, or forgotten $.
+l.30 ...igure=gel_model_dir/modelc.ps,width=2.5in}
+                                                  
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.31 \end{center}
+                 
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.31 \end{center}
+                 
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.31 \end{center}
+                 
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.31 \end{center}
+                 
+? 
+LaTeX Font Info:    No math setup on input line 51.
+
+LaTeX Warning: Reference `model:fig2' on page 5 undefined on input line 54.
+
+LaTeX Font Info:    No math setup on input line 57.
+
+LaTeX Warning: Reference `model:fig2' on page 5 undefined on input line 65.
+
+
+Overfull \hbox (5.99559pt too wide) in alignment at lines 80--85
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (5.99559pt too wide) in alignment at lines 89--94
+ [] [] [] [] 
+ []
+
+[5]
+
+LaTeX Warning: Reference `model:fig2' on page 6 undefined on input line 99.
+
+
+LaTeX Warning: Reference `model:fig2' on page 6 undefined on input line 103.
+
+
+Overfull \hbox (43.61278pt too wide) in alignment at lines 108--115
+ [] [] [] [] 
+ []
+
+
+LaTeX Warning: Reference `model:fig2' on page 6 undefined on input line 130.
+
+
+LaTeX Warning: Reference `model:fig3' on page 6 undefined on input line 177.
+
+! Undefined control sequence.
+<argument> \psfig 
+                  {figure=gel_model_dir/fig3.ps,width=4in}
+l.185 ...{figure=gel_model_dir/fig3.ps,width=4in}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.185 ...{figure=gel_model_dir/fig3.ps,width=4in}}
+                                                  
+? 
+! Extra }, or forgotten $.
+<argument> ...ure=gel_model_dir/fig3.ps,width=4in}
+                                                  
+l.185 ...{figure=gel_model_dir/fig3.ps,width=4in}}
+                                                  
+? 
+! Extra }, or forgotten $.
+\centerline #1->\@@line {\hss #1\hss }
+                                      
+l.185 ...{figure=gel_model_dir/fig3.ps,width=4in}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.191 \label{model:fig3}}
+                         
+? 
+LaTeX Font Info:    No math setup on input line 191.
+! Missing } inserted.
+<inserted text> 
+                }
+l.192 \end{figure}
+                  
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.192 \end{figure}
+                  
+? 
+
+LaTeX Warning: Reference `model:fig3' on page 6 undefined on input line 202.
+
+
+LaTeX Warning: Reference `model:fig1' on page 6 undefined on input line 204.
+
+
+LaTeX Warning: Reference `model:fig1' on page 6 undefined on input line 206.
+
+LaTeX Font Info:    No math setup on input line 207.
+) (fitting.tex [6]
+
+LaTeX Warning: Reference `model:fig1' on page 7 undefined on input line 5.
+
+
+LaTeX Warning: Reference `gel_model_model' on page 7 undefined on input line 9.
+
+
+
+LaTeX Warning: Reference `model:fig1' on page 7 undefined on input line 12.
+
+
+LaTeX Warning: Reference `gel_model_model' on page 7 undefined on input line 28
+.
+
+
+LaTeX Warning: Reference `model:fig1' on page 7 undefined on input line 38.
+
+
+LaTeX Warning: Reference `model:fig4' on page 7 undefined on input line 40.
+
+! Undefined control sequence.
+<argument> \psfig 
+                  {figure=gel_model_dir/fit_new.ps,width=4in}
+l.43 ...igure=gel_model_dir/fit_new.ps,width=4in}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.43 ...igure=gel_model_dir/fit_new.ps,width=4in}}
+                                                  
+? 
+! Extra }, or forgotten $.
+<argument> ...=gel_model_dir/fit_new.ps,width=4in}
+                                                  
+l.43 ...igure=gel_model_dir/fit_new.ps,width=4in}}
+                                                  
+? 
+! Extra }, or forgotten $.
+\centerline #1->\@@line {\hss #1\hss }
+                                      
+l.43 ...igure=gel_model_dir/fit_new.ps,width=4in}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.59 \label{model:fig4}}
+                        
+? 
+
+LaTeX Warning: Reference `model:fig1' on page 7 undefined on input line 59.
+
+
+LaTeX Warning: Reference `gel_model_strategy' on page 7 undefined on input line
+ 59.
+
+LaTeX Font Info:    No math setup on input line 59.
+! Missing } inserted.
+<inserted text> 
+                }
+l.60 \end{figure}
+                 
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.60 \end{figure}
+                 
+? 
+LaTeX Font Info:    No math setup on input line 63.
+
+LaTeX Warning: Reference `model:fig4' on page 7 undefined on input line 69.
+
+
+LaTeX Warning: Reference `model:fig4' on page 7 undefined on input line 71.
+
+
+LaTeX Warning: Reference `gel_model_strategy' on page 7 undefined on input line
+ 77.
+
+
+LaTeX Warning: Reference `model:fig4' on page 7 undefined on input line 79.
+
+LaTeX Font Info:    No math setup on input line 94.
+[7]
+LaTeX Font Info:    No math setup on input line 115.
+
+
+LaTeX Warning: Reference `model:fig1' on page 8 undefined on input line 133.
+
+
+LaTeX Warning: Reference `model:fig2' on page 8 undefined on input line 163.
+
+[8]
+
+LaTeX Warning: Reference `model:fig4' on page 9 undefined on input line 180.
+
+
+LaTeX Warning: Reference `model:fig1' on page 9 undefined on input line 183.
+
+
+LaTeX Warning: Reference `model:fig4' on page 9 undefined on input line 183.
+
+
+LaTeX Warning: Reference `model:fig4' on page 9 undefined on input line 186.
+
+
+LaTeX Warning: Reference `model:fig4' on page 9 undefined on input line 188.
+
+
+LaTeX Warning: Reference `model:fig5' on page 9 undefined on input line 188.
+
+
+LaTeX Warning: Reference `model:fig4' on page 9 undefined on input line 198.
+
+
+LaTeX Warning: Reference `model:fig5' on page 9 undefined on input line 201.
+
+
+LaTeX Warning: Reference `model:fig5' on page 9 undefined on input line 205.
+
+
+LaTeX Warning: Reference `model:fig5' on page 9 undefined on input line 207.
+
+! Undefined control sequence.
+<argument> \psfig 
+                  {figure=gel_model_dir/fqz11all2.ps,width=4in}
+l.211 ...re=gel_model_dir/fqz11all2.ps,width=4in}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.211 ...re=gel_model_dir/fqz11all2.ps,width=4in}}
+                                                  
+? 
+! Extra }, or forgotten $.
+<argument> ...el_model_dir/fqz11all2.ps,width=4in}
+                                                  
+l.211 ...re=gel_model_dir/fqz11all2.ps,width=4in}}
+                                                  
+? 
+! Extra }, or forgotten $.
+\centerline #1->\@@line {\hss #1\hss }
+                                      
+l.211 ...re=gel_model_dir/fqz11all2.ps,width=4in}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.217 \label{model:fig5}}
+                         
+? 
+LaTeX Font Info:    No math setup on input line 217.
+! Missing } inserted.
+<inserted text> 
+                }
+l.218 \end{figure}
+                  
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.218 \end{figure}
+                  
+? 
+
+LaTeX Warning: Reference `model:fig4' on page 9 undefined on input line 221.
+
+
+LaTeX Warning: Reference `model:fig6' on page 9 undefined on input line 222.
+
+LaTeX Font Info:    No math setup on input line 227.
+
+LaTeX Warning: Reference `model:fig6' on page 9 undefined on input line 239.
+
+
+LaTeX Warning: Reference `model:fig4' on page 9 undefined on input line 245.
+
+
+LaTeX Warning: Reference `model:fig6' on page 9 undefined on input line 259.
+
+
+LaTeX Warning: Reference `model:fig6' on page 9 undefined on input line 261.
+
+! Undefined control sequence.
+<argument> \psfig 
+                  {figure=gel_model_dir/denprof2.ps,width=4in}
+l.270 ...ure=gel_model_dir/denprof2.ps,width=4in}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.270 ...ure=gel_model_dir/denprof2.ps,width=4in}}
+                                                  
+? 
+! Extra }, or forgotten $.
+<argument> ...gel_model_dir/denprof2.ps,width=4in}
+                                                  
+l.270 ...ure=gel_model_dir/denprof2.ps,width=4in}}
+                                                  
+? 
+! Extra }, or forgotten $.
+\centerline #1->\@@line {\hss #1\hss }
+                                      
+l.270 ...ure=gel_model_dir/denprof2.ps,width=4in}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.281 \label{model:fig6}}
+                         
+? 
+LaTeX Font Info:    No math setup on input line 281.
+! Missing } inserted.
+<inserted text> 
+                }
+l.282 \end{figure}
+                  
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.282 \end{figure}
+                  
+? 
+LaTeX Font Info:    No math setup on input line 288.
+[9]
+
+LaTeX Warning: Reference `model:fig4' on page 10 undefined on input line 301.
+
+LaTeX Font Info:    No math setup on input line 335.
+) (diffuse.tex
+
+LaTeX Warning: Reference `model:fig1' on page 10 undefined on input line 4.
+
+
+LaTeX Warning: Reference `model:fig1' on page 10 undefined on input line 13.
+
+
+LaTeX Warning: Reference `model:fig2' on page 10 undefined on input line 15.
+
+
+LaTeX Warning: Reference `model:fig1' on page 10 undefined on input line 22.
+
+LaTeX Font Info:    No math setup on input line 22.
+
+LaTeX Warning: Reference `model:fig1' on page 10 undefined on input line 24.
+
+
+LaTeX Warning: Reference `model:fig7' on page 10 undefined on input line 43.
+
+
+LaTeX Warning: Reference `model:fig7' on page 10 undefined on input line 49.
+
+[10]
+! Undefined control sequence.
+<argument> \psfig 
+                  {figure=gel_model_dir/diffuse.ps,width=4in}
+l.56 ...igure=gel_model_dir/diffuse.ps,width=4in}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.56 ...igure=gel_model_dir/diffuse.ps,width=4in}}
+                                                  
+? 
+! Extra }, or forgotten $.
+<argument> ...=gel_model_dir/diffuse.ps,width=4in}
+                                                  
+l.56 ...igure=gel_model_dir/diffuse.ps,width=4in}}
+                                                  
+? 
+! Extra }, or forgotten $.
+\centerline #1->\@@line {\hss #1\hss }
+                                      
+l.56 ...igure=gel_model_dir/diffuse.ps,width=4in}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.67 \label{model:fig7}}
+                        
+? 
+LaTeX Font Info:    No math setup on input line 67.
+
+LaTeX Warning: Reference `model:fig2' on page 11 undefined on input line 67.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.68 \end{figure}
+                 
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.68 \end{figure}
+                 
+? 
+LaTeX Font Info:    No math setup on input line 71.
+
+LaTeX Warning: Reference `model:fig1' on page 11 undefined on input line 104.
+
+
+LaTeX Warning: Reference `model:fig7' on page 11 undefined on input line 111.
+
+
+LaTeX Warning: Reference `model:fig1' on page 11 undefined on input line 113.
+
+
+LaTeX Warning: Reference `model:fig1' on page 11 undefined on input line 121.
+
+[11]) (dis.tex
+
+LaTeX Warning: Reference `gel_model_model' on page 12 undefined on input line 3
+4.
+
+
+LaTeX Warning: Reference `model:fig1' on page 12 undefined on input line 39.
+
+
+LaTeX Warning: Reference `model:fig2' on page 12 undefined on input line 61.
+
+
+LaTeX Warning: Reference `model:fig6' on page 12 undefined on input line 61.
+
+
+LaTeX Warning: Reference `model:fig5' on page 12 undefined on input line 71.
+
+) (ref.tex (master.bbl [12])) (caption.tex
+! Undefined control sequence.
+<argument> \psfig 
+                  {figure=gel_model_dir/shdpt.ps,width=4in}
+l.3 ...g{figure=gel_model_dir/shdpt.ps,width=4in}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.3 ...g{figure=gel_model_dir/shdpt.ps,width=4in}}
+                                                  
+? 
+! Extra }, or forgotten $.
+<argument> ...re=gel_model_dir/shdpt.ps,width=4in}
+                                                  
+l.3 ...g{figure=gel_model_dir/shdpt.ps,width=4in}}
+                                                  
+? 
+! Extra }, or forgotten $.
+\centerline #1->\@@line {\hss #1\hss }
+                                      
+l.3 ...g{figure=gel_model_dir/shdpt.ps,width=4in}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.13 \label{fig1}}
+                  
+? 
+LaTeX Font Info:    No math setup on input line 13.
+! Missing } inserted.
+<inserted text> 
+                }
+l.14 \end{figure}
+                 
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.14 \end{figure}
+                 
+? 
+! Undefined control sequence.
+l.21 \psfig
+           {figure=gel_model_dir/modela.ps,height=3.0in}
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.21 \psfig{figure=gel_
+                       model_dir/modela.ps,height=3.0in}
+? 
+LaTeX Font Info:    No math setup on input line 21.
+! Extra }, or forgotten $.
+l.21 ...gure=gel_model_dir/modela.ps,height=3.0in}
+                                                  
+? 
+! Undefined control sequence.
+l.25 \psfig
+           {figure=gel_model_dir/modelb.ps,height=3.0in}
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 \end{center}
+                 
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 \end{center}
+                 
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.26 \end{center}
+                 
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.26 \end{center}
+                 
+? 
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--27
+[][]  \OT1/cmr/m/n/10 figure=gel$[]\OML/cmm/m/it/10 odel[]ir=modela:ps; height 
+\OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (73.77686pt too wide) in paragraph at lines 20--27
+\OT1/cmr/m/n/10 3\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0\OML/cmm/m/it/10 in []$ 
+ []
+
+! Undefined control sequence.
+l.29 \psfig
+           {figure=gel_model_dir/modelc.ps,width=2.5in}
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.29 \psfig{figure=gel_
+                       model_dir/modelc.ps,width=2.5in}
+? 
+! Extra }, or forgotten $.
+l.29 ...igure=gel_model_dir/modelc.ps,width=2.5in}
+                                                  
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 \end{center}
+                 
+? 
+
+! LaTeX Error: Something's wrong--perhaps a missing \item.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.30 \end{center}
+                 
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.30 \end{center}
+                 
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.30 \end{center}
+                 
+? 
+LaTeX Font Info:    No math setup on input line 52.
+[13]
+! Undefined control sequence.
+<argument> \psfig 
+                  {figure=gel_model_dir/fig3.ps,width=4in}
+l.56 ...g{figure=gel_model_dir/fig3.ps,width=4in}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.56 ...g{figure=gel_model_dir/fig3.ps,width=4in}}
+                                                  
+? 
+LaTeX Font Info:    No math setup on input line 56.
+! Extra }, or forgotten $.
+<argument> ...ure=gel_model_dir/fig3.ps,width=4in}
+                                                  
+l.56 ...g{figure=gel_model_dir/fig3.ps,width=4in}}
+                                                  
+? 
+! Extra }, or forgotten $.
+\centerline #1->\@@line {\hss #1\hss }
+                                      
+l.56 ...g{figure=gel_model_dir/fig3.ps,width=4in}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.62 \label{fig9}}
+                  
+? 
+LaTeX Font Info:    No math setup on input line 62.
+! Missing } inserted.
+<inserted text> 
+                }
+l.63 \end{figure}
+                 
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.63 \end{figure}
+                 
+? 
+! Undefined control sequence.
+<argument> \psfig 
+                  {figure=gel_model_dir/fit_new.ps,width=4in}
+l.66 ...igure=gel_model_dir/fit_new.ps,width=4in}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.66 ...igure=gel_model_dir/fit_new.ps,width=4in}}
+                                                  
+? 
+LaTeX Font Info:    No math setup on input line 66.
+! Extra }, or forgotten $.
+<argument> ...=gel_model_dir/fit_new.ps,width=4in}
+                                                  
+l.66 ...igure=gel_model_dir/fit_new.ps,width=4in}}
+                                                  
+? 
+! Extra }, or forgotten $.
+\centerline #1->\@@line {\hss #1\hss }
+                                      
+l.66 ...igure=gel_model_dir/fit_new.ps,width=4in}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.81 \label{fig2}}
+                  
+? 
+LaTeX Font Info:    No math setup on input line 81.
+! Missing } inserted.
+<inserted text> 
+                }
+l.82 \end{figure}
+                 
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.82 \end{figure}
+                 
+? 
+! Undefined control sequence.
+<argument> \psfig 
+                  {figure=gel_model_dir/fqz11all2.ps,width=4in}
+l.85 ...ure=gel_model_dir/fqz11all2.ps,width=4in}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.85 ...ure=gel_model_dir/fqz11all2.ps,width=4in}}
+                                                  
+? 
+LaTeX Font Info:    No math setup on input line 85.
+! Extra }, or forgotten $.
+<argument> ...el_model_dir/fqz11all2.ps,width=4in}
+                                                  
+l.85 ...ure=gel_model_dir/fqz11all2.ps,width=4in}}
+                                                  
+? 
+! Extra }, or forgotten $.
+\centerline #1->\@@line {\hss #1\hss }
+                                      
+l.85 ...ure=gel_model_dir/fqz11all2.ps,width=4in}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.91 \label{fig4}}
+                  
+? 
+LaTeX Font Info:    No math setup on input line 91.
+! Missing } inserted.
+<inserted text> 
+                }
+l.92 \end{figure}
+                 
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.92 \end{figure}
+                 
+? 
+! Undefined control sequence.
+<argument> \psfig 
+                  {figure=gel_model_dir/denprof2.ps,width=4in}
+l.95 ...gure=gel_model_dir/denprof2.ps,width=4in}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.95 ...gure=gel_model_dir/denprof2.ps,width=4in}}
+                                                  
+? 
+LaTeX Font Info:    No math setup on input line 95.
+! Extra }, or forgotten $.
+<argument> ...gel_model_dir/denprof2.ps,width=4in}
+                                                  
+l.95 ...gure=gel_model_dir/denprof2.ps,width=4in}}
+                                                  
+? 
+! Extra }, or forgotten $.
+\centerline #1->\@@line {\hss #1\hss }
+                                      
+l.95 ...gure=gel_model_dir/denprof2.ps,width=4in}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.105 headgroup Gaussian. \label{fig5}}
+                                       
+? 
+LaTeX Font Info:    No math setup on input line 105.
+! Missing } inserted.
+<inserted text> 
+                }
+l.106 \end{figure}
+                  
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.106 \end{figure}
+                  
+? 
+! Undefined control sequence.
+<argument> \psfig 
+                  {figure=gel_model_dir/diffuse.ps,width=4in}
+l.109 ...gure=gel_model_dir/diffuse.ps,width=4in}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.109 ...gure=gel_model_dir/diffuse.ps,width=4in}}
+                                                  
+? 
+LaTeX Font Info:    No math setup on input line 109.
+! Extra }, or forgotten $.
+<argument> ...=gel_model_dir/diffuse.ps,width=4in}
+                                                  
+l.109 ...gure=gel_model_dir/diffuse.ps,width=4in}}
+                                                  
+? 
+! Extra }, or forgotten $.
+\centerline #1->\@@line {\hss #1\hss }
+                                      
+l.109 ...gure=gel_model_dir/diffuse.ps,width=4in}}
+                                                  
+? 
+! Missing $ inserted.
+<inserted text> 
+                $
+l.119 \label{fig6}}
+                   
+? 
+LaTeX Font Info:    No math setup on input line 119.
+! Missing } inserted.
+<inserted text> 
+                }
+l.120 \end{figure}
+                  
+? 
+! Missing } inserted.
+<inserted text> 
+                }
+l.120 \end{figure}
+                  
+? 
+) (table.tex
+LaTeX Font Info:    No math setup on input line 16.
+LaTeX Font Info:    No math setup on input line 17.
+LaTeX Font Info:    No math setup on input line 18.
+LaTeX Font Info:    No math setup on input line 19.
+LaTeX Font Info:    No math setup on input line 20.
+LaTeX Font Info:    No math setup on input line 31.
+LaTeX Font Info:    No math setup on input line 32.
+LaTeX Font Info:    No math setup on input line 33.
+LaTeX Font Info:    No math setup on input line 34.
+LaTeX Font Info:    No math setup on input line 35.
+LaTeX Font Info:    No math setup on input line 37.
+LaTeX Font Info:    No math setup on input line 38.
+LaTeX Font Info:    No math setup on input line 39.
+ [14] (master.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) ) 
+Here is how much of TeX's memory you used:
+ 698 strings out of 11075
+ 6520 string characters out of 74288
+ 61364 words of memory out of 262141
+ 3430 multiletter control sequences out of 9500
+ 15499 words of font info for 57 fonts, out of 100000 for 255
+ 14 hyphenation exceptions out of 607
+ 23i,8n,19p,1408b,314s stack positions out of 300i,100n,60p,3000b,4000s
+
+Output written on master.dvi (14 pages, 102112 bytes).

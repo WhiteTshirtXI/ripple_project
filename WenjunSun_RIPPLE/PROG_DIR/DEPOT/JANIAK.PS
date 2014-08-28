@@ -1,0 +1,107 @@
+%!PS-Adobe-2.0
+%%Creator: Wenjun Sun
+%%Title: Ripple pattern
+%%Pages: 1
+%%BoundingBox: 0 0 612 792
+%%EndComments
+%-------------Variables and procedures------------
+/i {72 mul} def
+/width 8.5 i def
+/height 11 i def
+/LM -1.5 i def
+/center {width 2 div height 2 div translate} def
+/getHel {/Helvetica-Bold findfont 15 scalefont setfont} def
+/getCou {/Courier findfont 12 scalefont setfont} def
+/getSym {/Symbol findfont 12 scalefont setfont} def
+/newline{currentpoint 14 sub exch pop LM exch moveto} def
+/label {/subscript exch def
+ currentpoint moveto ( q) show
+ currentpoint 4 sub moveto subscript show} def
+/peak 
+ {/gs exch def /y exch def /x exch def
+ x y 7 360 0 arcn
+ closepath gs setgray fill} def
+%------------End variables and procedures---------
+%%EndProlog
+%%Page: 1 1
+%------------Begin program------------------------
+center
+
+getHel
+-2 i 0 i moveto
+2 i 0 i lineto
+(x) label
+0 i -1 i moveto
+0 i 4.5 i lineto
+(z) label
+1 setlinewidth
+stroke
+
+gsave
+0.000 i 3.000 i 0.000 peak
+-0.618 i 2.302 i 0.972 peak
+0.000 i 2.400 i 0.000 peak
+0.618 i 2.498 i 0.974 peak
+-0.618 i 1.702 i 0.835 peak
+-0.412 i 1.735 i 0.000 peak
+0.000 i 1.800 i 0.999 peak
+0.412 i 1.865 i 0.000 peak
+0.618 i 1.898 i 0.763 peak
+0.823 i 1.930 i 0.978 peak
+-0.823 i 1.070 i 0.914 peak
+-0.618 i 1.102 i 0.927 peak
+-0.412 i 1.135 i 0.956 peak
+0.000 i 1.200 i 0.821 peak
+0.206 i 1.233 i 0.544 peak
+0.412 i 1.265 i 0.956 peak
+0.618 i 1.298 i 0.887 peak
+-0.412 i 0.535 i 0.975 peak
+-0.206 i 0.567 i 0.000 peak
+0.000 i 0.600 i 0.000 peak
+0.206 i 0.633 i 0.000 peak
+0.412 i 0.065 i 0.965 peak
+0.412 i 0.065 i 0.965 peak
+grestore
+
+1.029 i 0.163 i 3 sub moveto (0) show
+1.029 i 0.763 i 3 sub moveto (1) show
+1.029 i 1.363 i 3 sub moveto (2) show
+1.029 i 1.963 i 3 sub moveto (3) show
+1.029 i 2.563 i 3 sub moveto (4) show
+1.029 i 3.163 i 3 sub moveto (5) show
+1.235 i 1.696 i 3 sub moveto (h) show
+
+-0.823 i 7 sub 3.170 i moveto (-4) show
+-0.618 i 7 sub 3.202 i moveto (-3) show
+-0.412 i 7 sub 3.235 i moveto (-2) show
+-0.206 i 7 sub 3.267 i moveto (-1) show
+0.000 i 7 sub 3.300 i moveto (0) show
+0.206 i 7 sub 3.333 i moveto (1) show
+0.412 i 7 sub 3.365 i moveto (2) show
+0.618 i 7 sub 3.398 i moveto (3) show
+0.823 i 7 sub 3.430 i moveto (4) show
+-0.412 i 3.535 i moveto (k) show
+
+newpath
+0.000 i 0.000 i moveto
+0.000 i 0.600 i lineto
+0.206 i 0.633 i lineto
+0.206 i 0.033 i lineto
+closepath 2 setlinewidth stroke
+
+newpath
+-1.457 i -2.250 i moveto
+-1.616 i -1.250 i lineto
+1.299 i -1.250 i lineto
+1.457 i -2.250 i lineto
+closepath 2 setlinewidth stroke
+
+LM -3.5 i moveto
+getCou (d = 55.2A, ) show
+getSym (l) show getCou ( = 160.9A, ) show
+getSym (g) show getCou ( = 99 deg) show
+newline
+((Jiniak_79 DMPC 21%_water 20C)) show
+
+showpage
+%%Trailer

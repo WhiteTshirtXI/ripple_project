@@ -1,0 +1,44 @@
+=====Summary of beam position at S1H=====
+MATLAB version (flipud applied to the image):
+ccdx   X  Y
+-55 -245 96
+
+tview version:
+ccdx  px pz
+-55 -247 95
+=================
+
+How to find the beam position at S1H:
+
+Compare dmpc6_010_c.tif and dmpc_031_c.tif.
+Both are BP. The only difference is the CCD horizontal position.
+Using tview, I found the following beam position:
+
+          ccdx  px  pz
+dmpc6_010    0 523 100
+dmpc6_031  -31  89  97
+
+So, moving the CCD by -31 resulted in 
+\Delta px = 523 - 89 = 434
+\Delta pz = 100 - 97 = 3
+
+The ripple WAXS was taken at ccdx = -55.
+Scaling linearly, moving the CCD by -24 should result in
+\Delta px = 24 / 31 * 434 = 336
+\Delta pz = 24 / 31 * 3 = 2
+or
+px = 89 - 336 = -247
+pz = 97 - 2 = 95
+so
+          ccdx   px  pz
+dmpc6_010    0  523 100
+dmpc6_031  -31   89  97
+           -55 -247  95  
+
+Using MATLAB (see beam_S1H.m), I found for dmpc6_010,
+the maximum intensity to be at (I used flipud to flip the image)
+px = 525 and pz = 100,
+and using tview,
+px = 523 and pz = 99.
+This means that whatever I measure in tview should be 
+shifted by 2 and 1 pixels in X and Y in MATLAB.

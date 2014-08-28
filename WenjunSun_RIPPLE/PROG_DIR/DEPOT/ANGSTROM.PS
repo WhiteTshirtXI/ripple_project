@@ -1,0 +1,29 @@
+%!
+%------------- Variables and procedures ---------------
+/Times-Roman findfont 10 scalefont setfont
+/char 1 string def
+/nstr 3 string def
+
+/newline 
+{currentpoint 11 sub
+exch pop LM exch moveto} def
+
+/prt-n
+{nstr cvs show} def
+
+/prtchar
+{char 0 3 -1 roll put char show} def
+
+/PrintCodeandChar
+{dup prt-n ( ) show prtchar newline} def
+
+%-------------- Begin Program ---------------------------
+/LM 72 def
+LM 600 moveto
+161 1 208 {PrintCodeandChar} for
+
+/LM 144 def
+LM 600 moveto
+225 1 251 {PrintCodeandChar} for
+
+showpage
