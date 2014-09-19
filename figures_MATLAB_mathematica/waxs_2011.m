@@ -1,15 +1,18 @@
-% A script to produce figures for WAXS
+% A script to produce figures for 2011 low resolution nGIWAXS
 close all;
 clear;
 global wavelength pixelSize sDist beamX beamZ
+
+% For Windows
 addpath(genpath('C:\Documents and Settings\Owner\My Documents\work\MATLAB_UserFunctions\Functions\Downloaded'));
 addpath('C:\Documents and Settings\Owner\My Documents\work\MATLAB_UserFunctions\Functions\waxs_kiyo');
 addpath(genpath('C:\Documents and Settings\Owner\My Documents\work\chess11'));
 
-addpath(genpath('~/WinC/MATLAB_UserFunctions/Functions/Downloaded'));
-addpath('~/WinC/MATLAB_UserFunctions/Functions/waxs_kiyo');
-addpath('~/WinC/MATLAB_UserFunctions/Functions');
-addpath(genpath('~/WinE/chess11'));
+% For linux
+addpath(genpath('~/WinE/MATLAB_UserFunctions/Functions/Downloaded'));
+addpath('~/WinE/MATLAB_UserFunctions/Functions/waxs_kiyo');
+addpath('~/WinE/MATLAB_UserFunctions/Functions');
+addpath(genpath('~/WinE/data/chess11'));
 
 wavelength = 1.176;
 pixelSize = 0.07113;
@@ -30,13 +33,31 @@ qshow(waxs, [0 500]);
 saveTightFigure(gcf, 'ripple_waxs_low-res.pdf');
 %axis([1 1.8 0 1])
 
-figure
-[qr, Int] = qrplot_q(waxs, [0.11 0.13]);
-dlmwrite('ripple_waxs_low-res_weak.dat', [qr Int]);
+%% Uncomment these to output I(q) plots
+[q, I] = sector_q(waxs, [1 2], [5 15]);
+dlmwrite('ripple_low-res_10deg.dat', [q, I]);
+[q, I] = sector_q(waxs, [1 2], [15 25]);
+dlmwrite('ripple_low-res_20deg.dat', [q, I]);
+[q, I] = sector_q(waxs, [1 2], [25 35]);
+dlmwrite('ripple_low-res_30deg.dat', [q, I]);
+[q, I] = sector_q(waxs, [1 2], [35 45]);
+dlmwrite('ripple_low-res_40deg.dat', [q, I]);
+[q, I] = sector_q(waxs, [1 2], [45 55]);
+dlmwrite('ripple_low-res_50deg.dat', [q, I]);
+[q, I] = sector_q(waxs, [1 2], [55 65]);
+dlmwrite('ripple_low-res_60deg.dat', [q, I]);
+[q, I] = sector_q(waxs, [1 2], [65 75]);
+dlmwrite('ripple_low-res_70deg.dat', [q, I]);
+[q, I] = sector_q(waxs, [1 2], [75 85]);
+dlmwrite('ripple_low-res_80deg.dat', [q, I]);
 
-figure
-[qr, Int] = qrplot_q(waxs, [0.19 0.21]);
-dlmwrite('ripple_waxs_low-res_strong.dat', [qr Int]);
+%% Uncomment these to create I(q_r) plots
+%figure
+%[qr, Int] = qrplot_q(waxs, [0.11 0.13]);
+%dlmwrite('ripple_waxs_low-res_weak.dat', [qr Int]);
+%figure
+%[qr, Int] = qrplot_q(waxs, [0.19 0.21]);
+%dlmwrite('ripple_waxs_low-res_strong.dat', [qr Int]);
 
 %% ripple phase data
 % a = slurp('ripple_060_cz.tif', 'c');
